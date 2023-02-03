@@ -1,12 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reports Dashboard</title>
-</head>
-<body>
-    hello
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body  >
+    <div class="dashboard_wrp">
+      <div class="sidebar_wrp">
+        <div class="sidebar_inner">
+          <div class="logo_wrp">
+            <figure>
+              <img src="./assets/images/logo.svg" />
+            </figure>
+            <img
+              src="./assets/images/sidebar_arrow.svg"
+              width="15px"
+              height="15px"
+            />
+          </div>
+          <div class="profile_wrp text-center">
+            <figure>
+              <img src="./assets/images/dummy-profile.png" />
+            </figure>
+            <div>
+              <button><i class="fa fa-gear"></i></button>
+              <button><i class="fa fa-bell"></i></button>
+              <button><i class="fa fa-sign-out"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content_wrp">
+        <div class="row">
+          <div class="col-12 col-md-9 dashboard_lft_contant_wrp">
+            <div class="dashboard_lft_contant">
+              <h1>Good Morning <strong>Lorem</strong></h1>
+              <p>
+                History will be kind to me for I intend to write it
+                <strong>-Winston Churchill</strong>
+              </p>
+              <div class="alert text-center">
+                Alert : You have missed your yesterday’s timesheet
+              </div>
+              <div class="dashboard_cards_wrp">
+                <div class="card greeting_card">
+                  <div class="greeting_card_inner">
+                    <img
+                      src="./assets/images/cards/greetings-dummy.png"
+                      width="100%"
+                      height="100%"
+                    />
+                    <span>Work Anniversary</span>
+                  </div>
+                </div>
+                <div class="card announcement_card">
+                  <h2 class="dashboard_card_title">
+                    Announcements<img
+                      src="./assets//images/announcement_icon.svg"
+                      width="35px"
+                      height="35px"
+                    />
+                    <span>Coming Soon</span>
+                  </h2>
+                </div>
+                <div class="card table_card anniversary_card">
+                  <h2 class="dashboard_card_title">
+                    Upcoming Anniversary<img
+                      src="./assets/images/dark_tada_icon.svg"
+                      width="25px"
+                      height="25px"
+                    />
+                  </h2>
+                  <div class="table_wrp">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Date</th>
+                          <th scope="col">Employee Name</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="card table_card birthday_card">
+                  <h2 class="dashboard_card_title">
+                    Upcoming Anniversary<img
+                      src="./assets/images/dark_tada_icon.svg"
+                      width="25px"
+                      height="25px"
+                    />
+                  </h2>
+                  <div class="table_wrp">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Date</th>
+                          <th scope="col">Employee Name</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="card table_card holiday_list_card">
+                  <h2 class="dashboard_card_title">
+                    Upcoming Anniversary<img
+                      src="./assets/images/light_tada_icon.svg"
+                      width="25px"
+                      height="25px"
+                    />
+                  </h2>
+                  <div class="table_wrp">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Date</th>
+                          <th scope="col">Employee Name</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                          <td>03 Feb</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 dashboard_right_contant_wrp">vbdfa</div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,179 @@
+body {
+    background-color: #fffdfa;
+    font-family: 'Poppins', sans-serif;
+}
+/* table_card scrollbar css */
+::-webkit-scrollbar {
+    width: 0px;
+}
+.dashboard_wrp {
+    display: flex;
+}
+.sidebar_wrp {
+    width: 19%;
+}
+.content_wrp {
+    width: 80%;
+}
+.sidebar_wrp .sidebar_inner {
+    padding: 15px;
+}
+.sidebar_wrp .logo_wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar_wrp .logo_wrp figure {
+    width: 150px;
+    hight: 150px;
+    margin: 0;
+}
+.sidebar_wrp .logo_wrp figure img {
+    width: 100%;
+    hight: 100%;
+}
+.sidebar_wrp .profile_wrp {
+}
+
+/* contant css */
+
+.content_wrp .dashboard_lft_contant_wrp {
+    padding: 30px;
+}
+.content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant {
+    background-color: #fff6e9;
+    border-radius: 80px;
+    padding: 45px 40px;
+}
+.content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #1b1b1b;
+}
+
+.content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant h1 strong {
+    color: #f85046;
+}
+.content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #686868;
+}
+.content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant p strong {
+    color: #1b1b1b;
+}
+
+/* alert css */
+
+.alert {
+    background: #ff0000;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.dashboard_cards_wrp {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 15px;
+    padding: 35px 0;
+}
+
+/* card css */
+.card {
+    border-radius: 20px;
+    border: unset;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.anniversary_card {
+    background-image: url("../images/cards/anniversary_back.svg");
+}
+.birthday_card {
+    background-image: url("../images/cards/birthday_back.svg");
+}
+.holiday_list_card {
+    background-image: url("../images/cards/holidays_list_days.svg");
+}
+.announcement_card {
+    background-image: url("../images/cards/announcements-back.svg");
+}
+
+.holiday_list_card h2,
+.announcement_card h2,
+.holiday_list_card.table_card th,
+.holiday_list_card.table_card td {
+    color: #ffffff;
+}
+
+.table_card {
+    padding: 45px 30px;
+}
+.table_card .table_wrp {
+    overflow: auto;
+    overflow-y: auto;
+    max-height: 260px;
+}
+.table_card thead {
+    position: sticky;
+    top: -3px;
+    z-index: 1;
+}
+.table_card tr {
+    border-color: transparent;
+}
+.table_card th {
+    width: 50%;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 32px;
+    color: #1b1b1b;
+}
+.table_card td {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1b1b1b;
+}
+.greeting_card .greeting_card_inner {
+    position: relative;
+}
+.greeting_card .greeting_card_inner span {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+}
+.announcement_card {
+    padding: 20px 30px;
+}
+.announcement_card span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    font-weight: 400;
+    font-size: 126px;
+    line-height: 90px;
+    font-family: "Praise", cursive;
+}
+.dashboard_card_title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.dashboard_card_title img {
+    margin-left: 8px;
+}
