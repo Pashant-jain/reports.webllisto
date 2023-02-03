@@ -1,6 +1,6 @@
 body {
     background-color: #fffdfa;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 /* table_card scrollbar css */
 ::-webkit-scrollbar {
@@ -9,6 +9,8 @@ body {
 .dashboard_wrp {
     display: flex;
 }
+/* sidebar css */
+
 .sidebar_wrp {
     width: 19%;
 }
@@ -16,24 +18,98 @@ body {
     width: 80%;
 }
 .sidebar_wrp .sidebar_inner {
-    padding: 15px;
+    padding: 60px 15px;
+    height: 100vh;
 }
 .sidebar_wrp .logo_wrp {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.sidebar_wrp .logo_wrp figure {
-    width: 150px;
-    hight: 150px;
+.logo_wrp figure {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+}
+.profile_wrp {
+    padding: 45px 0;
+}
+.profile_wrp figure {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+.profile_wrp .profile_icon_wrp .profile_icon {
+    border: unset;
+    background-color: #f3f1ef;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 0 7px;
+}
+.profile_wrp h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #1b1b1b;
     margin: 0;
 }
-.sidebar_wrp .logo_wrp figure img {
-    width: 100%;
-    hight: 100%;
+.profile_wrp p {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: #686868;
 }
-.sidebar_wrp .profile_wrp {
+.menu_wrp {
+    list-style-type: none;
 }
+.menu_wrp li a,
+.menu_dropdown button {
+    text-decoration: none;
+    padding: 12px 40px;
+    margin: 6px 0;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1b1b1b;
+    border-radius: 10px;
+    border: unset;
+    background-color: transparent;
+}
+.menu_wrp li a img{
+    margin-right: 15px;
+}
+.menu_dropdown button span{
+    margin-left: 15px;
+}
+.menu_wrp li a:hover,
+.menu_wrp li a.active {
+    background-color: #f3f1ef;
+}
+
+.menu_dropdown_content {
+    display: none;
+}
+.menu_dropdown:hover .menu_dropdown_content {
+    display: block;
+}
+.help_btn {
+    background: url("../images/help_btn_back.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    border: unset;
+    padding: 30px 35px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+}
+.help_btn img {
+    margin-right: 15px;
+}
+/* end of sidebar css */
 
 /* contant css */
 

@@ -14,32 +14,57 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
-  <body  >
+  <body>
     <div class="dashboard_wrp">
       <div class="sidebar_wrp">
         <div class="sidebar_inner">
           <div class="logo_wrp">
             <figure>
-              <img src="./assets/images/logo.svg" />
+              <!-- <img src="./assets/images/logo.svg" /> -->
+              <Span>Logo</Span>
             </figure>
             <img
               src="./assets/images/sidebar_arrow.svg"
-              width="15px"
-              height="15px"
+              width="30px"
+              height="30px"
             />
           </div>
           <div class="profile_wrp text-center">
-            <figure>
-              <img src="./assets/images/dummy-profile.png" />
+            <figure >
+              <img src="./assets/images/dummy-profile.png" width="100%" height="100%" />
             </figure>
-            <div>
-              <button><i class="fa fa-gear"></i></button>
-              <button><i class="fa fa-bell"></i></button>
-              <button><i class="fa fa-sign-out"></i></button>
+            <div class="profile_icon_wrp py-3" >
+              <Button class="profile_icon" ><img src="./assets/images/icons/settings_icon.svg" ></Button>
+              <Button class="profile_icon" ><img src="./assets/images/icons//notification_icon.svg" ></Button>
+              <Button class="profile_icon" ><img src="./assets/images/icons/logout_icon.svg" ></Button>
             </div>
+            <h2>Lorem Ipsum</h2>
+            <p>Designation</p>
+          </div>
+          <ul class="menu_wrp" >
+            <li><a href="#" class="active" ><img src="./assets/images/icons/dashboard_menu_icon.svg" ><span>Dashboard</span></a></li>
+            <li><a href="#" ><img src="./assets/images/icons/dashboard_menu_icon.svg" ><span>Dashboard</span></a></li>
+            <li><a href="#" ><img src="./assets/images/icons/dashboard_menu_icon.svg" ><span>Dashboard</span></a></li>
+            <li><a href="#" ><img src="./assets/images/icons/dashboard_menu_icon.svg" ><span>Dashboard</span></a></li>
+            <li><a href="#" ><img src="./assets/images/icons/dashboard_menu_icon.svg" ><span>Leave History</span></a></li>
+            
+            <div class="menu_dropdown" >
+                <button class="dropbtn">&#10148;<span>Dashboard</span></button>
+                <div class="menu_dropdown_content" >
+                    <li><a href="#" ><img src="./assets/images/icons/dashboard_menu_icon.svg" ><span>Dashboard</span></a></li>
+                    <li><a href="#" ><img src="./assets/images/icons/dashboard_menu_icon.svg" ><span>Dashboard</span></a></li>
+                    <li><a href="#" ><img src="./assets/images/icons/dashboard_menu_icon.svg" ><span>Leave History</span></a></li>
+                </div>
+            </div>
+          </ul>
+          <div class="text-center mt-5" >
+            <button type="button" class="help_btn" ><img src="./assets/images/icons/help_icon.svg"  >Help Center</button>
           </div>
         </div>
       </div>
@@ -69,7 +94,7 @@
                 <div class="card announcement_card">
                   <h2 class="dashboard_card_title">
                     Announcements<img
-                      src="./assets//images/announcement_icon.svg"
+                      src="./assets//images/icons/announcement_icon.svg"
                       width="35px"
                       height="35px"
                     />
@@ -79,7 +104,7 @@
                 <div class="card table_card anniversary_card">
                   <h2 class="dashboard_card_title">
                     Upcoming Anniversary<img
-                      src="./assets/images/dark_tada_icon.svg"
+                      src="./assets/images/icons/dark_tada_icon.svg"
                       width="25px"
                       height="25px"
                     />
@@ -119,8 +144,8 @@
                 </div>
                 <div class="card table_card birthday_card">
                   <h2 class="dashboard_card_title">
-                    Upcoming Anniversary<img
-                      src="./assets/images/dark_tada_icon.svg"
+                    Upcoming Birthdays<img
+                      src="./assets/images/icons/dark_tada_icon.svg"
                       width="25px"
                       height="25px"
                     />
@@ -160,8 +185,8 @@
                 </div>
                 <div class="card table_card holiday_list_card">
                   <h2 class="dashboard_card_title">
-                    Upcoming Anniversary<img
-                      src="./assets/images/light_tada_icon.svg"
+                    List Of Holidays<img
+                      src="./assets/images/icons/light_tada_icon.svg"
                       width="25px"
                       height="25px"
                     />
