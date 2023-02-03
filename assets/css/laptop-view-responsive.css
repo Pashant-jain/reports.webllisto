@@ -1,0 +1,106 @@
+@media only screen and (max-width: 1320px) {
+    .dashboard_cards_wrp {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .announcement_card {
+        min-height: 341px;
+    }
+    .help_btn {
+        padding: 20px;
+    }
+} /* 1199 */
+@media only screen and (max-width: 1199px) {
+   
+    .sidebar_wrp {
+        width: 8%;
+    }
+    .logo_wrp figure,
+    .profile_icon_wrp,
+    .profile_wrp h2,
+    .profile_wrp p,
+    .menu_wrp li a span,
+    .menu_dropdown button span,
+    .help_btn span {
+        display: none;
+    }
+    .profile_wrp figure {
+        width: 60px;
+        height: 60px;
+    }
+    .menu_wrp li a,
+    .menu_dropdown button {
+        padding: 8px;
+    }
+    .menu_wrp {
+        padding: unset;
+        text-align: center;
+    }
+    .help_btn {
+        padding: 15px;
+    }
+    .help_btn img,
+    .menu_wrp li a img {
+        margin: 0;
+    }
+    .content_wrp {
+        width: 91%;
+    }
+    /* closed sidebar css */
+   
+.closed_slidebar .sidebar_wrp {
+    width: 50%;
+    background-color: #fffdfa;
+    z-index: 9999;
+    position: fixed;
+}
+.closed_slidebar .sidebar_wrp .sidebar_inner{
+    height: 100vh;
+    overflow: auto;
+}
+.closed_slidebar .logo_wrp figure,
+.closed_slidebar .profile_icon_wrp,
+.closed_slidebar .profile_wrp h2,
+.closed_slidebar .profile_wrp p{
+    display: block;
+}
+.closed_slidebar .menu_wrp li a span,
+.closed_slidebar .menu_dropdown button span,
+.closed_slidebar .help_btn span {
+    display: inline-block;
+}
+.closed_slidebar .profile_wrp figure {
+    width: 120px;
+    height:120px;
+}
+.closed_slidebar .menu_wrp li a,
+.closed_slidebar .menu_dropdown button {
+    padding: 8px;
+}
+.closed_slidebar .menu_wrp {
+    padding: unset;
+    text-align: center;
+}
+.closed_slidebar .help_btn {
+    padding: 15px;
+}
+.closed_slidebar .help_btn img,
+.closed_slidebar .menu_wrp li a img {
+    margin-right: 15px;
+}
+.closed_slidebar .content_wrp {
+    width: 91%;
+}
+    /* end of closed sidebar css */
+} /* 1024 */
+@media only screen and (max-width: 991px) {
+    .dashboard_cards_wrp {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .announcement_card {
+        min-height: unset;
+    }
+    .announcement_card span{
+        font-size: 100px;
+    line-height: 80px;
+    }
+} /* 980 */

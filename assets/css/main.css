@@ -6,6 +6,18 @@ body {
 ::-webkit-scrollbar {
     width: 0px;
 }
+h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1b1b1b;
+}
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #686868;
+}
 .dashboard_wrp {
     display: flex;
 }
@@ -18,8 +30,7 @@ body {
     width: 80%;
 }
 .sidebar_wrp .sidebar_inner {
-    padding: 60px 15px;
-    height: 100vh;
+    padding: 45px 15px;
 }
 .sidebar_wrp .logo_wrp {
     display: flex;
@@ -28,8 +39,11 @@ body {
 }
 .logo_wrp figure {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 28px;
+    line-height: 32px;
+}
+.logo_wrp img {
+    z-index: 99;
 }
 .profile_wrp {
     padding: 45px 0;
@@ -38,6 +52,10 @@ body {
     width: 120px;
     height: 120px;
     margin: 0 auto;
+    border-radius: 50%;
+}
+.profile_wrp figure img{
+     border-radius: 50%;
 }
 .profile_wrp .profile_icon_wrp .profile_icon {
     border: unset;
@@ -48,41 +66,43 @@ body {
 }
 .profile_wrp h2 {
     font-weight: 700;
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 24px;
+    line-height: 28px;
     color: #1b1b1b;
     margin: 0;
 }
 .profile_wrp p {
     font-weight: 400;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 25px;
     color: #686868;
 }
 .menu_wrp {
     list-style-type: none;
+    padding: unset;
 }
 .menu_wrp li a,
 .menu_dropdown button {
     text-decoration: none;
-    padding: 12px 40px;
+    padding: 12px 25px;
     margin: 6px 0;
     display: inline-block;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 16px;
     color: #1b1b1b;
     border-radius: 10px;
     border: unset;
     background-color: transparent;
 }
-.menu_wrp li a img{
+.menu_wrp li a img {
     margin-right: 15px;
 }
-.menu_dropdown button span{
+.menu_dropdown button span {
     margin-left: 15px;
 }
 .menu_wrp li a:hover,
+.menu_dropdown button:hover,
 .menu_wrp li a.active {
     background-color: #f3f1ef;
 }
@@ -102,14 +122,51 @@ body {
     border: unset;
     padding: 30px 35px;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 16px;
     color: #ffffff;
 }
 .help_btn img {
     margin-right: 15px;
 }
 /* end of sidebar css */
+/* closed sidebar css */
+
+.closed_slidebar .sidebar_wrp {
+    width: 8%;
+}
+.closed_slidebar .logo_wrp figure,
+.closed_slidebar .profile_icon_wrp,
+.closed_slidebar .profile_wrp h2,
+.closed_slidebar .profile_wrp p,
+.closed_slidebar .menu_wrp li a span,
+.closed_slidebar .menu_dropdown button span,
+.closed_slidebar .help_btn span {
+    display: none;
+}
+.closed_slidebar .profile_wrp figure {
+    width: 60px;
+    height: 60px;
+}
+.closed_slidebar .menu_wrp li a,
+.closed_slidebar .menu_dropdown button {
+    padding: 8px;
+}
+.closed_slidebar .menu_wrp {
+    padding: unset;
+    text-align: center;
+}
+.closed_slidebar .help_btn {
+    padding: 15px;
+}
+.closed_slidebar .help_btn img,
+.closed_slidebar .menu_wrp li a img {
+    margin: 0;
+}
+.closed_slidebar .content_wrp {
+    width: 91%;
+}
+/* end of closed sidebar css */
 
 /* contant css */
 
@@ -123,8 +180,8 @@ body {
 }
 .content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant h1 {
     font-weight: 500;
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 24px;
+    line-height: 28px;
     color: #1b1b1b;
 }
 
@@ -133,8 +190,8 @@ body {
 }
 .content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant p {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 16px;
     color: #686868;
 }
 .content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant p strong {
@@ -147,8 +204,8 @@ body {
     background: #ff0000;
     border-radius: 10px;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 16px;
     color: #ffffff;
     margin-top: 30px;
 }
@@ -180,6 +237,7 @@ body {
 }
 .announcement_card {
     background-image: url("../images/cards/announcements-back.svg");
+    padding: 20px 30px;
 }
 
 .holiday_list_card h2,
@@ -208,23 +266,21 @@ body {
 .table_card th {
     width: 50%;
     font-weight: 600;
-    font-size: 21px;
+    font-size: 14px;
     line-height: 32px;
     color: #1b1b1b;
 }
 .table_card td {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 16px;
     color: #1b1b1b;
 }
 .greeting_card .greeting_card_inner {
     position: relative;
-    
-    
 }
 .greeting_card .greeting_card_inner::before {
-    background: linear-gradient(0.33deg, #F85046 0.47%, rgba(0, 0, 0, 0) 63.83%);
+    background: linear-gradient(0.33deg, #f85046 0.47%, rgba(0, 0, 0, 0) 63.83%);
     bottom: 0;
     content: "";
     height: 100%;
@@ -235,7 +291,7 @@ body {
     width: 100%;
     border-radius: 20px;
 }
-.greeting_card .greeting_card_inner img{
+.greeting_card .greeting_card_inner img {
     border-radius: 20px;
 }
 .greeting_card .greeting_card_inner span {
@@ -243,12 +299,9 @@ body {
     bottom: 30px;
     left: 30px;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 24px;
     color: #ffffff;
-}
-.announcement_card {
-    padding: 20px 30px;
 }
 .announcement_card span {
     position: absolute;
@@ -257,15 +310,15 @@ body {
     left: 0;
     right: 0;
     font-weight: 400;
-    font-size: 126px;
-    line-height: 90px;
+    font-size: 100px;
+    line-height: 80px;
     font-family: "Praise", cursive;
 }
 .dashboard_card_title {
     text-align: center;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 24px;
     margin-bottom: 30px;
 }
 .dashboard_card_title img {
