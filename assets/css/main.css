@@ -167,6 +167,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 20px;
 }
 .anniversary_card {
     background-image: url("../images/cards/anniversary_back.svg");
@@ -219,6 +220,23 @@ body {
 }
 .greeting_card .greeting_card_inner {
     position: relative;
+    
+    
+}
+.greeting_card .greeting_card_inner::before {
+    background: linear-gradient(0.33deg, #F85046 0.47%, rgba(0, 0, 0, 0) 63.83%);
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    border-radius: 20px;
+}
+.greeting_card .greeting_card_inner img{
+    border-radius: 20px;
 }
 .greeting_card .greeting_card_inner span {
     position: absolute;
