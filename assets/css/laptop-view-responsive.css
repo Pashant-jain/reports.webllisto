@@ -8,9 +8,12 @@
     .help_btn {
         padding: 20px;
     }
+    
 } /* 1199 */
 @media only screen and (max-width: 1199px) {
-   
+    .dashboard_wrp{
+        padding: 15px;
+    }
     .sidebar_wrp {
         width: 8%;
     }
@@ -44,6 +47,12 @@
     }
     .content_wrp {
         width: 91%;
+    }
+     .sidebar_wrp .logo_wrp{
+        justify-content:center;
+    }
+    .closed_slidebar .sidebar_wrp .logo_wrp{
+        justify-content: space-between;
     }
     /* closed sidebar css */
    

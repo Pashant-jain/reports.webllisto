@@ -20,6 +20,7 @@ p {
 }
 .dashboard_wrp {
     display: flex;
+    padding: 15px 30px;
 }
 /* sidebar css */
 
@@ -27,10 +28,10 @@ p {
     width: 19%;
 }
 .content_wrp {
-    width: 80%;
+    width: 81%;
 }
 .sidebar_wrp .sidebar_inner {
-    padding: 45px 15px;
+    padding: 20px 15px;
 }
 .sidebar_wrp .logo_wrp {
     display: flex;
@@ -41,6 +42,7 @@ p {
     font-weight: 700;
     font-size: 28px;
     line-height: 32px;
+    margin: unset;
 }
 .logo_wrp img {
     z-index: 99;
@@ -49,8 +51,8 @@ p {
     padding: 45px 0;
 }
 .profile_wrp figure {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     margin: 0 auto;
     border-radius: 50%;
 }
@@ -60,9 +62,11 @@ p {
 .profile_wrp .profile_icon_wrp .profile_icon {
     border: unset;
     background-color: #f3f1ef;
-    padding: 12px;
+    padding: 3px;
     border-radius: 50%;
     margin: 0 7px;
+    height: 35px;
+    width: 35px;
 }
 .profile_wrp h2 {
     font-weight: 700;
@@ -120,7 +124,7 @@ p {
     background-size: cover;
     border-radius: 15px;
     border: unset;
-    padding: 30px 35px;
+    padding: 20px 25px;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -166,17 +170,20 @@ p {
 .closed_slidebar .content_wrp {
     width: 91%;
 }
+.closed_slidebar .sidebar_wrp .logo_wrp{
+    justify-content: center;
+}
 /* end of closed sidebar css */
 
 /* contant css */
 
-.content_wrp .dashboard_lft_contant_wrp {
+/* .content_wrp .dashboard_lft_contant_wrp {
     padding: 30px;
-}
+} */
 .content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant {
     background-color: #fff6e9;
-    border-radius: 80px;
-    padding: 45px 40px;
+    border-radius: 60px;
+    padding: 30px 40px;
 }
 .content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant h1 {
     font-weight: 500;
