@@ -1,143 +1,143 @@
 body {
-    background-color: #fffdfa;
-    font-family: "Poppins", sans-serif;
+  background-color: #fffdfa;
+  font-family: "Poppins", sans-serif;
 }
 /* table_card scrollbar css */
 ::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
 h1 {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: #1b1b1b;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1b1b1b;
 }
 p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #686868;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #686868;
 }
 .dashboard_wrp {
-    display: flex;
-    padding: 15px 30px;
+  display: flex;
+  padding: 15px 30px;
 }
 /* sidebar css */
 
 .sidebar_wrp {
-    width: 19%;
+  width: 19%;
 }
 .content_wrp {
-    width: 81%;
+  width: 81%;
 }
 .sidebar_wrp .sidebar_inner {
-    padding: 20px 15px;
+  padding: 20px 15px;
 }
 .sidebar_wrp .logo_wrp {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo_wrp figure {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 32px;
-    margin: unset;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  margin: unset;
 }
 .logo_wrp img {
-    z-index: 99;
+  z-index: 99;
 }
 .profile_wrp {
-    padding: 45px 0;
+  padding: 45px 0;
 }
 .profile_wrp figure {
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-    border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  border-radius: 50%;
 }
-.profile_wrp figure img{
-     border-radius: 50%;
+.profile_wrp figure img {
+  border-radius: 50%;
 }
 .profile_wrp .profile_icon_wrp .profile_icon {
-    border: unset;
-    background-color: #f3f1ef;
-    padding: 3px;
-    border-radius: 50%;
-    margin: 0 7px;
-    height: 35px;
-    width: 35px;
+  border: unset;
+  background-color: #f3f1ef;
+  padding: 3px;
+  border-radius: 50%;
+  margin: 0 7px;
+  height: 35px;
+  width: 35px;
 }
 .profile_wrp h2 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: #1b1b1b;
-    margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1b1b1b;
+  margin: 0;
 }
 .profile_wrp p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #686868;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #686868;
 }
 .menu_wrp {
-    list-style-type: none;
-    padding: unset;
+  list-style-type: none;
+  padding: unset;
 }
 .menu_wrp li a,
 .menu_dropdown button {
-    text-decoration: none;
-    padding: 12px 25px;
-    margin: 6px 0;
-    display: inline-block;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #1b1b1b;
-    border-radius: 10px;
-    border: unset;
-    background-color: transparent;
+  text-decoration: none;
+  padding: 12px 25px;
+  margin: 6px 0;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1b1b1b;
+  border-radius: 10px;
+  border: unset;
+  background-color: transparent;
 }
 .menu_wrp li a img {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 .menu_dropdown button span {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 .menu_wrp li a:hover,
 .menu_dropdown button:hover,
 .menu_wrp li a.active {
-    background-color: #f3f1ef;
+  background-color: #f3f1ef;
 }
 
 .menu_dropdown_content {
-    display: none;
+  display: none;
 }
 .menu_dropdown:hover .menu_dropdown_content {
-    display: block;
+  display: block;
 }
 .help_btn {
-    background: url("../images/help_btn_back.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    border: unset;
-    padding: 20px 25px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    color: #ffffff;
+  background: url("../images/help_btn_back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  border: unset;
+  padding: 20px 25px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
 }
 .help_btn img {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 /* end of sidebar css */
 /* closed sidebar css */
 
 .closed_slidebar .sidebar_wrp {
-    width: 8%;
+  width: 8%;
 }
 .closed_slidebar .logo_wrp figure,
 .closed_slidebar .profile_icon_wrp,
@@ -146,32 +146,32 @@ p {
 .closed_slidebar .menu_wrp li a span,
 .closed_slidebar .menu_dropdown button span,
 .closed_slidebar .help_btn span {
-    display: none;
+  display: none;
 }
 .closed_slidebar .profile_wrp figure {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 .closed_slidebar .menu_wrp li a,
 .closed_slidebar .menu_dropdown button {
-    padding: 8px;
+  padding: 8px;
 }
 .closed_slidebar .menu_wrp {
-    padding: unset;
-    text-align: center;
+  padding: unset;
+  text-align: center;
 }
 .closed_slidebar .help_btn {
-    padding: 15px;
+  padding: 15px;
 }
 .closed_slidebar .help_btn img,
 .closed_slidebar .menu_wrp li a img {
-    margin: 0;
+  margin: 0;
 }
 .closed_slidebar .content_wrp {
-    width: 91%;
+  width: 91%;
 }
-.closed_slidebar .sidebar_wrp .logo_wrp{
-    justify-content: center;
+.closed_slidebar .sidebar_wrp .logo_wrp {
+  justify-content: center;
 }
 /* end of closed sidebar css */
 
@@ -181,153 +181,461 @@ p {
     padding: 30px;
 } */
 .content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant {
-    background-color: #fff6e9;
-    border-radius: 60px;
-    padding: 30px 40px;
+  background-color: #fff6e9;
+  border-radius: 60px;
+  padding: 30px 40px;
 }
 .content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant h1 {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: #1b1b1b;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1b1b1b;
 }
 
 .content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant h1 strong {
-    color: #f85046;
+  color: #f85046;
 }
 .content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #686868;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #686868;
 }
 .content_wrp .dashboard_lft_contant_wrp .dashboard_lft_contant p strong {
-    color: #1b1b1b;
+  color: #1b1b1b;
 }
 
 /* alert css */
 
 .alert {
-    background: #ff0000;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    color: #ffffff;
-    margin-top: 30px;
+  background: #ff0000;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-top: 30px;
 }
 
 .dashboard_cards_wrp {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px 15px;
-    padding: 35px 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 15px;
+  padding: 35px 0;
 }
 
 /* card css */
 .card {
-    border-radius: 20px;
-    border: unset;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
+  border-radius: 20px;
+  border: unset;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
 }
 .anniversary_card {
-    background-image: url("../images/cards/anniversary_back.svg");
+  background-image: url("../images/cards/anniversary_back.svg");
 }
 .birthday_card {
-    background-image: url("../images/cards/birthday_back.svg");
+  background-image: url("../images/cards/birthday_back.svg");
 }
 .holiday_list_card {
-    background-image: url("../images/cards/holidays_list_days.svg");
+  background-image: url("../images/cards/holidays_list_days.svg");
 }
 .announcement_card {
-    background-image: url("../images/cards/announcements-back.svg");
-    padding: 20px 30px;
+  background-image: url("../images/cards/announcements-back.svg");
+  padding: 20px 30px;
 }
 
 .holiday_list_card h2,
 .announcement_card h2,
 .holiday_list_card.table_card th,
 .holiday_list_card.table_card td {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .table_card {
-    padding: 45px 30px;
+  padding: 30px 15px;
 }
 .table_card .table_wrp {
-    overflow: auto;
-    overflow-y: auto;
-    max-height: 260px;
+  overflow: auto;
+  overflow-y: auto;
+  max-height: 200px;
 }
 .table_card thead {
-    position: sticky;
-    top: -3px;
-    z-index: 1;
+  position: sticky;
+  top: -3px;
+  z-index: 1;
 }
 .table_card tr {
-    border-color: transparent;
+  border-color: transparent;
 }
 .table_card th {
-    width: 50%;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 32px;
-    color: #1b1b1b;
+  width: 50%;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1b1b1b;
 }
 .table_card td {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #1b1b1b;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1b1b1b;
 }
 .greeting_card .greeting_card_inner {
-    position: relative;
+  position: relative;
 }
 .greeting_card .greeting_card_inner::before {
-    background: linear-gradient(0.33deg, #f85046 0.47%, rgba(0, 0, 0, 0) 63.83%);
-    bottom: 0;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    border-radius: 20px;
+  background: linear-gradient(0.33deg, #f85046 0.47%, rgba(0, 0, 0, 0) 63.83%);
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  border-radius: 20px;
 }
 .greeting_card .greeting_card_inner img {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 .greeting_card .greeting_card_inner span {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ffffff;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
 }
 .announcement_card span {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    right: 0;
-    font-weight: 400;
-    font-size: 100px;
-    line-height: 80px;
-    font-family: "Praise", cursive;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 80px;
+  font-family: "Praise", cursive;
 }
 .dashboard_card_title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 25px;
 }
 .dashboard_card_title img {
-    margin-left: 8px;
+  margin-left: 8px;
 }
+
+.dashboard_right_contant_wrp {
+  padding: unset;
+}
+
+/* calander css */
+
+.calendar {
+  /* height: 309px;
+    width: 435px; */
+  background-color: #f8f5f2;
+  border-radius: 20px;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.calendar-header .year-picker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  color: var(--color-txt);
+  padding: 10px;
+}
+pre {
+  margin: unset;
+}
+
+.calendar-body {
+  padding: 10px;
+}
+
+.calendar-week-day {
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: 600;
+}
+
+.calendar-week-day div {
+  display: grid;
+  place-items: center;
+  color: #1b1b1b;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  color: var(--color-txt);
+}
+
+.calendar-days div {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  animation: to-top 1s forwards;
+  margin: auto;
+  font-size: 13px;
+}
+
+.calendar-days div span {
+  position: absolute;
+}
+
+.calendar-days div:hover span {
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.calendar-days div span:nth-child(1),
+.calendar-days div span:nth-child(3) {
+  width: 2px;
+  height: 0;
+  background-color: var(--color-txt);
+}
+
+.calendar-days div:hover span:nth-child(1),
+.calendar-days div:hover span:nth-child(3) {
+  height: 100%;
+}
+
+.calendar-days div span:nth-child(1) {
+  bottom: 0;
+  left: 0;
+}
+
+.calendar-days div span:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+
+.calendar-days div span:nth-child(2),
+.calendar-days div span:nth-child(4) {
+  width: 0;
+  height: 2px;
+  background-color: var(--color-txt);
+}
+
+.calendar-days div:hover span:nth-child(2),
+.calendar-days div:hover span:nth-child(4) {
+  width: 100%;
+}
+
+.calendar-days div span:nth-child(2) {
+  top: 0;
+  left: 0;
+}
+
+.calendar-days div span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+.calendar-days div:hover span:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.calendar-days div:hover span:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.calendar-days div:hover span:nth-child(4) {
+  transition-delay: 0.6s;
+}
+
+.calendar-days div.curr-date,
+.calendar-days div.curr-date:hover {
+  background-color: blue;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.calendar-days div.leave-date,
+.calendar-days div.leave-date:hover {
+  background-color: orange;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.calendar-days div.timesheet_fill-date,
+.calendar-days div.timesheet_fill-date:hover {
+  background-color: var(--green);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.calendar-days div.timesheet_miss-date,
+.calendar-days div.timesheet_miss-date:hover {
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 50%;
+}
+
+.calendar-days div.holiday-date,
+.calendar-days div.holiday-date:hover {
+  background-color: var(--pink);
+  color: var(--white);
+  border-radius: 50%;
+}
+
+.calendar-days div.curr-date span {
+  display: none;
+}
+
+.month-picker {
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.month-picker:hover {
+  background-color: var(--color-hover);
+}
+
+.year-picker {
+  display: flex;
+  align-items: center;
+}
+
+.year-change {
+  /* height: 40px;
+    width: 40px; */
+  border-radius: 50%;
+  /* display: grid; */
+  /* place-items: center; */
+  /* margin: 0 10px; */
+  cursor: pointer;
+}
+
+.year-change:hover {
+  background-color: var(--color-hover);
+}
+
+.calendar-footer {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.toggle {
+  display: flex;
+}
+
+.toggle span {
+  margin-right: 10px;
+  color: var(--color-txt);
+}
+
+.month-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f8f5f2;
+  padding: 20px;
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
+  display: grid;
+  transform: scale(1.5);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.month-list.show {
+  transform: scale(1);
+  visibility: visible;
+  pointer-events: visible;
+  transition: all 0.2s ease-in-out;
+}
+
+.month-list > div {
+  display: grid;
+  place-items: center;
+}
+
+.month-list > div > div {
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--color-txt);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.month-list > div > div:hover {
+  background-color: var(--color-hover);
+}
+
+.calander_event_btn_wrp {
+  margin: 30px 0;
+}
+.calander_event_btn {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #f85046;
+  border-radius: 50px;
+  border: unset;
+  padding: 12px 18px;
+  box-shadow: 0 5px 12px #f85046;
+}
+.calander_event_wrp {
+  padding: 15px 30px;
+}
+.calander_event_wrp h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom:20px;
+}
+.calander_event_table table {
+  width: 100%;
+}
+.calander_event_table td {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 10px 0;
+  display: inline-block;
+}
+.calander_event_table td.event_title {
+  color: #6b6b6b;
+  border-right: 3px solid;
+  margin-right: 20px;
+  padding-right: 15px;
+}
+.calander_event_table td.event_title.birthday {
+  border-color: #ff00d6;
+}
+.calander_event_table td.event_title.work {
+    border-color: #4A87FF;
+  }
