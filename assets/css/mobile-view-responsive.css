@@ -15,9 +15,9 @@
   .alert {
     margin-top: 15px;
   }
-  .dashboard_cards_wrp {
+  /* .dashboard_cards_wrp {
     padding: 15px 0;
-  }
+  } */
   .announcement_card {
     min-height: 178px;
   }
@@ -56,6 +56,10 @@
   .profile_wrp p {
     font-size: 14px;
     line-height: 18px;
+  }
+  .calander_event_table td{
+    font-size: 12px;
+    line-height: 14px;
   }
 } /* 480 */
 @media only screen and (max-width: 479px) {

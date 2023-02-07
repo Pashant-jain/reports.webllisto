@@ -8,6 +8,9 @@
   .help_btn {
     padding: 20px;
   }
+  .sidebar_wrp .sidebar_inner {
+    padding: 0 15px 0 0;
+}
 } /* 1199 */
 @media only screen and (max-width: 1199px) {
   .dashboard_wrp {
@@ -62,6 +65,9 @@
     position: fixed;
   }
   .closed_slidebar .sidebar_wrp .sidebar_inner {
+    padding: 0 15px;
+}
+  .closed_slidebar .sidebar_wrp .sidebar_inner {
     height: 100vh;
     overflow: auto;
   }
@@ -111,7 +117,11 @@
     font-size: 100px;
     line-height: 80px;
   }
-  .dashboard_right_contant_wrp{
-    padding:0 15px
+  .dashboard_right_contant_wrp, .dashboard_lft_contant_wrp{
+    padding:0;
   }
+  .dashboard_right_contant_wrp{
+    padding-top:15px;
+  }
+
 } /* 980 */

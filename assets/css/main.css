@@ -339,8 +339,9 @@ p {
 /* calander css */
 
 .calendar {
-  /* height: 309px;
-    width: 435px; */
+  /* height: 309px;*/
+    max-width: 435px; 
+    margin:auto;
   background-color: #f8f5f2;
   border-radius: 20px;
   padding: 15px;
@@ -619,19 +620,33 @@ pre {
 .calander_event_table table {
   width: 100%;
 }
+.calander_event_table tr{
+    margin:15px 0;
+    display:block;
+}
 .calander_event_table td {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  margin: 10px 0;
-  display: inline-block;
+  word-break: break-word;
 }
+.calander_event_table td span{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
 .calander_event_table td.event_title {
   color: #6b6b6b;
   border-right: 3px solid;
-  margin-right: 20px;
   padding-right: 15px;
+  width:30%
+}
+.calander_event_table .event_dtl{
+    width:70%;
+    padding-left:20px;
 }
 .calander_event_table td.event_title.birthday {
   border-color: #ff00d6;
