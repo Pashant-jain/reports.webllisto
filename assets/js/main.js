@@ -4,3 +4,20 @@
     $(".contant").toggleClass("expand_contant");
   });
 
+
+
+  $(document).ready(function () {
+    $('#example').DataTable({
+        lengthMenu: [
+            [2, 25, 50, -1],
+            [2, 25, 50, 'All'],
+        ],
+        pagingType: 'simple',
+    });
+});
+
+// $(document).ready(function () {
+//   $('#example').DataTable({
+    
+//   });
+// });

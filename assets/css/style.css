@@ -20,6 +20,10 @@ h2 {
   font-size: 20px;
   font-weight: 500;
 }
+.page_title{
+  color:#F85046;
+  font-weight:700;
+}
 .subtitle {
   font-size: 14px;
   color: #686868;
