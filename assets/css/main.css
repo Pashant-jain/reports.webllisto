@@ -849,4 +849,6 @@ pre {
 }
 
 
-
+table body td:nth-child(1) {
+  border-radius:20px
+}
