@@ -394,6 +394,9 @@ pre {
 .calander_event_wrp {
     padding: 15px;
 }
+.calendar-days{
+  gap: 2px;
+}
 } /* 375 */
 @media only screen and (max-width: 374px) {
 } /* 320 */
