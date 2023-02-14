@@ -385,6 +385,15 @@ pre {
     width: 130px;
     max-width: 130px;
 }
+.calendar-body {
+    padding: 0;
+}
+.calander{
+  padding: 15px ;
+}
+.calander_event_wrp {
+    padding: 15px;
+}
 } /* 375 */
 @media only screen and (max-width: 374px) {
 } /* 320 */
