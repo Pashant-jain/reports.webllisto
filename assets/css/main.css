@@ -1,3 +1,93 @@
 .timesheet_page_wrp .contant{
   margin-right:unset;
 }
+.timesheet_page_wrp .contant .addtimesheet_wrp h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #F85046;
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp span{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #686868;
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp {
+  background: #FFEED5;
+  border-radius: 35px;
+  margin: 20px 0px;
+  padding: 20px 25px;
+}
+
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sel_proj{
+  width: 87%;
+  border: none;
+  background: none;
+  margin-left: 1%;
+  border-bottom: 0.5px solid #B7B7B7;
+  padding: 6px;
+}
+select:focus-visible {
+  outline:none
+}
+input::focus-visible {
+  outline:none
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .bottom_margin{
+  margin-bottom:35px;
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time{
+  display:flex;
+  justify-content: space-between;
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time{
+  display:flex;
+  width: 48%;
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time .start_time_ans{
+  width: 74%;
+  margin-left: 39px;
+  box-shadow: none;
+  border-radius: 0;
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details{
+  display:flex
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example{
+  width: 88%;
+  margin-left: 22px;
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example .fr-second-toolbar{
+  display:none;
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example .fr-element {
+  min-height: 168px;
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example .fr-wrapper{
+  border:unset;
+  background:none;
+  bottom: 64px;
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example .fr-toolbar{
+  border:unset;
+  background:none;
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sub_btn_wrp .submit_btn{
+  color: #ffffff;
+  background: #f85046;
+  border-radius: 50px;
+  border: unset;
+  padding: 12px 18px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+}
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sub_btn_wrp{
+  display:flex;
+  justify-content:center;
+}

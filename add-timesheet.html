@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
 
     <link
       rel="stylesheet"
@@ -25,6 +26,8 @@
     <link rel="stylesheet" href="./assets/css/laptop-view-responsive.css" />
     <link rel="stylesheet" href="./assets/css/tablet-view-responsive.css" />
     <link rel="stylesheet" href="./assets/css/mobile-view-responsive.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" rel="stylesheet"/>
   </head>
   <body>
     <div class="page_wrp timesheet_page_wrp">
@@ -147,16 +150,61 @@
       </aside>
       <div class="contant">
        <div class="addtimesheet_wrp" >
-htrjdkj
+        <h1>Add Timesheet</h1>
+        <span>Add report with the help of the fields mentioned below.</span>
+        <div  class="addtimesheet_innr_wrp">
+          <div class="form-group bottom_margin">
+            <label htmlFor="name bt-2">Select Project </label>
+            <select class="sel_proj">
+              <option value="">Webllisto Marketing</option>
+              <option>Project 1</option>
+              <option>Project 2</option>
+              <option>Project 3</option>
+            </select>
+          </div>
+          <div class="time bottom_margin">
+            <div class="start_time ">
+              <label for="start_time" class="col-form-label">Start Time</label>
+              <input type='time' class="form-control sel_proj start_time_ans" id="starttime" />
+            </div>
+            <div class="start_time ">
+              <label for="end_time" class="col-form-label">End Time</label> 
+              <input type='time' class="form-control sel_proj start_time_ans" id="date" />
+            </div>
+          </div>
+          <div class="task_details">
+            <label for="task_detail" class="col-form-label">Task Details</label>
+            <div id="example"></div>
+            <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>  
+            <script>
+            var editor = new FroalaEditor('#example');
+            </script>
+          </div>
+          <div class="form-group bottom_margin">
+            <label htmlFor="name bt-2">Task Status </label>
+            <select class="sel_proj">
+              <option value="">Select Task Status</option>
+              <option>Done</option>
+              <option>In-progress</option>
+            </select>
+          </div>
+          <div class="sub_btn_wrp">
+            <button type="button" class="submit_btn">Submit</button>
+          </div>
+        </div>
        </div>
       </div>
-    
+      
     </div>
+    
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
