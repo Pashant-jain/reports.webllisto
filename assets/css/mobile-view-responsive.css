@@ -1,5 +1,5 @@
 @media only screen and (max-width: 649px) {
-  .sidebar_wrp {
+  /* .sidebar_wrp {
     width: 60px;
   }
   .closed_slidebar .sidebar_wrp {
@@ -17,7 +17,7 @@
   }
   /* .dashboard_cards_wrp {
     padding: 15px 0;
-  } */
+  } 
   .announcement_card {
     min-height: 178px;
   }
@@ -60,10 +60,10 @@
   .calander_event_table td{
     font-size: 12px;
     line-height: 14px;
-  }
+  } */
 } /* 480 */
 @media only screen and (max-width: 479px) {
-  .table_card .table_wrp table {
+  /* .table_card .table_wrp table {
     min-width: 270px;
   }
   .calendar-days div{
@@ -87,7 +87,61 @@
   .calendar-header .year-picker{
     font-size: 10px;
     line-height: 14px;
+  } */
+  h2{
+    font-size: 14px;
   }
+  .subtitle,.timesheet_alert,.calander_event_btn{
+    font-size: 11px;
+  }
+  .greeting_card .greeting_card_inner span,.calander_event_wrp h2{
+    font-size: 13px;
+  }
+  .announcement_card span{
+    font-size: 35px;
+    line-height: 29px;
+  }
+  .announcement_card {
+    min-height: 150px;
+}
+.sidebar.expand_sidebar .menu_wrp {
+    padding: 0 30px;
+}
+.menu_wrp li,.help_btn{
+  font-size: 13px;
+    line-height: 14px;
+}
+.dashboard_card_title img{
+  width:15px;
+  height:15px;
+}
+.announcement_card,.table_card{
+  padding:15px
+}
+.dashboard_card_title{
+  font-size: 12px;
+}
+.table_card  table{
+  width: 257px;
+}
+.dashboard_wrp{
+  padding: 15px;
+  border-radius: 35px;
+}
+.dashboard_cards_wrp{
+  padding: 15px 0;
+}
+.table_card td,.table_card th,.calander_event_table td{
+  font-size: 11px;
+    line-height: 12px;
+}
+.greeting_card .greeting_card_inner span{
+  text-align: center;
+  left:0;
+  right:0;
+  bottom:20px;
+  padding:0 8px;
+}
 } /* 375 */
 @media only screen and (max-width: 374px) {
 } /* 320 */

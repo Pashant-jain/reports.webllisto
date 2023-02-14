@@ -1,0 +1,370 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fffdfa;
+  font-family: "Poppins", sans-serif;
+}
+/* table_card scrollbar css */
+::-webkit-scrollbar {
+  width: 0px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.subtitle {
+  font-size: 14px;
+  color: #686868;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+.rotate-90 {
+  transform: rotate(90deg);
+}
+.rotate-270 {
+  transform: rotate(270deg);
+}
+/* sidebar css */
+
+.sidebar {
+  width: 280px;
+  position: fixed;
+  height: 100vh;
+  padding: 15px 15px 15px 30px;
+  overflow: auto;
+  z-index: 9999999;
+}
+
+/* .profile_wrp img{
+    margin: 0 auto;
+  } */
+.profile_icon {
+  background-color: #f3f1ef;
+  border-radius: 50%;
+  padding: 8px;
+  border: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .profile_icon:nth-child(2) {
+  margin: 0 15px;
+} */
+.profile_wrp h2 {
+  font-weight: 700;
+}
+.profile_img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.profile_icon img {
+  width: 16px;
+  height: 16px;
+}
+.menu_wrp {
+  list-style-type: none;
+  padding: 0 15px;
+}
+.menu_wrp li {
+  text-decoration: none;
+
+  margin: 6px 0;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1b1b1b;
+  border-radius: 10px;
+  border: unset;
+  background-color: transparent;
+  width: 100%;
+}
+.menu_wrp li a {
+  text-decoration: none;
+  color: #1b1b1b;
+  width: 100%;
+  padding: 12px 25px;
+  display: block;
+}
+.menu_wrp li.active,
+.menu_wrp li:hover {
+  background-color: #f3f1ef;
+}
+.menu_wrp li a img {
+  margin-right: 15px;
+}
+.menu_wrp li a .down_arrow {
+  margin-left: 8px;
+  margin-right: 0;
+}
+.menu_wrp .submenu {
+  display: none;
+}
+.menu_wrp .submenu li a {
+  padding: 6px 25px;
+  margin: unset;
+}
+.menu_wrp li:hover .submenu {
+  display: block;
+}
+
+.help_btn {
+  background: url("../images/help_btn_back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  border: unset;
+  padding: 20px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.help_btn img {
+  margin-right: 15px;
+  width: 25px;
+  height: 25px;
+}
+.sidebar_toggler {
+  cursor: pointer;
+}
+
+/* end of sidebar css */
+
+/* notification css */
+/* .notification_btn {
+  position: relative;
+}
+.notification_btn:hover .notification_wrp{
+  display: block;
+}
+.notification_wrp {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 100px;
+  background-color: #ffffff;
+  z-index: 99999;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+} */
+/* end of notification css */
+/* expanded sidebar css */
+.sidebar.expand_sidebar {
+  width: 75px;
+  padding: 15px;
+}
+.sidebar.expand_sidebar .sidebar_head {
+  justify-content: center !important;
+}
+.sidebar.expand_sidebar .sidebar_head figure,
+.sidebar.expand_sidebar .profile_icon_wrp,
+.sidebar.expand_sidebar .profile_wrp h2,
+.sidebar.expand_sidebar .profile_wrp p,
+.sidebar.expand_sidebar .menu_wrp li a span,
+.sidebar.expand_sidebar .help_btn span {
+  display: none !important;
+}
+.sidebar.expand_sidebar .profile_img {
+  width: 30px;
+  height: 30px;
+}
+.sidebar.expand_sidebar .menu_wrp {
+  padding: unset;
+}
+.sidebar.expand_sidebar .menu_wrp li a {
+  padding: 8px;
+  text-align: center;
+}
+.sidebar.expand_sidebar .menu_wrp li a img,
+.sidebar.expand_sidebar .help_btn img {
+  margin: 0 auto;
+}
+.sidebar.expand_sidebar .help_btn {
+  padding: 8px;
+}
+.contant.expand_contant {
+  margin-left: 75px;
+}
+/* expanded sidebar css */
+
+/* calander css */
+
+/* end of calander css */
+
+.contant {
+  margin-left: 280px;
+  margin-right: 380px;
+  padding: 15px;
+}
+
+/* dashboard  page css */
+.dashboard_wrp {
+  background-color: #fff6e9;
+  border-radius: 50px;
+  padding: 30px;
+}
+.dashboard_wrp .username {
+  color: #f85046;
+}
+.dashboard_wrp .thoughtby {
+  color: #1b1b1b;
+  font-weight: 600;
+}
+.timesheet_alert {
+  background-color: #ff0000;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+}
+.timesheet_alert:before {
+  background-color: rgba(255, 0, 0, 0.8);
+  bottom: 0;
+  content: "";
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 25;
+  width: 100%;
+  border-radius: 50px;
+  filter: blur(22px);
+}
+/* end of dashboard  page css */
+
+
+.dashboard_cards_wrp {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 15px;
+  padding: 35px 0;
+}
+
+/* card css */
+.card {
+  border-radius: 20px;
+  border: unset;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+.anniversary_card {
+  background-image: url("../images/cards/anniversary_back.svg");
+}
+.birthday_card {
+  background-image: url("../images/cards/birthday_back.svg");
+}
+.holiday_list_card {
+  background-image: url("../images/cards/holidays_list_days.svg");
+}
+.announcement_card {
+  background-image: url("../images/cards/announcements-back.svg");
+  padding: 20px 30px;
+}
+
+.holiday_list_card h2,
+.announcement_card h2,
+.holiday_list_card.table_card th,
+.holiday_list_card.table_card td {
+  color: #ffffff;
+}
+
+.table_card {
+  padding: 30px 15px;
+}
+.table_card .table_wrp {
+  overflow: auto;
+  overflow-y: auto;
+  max-height: 200px;
+}
+.table_card thead {
+  position: sticky;
+  top: -3px;
+  z-index: 1;
+  backdrop-filter: blur(3px);
+}
+.table_card tr {
+  border-color: transparent;
+}
+.table_card th {
+  width: 50%;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1b1b1b;
+}
+.table_card td {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1b1b1b;
+}
+.greeting_card .greeting_card_inner {
+  position: relative;
+}
+.greeting_card .greeting_card_inner::before {
+  background: linear-gradient(0.33deg, #f85046 0.47%, rgba(0, 0, 0, 0) 63.83%);
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  border-radius: 20px;
+}
+.greeting_card .greeting_card_inner img {
+  border-radius: 20px;
+}
+.greeting_card .greeting_card_inner span {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.announcement_card span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 55px;
+  font-family: "Praise", cursive;
+}
+.dashboard_card_title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.dashboard_card_title img {
+  margin-left: 8px;
+}
+
+.dashboard_right_contant_wrp {
+  padding: unset;
+}
+/* end of card css */
