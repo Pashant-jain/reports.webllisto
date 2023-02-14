@@ -3373,7 +3373,6 @@
               (r = t),
               (o = n)
             );
-            var r, o, i;
           },
           1
         );
@@ -3651,7 +3650,6 @@
                 l
               )
             );
-            var i, e, l, s, u, c;
           },
           1
         );
@@ -3853,7 +3851,6 @@
                     e
                   )
                 );
-                var a, e, r, o, i, l, s, u, c, f, d, n, h, p;
               })
             : ((e = b
                 ? { page: b.page, order: b.order, search: b.search }
@@ -4321,10 +4318,10 @@
             sFirst: "First",
             sLast: "Last",
             sNext: "Next",
-            sPrevious: "Previous",
+            sPrevious: "custom prev",
           },
           sEmptyTable: "No data available in table",
-          sInfo: "Showing _START_ to _END_ of _TOTAL_ entries",
+          sInfo: "page _PAGE_ of _PAGES_",
           sInfoEmpty: "Showing 0 to 0 of 0 entries",
           sInfoFiltered: "(filtered from _MAX_ total entries)",
           sInfoPostFix: "",
