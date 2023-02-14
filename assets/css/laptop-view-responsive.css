@@ -109,21 +109,4 @@
 }
 } /* 1024 */
 @media only screen and (max-width: 991px) {
-  /* .dashboard_cards_wrp {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .announcement_card {
-    min-height: unset;
-  }
-  .announcement_card span {
-    font-size: 100px;
-    line-height: 80px;
-  }
-  .dashboard_right_contant_wrp,
-  .dashboard_lft_contant_wrp {
-    padding: 0;
-  }
-  .dashboard_right_contant_wrp {
-    padding-top: 15px;
-  } */
 } /* 980 */
