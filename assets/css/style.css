@@ -413,3 +413,33 @@ padding: 7px 10px;
   background-color: #ffeed5;
 
 }
+
+/* form css */
+label{
+  font-size:14px;
+  font-weight: 600;
+  color: #000000;
+}
+select {
+    border: unset;
+    border-bottom: 1px solid #B7B7B7;
+    background-color: transparent;
+}
+.btn{
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: unset;
+  padding: 7px 19px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.Regularize{
+  background-color: #F85046;
+  border-color: #F85046 !important;
+}
+.Filter{
+  background-color: #2CDE00;
+  border-color: #2CDE00 !important;
+}
+/* end of form css */
