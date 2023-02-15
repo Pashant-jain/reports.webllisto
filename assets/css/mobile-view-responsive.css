@@ -38,7 +38,7 @@
 .table_card  table{
   width: 257px;
 }
-.dashboard_wrp{
+.dashboard_wrp, .addtimesheet_wrp{
   padding: 15px;
   border-radius: 35px;
 }
