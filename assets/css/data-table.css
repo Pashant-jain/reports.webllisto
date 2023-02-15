@@ -308,7 +308,7 @@ table.dataTable tbody tr.selected a {
 }
 
 table.dataTable tbody td {
-    padding: 8px 10px;
+    padding: 10px 12px;
     font-size: 14px;
     color: #1B1B1B;
    
@@ -499,6 +499,7 @@ table.dataTable td {
     float: left;
     position: absolute;
     bottom: 0;
+    z-index: 9;
 }
 .dataTables_wrapper .dataTables_length label{
     font-size: 14px;
@@ -759,3 +760,9 @@ table.dataTable td {
 
 
 
+.project_list_table:nth-child(1),.project_list_table:nth-child(3){
+    width: 15px;
+}
+.project_list_table:nth-child(2),.project_list_table:nth-child(4){
+    width: 42px;
+}
