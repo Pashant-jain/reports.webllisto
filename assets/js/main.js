@@ -5,7 +5,6 @@ $(".sidebar_toggler").click(function () {
 });
 $(document).ready(function () {
   var report_list_table = $("#list_table").hasClass("report_list_table");
-  alert(report_list_table);
   $("#list_table").DataTable({
     lengthMenu: [
       [10, 25, 50, -1],
