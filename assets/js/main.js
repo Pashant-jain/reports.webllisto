@@ -3,8 +3,9 @@ $(".sidebar_toggler").click(function () {
   $(".sidebar_toggler").toggleClass("rotate-180");
   $(".contant").toggleClass("expand_contant");
 });
-
 $(document).ready(function () {
+  var report_list_table = $("#list_table").hasClass("report_list_table");
+  alert(report_list_table);
   $("#list_table").DataTable({
     lengthMenu: [
       [10, 25, 50, -1],
@@ -12,8 +13,6 @@ $(document).ready(function () {
     ],
     pagingType: "simple",
     responsive: true,
+    searching: report_list_table ? false : true,
   });
-  // $(".report_list_table").DataTable({
-  //   searching: false,
-  // });
 });
