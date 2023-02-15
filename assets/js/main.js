@@ -13,7 +13,7 @@ $(document).ready(function () {
     pagingType: "simple",
     responsive: true,
   });
-  $(".report_list_table").DataTable({
-    searching: false,
-  });
+  // $(".report_list_table").DataTable({
+  //   searching: false,
+  // });
 });
