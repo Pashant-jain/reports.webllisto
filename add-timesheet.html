@@ -174,12 +174,15 @@
           </div>
           <div class="task_details">
             <label for="task_detail" class="col-form-label">Task Details</label>
-            <div id="example"></div>
+            <div id="example"><p>This is the full featured editor with the toolbar at the bottom, using the <a href="../docs/options#toolbarBottom" title="toolbarBottom option" target="_blank">toolbarBottom</a> option.</p></div>
             <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>  
             <script>
-            var editor = new FroalaEditor('#example');
+              new FroalaEditor('div#example', {
+                toolbarBottom: true
+              })
             </script>
           </div>
+          
           <div class="form-group bottom_margin">
             <label htmlFor="name bt-2">Task Status </label>
             <select class="sel_proj">

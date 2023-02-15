@@ -20,7 +20,7 @@
 .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp {
   background: #FFEED5;
   border-radius: 35px;
-  margin: 20px 0px;
+  margin: 35px 0px;
   padding: 20px 25px;
 }
 
@@ -77,6 +77,12 @@ input::focus-visible {
   border:unset;
   background:none;
 }
+#example .fr-toolbar .fr-command.fr-btn .fr-open :hover {
+  background: none;
+}
+#example .fr-toolbar .fr-command.fr-btn .fr-open .fr-desktop .fr-command:hover:not(.fr-table-cell){
+  background: none;
+}
 .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sub_btn_wrp .submit_btn{
   color: #ffffff;
   background: #f85046;
@@ -86,6 +92,13 @@ input::focus-visible {
   font-size: 14px;
   line-height: 22px;
   font-weight: 700;
+}
+.submit_btn:before{
+  background-color: #F85046;
+  content: "";
+  height: 50%;
+  border-radius: 50px;
+  filter: blur(12px);
 }
 .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sub_btn_wrp{
   display:flex;
