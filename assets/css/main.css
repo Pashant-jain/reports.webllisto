@@ -77,12 +77,7 @@ input::focus-visible {
   border:unset;
   background:none;
 }
-#example .fr-toolbar .fr-command.fr-btn .fr-open :hover {
-  background: none;
-}
-#example .fr-toolbar .fr-command.fr-btn .fr-open .fr-desktop .fr-command:hover:not(.fr-table-cell){
-  background: none;
-}
+
 .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sub_btn_wrp .submit_btn{
   color: #ffffff;
   background: #f85046;
