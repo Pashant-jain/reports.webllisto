@@ -1375,7 +1375,9 @@
             (h += i);
         }
         f.append(a), (f = P(a));
+       
       } else if (">" == n) f = f.parent();
+      // else if ("l" == n && c.bPaginate && c.bLengthChange) e = $t(t);
       else if ("l" == n && c.bPaginate && c.bLengthChange) e = $t(t);
       else if ("f" == n && c.bFilter) e = Lt(t);
       else if ("r" == n && c.bProcessing) e = Zt(t);
@@ -1621,7 +1623,7 @@
       r = n.oLanguage,
       o = n.oPreviousSearch,
       i = n.aanFeatures,
-      l = '<input type="search" class="' + t.sFilterInput + '"/>',
+      l = '<input type="search"  class="' + t.sFilterInput + '"/>',
       s = (s = r.sSearch).match(/_INPUT_/) ? s.replace("_INPUT_", l) : s + l,
       l = P("<div/>", {
         id: i.f ? null : a + "_filter",
@@ -1840,6 +1842,7 @@
       i = n.oFeatures,
       l = n.bDeferLoading;
     if (n.bInitialised) {
+      
       for (
         _t(n),
           yt(n),
@@ -2052,7 +2055,7 @@
         l &&
           s.append(
             P(f, { class: a.sScrollFoot })
-              .css({ overflow: "hidden", border: 0, width: e ? u(e) : "100%" })
+              .css({ overflow: "auto", border: 0, width: e ? u(e) : "100%" })
               .append(
                 P(f, { class: a.sScrollFootInner }).append(
                   i
@@ -4317,12 +4320,12 @@
           oPaginate: {
             sFirst: "First",
             sLast: "Last",
-            sNext: "Next",
-            sPrevious: "custom prev",
+            sNext: "",
+            sPrevious: "",
           },
           sEmptyTable: "No data available in table",
           sInfo: "page _PAGE_ of _PAGES_",
-          sInfoEmpty: "Showing 0 to 0 of 0 entries",
+          sInfoEmpty: "",//Showing 0 to 0 of 0 entries
           sInfoFiltered: "(filtered from _MAX_ total entries)",
           sInfoPostFix: "",
           sDecimal: "",
@@ -4330,10 +4333,10 @@
           sLengthMenu: "Show _MENU_ entries",
           sLoadingRecords: "Loading...",
           sProcessing: "",
-          sSearch: "Search:",
-          sSearchPlaceholder: "",
+          sSearch: "<img src='./assets/images/icons/search_icon.svg' class='table_search_label' />",
+          sSearchPlaceholder: "Search",
           sUrl: "",
-          sZeroRecords: "No matching records found",
+          sZeroRecords: "No data available in table",
         },
         oSearch: P.extend({}, C.models.oSearch),
         sAjaxDataProp: "data",
@@ -5093,7 +5096,7 @@
       _fnInitialise: Jt,
       _fnInitComplete: qt,
       _fnLengthChange: Gt,
-      _fnFeatureHtmlLength: $t,
+      // _fnFeatureHtmlLength: $t,
       _fnFeatureHtmlPaginate: zt,
       _fnPageChange: Yt,
       _fnFeatureHtmlProcessing: Zt,

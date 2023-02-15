@@ -9,10 +9,11 @@
   $(document).ready(function () {
     $('#example').DataTable({
         lengthMenu: [
-            [2, 25, 50, -1],
-            [2, 25, 50, 'All'],
+            [10, 25, 50, -1],
+            [10, 25, 50, 'All'],
         ],
         pagingType: 'simple',
+        responsive: true
     });
 });
 
