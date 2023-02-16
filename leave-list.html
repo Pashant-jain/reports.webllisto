@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href='./assets/css/text-editor.css' rel='stylesheet' type='text/css' />
 
     <link
       rel="stylesheet"
@@ -20,14 +19,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/css/data-table.css" />
     <link rel="stylesheet" href="./assets/css/calander.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/laptop-view-responsive.css" />
     <link rel="stylesheet" href="./assets/css/tablet-view-responsive.css" />
     <link rel="stylesheet" href="./assets/css/mobile-view-responsive.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" rel="stylesheet"/>
   </head>
   <body>
     <div class="page_wrp timesheet_page_wrp">
@@ -149,65 +147,74 @@
         </div>
       </aside>
       <div class="contant">
-       <div class="addtimesheet_wrp" >
-        <h1>Add Timesheet</h1>
-        <span>Add report with the help of the fields mentioned below.</span>
-        <div  class="addtimesheet_innr_wrp">
-          <div class="form-group bottom_margin">
-            <label htmlFor="name bt-2">Select Project </label>
-            <select class="sel_proj">
-              <option class="option_menu" value="">Webllisto Marketing</option>
-              <option class="option_menu">Project 1</option>
-              <option class="option_menu">Project 2</option>
-              <option class="option_menu">Project 3</option>
-            </select>
-          </div>
-          <div class="time bottom_margin">
-            <div class="start_time ">
-              <label for="start_time" class="col-form-label">Start Time</label>
-              <input type='time' class="form-control sel_proj start_time_ans" id="starttime" />
-            </div>
-            <div class="start_time end_time_resp ">
-              <label for="end_time" class="col-form-label">End Time</label> 
-              <input type='time' class="form-control sel_proj start_time_ans " id="date" />
-            </div>
-          </div>
-          <div class="task_details">
-            <label for="task_detail" class="col-form-label">Task Details</label>
-            <div id="example"><p>Webllisto Marketing</p></div>
-            <script type='text/javascript' src='./assets/js/text-editor.js'></script>  
-            <script>
-              new FroalaEditor('div#example', {
-                toolbarBottom: true
-              })
-            </script>
-          </div>
-          
-          <div class="form-group bottom_margin">
-            <label htmlFor="name bt-2">Task Status </label>
-            <select class="task_status">
-              <option class="option_menu" value="">Select Task Status</option>
-              <option class="option_menu">Done</option>
-              <option class="option_menu">In-progress</option>
-            </select>
-          </div>
-          <div class="sub_btn_wrp">
-            <button type="button" class="submit_btn">Submit</button>
+        <div class="addtimesheet_wrp">
+          <h2 class="page_title">Leave List</h2>
+          <p class="subtitle mb-3">
+            List of your reports with server side datatable. 
+          </p>
+          <div class="page_inner_wrp mt-5">
+            <table
+              id="list_table"
+              class="row-border cell-border project_list_table"
+              style="width: 100%"
+            >
+              <thead>
+                <tr>
+                  <th style="min-width:90px" >Type-Period</th>
+                  <th style="min-width:90px" >From Date</th>
+                  <th style="min-width:90px" >To Date</th>
+                  <th style="min-width:90px" >Applying To</th>
+                  <th>Reason</th>
+                  <th>Status</th>
+                  <th style="min-width:90px" >Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr>
+                    <td><span>Casual Leave</span></td>
+                    <td><span>2023-02-09</span></td>
+                    <td><span>2023-02-09</span></td>
+                    <td><span>Bharti Sharma</span></td>
+                    <td style="max-width: 200px">
+                      <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
+                    </td>
+                    
+                    <td><span>APPROVED_BY_RM</span></td>
+                    <td>
+                      <span
+                        ><div class="table_action_drobdown text-center">
+                          <button
+                            class="table_action_btn"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Action
+                          </button>
+                          <ul
+                            class="dropdown-menu table_action_menu"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>Edit</li>
+                            <li>Delete</li>
+                          </ul>
+                        </div></span
+                      >
+                    </td>
+                  </tr> -->
+              </tbody>
+            </table>
           </div>
         </div>
-       </div>
       </div>
-      
     </div>
-    
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="./assets/js/data-table.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
