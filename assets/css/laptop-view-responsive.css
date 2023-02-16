@@ -94,6 +94,9 @@
   /* expanded sidebar css */
 } /* 1199 */
 @media only screen and (max-width: 1199px) {
+  .filter_table_wrp .filter_table_inner  {
+    width: 1000px !important;
+  }
   .calander {
     width: unset;
     position: unset;
