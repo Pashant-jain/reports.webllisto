@@ -23,7 +23,14 @@
   margin: 35px 0px;
   padding: 20px 25px;
 }
-
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_status{
+  width: 87%;
+  border: none;
+  background: none;
+  margin-left: 1%;
+  border-bottom: 0.5px solid #B7B7B7;
+  padding: 6px;
+}
 .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sel_proj{
   width: 87%;
   border: none;
@@ -41,6 +48,11 @@ input::focus-visible {
 .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .bottom_margin{
   margin-bottom:35px;
 }
+.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .bottom_margin .option_menu{
+  background-color:#FFDFB2;
+  border-color:#B7B7B7;
+}
+
 .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time{
   display:flex;
   justify-content: space-between;
@@ -50,13 +62,14 @@ input::focus-visible {
   width: 48%;
 }
 .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time .start_time_ans{
-  width: 74%;
-  margin-left: 39px;
+  width: 71%;
+  margin-left: 50px;
   box-shadow: none;
   border-radius: 0;
 }
 .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details{
-  display:flex
+  display:flex;
+  margin-bottom: 35px;
 }
 .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example{
   width: 88%;
@@ -98,4 +111,111 @@ input::focus-visible {
 .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sub_btn_wrp{
   display:flex;
   justify-content:center;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1199px) {
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time .start_time_ans{
+    width: 72%;
+    margin-left: 37px;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example{
+    width: 87%;
+  }
+} /* 1024 */
+
+@media only screen and (max-width: 1023px) {
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sel_proj {
+    width: 83%;
+    margin-left: 2%;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_status{
+    width: 86%;
+  }
+  .timesheet_page_wrp .contant  .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time .start_time_ans {
+    width: 66%;
+    margin-left: 43px;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example{
+    width: 86%;
+  }
+}
+@media only screen and (max-width: 979px) {
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sel_proj {
+    width: 77%;
+    margin-left: 3%;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_status{
+    width: 79%;
+    margin-left: 3%;
+  }
+  .timesheet_page_wrp .contant  .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time .start_time_ans {
+    width: 54%;
+    margin-left: 46px;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example{
+    width: 81%;
+  }
+} /* 768 */
+
+@media only screen and (max-width: 767px) {
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sel_proj {
+    width: 69%;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_status{
+    width: 73%;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time{
+    display:block;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time{
+    width: 95%;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time .start_time_ans{
+    width: 72%;
+    margin-left: 43px;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .end_time_resp{
+    margin-top:35px;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example{
+    width: 76%;
+  }
+} /* 650 */
+
+@media only screen and (max-width: 649px) {
+  .timesheet_page_wrp .contant .addtimesheet_wrp h1{
+    font-size: 23px;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp span{
+    font-size: 14px;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sel_proj {
+    width: 59%;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time .start_time_ans {
+    width: 58%;
+    margin-left: 36px;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example {
+    width: 88%;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_status {
+    width: 58%;
+    margin-left: 8%;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details{
+    display:block;
+  }
+} /* 480 */
+@media only screen and (max-width: 479px) {
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sel_proj {
+    margin-left:unset;
+    width: 95%;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_status {
+    width: 94%;
+    margin-left:unset;
+  }
 }
