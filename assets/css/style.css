@@ -428,20 +428,23 @@ label {
   color: #000000;
 }
 select,
-input {
+input,textarea,.profile_skils_wrp {
   border: unset;
   border-bottom: 1px solid #b7b7b7;
   background-color: #ffeed5;
   /* width: 100%; */
   font-size: 14px;
-  
+
 }
 select:focus,
 select:focus-visible,
 select:active,
 input:focus,
 input:focus-visible,
-input:active {
+input:active,
+textarea:focus,
+textarea:focus-visible,
+textarea:active {
   outline: unset;
 }
 .btn {
@@ -489,6 +492,9 @@ form input,.emp_attandance_dtl_wrp input{
     border-radius: 50px;
     filter: blur(12px);
 }
+.profile_skils{
+  border: 1px solid #B7B7B7;
+}
 /* end of form css */
 
 /* settings page css */
@@ -527,5 +533,8 @@ form input,.emp_attandance_dtl_wrp input{
   display:grid;
   grid-template-columns: repeat(2,minmax(0,1fr));
   gap: 40px 25px;
+}
+.profile_skils_wrp{
+  margin:30px ;
 }
 /* end of settings page css */
