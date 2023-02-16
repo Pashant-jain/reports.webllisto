@@ -225,7 +225,7 @@ h4 {
 /* dashboard  page css */
 .dashboard_wrp,
 .addtimesheet_wrp,
-.settings_wrp {
+.settings_wrp,.apply_leave_wrp {
   background-color: #fff6e9;
   border-radius: 50px;
   padding: 30px;

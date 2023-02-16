@@ -1,0 +1,61 @@
+.timesheet_page_wrp .contant{
+    margin-right:unset;
+  }
+  .timesheet_page_wrp .contant .remaining_leave_wrp{
+    display:flex;
+    justify-content:center;
+  }
+  .timesheet_page_wrp .contant .remaining_leave_wrp .remaining_leaves{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #2CDE00;
+    padding: 10px 90px;
+    border-radius: 10px;
+  }
+  .timesheet_page_wrp .contant .page_inner_wrp .form-material .form-group select{
+    border: none;
+    background-color: transparent;
+    border-bottom: 0.5px solid #B7B7B7;
+    padding: 6px;
+    border-radius:0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .timesheet_page_wrp .contant .page_inner_wrp .form-material .form-group select:focus {
+    box-shadow: none;
+  }
+  .option_menu{
+    background-color:#FFDFB2;
+    border-color:#B7B7B7;
+  }
+  .timesheet_page_wrp .contant .page_inner_wrp .form-material .form-group input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 0.5px solid #B7B7B7;
+    padding: 6px;
+    border-radius:0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    box-shadow: none;
+  }
+  .timesheet_page_wrp .contant .page_inner_wrp .form-material .form-group .applying_to{
+    display:flex;
+  }
+  .timesheet_page_wrp .contant .page_inner_wrp .form-material .form-group .applying_to .applying_ans{
+    width: 87%;
+    margin-left: 59px;
+  }
+  .timesheet_page_wrp .contant .page_inner_wrp .form-material .form-group .reason{
+    display:flex;
+  }
+  .timesheet_page_wrp .contant .page_inner_wrp .form-material .form-group #example{
+    width: 90%;
+    margin-left: 78px;
+  }
+
+    
