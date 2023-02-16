@@ -224,4 +224,13 @@ input::focus-visible {
     width: 99%;
     margin-left: unset;
   }
+  .timesheet_page_wrp .contant .addtimesheet_wrp {
+    padding:15px;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details #example{
+    margin:unset;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details #example .fr-element{
+    padding:unset;
+  }
 } /* 375 */
