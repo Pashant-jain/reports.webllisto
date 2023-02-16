@@ -1,29 +1,7 @@
 .timesheet_page_wrp .contant{
   margin-right:unset;
 }
-.timesheet_page_wrp .contant .addtimesheet_wrp h1{
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-  color: #F85046;
-}
-.timesheet_page_wrp .contant .addtimesheet_wrp span{
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #686868;
-}
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp {
-  background: #FFEED5;
-  border-radius: 35px;
-  margin: 35px 0px;
-  padding: 20px 25px;
-}
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_status{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_status{
   width: 87%;
   border: none;
   background: none;
@@ -31,7 +9,7 @@
   border-bottom: 0.5px solid #B7B7B7;
   padding: 6px;
 }
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sel_proj{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .sel_proj{
   width: 87%;
   border: none;
   background: none;
@@ -45,53 +23,56 @@ select:focus-visible {
 input::focus-visible {
   outline:none
 }
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .bottom_margin{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .bottom_margin{
   margin-bottom:35px;
 }
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .bottom_margin .option_menu{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .bottom_margin .option_menu{
   background-color:#FFDFB2;
   border-color:#B7B7B7;
 }
 
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .time{
   display:flex;
   justify-content: space-between;
 }
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .time .start_time{
   display:flex;
   width: 48%;
 }
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time .start_time_ans{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .time .start_time .start_time_ans{
   width: 71%;
   margin-left: 50px;
   box-shadow: none;
   border-radius: 0;
 }
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details{
   display:flex;
   margin-bottom: 35px;
 }
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details #example{
   width: 88%;
   margin-left: 22px;
+  background: #FFEED5;
+  position:relative;
 }
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example .fr-second-toolbar{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details #example .fr-second-toolbar{
   display:none;
 }
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example .fr-element {
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details #example .fr-element {
   min-height: 168px;
 }
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example .fr-wrapper{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details #example .fr-wrapper{
   border:unset;
   background:none;
   bottom: 64px;
 }
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example .fr-toolbar{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details #example .fr-toolbar{
   border:unset;
   background:none;
+  position:absolute;
 }
 
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sub_btn_wrp .submit_btn{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .sub_btn_wrp .submit_btn{
   color: #ffffff;
   background: #f85046;
   border-radius: 50px;
@@ -103,119 +84,144 @@ input::focus-visible {
 }
 .submit_btn:before{
   background-color: #F85046;
-  content: "";
-  height: 50%;
-  border-radius: 50px;
-  filter: blur(12px);
+    bottom: 0;
+    content: "";
+    height: 20%;
+    left: 45%;
+    position: absolute;
+    right: 0;
+    top: 25;
+    width: 10%;
+    border-radius: 50px;
+    filter: blur(12px);
 }
-.timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sub_btn_wrp{
+.timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .sub_btn_wrp{
   display:flex;
   justify-content:center;
+  position:relative;
 }
 
 /* Responsive */
 
 @media only screen and (max-width: 1199px) {
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time .start_time_ans{
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .time .start_time .start_time_ans{
     width: 72%;
     margin-left: 37px;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example{
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details #example{
     width: 87%;
   }
 } /* 1024 */
 
 @media only screen and (max-width: 1023px) {
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sel_proj {
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .sel_proj {
     width: 83%;
     margin-left: 2%;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_status{
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_status{
     width: 86%;
   }
-  .timesheet_page_wrp .contant  .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time .start_time_ans {
+  .timesheet_page_wrp .contant  .addtimesheet_wrp .page_inner_wrp .time .start_time .start_time_ans {
     width: 66%;
     margin-left: 43px;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example{
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details #example{
     width: 86%;
   }
 }
 @media only screen and (max-width: 979px) {
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sel_proj {
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .sel_proj {
     width: 77%;
     margin-left: 3%;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_status{
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_status{
     width: 79%;
     margin-left: 3%;
   }
-  .timesheet_page_wrp .contant  .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time .start_time_ans {
+  .timesheet_page_wrp .contant  .addtimesheet_wrp .page_inner_wrp .time .start_time .start_time_ans {
     width: 54%;
     margin-left: 46px;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example{
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details #example{
     width: 81%;
   }
 } /* 768 */
 
 @media only screen and (max-width: 767px) {
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sel_proj {
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .sel_proj {
     width: 69%;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_status{
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_status{
     width: 73%;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time{
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .time{
     display:block;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time{
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .time .start_time{
     width: 95%;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time .start_time_ans{
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .time .start_time .start_time_ans{
     width: 72%;
     margin-left: 43px;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .end_time_resp{
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .time .end_time_resp{
     margin-top:35px;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example{
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details #example{
     width: 76%;
   }
 } /* 650 */
 
 @media only screen and (max-width: 649px) {
-  .timesheet_page_wrp .contant .addtimesheet_wrp h1{
+  .timesheet_page_wrp .contant .addtimesheet_wrp h2{
     font-size: 23px;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp span{
+  .timesheet_page_wrp .contant .addtimesheet_wrp p{
     font-size: 14px;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sel_proj {
-    width: 59%;
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .sel_proj {
+    /* width: 59%; */
+    margin-left:unset;
+    width: 95%;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .time .start_time .start_time_ans {
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .time .start_time .start_time_ans {
     width: 58%;
     margin-left: 36px;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details #example {
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details #example {
     width: 88%;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_status {
-    width: 58%;
-    margin-left: 8%;
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_status {
+    /* width: 58%;
+    margin-left: 8%; */
+    width: 94%;
+    margin-left:unset;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_details{
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_details{
     display:block;
   }
 } /* 480 */
 @media only screen and (max-width: 479px) {
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .sel_proj {
+  .timesheet_page_wrp .contant .addtimesheet_wrp h2{
+    font-size: 14px;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp p{
+    font-size: 11px;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .sel_proj {
     margin-left:unset;
     width: 95%;
   }
-  .timesheet_page_wrp .contant .addtimesheet_wrp .addtimesheet_innr_wrp .task_status {
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .task_status {
     width: 94%;
     margin-left:unset;
   }
-}
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .time .start_time{
+    display:block;
+    width:95%;
+  }
+  .timesheet_page_wrp .contant .addtimesheet_wrp .page_inner_wrp .time .start_time .start_time_ans{
+    width: 99%;
+    margin-left: unset;
+  }
+} /* 375 */
