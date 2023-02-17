@@ -237,10 +237,53 @@
                       <h3 class="my-2">Employee Profile</h3>
                     </div>
                     <div class="row profile_inner mt-5">
-                      <div class="col-3 profile_inner_lft">ferg</div>
+                      <div class="col-3 profile_inner_lft">
+                        <div
+                          class="emp_profile_box_wrp emp_profile_wrp d-flex justify-content-center align-items-center text-center mb-3"
+                        >
+                          <div>
+                            <figure>
+                              <img
+                                src="./assets/images/dummy-profile.png"
+                                alt="dummy progile image"
+                                width="75px"
+                                height="75px"
+                              />
+                            </figure>
+                            <h3 class="m-0">Lorem Ipsum</h3>
+                            <p class="my-2">Designation</p>
+                            <button type="buton" class="edit_btn">
+                              <img
+                                src="./assets/images/icons/edit_icon.svg"
+                                alt="Edit"
+                              />Edit
+                            </button>
+                          </div>
+                        </div>
+                        <div class="emp_profile_box_wrp emp_leave_dtl_wrp" >
+                          <h4 class="mb-3" >Leave details</h4>
+                          <p class="emp_leave_dtl d-flex justify-content-between align-items-center mt-2 mb-0" >
+                          <span>Casual Leaves</span>  
+                          <span>6.0</span>
+                          </p>
+                          <p class="emp_leave_dtl d-flex justify-content-between align-items-center mt-2 mb-0" >
+                            <span>Privileged Leave</span>  
+                            <span>6.0</span>
+                            </p>
+                            <p class="emp_leave_dtl d-flex justify-content-between align-items-center mt-2 mb-0" >
+                              <span>Emergency Leave</span>  
+                              <span>6.0</span>
+                              </p>
+                              <p class="emp_leave_dtl d-flex justify-content-between align-items-center mt-2 mb-0" >
+                                <span>Loss of Pay</span>  
+                                <span>6.0</span>
+                                </p>
+                             
+                        </div>
+                      </div>
                       <div class="col-9 profile_inner_right">
-                        <div class="emp_profile_dtl_wrp" >
-                          <div class="row">
+                        <div class="emp_profile_dtl_wrp">
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Username</label>
                             </div>
@@ -248,7 +291,7 @@
                               <input readonly type="text" value="lorem_ip" />
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Father Name</label>
                             </div>
@@ -256,40 +299,56 @@
                               <input readonly type="text" value="Lorem Ipsum" />
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Joining Date</label>
                             </div>
                             <div class="col-8">
-                              <input readonly type="text" value="Aug. 25, 2020" />
+                              <input
+                                readonly
+                                type="text"
+                                value="Aug. 25, 2020"
+                              />
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Birth Date</label>
                             </div>
                             <div class="col-8">
-                              <input readonly type="text" value="Feb 25, 2020" />
+                              <input
+                                readonly
+                                type="text"
+                                value="Feb 25, 2020"
+                              />
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Email Address</label>
                             </div>
                             <div class="col-8">
-                              <input readonly type="email" value="prashant.jain@webllisto.com" />
+                              <input
+                                readonly
+                                type="email"
+                                value="prashant.jain@webllisto.com"
+                              />
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Manager</label>
                             </div>
                             <div class="col-8">
-                              <input readonly type="text" value="Prashant jain" />
+                              <input
+                                readonly
+                                type="text"
+                                value="Prashant jain"
+                              />
                             </div>
                           </div>
-                          
-                          <div class="row">
+
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Contact No.</label>
                             </div>
@@ -297,7 +356,7 @@
                               <input readonly type="tell" value="12345 67890" />
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Alt. Contact</label>
                             </div>
@@ -305,7 +364,7 @@
                               <input readonly type="text" value="99999 99999" />
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Role</label>
                             </div>
@@ -313,7 +372,7 @@
                               <input readonly type="text" value="Employee" />
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Department</label>
                             </div>
@@ -322,19 +381,25 @@
                             </div>
                           </div>
                         </div>
-                        <div class="my-4" >
+                        <div class="my-5" style="padding: 0 15px">
                           <div class="row">
                             <div class="col-2 p-0">
-                              <label>Nationality</label>
+                              <label>Skills</label>
                             </div>
                             <div class="col-10">
-                              <textarea readonly ></textarea>
-                              
+                              <div class="profile_skils_wrp">
+                                <span class="profile_skils">Lorem Ipsum</span>
+                                <span class="profile_skils">Lorem Ipsum</span>
+                                <span class="profile_skils">Lorem Ipsum</span>
+                                <span class="profile_skils">Lorem Ipsum</span>
+                                <span class="profile_skils">Lorem Ipsum</span>
+                                <span class="profile_skils">Lorem Ipsum</span>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="emp_profile_dtl_wrp" >
-                          <div class="row">
+                        <div class="emp_profile_dtl_wrp">
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Religion</label>
                             </div>
@@ -342,7 +407,7 @@
                               <input readonly type="text" value="None" />
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Nationality</label>
                             </div>
@@ -350,7 +415,7 @@
                               <input readonly type="text" value="Indian" />
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Gender</label>
                             </div>
@@ -358,7 +423,7 @@
                               <input readonly type="text" value="Female" />
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row m-0">
                             <div class="col-4 p-0">
                               <label>Blood Group</label>
                             </div>
@@ -509,7 +574,7 @@
                   role="tabpanel"
                   aria-labelledby="pills-Your-summary-tab"
                 >
-                  <div class="profile_wrp">
+                  <div class="emp_summery_wrp">
                     <div class="text-center">
                       <img
                         src="./assets/images/icons//summary_icon.svg"
@@ -520,7 +585,81 @@
                       />
                       <h3 class="my-2">Employee Summary</h3>
                     </div>
-                    <div class="change_password_inner mt-5"></div>
+                    <div class="emp_summery_inner mt-5">
+                      <div class="emp_summery_dtl_wrp" >
+                        <div class="row m-0 ">
+                          <div class="col-5 p-0">
+                            <label>Joining Date</label>
+                          </div>
+                          <div class="col-7 p-0">
+                            <input readonly type="text" value="Aug 25, 2020" />
+                          </div>
+                        </div>
+                        <div class="row m-0 ">
+                          <div class="col-5 p-0">
+                            <label>Total Leaves</label>
+                          </div>
+                          <div class="col-7 p-0">
+                            <input readonly type="text" value="0" />
+                          </div>
+                        </div>
+                        <div class="row m-0 ">
+                          <div class="col-5 p-0">
+                            <label>Total Projects</label>
+                          </div>
+                          <div class="col-7 p-0">
+                            <input readonly type="text" value="10" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-5">
+                        <div class="row m-0 ">
+                          <div class="col-1 p-0">
+                            <label>Allotted Projects</label>
+                          </div>
+                          <div class="col-11">
+                            <div class="profile_skils_wrp">
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="emp_summery_dtl_wrp" >
+                        <div class="row m-0 ">
+                          <div class="col-5 p-0">
+                            <label>Avg. Start Time</label>
+                          </div>
+                          <div class="col-7 p-0">
+                            <input readonly type="text" value="10:46 AM" />
+                          </div>
+                        </div>
+                        <div class="row m-0 ">
+                          <div class="col-5 p-0">
+                            <label>Avg. End Time</label>
+                          </div>
+                          <div class="col-7 p-0">
+                            <input readonly type="text" value="08:15 PM" />
+                          </div>
+                        </div>
+                        <div class="row m-0 ">
+                          <div class="col-5 p-0">
+                            <label>Total Worked</label>
+                          </div>
+                          <div class="col-7 p-0">
+                            <input readonly type="text" value="699 Hours 30 Minutes" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div
@@ -547,7 +686,7 @@
                             <label>Old Password</label>
                           </div>
                           <div class="col-8">
-                            <input 
+                            <input
                               type="password"
                               placeholder="Enter old password"
                             />
@@ -558,7 +697,7 @@
                             <label>New Password</label>
                           </div>
                           <div class="col-8">
-                            <input 
+                            <input
                               type="password"
                               placeholder="Enter new password"
                             />
@@ -569,7 +708,7 @@
                             <label>Re-enter Your Password</label>
                           </div>
                           <div class="col-8">
-                            <input 
+                            <input
                               type="text"
                               placeholder="Re-enter new password"
                             />

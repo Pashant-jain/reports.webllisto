@@ -32,6 +32,9 @@ h4 {
   color: #f85046;
   font-weight: 700;
 }
+p{
+  font-size: 14px;
+}
 .subtitle {
   font-size: 14px;
   color: #686868;
@@ -428,20 +431,24 @@ label {
   color: #000000;
 }
 select,
-input {
+input,
+textarea,
+.profile_skils_wrp {
   border: unset;
   border-bottom: 1px solid #b7b7b7;
   background-color: #ffeed5;
   /* width: 100%; */
   font-size: 14px;
-  
 }
 select:focus,
 select:focus-visible,
 select:active,
 input:focus,
 input:focus-visible,
-input:active {
+input:active,
+textarea:focus,
+textarea:focus-visible,
+textarea:active {
   outline: unset;
 }
 .btn {
@@ -465,7 +472,10 @@ input:active {
 .filter_table_wrp {
   overflow: auto;
 }
-form input,.emp_attandance_dtl_wrp input{
+form input,
+.emp_attandance_dtl_wrp input,
+.emp_profile_dtl_wrp input,
+.emp_summery_inner  input {
   width: 100%;
 }
 .submit {
@@ -476,18 +486,27 @@ form input,.emp_attandance_dtl_wrp input{
   padding: 8px 28px;
   position: relative;
 }
-.submit:before{
-  background-color: #F85046;
-    bottom: 0;
-    content: "";
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 25;
-    width: 100%;
-    border-radius: 50px;
-    filter: blur(12px);
+.submit:before {
+  background-color: #f85046;
+  bottom: 0;
+  content: "";
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 25;
+  width: 100%;
+  border-radius: 50px;
+  filter: blur(12px);
+}
+.profile_skils {
+  border: 1px solid #b7b7b7;
+  border-radius: 50px;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  display: inline-block;
 }
 /* end of form css */
 
@@ -518,14 +537,47 @@ form input,.emp_attandance_dtl_wrp input{
   width: 80%;
   margin: 0 auto;
 }
-.emp_attandance_dtl_wrp{
-  display:grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
+.emp_attandance_dtl_wrp {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 50px 30px;
 }
-.emp_profile_dtl_wrp{
-  display:grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
-  gap: 40px 25px;
+.emp_profile_dtl_wrp {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.emp_profile_wrp figure image {
+  border-radius: 50%;
+}
+.emp_profile_wrp .edit_btn{
+  border: 1px solid #B7B7B7;
+  background-color: transparent;
+  border-radius: 40px;
+  font-size: 12px;
+  padding: 3px 12px;
+}
+.emp_profile_wrp .edit_btn img{
+  margin-right: 8px;
+}
+.emp_profile_box_wrp{
+  border-radius: 18px;
+  padding:30px  25px;
+}
+.emp_profile_wrp {
+  background-color: #ffe1b6;
+}
+.emp_leave_dtl_wrp{
+  background-color: 
+  #FFC3C0;
+}
+.emp_leave_dtl{
+  font-size: 12px;
+}
+.emp_summery_dtl_wrp{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
 }
 /* end of settings page css */
