@@ -523,6 +523,7 @@ form input,
 }
 .setting_tab_head .nav-item .nav-link {
   font-size: 14px;
+  font-weight: 600;
   color: #ffffff;
   padding: 6px 23px;
 }
@@ -579,5 +580,29 @@ form input,
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 30px;
+}
+.settings_mobile_wrp{
+  display: none;
+}
+.settings_mobile_wrp .accordion{
+  border-radius: 25px;
+}
+.settings_mobile_wrp .accordion-item:first-child,.settings_mobile_wrp .accordion-item:first-child .accordion-header,.settings_mobile_wrp .accordion-item:first-child .accordion-header .accordion-button{
+  border-radius: 25px 25px 0 0 ;
+}
+.settings_mobile_wrp .accordion-item:last-child,.settings_mobile_wrp .accordion-item:last-child .accordion-header,.settings_mobile_wrp .accordion-item:last-child .accordion-header .accordion-button[aria-expanded="false"],
+.accordion-item:last-child .accordion-collapse.show .accordion-body{
+  border-radius: 0 0 25px 25px  ;
+}
+.settings_mobile_wrp .accordion-item .accordion-header .accordion-button,.settings_mobile_wrp .accordion-item .accordion-header .accordion-button:focus{
+  background-color: #F85046;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  outline: none;
+  box-shadow:none;
+}
+.settings_mobile_wrp .accordion-item .accordion-body,.settings_mobile_wrp .accordion-item .accordion-header{
+  background-color: #ffeed5;
 }
 /* end of settings page css */

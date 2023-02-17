@@ -112,4 +112,10 @@
 }
 } /* 1024 */
 @media only screen and (max-width: 991px) {
+  .profile_inner_lft{
+    display:grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap:30px;
+    margin-bottom:45px;
+  }
 } /* 980 */
