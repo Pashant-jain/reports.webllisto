@@ -474,7 +474,8 @@ textarea:active {
 }
 form input,
 .emp_attandance_dtl_wrp input,
-.emp_profile_dtl_wrp input {
+.emp_profile_dtl_wrp input,
+.emp_summery_inner  input {
   width: 100%;
 }
 .submit {
@@ -546,11 +547,7 @@ form input,
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 40px;
 }
-.emp_profile_wrp {
-  background-color: #ffe1b6;
-  border-radius: 18px;
-  padding: 30px;
-}
+
 .emp_profile_wrp figure image {
   border-radius: 50%;
 }
@@ -563,5 +560,24 @@ form input,
 }
 .emp_profile_wrp .edit_btn img{
   margin-right: 8px;
+}
+.emp_profile_box_wrp{
+  border-radius: 18px;
+  padding:30px  25px;
+}
+.emp_profile_wrp {
+  background-color: #ffe1b6;
+}
+.emp_leave_dtl_wrp{
+  background-color: 
+  #FFC3C0;
+}
+.emp_leave_dtl{
+  font-size: 12px;
+}
+.emp_summery_dtl_wrp{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
 }
 /* end of settings page css */
