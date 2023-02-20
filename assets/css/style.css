@@ -114,7 +114,8 @@ p{
 }
 .menu_wrp li.active,
 .menu_wrp li:hover {
-  background-color: #f3f1ef;
+  /* background-color: #f3f1ef; */
+  background-color: #F85046;
 }
 .menu_wrp li a img {
   margin-right: 15px;
@@ -613,4 +614,7 @@ background-position: center;
 /* end of settings page css */
 .filter_table_wrp input, {
     width: 60%;
+}
+.down_light_arrow{
+  display:none
 }
