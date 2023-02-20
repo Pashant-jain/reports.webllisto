@@ -28,12 +28,13 @@
     overflow-x: visible !important;
 }
 .fr-box.fr-basic {
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
+    /* border-radius: 10px; */
+    /* -moz-border-radius: 10px; */
+    /* -webkit-border-radius: 10px; */
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
+    border-bottom: 1px solid #b7b7b7;
 }
 .fr-box.fr-basic .fr-element {
     font-family: sans-serif;
@@ -90,9 +91,7 @@
     height: 40px;
     width: 40px;
     text-align: center;
-    background: transperent;.fr-code-view{
-    min-height: 200px;
-}
+    background: transperent;
     color: #333333;
     -webkit-transition: background 0.2s ease 0s, color 0.2s ease 0s, transform 0.2s ease 0s;
     -moz-transition: background 0.2s ease 0s, color 0.2s ease 0s, transform 0.2s ease 0s;
@@ -188,8 +187,8 @@ iframe.fr-iframe {
 }
 .fr-box.fr-basic .fr-wrapper {
     background: transperent;
-    border: 1px solid #cccccc;
-    border-bottom-color: #efefef;
+    /* border: 1px solid #cccccc; */
+    /* border-bottom-color: #efefef; */
     top: 0;
     left: 0;
 }
@@ -852,7 +851,7 @@ body.fr-prevent-scroll.fr-mobile {
     background-clip: padding-box;
     margin: 20px auto;
     display: inline-block;
-    background: transperent;
+    background: #ffeed5;
     min-width: 300px;
     -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14),
         0 1px 18px 0 rgba(0, 0, 0, 0.12);
@@ -1546,6 +1545,7 @@ ol.decimal_type > li:before {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
+    border: unset;
 }
 .fr-toolbar.fr-bottom .fr-newline {
     display:none;
@@ -3719,7 +3719,6 @@ body.fr-fullscreen {
     height: 100%;
     width: 100%;
     position: fixed;
-    background-color: #ffeed5;
 }
 .fr-box.fr-fullscreen {
     margin: 0 !important;
@@ -3730,10 +3729,10 @@ body.fr-fullscreen {
     right: 0;
     z-index: 2147483630 !important;
     width: auto !important;
-    background-color: #ffeed5 !important;
+    background-color: #ffeed5;
 }
 .fr-box.fr-fullscreen .fr-wrapper {
-    background-color: #fff;
+    background-color: #ffeed5;
 }
 .fr-box.fr-fullscreen.fr-basic.fr-top .fr-wrapper {
     border-radius: 0;
@@ -5685,6 +5684,6 @@ span.fr-img-caption.fr-view.fr-dii.fr-fir {
 .fr-code-view{
     min-height: 200px;
 }
-.fr-wrapper > div[style="z-index:9999;width:100%;position:relative"],.fr-wrapper > div[style="z-index: 9999; width: 100%; position: relative;"]{
+.fr-wrapper > div[style="z-index:9999;width944:100%;position:relative"]{
     display: none !important;
 }

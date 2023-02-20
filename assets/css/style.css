@@ -449,12 +449,13 @@ label {
 select,
 input,
 textarea,
-.profile_skils_wrp {
+.profile_skils_wrp,.viewbar {
   border: unset;
   border-bottom: 1px solid #b7b7b7;
   background-color: #ffeed5;
-  /* width: 100%; */
+  width: 100%;
   font-size: 14px;
+  border-radius: unset;
 }
 select:focus,
 select:focus-visible,
@@ -560,7 +561,7 @@ form input,
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 50px 30px;
 }
-.emp_profile_dtl_wrp {
+.emp_profile_dtl_wrp ,.apply_leave_inner{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 40px;
@@ -629,4 +630,17 @@ background-position: center;
 /* end of settings page css */
 .filter_table_wrp input {
     width: 60%;
+}
+
+
+.avaiabe_leave_dtl{
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #2CDE00;
+border-radius: 10px;
+padding: 7px 15px;
+width: 300px;
+display: block;
+margin: 0 auto;
 }
