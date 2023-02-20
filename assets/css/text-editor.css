@@ -3719,6 +3719,7 @@ body.fr-fullscreen {
     height: 100%;
     width: 100%;
     position: fixed;
+    background-color: #ffeed5;
 }
 .fr-box.fr-fullscreen {
     margin: 0 !important;
