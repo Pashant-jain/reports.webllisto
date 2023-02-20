@@ -5684,6 +5684,6 @@ span.fr-img-caption.fr-view.fr-dii.fr-fir {
 .fr-code-view{
     min-height: 200px;
 }
-.fr-wrapper > div[style="z-index:9999;width944:100%;position:relative"]{
+.fr-wrapper > div > a[href="https://www.froala.com/wysiwyg-editor?k=u"]{
     display: none !important;
 }
