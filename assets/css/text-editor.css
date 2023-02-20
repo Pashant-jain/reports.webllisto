@@ -3730,6 +3730,7 @@ body.fr-fullscreen {
     right: 0;
     z-index: 2147483630 !important;
     width: auto !important;
+    background-color: #ffeed5 !important;
 }
 .fr-box.fr-fullscreen .fr-wrapper {
     background-color: #fff;
