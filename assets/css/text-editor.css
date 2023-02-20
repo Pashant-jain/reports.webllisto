@@ -2333,7 +2333,7 @@ textarea.fr-code {
     background: none;
     font-size: 16px;
     border-radius: 5px;
-    background-color: #eff5fa;
+    background-color: transperent;
     outline: none;
 }
 .fr-trim-button:hover {
@@ -4801,7 +4801,7 @@ div.fr-modal-body div.fr-image-list div.fr-image-container .fr-insert-img {
     background: none;
     font-size: 16px;
     border-radius: 5px;
-    background-color: #eff5fa;
+    background-color: transperent;
     outline: none;
 }
 .fr-trim-button:hover {
@@ -5683,6 +5683,6 @@ span.fr-img-caption.fr-view.fr-dii.fr-fir {
 .fr-code-view{
     min-height: 200px;
 }
-.fr-wrapper > div[style="z-index:9999;width:100%;position:relative"]{
+.fr-wrapper > div[style="z-index:9999;width:100%;position:relative"],.fr-wrapper > div[style="z-index: 9999; width: 100%; position: relative;"]{
     display: none !important;
 }
