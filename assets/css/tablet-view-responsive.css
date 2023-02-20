@@ -1,4 +1,16 @@
 @media only screen and (max-width: 979px) {
+    .settings_mobile_wrp{
+  display: block;
+}
+.settings_desktop_wrp{
+    display:none
+}
+.emp_attandance_dtl_wrp,.emp_summery_dtl_wrp,.emp_profile_dtl_wrp{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.change_password_inner {
+    width: unset;
+}
 } /* 768 */
 @media only screen and (max-width: 767px) {
 
@@ -11,4 +23,7 @@
     .profile_wrp {
   padding: 30px 0 !important;
 }
+.profile_inner_lft{
+   display:block
+  }
 } /* 650 */

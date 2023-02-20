@@ -40,7 +40,7 @@ p{
   color: #686868;
 }
 
-.rotate-180 {
+.rotate-180,.accordion-button:not(.collapsed)::after {
   transform: rotate(180deg);
 }
 .rotate-90 {
@@ -228,7 +228,7 @@ p{
 /* dashboard  page css */
 .dashboard_wrp,
 .addtimesheet_wrp,
-.settings_wrp {
+.settings_wrp,.apply_leave_wrp {
   background-color: #fff6e9;
   border-radius: 50px;
   padding: 30px;
@@ -390,7 +390,7 @@ p{
 .page_inner_wrp {
   background: #ffeed5;
   border-radius: 25px;
-  padding: 20px 25px;
+  padding:25px;
 }
 /* end of page inner css */
 
@@ -465,8 +465,8 @@ textarea:active {
   border-color: #f85046 !important;
 }
 .Filter {
-  background-color: #2cde00;
-  border-color: #2cde00 !important;
+  background-color: #F39E24;
+  border-color: #F39E24 !important;
   margin-right: 20px;
 }
 .filter_table_wrp {
@@ -485,6 +485,7 @@ form input,
   border-radius: 50px;
   padding: 8px 28px;
   position: relative;
+  font-size:14px;
 }
 .submit:before {
   background-color: #f85046;
@@ -523,6 +524,7 @@ form input,
 }
 .setting_tab_head .nav-item .nav-link {
   font-size: 14px;
+  font-weight: 600;
   color: #ffffff;
   padding: 6px 23px;
 }
@@ -580,4 +582,35 @@ form input,
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 30px;
 }
+.settings_mobile_wrp{
+  display: none;
+}
+.settings_mobile_wrp .accordion{
+  border-radius: 25px;
+}
+.settings_mobile_wrp .accordion-item:first-child,.settings_mobile_wrp .accordion-item:first-child .accordion-header,.settings_mobile_wrp .accordion-item:first-child .accordion-header .accordion-button{
+  border-radius: 25px 25px 0 0 ;
+}
+.settings_mobile_wrp .accordion-item:last-child,.settings_mobile_wrp .accordion-item:last-child .accordion-header,.settings_mobile_wrp .accordion-item:last-child .accordion-header .accordion-button[aria-expanded="false"],
+.accordion-item:last-child .accordion-collapse.show .accordion-body{
+  border-radius: 0 0 25px 25px  ;
+}
+.settings_mobile_wrp .accordion-item .accordion-header .accordion-button,.settings_mobile_wrp .accordion-item .accordion-header .accordion-button:focus{
+  background-color: #F85046;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  outline: none;
+  box-shadow:none;
+}
+.settings_mobile_wrp .accordion-item .accordion-body,.settings_mobile_wrp .accordion-item .accordion-header{
+  background-color: #ffeed5;
+}
+.accordion-button::after,.accordion-button:not(.collapsed)::after{
+background-image: url('../images/down-arrow-light.svg');
+background-position: center;
+}
 /* end of settings page css */
+.filter_table_wrp input, {
+    width: 60%;
+}
