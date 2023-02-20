@@ -6,6 +6,36 @@
   h2{
     font-size: 14px;
   }
+  h3{
+    font-size: 13px;
+  }
+  h4,select, input, textarea, .profile_skils_wrp,label{
+    font-size: 12px;
+  }
+  p{
+    font-size: 11px;
+  }
+  .emp_leave_dtl{
+    font-size: 10PX;
+  }
+  .emp_profile_box_wrp{
+    padding: 15px;
+  }
+  .emp_profile_wrp  figure img{
+    width: 60px;
+    height: 60px;
+  }
+  .profile_skils{
+    font-size: 10px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
+  .submit{
+    font-size: 12px;
+  }
+  .profile_inner_lft{
+    margin-bottom: 15px;
+  }
   .subtitle,.timesheet_alert,.calander_event_btn{
     font-size: 11px;
   }
@@ -39,9 +69,12 @@
 .table_card  table{
   width: 257px;
 }
-.dashboard_wrp, .addtimesheet_wrp,.apply_leave_wrp{
+.dashboard_wrp, .addtimesheet_wrp,.apply_leave_wrp,.settings_wrp{
   padding: 15px;
   border-radius: 35px;
+}
+.settings_wrp .accordion-body{
+  padding:15px;
 }
 .dashboard_cards_wrp{
   padding: 15px 0;

@@ -40,7 +40,7 @@ p{
   color: #686868;
 }
 
-.rotate-180 {
+.rotate-180,.accordion-button:not(.collapsed)::after {
   transform: rotate(180deg);
 }
 .rotate-90 {
@@ -485,6 +485,7 @@ form input,
   border-radius: 50px;
   padding: 8px 28px;
   position: relative;
+  font-size:14px;
 }
 .submit:before {
   background-color: #f85046;
@@ -604,5 +605,9 @@ form input,
 }
 .settings_mobile_wrp .accordion-item .accordion-body,.settings_mobile_wrp .accordion-item .accordion-header{
   background-color: #ffeed5;
+}
+.accordion-button::after,.accordion-button:not(.collapsed)::after{
+background-image: url('../images/down-arrow-light.svg');
+background-position: center;
 }
 /* end of settings page css */
