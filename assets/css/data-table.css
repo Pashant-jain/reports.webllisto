@@ -311,6 +311,7 @@ table.dataTable tbody td {
     padding: 10px 12px;
     font-size: 14px;
     color: #1B1B1B;
+    vertical-align: baseline;
    
 }
 table.dataTable tbody td span{
