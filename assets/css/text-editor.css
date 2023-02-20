@@ -1546,6 +1546,7 @@ ol.decimal_type > li:before {
     background-clip: padding-box;
 }
 .fr-toolbar.fr-bottom .fr-newline {
+    display:none;
     padding-top: 0;
     -webkit-transition: padding-top 0.5s;
     -moz-transition: padding-top 0.5s;
