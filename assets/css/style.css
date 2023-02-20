@@ -91,6 +91,15 @@ p{
   list-style-type: none;
   padding: 0 15px;
 }
+.light_img{
+  display:none
+}
+.menu_wrp li.active .light_img,.menu_wrp li:hover .light_img{
+  display:inline-block
+}
+.menu_wrp li.active .dark_img,.menu_wrp li:hover .dark_img{
+  display:none
+}
 .menu_wrp li {
   text-decoration: none;
 
@@ -113,9 +122,15 @@ p{
   display: block;
 }
 .menu_wrp li.active,
-.menu_wrp li:hover {
+.menu_wrp li:hover
+ {
   /* background-color: #f3f1ef; */
   background-color: #F85046;
+
+}
+.menu_wrp li.active a,
+.menu_wrp li:hover a{
+  color: #ffffff;
 }
 .menu_wrp li a img {
   margin-right: 15px;
@@ -612,7 +627,7 @@ background-image: url('../images/down-arrow-light.svg');
 background-position: center;
 }
 /* end of settings page css */
-.filter_table_wrp input, {
+.filter_table_wrp input {
     width: 60%;
 }
 .down_light_arrow{
