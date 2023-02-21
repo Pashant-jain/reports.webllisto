@@ -3,6 +3,18 @@
     width: 100%;
     padding: 7px;
   }
+  .client_list_add_client_wrp .filter_table_btn_wrp{
+   flex-direction:column;
+  }
+  .filter_table_btn_wrp .import,.filter_table_btn_wrp .export,.filter_table_btn_wrp .submit{
+    width: 100%;
+    margin-right:unset ;
+    margin-bottom: 15px;
+  }
+  .pupup_btn {
+    margin: 10px 0;
+    width: 100%;
+  }
 } /* 480 */
 @media only screen and (max-width: 479px) {
 
@@ -12,7 +24,7 @@
   h3{
     font-size: 13px;
   }
-  h4,select, input, textarea, .profile_skils_wrp,label,.avaiabe_leave_dtl{
+  h4,select, input, textarea, .profile_skils_wrp,label,.avaiabe_leave_dtl,.filter_table_btn_wrp .import,.filter_table_btn_wrp .export,.filter_table_btn_wrp .submit{
     font-size: 12px;
   }
   p{

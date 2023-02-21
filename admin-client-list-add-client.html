@@ -157,10 +157,10 @@
                   <div
                   class="filter_table_btn_wrp d-flex justify-content-end align-items-center"
                   >
-                  <button class="btn import">Import</button>
-                  <button type="button" class="btn export" data-toggle="modal" data-target="#client_list">Export</button>
+                  <button class="btn import" data-toggle="modal" data-target="#client_list_import">Import</button>
+                  <button type="button" class="btn export" data-toggle="modal" data-target="#client_list_export">Export</button>
     
-                  <button class="btn submit"><span class="position-relative">Add Client</span></button>
+                  <button class="submit"><span class="position-relative">Add Client</span></button>
               </div>
                   <table
                     id="list_table"
@@ -855,23 +855,79 @@
         </div>
       </div>
       <!-- Modal -->
-<div class="modal fade " id="client_list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade " id="client_list_export" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog  modal-dialog-centered" role="document">
     <div class="modal-content">
       <button type="button" class="close modal_close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
       <div class="modal-body text-center">
-        <h2>Confirm</h2>
-        <p>By default the filter is set to none. So all the records will be exported.<br/>Change the filter settings if you want to export only specific set of records.</p>
+       <div class="conform_export_wrp" >
+        <h2 class="mb-4" >Confirm</h2>
+        <p class="mb-1" >By default the filter is set to none. So all the records will be exported.</p>
+        <p>Change the filter settings if you want to export only specific set of<br> records.</p>
+        <div>
+          <div class="row  popup_select_wrp">
+            <div class="col-12 col-sm-6 mb-3 mb-sm-0 p-0">
+              <label> Select Project Type </label>
+            </div>
+            <div class="col-12 col-sm-6 p-0">
+              <select>
+                <option class="option_menu" value="">Casual Leave</option>
+                <option class="option_menu">Casual Leave</option>
+                <option class="option_menu">Project 2</option>
+                <option class="option_menu">Project 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="text-center mt-3 mt-sm-5" >
+            <button type="button" class="btn pupup_btn outline_btn" >Export</button>
+            <button type="button" class="btn pupup_btn dark_btn" data-dismiss="modal" >Cancel</button>
+          </div>
+        </div>
+       </div>
       </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
+     
     </div>
   </div>
 </div>
+
+    <!-- Modal -->
+    <div class="modal fade " id="client_list_import" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <button type="button" class="close modal_close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body text-center">
+           <div class="conform_import_wrp" >
+            <h2 class="mb-4" >Confirm</h2>
+            <h6>Points To Be Noted -</h6>
+            <div>
+              <div class="row  popup_select_wrp">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0 p-0">
+                  <label> Select Project Type </label>
+                </div>
+                <div class="col-12 col-sm-6 p-0">
+                  <select>
+                    <option class="option_menu" value="">Casual Leave</option>
+                    <option class="option_menu">Casual Leave</option>
+                    <option class="option_menu">Project 2</option>
+                    <option class="option_menu">Project 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="text-center mt-3 mt-sm-5" >
+                <button type="button" class="btn pupup_btn outline_btn" >Export</button>
+                <button type="button" class="btn pupup_btn dark_btn" data-dismiss="modal" >Cancel</button>
+              </div>
+            </div>
+           </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
     </div>
     </div>
     <script

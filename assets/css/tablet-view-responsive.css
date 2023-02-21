@@ -14,6 +14,11 @@
 .client_list_add_client_wrp .filter_table_btn_wrp{
     position: unset;
 }
+.modal-dialog {
+  min-width: 85%;
+  max-width:85%;
+  margin: auto;
+}
 } /* 768 */
 @media only screen and (max-width: 767px) {
 
@@ -28,5 +33,11 @@
 }
 .profile_inner_lft{
    display:block
+  }
+  .client_list_add_client_wrp .filter_table_btn_wrp{
+    justify-content: center !important;
+  }
+  .modal-body .popup_select_wrp{
+    width: 100%;
   }
 } /* 650 */
