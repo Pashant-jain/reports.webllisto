@@ -644,3 +644,81 @@ width: 300px;
 display: block;
 margin: 0 auto;
 }
+.add_policy_inner{
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+/* .add_policy_inner .fileUpload {
+  position: relative;
+  overflow: hidden;
+}
+.add_policy_inner .fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.add_policy_inner .btn--browse{
+  border: unsets;
+padding: 4px;
+}
+.add_policy_inner .btn--browse span{
+  background-color: #1B1B1B;
+  height: 42px;
+}
+
+.add_policy_inner .f-input{
+height: 42px;
+background-color: transparent;
+border: 0.5px solid #B7B7B7;
+width: 100%;
+padding: 4px;
+max-width: 300px;
+float: left;
+padding: 0 14px;
+} */
+
+.custom_input_wrp{
+  border: 0.5px solid #B7B7B7;
+  padding: 4px;
+}
+.add_policy_inner .custom_input_wrp .fileUpload {
+  position: relative;
+  overflow: hidden;
+  padding: 4px; 
+}
+.add_policy_inner .custom_input_wrp .fileUpload span{
+  background-color: #1b1b1b;
+  color: #ffffff;
+  padding: 7px 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.add_policy_inner .fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+} 
+.add_policy_inner .custom_input_wrp  .f-input{
+  height: 32px;
+  background-color: transparent;
+  width: 77%;
+  padding: 4px;
+  /* max-width: 300px; */
+  float: left;
+  padding: 0 14px;
+  border: unset;
+  }
