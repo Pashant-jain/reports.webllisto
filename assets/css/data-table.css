@@ -512,6 +512,7 @@ table.dataTable td {
     padding: 5px;
     background-color: #FFDFB2;
     padding: 4px;
+    width:unset;
 }
 .dataTables_wrapper .dataTables_length select:focus,.dataTables_wrapper .dataTables_length select:focus-visible{
     border: unset;
