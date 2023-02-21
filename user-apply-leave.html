@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href='./assets/css/text-editor.css' rel='stylesheet' type='text/css' />
 
     <link
       rel="stylesheet"
@@ -20,16 +19,23 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/css/filter_multi_select.css" />
+
+    <link href='./assets/css/text-editor.css' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="./assets/css/data-table.css" />
     <link rel="stylesheet" href="./assets/css/calander.css" />
-    <link rel="stylesheet" href="./assets/css/email-cc.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/apply-leave.css" />
     <link rel="stylesheet" href="./assets/css/laptop-view-responsive.css" />
     <link rel="stylesheet" href="./assets/css/tablet-view-responsive.css" />
     <link rel="stylesheet" href="./assets/css/mobile-view-responsive.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" rel="stylesheet"/>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/filter-multi-select-bundle.min.js"></script>
   </head>
   <body>
     <div class="page_wrp timesheet_page_wrp">
@@ -151,126 +157,108 @@
         </div>
       </aside>
       <div class="contant">
-       <div class="apply_leave_wrp">
-        <h2 class="page_title">Apply Leave</h2>
-        <p class="subtitle mb-3">Fill the required information below to Apply leave</p>
-        <div  class="page_inner_wrp mt-5">
-            <div class="remaining_leave_wrp mb-5 mt-3">
-                <p class="remaining_leaves">You have currently 6.0 available</p>
-            </div>
+        <div class="addtimesheet_wrp">
+          <h2 class="page_title">Apply Leave</h2>
+          <p class="subtitle mb-3">
+            Fill the required information below to Apply leave
+          </p>
+          <div class="page_inner_wrp mt-5">
+            <span class="avaiabe_leave_dtl text-center"
+              >You have currently 6.0 available</span
+            >
 
-
-            
-            <form class="form-material" action="/leave/" method="post" id="form-leave">
-                <div class="form-group">
-                  <div class="row mb-5">
-                    <div class="col-md-6">
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Leave Type</label>
-                            <div class="col-sm-9">
-                                <select class="form-select" id="leave_type">
-                                    <option class="option_menu" value="CASUAL">Casual Leave</option>
-                                    <option class="option_menu" value="PRIVILEGED">Privileged Leave</option>
-                                    <option class="option_menu" value="EMERGENCY">Emergency Leave</option>
-                                    <option class="option_menu" value="LOP">Loss of Pay</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Leave Period</label>
-                            <div class="col-sm-9">
-                                <select id="leave_period" name="leave_period" class="form-select">
-                                    <option class="option_menu" value="FULL DAY">Full Day</option>
-                                    <option class="option_menu" value="HALF DAY">Half Day</option>
-                                </select>
-                                <span class="messages popover-valid"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-5">
-                    <div class="col-md-6">
-                      <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">From Date</label>
-                        <div class="col-sm-9">
-                          <input type="date" id="sd" autocomplete="off" name="from_date" class="form-control hasDatepicker" required="">
-
-                          <span id="msg_from" class="messages popover-valid"></span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">To Date</label>
-                        <div class="col-sm-9">
-                          <input type="date" autocomplete="off" id="ed" name="to_date" class="form-control hasDatepicker" required="">
-                          <span id="msg_to" class="messages popover-valid"></span>
-                        </div>
-                      </div>
-                    </div>
+            <form class="apply_leave_form mt-3 mt-sm-5">
+              <div class="apply_leave_inner">
+                <div class="row m-0">
+                  <div class="col-12 col-sm-3 mb-3 mb-sm-0 p-0">
+                    <label>Leave Type</label>
                   </div>
-                  <div class="form-group mb-5 applying_to">
-                    
-                        <label class="col-form-label">Applying To</label>
-                    
-                      <input type="text" value="Bharti Sharma" class="form-control applying_ans" id="apply_to" disabled="">
-                      <input type="hidden" value="42" name="applying_to" id="applying_to">
-                      <span class="messages popover-valid"></span>
-                  
-                  </div>
-
-                  <div class="row mb-5">
-                    <div class="col-md-12">
-                      <div class="form-group row">
-                        <label class="col-sm-1 col-form-label" style="min-width: 13% !important;">CC To</label>
-                       <div class="col-sm-10 p-0 ">
-                          <input type="email" data-role="tagsinput">
-                          <div id="employee-cc-selector" class="filter-multi-select dropdown" multiple="" tabindex="0"><div class="viewbar form-control dropdown-toggle" style="width: 102%;"><span hidden="" class="col-form-label mr-2 text-dark"></span><span hidden="" class="mr-2">0/53</span><span class="placeholder"></span><span class="selected-items"><span id="cc-1" data-id="cc-1" class="item">Bhupat Bheda<button type="button" id="cc-button-Bhupat-Bheda" tabindex="-1">×</button></span><span id="cc-2" data-id="cc-2" class="item">Richa Singh<button type="button" id="cc-button-Richa-Singh" tabindex="-1">×</button></span><span id="cc-0" data-id="cc-0" class="item">Webllisto admin<button type="button" id="cc-button-Webllisto-admin" tabindex="-1">×</button></span><span id="cc-40" data-id="cc-40" class="item">Anjali Torne<button type="button" id="cc-button-Anjali-Torne" tabindex="-1">×</button></span><span id="cc-39" data-id="cc-39" class="item">Shreya Yadav<button type="button" id="cc-button-Shreya-Yadav" tabindex="-1">×</button></span><span id="cc-41" data-id="cc-41" class="item">Juhi Anand<button type="button" id="cc-button-Juhi-Anand" tabindex="-1">×</button></span></span></div><div class="dropdown-menu"><div class="filter dropdown-item"><input type="text" placeholder="Filter" class="form-control"><button type="button" tabindex="-1">×</button></div><div class="items dropdown-item"><div class="dropdown-item custom-control"><input type="checkbox" id="cc--1-chbx" name="cc" value="" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc--1-chbx" class="custom-control-label">Select All</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-0-chbx" name="cc" value="django_admin" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-0-chbx" class="custom-control-label">Webllisto admin</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-1-chbx" name="cc" value="bhupat_b" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-1-chbx" class="custom-control-label">Bhupat Bheda</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-2-chbx" name="cc" value="richa_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-2-chbx" class="custom-control-label">Richa Singh</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-3-chbx" name="cc" value="anshul_j" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-3-chbx" class="custom-control-label">Anshul Jain</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-4-chbx" name="cc" value="swati_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-4-chbx" class="custom-control-label">Swati Soni</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-5-chbx" name="cc" value="manish_p" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-5-chbx" class="custom-control-label">Manish Patidar</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-6-chbx" name="cc" value="kapil_g" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-6-chbx" class="custom-control-label">Kapil Gupta</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-7-chbx" name="cc" value="shubham_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-7-chbx" class="custom-control-label">Shubham Sahu</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-8-chbx" name="cc" value="azam_a" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-8-chbx" class="custom-control-label">Azam Ali</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-9-chbx" name="cc" value="jitesh_c" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-9-chbx" class="custom-control-label">Jitesh Choudhary</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-10-chbx" name="cc" value="Palash_p" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-10-chbx" class="custom-control-label">Palash Patil</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-11-chbx" name="cc" value="shanti_c" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-11-chbx" class="custom-control-label">Shanti Chouhan</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-12-chbx" name="cc" value="Nilesh_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-12-chbx" class="custom-control-label">Nilesh Shah</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-13-chbx" name="cc" value="Kiran_b" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-13-chbx" class="custom-control-label">Kiran Bagade</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-14-chbx" name="cc" value="venkatesh_e" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-14-chbx" class="custom-control-label">Venkatesh Eleswarapu</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-15-chbx" name="cc" value="sudhir_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-15-chbx" class="custom-control-label">Sudhir Singh</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-16-chbx" name="cc" value="Manish_C" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-16-chbx" class="custom-control-label">Manish Chokotiya</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-17-chbx" name="cc" value="danish_a" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-17-chbx" class="custom-control-label">Danish Ali</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-18-chbx" name="cc" value="shippu_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-18-chbx" class="custom-control-label">Shippu Sharma</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-19-chbx" name="cc" value="tanuj_g" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-19-chbx" class="custom-control-label">Tanuj Gehlot</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-20-chbx" name="cc" value="aditya_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-20-chbx" class="custom-control-label">Aditya Singh</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-21-chbx" name="cc" value="ayush_j" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-21-chbx" class="custom-control-label">Ayush Jaiswal</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-22-chbx" name="cc" value="yashika_v" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-22-chbx" class="custom-control-label">Yashika Varshney</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-23-chbx" name="cc" value="prashant_j" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-23-chbx" class="custom-control-label">Prashant Jain</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-24-chbx" name="cc" value="sunil_j" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-24-chbx" class="custom-control-label">Sunil Jonwar</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-25-chbx" name="cc" value="anil_l" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-25-chbx" class="custom-control-label">Anil Lodha</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-26-chbx" name="cc" value="aayush_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-26-chbx" class="custom-control-label">Aayush Soni</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-27-chbx" name="cc" value="himanshu_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-27-chbx" class="custom-control-label">Himanshu Sharma</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-28-chbx" name="cc" value="apurva_v" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-28-chbx" class="custom-control-label">Apurva Vijayvargiya</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-29-chbx" name="cc" value="asim_m" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-29-chbx" class="custom-control-label">Syed Asim Mahmood</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-30-chbx" name="cc" value="priyanshu_v" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-30-chbx" class="custom-control-label">Priyanshu Vijay</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-31-chbx" name="cc" value="Yuvaraj_D" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-31-chbx" class="custom-control-label">Yuvaraj Deva</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-32-chbx" name="cc" value="shubham_si" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-32-chbx" class="custom-control-label">Shubham Singh</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-33-chbx" name="cc" value="partosh_k" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-33-chbx" class="custom-control-label">Partosh Kumar</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-34-chbx" name="cc" value="rohit_b" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-34-chbx" class="custom-control-label">Rohit Bhatt</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-35-chbx" name="cc" value="deepak_v" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-35-chbx" class="custom-control-label">Deepak Verma</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-36-chbx" name="cc" value="Shonak_S" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-36-chbx" class="custom-control-label">Shonak Sahu</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-37-chbx" name="cc" value="Satyam_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-37-chbx" class="custom-control-label">Satyam Singh</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-38-chbx" name="cc" value="Bhavna_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-38-chbx" class="custom-control-label">Bhavna Shrivastava</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-39-chbx" name="cc" value="shreya_y" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-39-chbx" class="custom-control-label">Shreya Yadav</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-40-chbx" name="cc" value="anjali_t" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-40-chbx" class="custom-control-label">Anjali Torne</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-41-chbx" name="cc" value="Juhi_a" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-41-chbx" class="custom-control-label">Juhi Anand</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-42-chbx" name="cc" value="gaurav_k" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-42-chbx" class="custom-control-label">Gaurav Khandelwal</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-43-chbx" name="cc" value="ajitesh_m" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-43-chbx" class="custom-control-label">Ajitesh Mishra</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-44-chbx" name="cc" value="shubham_j" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-44-chbx" class="custom-control-label">Shubham Joshi</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-45-chbx" name="cc" value="Amit_k" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-45-chbx" class="custom-control-label">Amit Kushwaha</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-46-chbx" name="cc" value="mukesh_b" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-46-chbx" class="custom-control-label">Mukesh Bangar</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-47-chbx" name="cc" value="piyush_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-47-chbx" class="custom-control-label">Piyush Singh</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-48-chbx" name="cc" value="kunal_n" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-48-chbx" class="custom-control-label">Kunal Nigam</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-49-chbx" name="cc" value="akshay_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-49-chbx" class="custom-control-label">Akshay Sharma</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-50-chbx" name="cc" value="alban_s" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-50-chbx" class="custom-control-label">Alban Sheikh</label></div><div class="dropdown-item custom-control"><input type="checkbox" id="cc-51-chbx" name="cc" value="piyush_k" class="custom-control-input custom-checkbox" tabindex="-1"><label for="cc-51-chbx" class="custom-control-label">Piyush Khandelwal</label></div></div></div></div>
-
-                          <span class="messages popover-valid"></span>
-                        </div> 
-                      </div>
-                    </div>
+                  <div class="col-12 col-sm-9 p-0">
+                    <select>
+                      <option class="option_menu" value="">Casual Leave</option>
+                      <option class="option_menu">Casual Leave</option>
+                      <option class="option_menu">Project 2</option>
+                      <option class="option_menu">Project 3</option>
+                    </select>
                   </div>
                 </div>
-
-                <div class="form-group mb-5 reason" id="div_reason">
-                  <label for="exampleFormControlTextarea1">Reason</label>
-                  <div id="example"><p>Webllisto Marketing</p></div>
-                  <script type='text/javascript' src='./assets/js/text-editor.js'></script>  
-                  <script>
-                  new FroalaEditor('div#example', {
-                      toolbarBottom: true
-                  })
-                  </script>
+                <div class="row m-0">
+                  <div class="col-12 col-sm-3 mb-3 mb-sm-0 p-0">
+                    <label>Leave Period</label>
+                  </div>
+                  <div class="col-12 col-sm-9 p-0">
+                    <select>
+                      <option class="option_menu" value="">Full Day</option>
+                      <option class="option_menu">Half Day</option>
+                    </select>
+                  </div>
                 </div>
-
-                <div class="form-group sub_btn">
-                  <button type="submit" id="leaveSubmit" class="submit m-b-0">Submit</button>
+                <div class="row m-0">
+                  <div class="col-12 col-sm-3 mb-3 mb-sm-0 p-0">
+                    <label>From Date</label>
+                  </div>
+                  <div class="col-12 col-sm-9 p-0">
+                    <input type="date" />
+                  </div>
                 </div>
-                
-              </form>
-              
+                <div class="row m-0">
+                  <div class="col-12 col-sm-3 mb-3 mb-sm-0 p-0">
+                    <label>To Date</label>
+                  </div>
+                  <div class="col-12 col-sm-9 p-0">
+                    <input type="date" />
+                  </div>
+                </div>
+              </div>
+              <div class="my-5" style="padding: 0 15px">
+                <div class="row">
+                  <div class="col-12 col-lg-1 mb-3 mb-lg-0 p-0">
+                    <label>Applying To</label>
+                  </div>
+                  <div class="col-12 col-lg-11 p-0 ps-sm-5">
+                    <input readonly type="text" value="Lorem Ipsum" />
+                  </div>
+                </div>
+              </div>
+              <div class="my-5" style="padding: 0 15px">
+                <div class="row">
+                  <div class="col-12 col-lg-1 mb-3 mb-lg-0 p-0">
+                    <label>CC To</label>
+                  </div>
+                  <div class="col-12 col-lg-11 p-0 ps-sm-5">
+                    <select multiple name="cc" id="cc" class="filter-multi-select">
+                        <option value="bear"><img src="./assets/images/dummy-profile.png" alt="profile" class="rounded-circle" width="30px" height="30px" /> <span class="item_name" >Lorem Ipsum</span></option>
+                        <option value="bear1"><img src="./assets/images/dummy-profile.png" alt="profile" class="rounded-circle" width="30px" height="30px" /> <span class="item_name" >Lorem Ipsum</span></option>
+                        <option value="bear2"><img src="./assets/images/dummy-profile.png" alt="profile" class="rounded-circle" width="30px" height="30px" /> <span class="item_name" >Lorem Ipsum</span></option>
+                        <option value="bear3"><img src="./assets/images/dummy-profile.png" alt="profile" class="rounded-circle" width="30px" height="30px" /> <span class="item_name" >Lorem Ipsum</span></option>
+                        <option value="bear4"><img src="./assets/images/dummy-profile.png" alt="profile" class="rounded-circle" width="30px" height="30px" /> <span class="item_name" >Lorem Ipsum</span></option>
+                        <option value="bear5"><img src="./assets/images/dummy-profile.png" alt="profile" class="rounded-circle" width="30px" height="30px" /> <span class="item_name" >Lorem Ipsum</span></option>
+                       
+                      </select>
+                  </div>
+                </div>
+              </div>
+              <div class="my-5" style="padding: 0 15px">
+                <div class="row">
+                  <div class="col-12 col-lg-1 mb-3 mb-lg-0 p-0">
+                    <label>Reason</label>
+                  </div>
+                  <div class="col-12 col-lg-11 p-0 ps-sm-5">
+                    <div id="example"><p>Webllisto Marketing</p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center" > 
+                <button type="submit" class="submit" ><span class="position-relative" >Submit</span></button>
+              </div>
+            </form>
+          </div>
         </div>
-        
-
-       </div>
       </div>
-      
     </div>
-    
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="./assets/js/email-cc.js"></script>
+
+    <script type='text/javascript' src='./assets/js/text-editor.js'></script>  
+    <script src="./assets/js/data-table.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

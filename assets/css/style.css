@@ -91,6 +91,15 @@ p{
   list-style-type: none;
   padding: 0 15px;
 }
+.light_img{
+  display:none
+}
+.menu_wrp li.active .light_img,.menu_wrp li:hover .light_img{
+  display:inline-block
+}
+.menu_wrp li.active .dark_img,.menu_wrp li:hover .dark_img{
+  display:none
+}
 .menu_wrp li {
   text-decoration: none;
 
@@ -113,9 +122,15 @@ p{
   display: block;
 }
 .menu_wrp li.active,
-.menu_wrp li:hover {
+.menu_wrp li:hover
+ {
   /* background-color: #f3f1ef; */
   background-color: #F85046;
+
+}
+.menu_wrp li.active a,
+.menu_wrp li:hover a{
+  color: #ffffff;
 }
 .menu_wrp li a img {
   margin-right: 15px;
@@ -434,12 +449,13 @@ label {
 select,
 input,
 textarea,
-.profile_skils_wrp {
+.profile_skils_wrp,.viewbar {
   border: unset;
   border-bottom: 1px solid #b7b7b7;
   background-color: #ffeed5;
-  /* width: 100%; */
+  width: 100%;
   font-size: 14px;
+  border-radius: unset;
 }
 select:focus,
 select:focus-visible,
@@ -545,7 +561,7 @@ form input,
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 50px 30px;
 }
-.emp_profile_dtl_wrp {
+.emp_profile_dtl_wrp ,.apply_leave_inner{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 40px;
@@ -612,9 +628,10 @@ background-image: url('../images/down-arrow-light.svg');
 background-position: center;
 }
 /* end of settings page css */
-.filter_table_wrp input, {
+.filter_table_wrp input {
     width: 60%;
 }
+
 .down_light_arrow{
   display:none
 }
@@ -690,3 +707,59 @@ background-position: center;
 span a{
   color:black;
 }
+
+.avaiabe_leave_dtl{
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #2CDE00;
+border-radius: 10px;
+padding: 7px 15px;
+width: 300px;
+display: block;
+margin: 0 auto;
+}
+.add_policy_inner{
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.custom_input_wrp{
+  border: 0.5px solid #B7B7B7;
+  padding: 4px;
+}
+.add_policy_inner .custom_input_wrp .fileUpload {
+  position: relative;
+  overflow: hidden;
+  padding: 4px; 
+}
+.add_policy_inner .custom_input_wrp .fileUpload span{
+  background-color: #1b1b1b;
+  color: #ffffff;
+  padding: 7px 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.add_policy_inner .fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+} 
+.add_policy_inner .custom_input_wrp  .f-input{
+  height: 32px;
+  background-color: transparent;
+  width: 77%;
+  padding: 4px;
+  /* max-width: 300px; */
+  float: left;
+  padding: 0 14px;
+  border: unset;
+  }
+

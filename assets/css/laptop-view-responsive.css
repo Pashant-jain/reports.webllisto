@@ -10,6 +10,9 @@
 }
 } /* 1199 */
 @media only screen and (max-width: 1199px) {
+  .apply_leave_inner{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .sidebar .sidebar_toggler {
     transform: rotate(180deg);
   }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href='./assets/css/text-editor.css' rel='stylesheet' type='text/css' />
 
     <link
       rel="stylesheet"
@@ -19,23 +20,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/filter_multi_select.css" />
-
-    <link href='./assets/css/text-editor.css' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="./assets/css/data-table.css" />
     <link rel="stylesheet" href="./assets/css/calander.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/laptop-view-responsive.css" />
     <link rel="stylesheet" href="./assets/css/tablet-view-responsive.css" />
     <link rel="stylesheet" href="./assets/css/mobile-view-responsive.css" />
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./assets/js/filter-multi-select-bundle.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" rel="stylesheet"/>
   </head>
   <body>
     <div class="page_wrp timesheet_page_wrp">
@@ -157,86 +149,65 @@
         </div>
       </aside>
       <div class="contant">
-        <div class="addtimesheet_wrp">
-          <h2 class="page_title">Add Timesheet</h2>
-          <p class="subtitle mb-3">
-            Add report with the help of the fields mentioned below.
-          </p>
-          <div class="page_inner_wrp mt-5">
-           
-
-            <form class="apply_leave_form mt-3 mt-sm-5">
-                <div class="mb-5" style="padding: 0 15px">
-                    <div class="row">
-                      <div class="col-12 col-lg-2 mb-3 mb-lg-0 p-0">
-                        <label>Select Project </label>
-                      </div>
-                      <div class="col-12 col-lg-10 p-0 px-sm-1">
-                        <select>
-                            <option class="option_menu" value="">Webllisto Marketing</option>
-                            <option class="option_menu">Webllisto Marketing</option>
-                            <option class="option_menu">Project 2</option>
-                            <option class="option_menu">Project 3</option>
-                          </select>
-                      </div>
-                    </div>
-                  </div>
-              <div class="apply_leave_inner">
-                
-                <div class="row m-0">
-                  <div class="col-12 col-sm-3 mb-3 mb-sm-0 p-0">
-                    <label>Start Time</label>
-                  </div>
-                  <div class="col-12 col-sm-9 p-0">
-                    <input type="time" />
-                  </div>
-                </div>
-                <div class="row m-0">
-                  <div class="col-12 col-sm-3 mb-3 mb-sm-0 p-0">
-                    <label>End Time</label>
-                  </div>
-                  <div class="col-12 col-sm-9 p-0">
-                    <input type="time" />
-                  </div>
-                </div>
-              </div>
-             
-              
-              <div class="my-5" style="padding: 0 15px">
-                <div class="row">
-                  <div class="col-12 col-lg-2 mb-3 mb-lg-0 p-0">
-                    <label>Task Details</label>
-                  </div>
-                  <div class="col-12 col-lg-10 p-0 px-sm-1">
-                    <div id="example"><p>Webllisto Marketing</p></div>
-                  </div>
-                </div>
-              </div>
-              <div class="mb-5" style="padding: 0 15px">
-                <div class="row">
-                  <div class="col-12 col-lg-2 mb-3 mb-lg-0 p-0">
-                    <label>Task Status</label>
-                  </div>
-                  <div class="col-12 col-lg-10 p-0 px-sm-1">
-                    <select>
-                        <option class="option_menu" value="" disabled>Select Task Status</option>
-                        <option class="option_menu">Completed</option>
-                        <option class="option_menu">In Progress</option>
-                      </select>
-                  </div>
-                </div>
-              </div>
-              <div class="text-center" > 
-                <button type="submit" class="submit" ><span class="position-relative" >Submit</span></button>
-              </div>
-            </form>
+       <div class="addtimesheet_wrp" >
+        <h2 class="page_title">Add Timesheet</h2>
+        <p class="subtitle mb-3">Add report with the help of the fields mentioned below.</p>
+        <div  class="page_inner_wrp mt-5">
+          <div class="form-group bottom_margin">
+            <label htmlFor="name bt-2">Select Project </label>
+            <select class="sel_proj">
+              <option class="option_menu" value="">Webllisto Marketing</option>
+              <option class="option_menu">Project 1</option>
+              <option class="option_menu">Project 2</option>
+              <option class="option_menu">Project 3</option>
+            </select>
+          </div>
+          <div class="time bottom_margin">
+            <div class="start_time ">
+              <label for="start_time" class="col-form-label">Start Time</label>
+              <input type='time' class="form-control sel_proj start_time_ans" id="starttime" />
+            </div>
+            <div class="start_time end_time_resp ">
+              <label for="end_time" class="col-form-label">End Time</label> 
+              <input type='time' class="form-control sel_proj start_time_ans " id="date" />
+            </div>
+          </div>
+          <div class="task_details">
+            <label for="task_detail" class="col-form-label">Task Details</label>
+            <div id="example"><p>Webllisto Marketing</p></div>
+            <script type='text/javascript' src='./assets/js/text-editor.js'></script>  
+            <script>
+              new FroalaEditor('div#example', {
+                toolbarBottom: true
+              })
+            </script>
+          </div>
+          
+          <div class="form-group bottom_margin">
+            <label htmlFor="name bt-2">Task Status </label>
+            <select class="task_status">
+              <option class="option_menu" value="">Select Task Status</option>
+              <option class="option_menu">Done</option>
+              <option class="option_menu">In-progress</option>
+            </select>
+          </div>
+          <div class="sub_btn_wrp">
+            <button type="button" class="submit fw-bold"><span class="position-relative" >Submit</span></button>
           </div>
         </div>
+       </div>
       </div>
+      
     </div>
-
-    <script type='text/javascript' src='./assets/js/text-editor.js'></script>  
-    <script src="./assets/js/data-table.js"></script>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

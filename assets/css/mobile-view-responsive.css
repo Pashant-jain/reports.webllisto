@@ -1,5 +1,8 @@
 @media only screen and (max-width: 649px) {
- 
+  .avaiabe_leave_dtl{
+    width: 100%;
+    padding: 7px;
+  }
 } /* 480 */
 @media only screen and (max-width: 479px) {
 
@@ -9,7 +12,7 @@
   h3{
     font-size: 13px;
   }
-  h4,select, input, textarea, .profile_skils_wrp,label{
+  h4,select, input, textarea, .profile_skils_wrp,label,.avaiabe_leave_dtl{
     font-size: 12px;
   }
   p{
@@ -90,6 +93,10 @@
   bottom:20px;
   padding:0 8px;
 }
+.page_inner_wrp{
+  padding: 15px;
+}
+
 } /* 375 */
 @media only screen and (max-width: 374px) {
 } /* 320 */
