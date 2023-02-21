@@ -57,7 +57,7 @@ p{
   height: 100vh;
   padding: 15px 15px 15px 30px;
   overflow: auto;
-  z-index: 9999999;
+  z-index: 999;
 }
 
 /* .profile_wrp img{
@@ -411,13 +411,13 @@ p{
 /* end of page inner css */
 
 .table_action_btn {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #1b1b1b;
   border: 1px solid #f85046;
   border-radius: 10px;
   background-color: transparent;
-  padding: 7px 10px;
+  padding: 4px 8px;
 }
 .table_action_btn:after {
   background-image: url("../images/down-arrow.svg");
@@ -658,7 +658,7 @@ background-position: center;
 .client_list_wrp .submit{
   padding: 11px 28px;
 }
-
+/* end of client-list-css */
 /* employee-leave-balance-list-css */
 .emp_leave_balance_wrp .update_leave_btn {
   font-size: 14px;
@@ -688,6 +688,7 @@ background-position: center;
   position: absolute;
   right: 25px;
   top: 18px;
+  z-index: 1;
 }
 .client_list_add_client_wrp .submit{
   padding: 11px 28px;
@@ -720,7 +721,7 @@ display: block;
 margin: 0 auto;
 }
 .add_policy_inner{
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
   padding: 30px 0;
 }
@@ -728,11 +729,14 @@ margin: 0 auto;
 .custom_input_wrp{
   border: 0.5px solid #B7B7B7;
   padding: 4px;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .add_policy_inner .custom_input_wrp .fileUpload {
   position: relative;
   overflow: hidden;
-  padding: 4px; 
+  /* padding: 4px;  */
 }
 .add_policy_inner .custom_input_wrp .fileUpload span{
   background-color: #1b1b1b;
@@ -740,6 +744,8 @@ margin: 0 auto;
   padding: 7px 10px;
   font-size: 14px;
   font-weight: 600;
+  display: block;
+    text-align: center;
 }
 .add_policy_inner .fileUpload input.upload {
   position: absolute;
@@ -763,3 +769,36 @@ margin: 0 auto;
   border: unset;
   }
 
+/* modal css */
+.modal{
+  background: rgba(255, 246, 233, 0.85);
+  color: #ffffff;
+}
+.modal-dialog {
+  min-width: 650px;
+  margin: auto;
+}
+.modal-content{
+  background: #F85046;
+    box-shadow: 0px 4px 34px #f85046;
+    border-radius: 20px;
+    padding:15px;
+    position:relative;
+    border: unset;
+}
+.modal_close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: unset;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 21px;
+}
+.modal-body{
+  padding: 30px 0;
+}
+.modal-body h2{
+  font-weight: 600;
+}
+/* end of modal css */

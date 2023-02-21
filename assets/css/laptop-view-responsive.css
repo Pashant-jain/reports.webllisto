@@ -123,6 +123,9 @@
 .contant{
   margin-right:unset;
 }
+.add_policy_inner {
+    width: 100%;
+}
 } /* 1024 */
 @media only screen and (max-width: 991px) {
   .profile_inner_lft{
