@@ -11,6 +11,9 @@
 .change_password_inner {
     width: unset;
 }
+.client_list_add_client_wrp .filter_table_btn_wrp{
+    position: unset;
+}
 } /* 768 */
 @media only screen and (max-width: 767px) {
 
