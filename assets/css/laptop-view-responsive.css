@@ -1,4 +1,15 @@
 @media only screen and (max-width: 1336px) {
+  .dashboard_cards_wrp{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .expand_contant .dashboard_cards_wrp{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .announcement_card {
+    min-height: 300px;
+}
+} /* 1199 */
+@media only screen and (max-width: 1199px) {
   .sidebar .sidebar_toggler {
     transform: rotate(180deg);
   }
@@ -92,8 +103,7 @@
     transform: rotate(00deg);
   }
   /* expanded sidebar css */
-} /* 1199 */
-@media only screen and (max-width: 1199px) {
+  /* prashant jain */
   .filter_table_wrp .filter_table_inner  {
     width: 1000px !important;
   }
