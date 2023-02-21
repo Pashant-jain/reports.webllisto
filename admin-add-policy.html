@@ -158,83 +158,42 @@
       </aside>
       <div class="contant">
         <div class="addtimesheet_wrp">
-          <h2 class="page_title">Add Timesheet</h2>
+          <h2 class="page_title">Add Policy</h2>
           <p class="subtitle mb-3">
-            Add report with the help of the fields mentioned below.
+            Lorem ipsum dolor sit amet consectetur. Egestas nulla purus vel sed.
           </p>
-          <div class="page_inner_wrp mt-5">
-           
-
-            <form class="apply_leave_form mt-3 mt-sm-5">
-                <div class="mb-5" style="padding: 0 15px">
-                    <div class="row">
-                      <div class="col-12 col-lg-2 mb-3 mb-lg-0 p-0">
-                        <label>Select Project </label>
-                      </div>
-                      <div class="col-12 col-lg-10 p-0 px-sm-1">
-                        <select>
-                            <option class="option_menu" value="">Webllisto Marketing</option>
-                            <option class="option_menu">Webllisto Marketing</option>
-                            <option class="option_menu">Project 2</option>
-                            <option class="option_menu">Project 3</option>
-                          </select>
-                      </div>
+          <div class="page_inner_wrp mt-5 min-vh-100">
+            <div class="add_policy_inner" >
+                <div class="row m-0 align-items-center">
+                    <div class="col-12 col-sm-2 mb-3 mb-sm-0 p-0">
+                      <label>Upload PDF</label>
+                    </div>
+                    <div class="col-12 col-sm-10 p-0">
+                        <div class="custom_input_wrp" >
+                            <input id="uploadFile" class="f-input" placeholder="No File Chosen">
+                        <div class="fileUpload  btn--browse">
+                            <span>Choose File
+                              
+                            </span>
+                            <input id="uploadBtn" type="file" accept=".pdf" class="upload"/>
+                        </div>
+                        </div>
                     </div>
                   </div>
-              <div class="apply_leave_inner">
-                
-                <div class="row m-0">
-                  <div class="col-12 col-sm-3 mb-3 mb-sm-0 p-0">
-                    <label>Start Time</label>
-                  </div>
-                  <div class="col-12 col-sm-9 p-0">
-                    <input type="time" />
-                  </div>
-                </div>
-                <div class="row m-0">
-                  <div class="col-12 col-sm-3 mb-3 mb-sm-0 p-0">
-                    <label>End Time</label>
-                  </div>
-                  <div class="col-12 col-sm-9 p-0">
-                    <input type="time" />
-                  </div>
-                </div>
-              </div>
-             
-              
-              <div class="my-5" style="padding: 0 15px">
-                <div class="row">
-                  <div class="col-12 col-lg-2 mb-3 mb-lg-0 p-0">
-                    <label>Task Details</label>
-                  </div>
-                  <div class="col-12 col-lg-10 p-0 px-sm-1">
-                    <div id="example"><p>Webllisto Marketing</p></div>
-                  </div>
-                </div>
-              </div>
-              <div class="mb-5" style="padding: 0 15px">
-                <div class="row">
-                  <div class="col-12 col-lg-2 mb-3 mb-lg-0 p-0">
-                    <label>Task Status</label>
-                  </div>
-                  <div class="col-12 col-lg-10 p-0 px-sm-1">
-                    <select>
-                        <option class="option_menu" value="" disabled>Select Task Status</option>
-                        <option class="option_menu">Completed</option>
-                        <option class="option_menu">In Progress</option>
-                      </select>
-                  </div>
-                </div>
-              </div>
-              <div class="text-center" > 
-                <button type="submit" class="submit" ><span class="position-relative" >Submit</span></button>
-              </div>
-            </form>
-          </div>
+                  <div class="text-center mt-5" >
+                    <button type="submit" class="submit" ><Span class="position-relative" >Submit</Span></button>
+                  </div> 
+            </div>
         </div>
       </div>
     </div>
+<script>
+    
+    document.getElementById("uploadBtn").onchange = function () {
+    document.getElementById("uploadFile").value = this.value.replace("C:\\fakepath\\", "");
+};
 
+</script>
     <script type='text/javascript' src='./assets/js/text-editor.js'></script>  
     <script src="./assets/js/data-table.js"></script>
     <script src="./assets/js/main.js"></script>

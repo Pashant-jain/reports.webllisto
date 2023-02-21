@@ -1405,7 +1405,54 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="./assets/js/chart-loader.js"></script>
-
     <script src="./assets/js/main.js"></script>
+    <script>
+      
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+  var data = google.visualization.arrayToDataTable
+      ([['month', 'works'],
+        ['Jan', 180],
+        ['feb', 120],
+        ['mar', 100],
+        ['apr', 250],
+        ['Jan', 300],
+        ['Jan', 130],
+        ['Jan', 300],
+        ['Jan', 144],
+        ['Jan', 145],
+        ['Jan', 265],
+        ['Jan', 275],
+        ['Jan', 400],
+  ]);
+
+  var options = {
+    legend: 'none',
+    // hAxis: { minValue: 0, maxValue: 9 },
+    vAxis: {gridlines: { count: 0}},
+//     vAxis:{
+//    baselineColor: '#000',
+//    gridlineColor: '#000',
+//   //  textPosition: 'none',
+//    gridlines: { count: 0}
+//  },
+//  hAxis:{
+//    baselineColor: '#000',
+//    gridlineColor: '#000',
+//   //  textPosition: 'none',
+//    gridlines: { count: 0}
+//  },
+    colors: ['#F85046'],
+    backgroundColor: { fill:'transparent' },
+    pointSize: 7,
+    pointShape: { type: 'circle', sides: 4, colors:'#000' },
+    responsive: true,
+  };
+
+  var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+  chart.draw(data, options);
+}
+    </script>
   </body>
 </html>
