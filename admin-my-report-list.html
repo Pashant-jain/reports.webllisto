@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/data-table.css" />
+    <link rel="stylesheet" href="./assets/css/calander.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/laptop-view-responsive.css" />
+    <link rel="stylesheet" href="./assets/css/tablet-view-responsive.css" />
+    <link rel="stylesheet" href="./assets/css/mobile-view-responsive.css" />
+  </head>
+  <body>
+    <div class="page_wrp timesheet_page_wrp">
+      <aside id="separator-sidebar" class="sidebar" aria-label="Sidebar">
+        <div class="sidebar_inner">
+          <div
+            class="sidebar_head d-flex justify-content-between align-items-center"
+          >
+            <figure class="m-0"><h1 class="m-0">Logo</h1></figure>
+            <img
+              src="./assets/images/sidebar_arrow.svg"
+              alt="sidebar toggle"
+              width="20px"
+              height="20px"
+              class="sidebar_toggler"
+            />
+          </div>
+          <div class="profile_wrp py-5">
+            <figure class="text-center m-0">
+              <img
+                src="./assets/images/dummy-profile.png"
+                alt="dummy profile"
+                class="profile_img"
+              />
+            </figure>
+            <div
+              class="profile_icon_wrp d-flex justify-content-center align-items-center py-3"
+            >
+              <button class="profile_icon">
+                <img
+                  src="./assets/images/icons/settings_icon.svg"
+                  alt="Settings"
+                  class="w-4"
+                />
+              </button>
+              <div class="notification_btn mx-3">
+                <button class="profile_icon">
+                  <img
+                    src="./assets/images/icons//notification_icon.svg"
+                    alt="Notification"
+                    class="w-4"
+                  />
+                </button>
+                <div class="notification_wrp"></div>
+              </div>
+              <button class="profile_icon">
+                <img
+                  src="./assets/images/icons/logout_icon.svg"
+                  alt="Log Out"
+                  class="w-4"
+                />
+              </button>
+            </div>
+            <h2 class="text-center">Lorem Ipsum</h2>
+            <p class="subtitle text-center">Designation</p>
+          </div>
+          <ul class="menu_wrp">
+            <li class="active">
+              <a href="#"
+                ><img
+                  src="./assets/images/icons/dashboard_menu_icon.svg"
+                  alt="Dashboard Icon" /><span>Dashboard</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow"
+              /></a>
+
+              <ul class="submenu">
+                <li>
+                  <a href="#"><span>Dashboard</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Dashboard</span></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/icons/dashboard_menu_icon.svg"
+                  alt="Dashboard Icon"
+                /><span>Dashboard</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/icons/dashboard_menu_icon.svg"
+                  alt="Dashboard Icon"
+                /><span>Dashboard</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/icons/dashboard_menu_icon.svg"
+                  alt="Dashboard Icon"
+                /><span>Dashboard</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/icons/dashboard_menu_icon.svg"
+                  alt="Dashboard Icon"
+                /><span>Leave History</span></a
+              >
+            </li>
+          </ul>
+          <div class="text-center mt-5">
+            <button type="button" class="help_btn">
+              <img
+                src="./assets/images/icons/help_icon.svg"
+                alt="Help Icon Icon"
+              /><span>Help Center</span>
+            </button>
+          </div>
+        </div>
+      </aside>
+      <div class="contant">
+        <div class="my_leave_review_wrp">
+          <h2 class="page_title">My Reports List</h2>
+          <p class="subtitle mb-3">
+            List of your reports with server side datatable.
+          </p>
+          <div class="page_inner_wrp mt-5">
+            <div
+              class="filter_table_wrp pb-3"
+            >
+              <div class="filter_table_inner d-flex justify-content-between align-items-center " >
+                <div
+                  class="filter_table_inbox d-flex justify-content-between align-items-center gap-3 w-75"
+                >
+                  <div>
+                    <label>
+                      Select Project :
+                      <select style="width: 135px">
+                        <option value="Webllisto Marketing">
+                          Webllisto MarketingWebllisto MarketingWebllisto Marketing
+                        </option>
+                        <option value="Webllisto Marketing">
+                          Webllisto Marketing
+                        </option>
+                        <option value="Webllisto Marketing">
+                          Webllisto Marketing
+                        </option>
+                        <option value="Webllisto Marketing">
+                          Webllisto Marketing
+                        </option>
+                      </select>
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      Start Date :  
+                      <input type="date" />
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      End Date : 
+                      <input type="date" />
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  class="filter_table_btn_wrp d-flex justify-content-end align-items-center w-25"
+                >
+                  <button class="btn Filter">Filter</button>
+                  <button class="btn Regularize">Regularize</button>
+                </div>
+              </div>
+            </div>
+            <table
+              id="list_table"
+              class="row-border cell-border report_list_table table_with_action "
+              style="width: 100%"
+            >
+              <thead>
+                <tr>
+                  <th style="min-width: 90px;" >Project</th>
+                  <th style="max-width:70px" >Start Time</th>
+                  <th style="max-width:60px">End Time</th>
+                  <th>Date</th>
+                  <th style="min-width:130px" >Description</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span>Astroon NFT</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>2023-02-10</span></td>
+                  <td style="max-width: 200px">
+                    <span>NFT market place in</span>
+                  </td>
+                  <td><span>Completed</span></td>
+                  <td>
+                    <span
+                      ><div class="table_action_drobdown text-center">
+                        <button
+                          class="table_action_btn"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Action
+                        </button>
+                        <ul
+                          class="dropdown-menu table_action_menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>Edit</li>
+                          <li>Delete</li>
+                        </ul>
+                      </div></span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td><span>Astroon NFT</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>2023-02-10</span></td>
+                  <td style="max-width: 200px">
+                    <span>NFT market place in</span>
+                  </td>
+                  <td><span>Completed</span></td>
+                  <td>
+                    <span
+                      ><div class="table_action_drobdown text-center">
+                        <button
+                          class="table_action_btn"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Action
+                        </button>
+                        <ul
+                          class="dropdown-menu table_action_menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>Edit</li>
+                          <li>Delete</li>
+                        </ul>
+                      </div></span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td><span>Astroon NFT</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>2023-02-10</span></td>
+                  <td style="max-width: 200px">
+                    <span>NFT market place in</span>
+                  </td>
+                  <td><span>Completed</span></td>
+                  <td>
+                    <span
+                      ><div class="table_action_drobdown text-center">
+                        <button
+                          class="table_action_btn"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Action
+                        </button>
+                        <ul
+                          class="dropdown-menu table_action_menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>Edit</li>
+                          <li>Delete</li>
+                        </ul>
+                      </div></span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td><span>Astroon NFT</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>2023-02-10</span></td>
+                  <td style="max-width: 200px">
+                    <span>NFT market place in</span>
+                  </td>
+                  <td><span>Completed</span></td>
+                  <td>
+                    <span
+                      ><div class="table_action_drobdown text-center">
+                        <button
+                          class="table_action_btn"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Action
+                        </button>
+                        <ul
+                          class="dropdown-menu table_action_menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>Edit</li>
+                          <li>Delete</li>
+                        </ul>
+                      </div></span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td><span>Astroon NFT</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>2023-02-10</span></td>
+                  <td style="max-width: 200px">
+                    <span>NFT market place in</span>
+                  </td>
+                  <td><span>Completed</span></td>
+                  <td>
+                    <span
+                      ><div class="table_action_drobdown text-center">
+                        <button
+                          class="table_action_btn"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Action
+                        </button>
+                        <ul
+                          class="dropdown-menu table_action_menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>Edit</li>
+                          <li>Delete</li>
+                        </ul>
+                      </div></span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td><span>Astroon NFT</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>2023-02-10</span></td>
+                  <td style="max-width: 200px">
+                    <span>NFT market place in</span>
+                  </td>
+                  <td><span>Completed</span></td>
+                  <td>
+                    <span
+                      ><div class="table_action_drobdown text-center">
+                        <button
+                          class="table_action_btn"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Action
+                        </button>
+                        <ul
+                          class="dropdown-menu table_action_menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>Edit</li>
+                          <li>Delete</li>
+                        </ul>
+                      </div></span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td><span>Astroon NFT</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>2023-02-10</span></td>
+                  <td style="max-width: 200px">
+                    <span>NFT market place in</span>
+                  </td>
+                  <td><span>Completed</span></td>
+                  <td>
+                    <span
+                      ><div class="table_action_drobdown text-center">
+                        <button
+                          class="table_action_btn"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Action
+                        </button>
+                        <ul
+                          class="dropdown-menu table_action_menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>Edit</li>
+                          <li>Delete</li>
+                        </ul>
+                      </div></span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td><span>Astroon NFT</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>2023-02-10</span></td>
+                  <td style="max-width: 200px">
+                    <span>NFT market place in</span>
+                  </td>
+                  <td><span>Completed</span></td>
+                  <td>
+                    <span
+                      ><div class="table_action_drobdown text-center">
+                        <button
+                          class="table_action_btn"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Action
+                        </button>
+                        <ul
+                          class="dropdown-menu table_action_menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>Edit</li>
+                          <li>Delete</li>
+                        </ul>
+                      </div></span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td><span>Astroon NFT</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>13:15:00</span></td>
+                  <td><span>2023-02-10</span></td>
+                  <td style="max-width: 200px">
+                    <span>NFT market place in</span>
+                  </td>
+                  <td><span>Completed</span></td>
+                  <td>
+                    <span
+                      ><div class="table_action_drobdown text-center">
+                        <button
+                          class="table_action_btn"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Action
+                        </button>
+                        <ul
+                          class="dropdown-menu table_action_menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>Edit</li>
+                          <li>Delete</li>
+                        </ul>
+                      </div></span
+                    >
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../files/assets/pages/advance-elements/custom-picker.js"
+    ></script>
+    <script src="./assets/js/data-table.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

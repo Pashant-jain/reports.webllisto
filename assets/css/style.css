@@ -244,7 +244,8 @@ p{
 /* dashboard  page css */
 .dashboard_wrp,
 .addtimesheet_wrp,
-.settings_wrp,.apply_leave_wrp, .client_list_wrp, .emp_leave_balance_wrp, .client_list_add_client_wrp, .employee_list_wrp, .past_employee_list_wrp, .leave_review_wrp{
+.settings_wrp,.apply_leave_wrp, .client_list_wrp, .emp_leave_balance_wrp, .client_list_add_client_wrp, .employee_list_wrp, .past_employee_list_wrp, .leave_review_wrp,
+.my_leave_review_wrp, .admin_report_list_wrp, .regularization_review_wrp, .regularization_review_history_wrp, .leave_history_wrp{
   background-color: #fff6e9;
   border-radius: 50px;
   padding: 30px;
@@ -712,6 +713,46 @@ span a{
 }
 /* end of employee-list-css */
 
+/* regularization-review-css */
+.regularization_review_wrp
+  .page_inner_wrp{
+  position:relative;
+}
+.regularization_review_wrp
+ .filter_table_btn_wrp{
+  position: absolute;
+  right: 6px;
+  top: 18px;
+}
+/* end of regularization-review-css */
+
+/* regularization-review-history-css */
+.regularization_review_history_wrp
+  .page_inner_wrp{
+  position:relative;
+}
+.regularization_review_history_wrp
+ .filter_table_btn_wrp{
+  position: absolute;
+  right: 6px;
+  top: 18px;
+}
+/* end of regularization-review-history-css */
+
+/* past employee list css */
+.past_employee_list_wrp
+  .page_inner_wrp{
+  position:relative;
+}
+.past_employee_list_wrp
+ .filter_table_btn_wrp{
+  position: absolute;
+  right: 6px;
+  top: 18px;
+}
+/* end of past employee list css */
+
+
 .avaiabe_leave_dtl{
   font-size: 14px;
   font-weight: 600;
@@ -778,7 +819,7 @@ margin: 0 auto;
   color: #ffffff;
 }
 .modal-dialog {
-  min-width: 650px;
+  min-width: 700px;
   margin: auto;
 }
 .modal-content{
@@ -797,11 +838,40 @@ margin: 0 auto;
   background-color: transparent;
   color: #ffffff;
   font-size: 21px;
+  z-index: 9;
 }
-.modal-body{
+.conform_export_wrp{
   padding: 30px 0;
 }
 .modal-body h2{
   font-weight: 600;
 }
+.modal-body .popup_select_wrp{
+  width: 60%;
+  margin: 0 auto;
+}
+.modal-body .popup_select_wrp label{
+  color: #ffffff;
+}
+.modal-body .popup_select_wrp select{
+  background-color: #F85046;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.pupup_btn{
+  border-radius: 50px;
+  padding: 8px 30px;
+  margin: 0 10px;
+}
+.dark_btn{
+  background-color: #1b1b1b !important;
+  border-color: #1b1b1b !important;
+}
+.dark_btn:hover{
+  border-color: #fff !important;
+}
+.outline_btn:hover{
+  background-color: #1b1b1b !important;
+}
+
 /* end of modal css */
