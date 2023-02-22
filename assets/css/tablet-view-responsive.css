@@ -14,6 +14,14 @@
 .client_list_add_client_wrp .filter_table_btn_wrp{
     position: unset;
 }
+.modal-dialog {
+  min-width: 85%;
+  max-width:85%;
+  margin: auto;
+}
+.login_inner{
+  width: 100%;
+}
 } /* 768 */
 @media only screen and (max-width: 767px) {
 
@@ -28,5 +36,24 @@
 }
 .profile_inner_lft{
    display:block
+  }
+  .client_list_add_client_wrp .filter_table_btn_wrp{
+    justify-content: center !important;
+  }
+  /* .modal-body .popup_select_wrp{
+    width: 100%;
+  } */
+  .login_wrp{
+    position:unset;
+    width:100%;
+    border-radius:25px;
+  }
+  .login_page_wrp{
+    background-image:unset;
+  }
+  .login_right_wrp{
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
 } /* 650 */
