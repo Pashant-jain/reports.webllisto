@@ -244,7 +244,7 @@ p{
 /* dashboard  page css */
 .dashboard_wrp,
 .addtimesheet_wrp,
-.settings_wrp,.apply_leave_wrp, .client_list_wrp, .emp_leave_balance_wrp, .client_list_add_client_wrp, .employee_list_wrp{
+.settings_wrp,.apply_leave_wrp, .client_list_wrp, .emp_leave_balance_wrp, .client_list_add_client_wrp, .employee_list_wrp, .past_employee_list_wrp, .leave_review_wrp{
   background-color: #fff6e9;
   border-radius: 50px;
   padding: 30px;
@@ -678,6 +678,7 @@ background-position: center;
   right: 25px;
   top: 18px;
 }
+/* enf of employee-leave-balance-list-css */
 
 /* client-list-add-client-css */
 .client_list_add_client_wrp
@@ -694,7 +695,7 @@ background-position: center;
 .client_list_add_client_wrp .submit{
   padding: 11px 28px;
 }
-
+/* enf of client-list-add-client-css */
 /* employee-list-css */
 .employee_list_wrp
   .page_inner_wrp{
@@ -709,6 +710,7 @@ background-position: center;
 span a{
   color:black;
 }
+/* end of employee-list-css */
 
 .avaiabe_leave_dtl{
   font-size: 14px;

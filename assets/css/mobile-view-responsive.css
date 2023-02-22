@@ -72,7 +72,8 @@
 .table_card  table{
   width: 257px;
 }
-.dashboard_wrp, .addtimesheet_wrp,.apply_leave_wrp,.settings_wrp, .client_list_wrp, .emp_leave_balance_wrp, .client_list_add_client_wrp, .employee_list_wrp{
+.dashboard_wrp, .addtimesheet_wrp,.apply_leave_wrp,.settings_wrp, .client_list_wrp, .emp_leave_balance_wrp, .client_list_add_client_wrp, .employee_list_wrp, .past_employee_list_wrp,
+.leave_review_wrp{
   padding: 15px;
   border-radius: 35px;
 }
