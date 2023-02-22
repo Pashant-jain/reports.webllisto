@@ -867,11 +867,11 @@
         <p class="mb-1" >By default the filter is set to none. So all the records will be exported.</p>
         <p>Change the filter settings if you want to export only specific set of<br> records.</p>
         <div>
-          <div class="row  popup_select_wrp">
+          <div class="row  popup_select_wrp m-0">
             <div class="col-12 col-sm-6 mb-3 mb-sm-0 p-0">
-              <label> Select Project Type </label>
+              <label>Select Way of Communication</label>
             </div>
-            <div class="col-12 col-sm-6 p-0">
+            <div class="col-12 col-sm-6 p-0 text-sm-start ">
               <select>
                 <option class="option_menu" value="">Casual Leave</option>
                 <option class="option_menu">Casual Leave</option>
@@ -899,24 +899,22 @@
           <button type="button" class="close modal_close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <div class="modal-body text-center">
+          <div class="modal-body">
            <div class="conform_import_wrp" >
-            <h2 class="mb-4" >Confirm</h2>
+            <h2 class="mb-4 text-center" >Confirm</h2>
             <h6>Points To Be Noted -</h6>
+            <ul class="mb-4">
+              <li>Please follow the general coventions while filling the email column.(@ and .com are compulsory)</li>
+              <li>Keep the entries in the name column unique.</li>
+              <li>The columns zip_code(6 digits) and contact_number(10 digits) should only contain numbers.</li>
+              <li>The way_of_communication column should have entries from the already defined set of options.(Like - SLACK)</li>
+              <li>Please upload only .csv or .xlsx files.</li>
+            </ul>
             <div>
-              <div class="row  popup_select_wrp">
-                <div class="col-12 col-sm-6 mb-3 mb-sm-0 p-0">
-                  <label> Select Project Type </label>
-                </div>
-                <div class="col-12 col-sm-6 p-0">
-                  <select>
-                    <option class="option_menu" value="">Casual Leave</option>
-                    <option class="option_menu">Casual Leave</option>
-                    <option class="option_menu">Project 2</option>
-                    <option class="option_menu">Project 3</option>
-                  </select>
-                </div>
-              </div>
+              afas
+            </div>
+            <div>
+             
               <div class="text-center mt-3 mt-sm-5" >
                 <button type="button" class="btn pupup_btn outline_btn" >Export</button>
                 <button type="button" class="btn pupup_btn dark_btn" data-dismiss="modal" >Cancel</button>

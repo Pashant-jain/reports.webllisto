@@ -40,9 +40,9 @@
   .client_list_add_client_wrp .filter_table_btn_wrp{
     justify-content: center !important;
   }
-  .modal-body .popup_select_wrp{
+  /* .modal-body .popup_select_wrp{
     width: 100%;
-  }
+  } */
   .login_wrp{
     position:unset;
     width:100%;

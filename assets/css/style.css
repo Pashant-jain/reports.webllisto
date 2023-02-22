@@ -481,7 +481,7 @@ textarea:active {
   border: unset;
   padding: 7px 19px;
   border-radius: 10px;
-  border: 1px solid;
+  border: 0.5px solid;
 }
 .Regularize {
   background-color: #f85046;
@@ -782,7 +782,7 @@ margin: 0 auto;
   color: #ffffff;
 }
 .modal-dialog {
-  min-width: 700px;
+  min-width: 800px;
   margin: auto;
 }
 .modal-content{
@@ -809,10 +809,10 @@ margin: 0 auto;
 .modal-body h2{
   font-weight: 600;
 }
-.modal-body .popup_select_wrp{
+/* .modal-body .popup_select_wrp{
   width: 60%;
   margin: 0 auto;
-}
+} */
 .modal-body .popup_select_wrp label{
   color: #ffffff;
 }
@@ -835,6 +835,15 @@ margin: 0 auto;
 }
 .outline_btn:hover{
   background-color: #1b1b1b !important;
+}
+.conform_import_wrp ul{
+  list-style-type: auto;
+  padding-left:15px ;
+}
+.conform_import_wrp ul li{
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 300;
 }
 
 /* end of modal css */
@@ -933,5 +942,8 @@ margin: 0 auto;
   font-weight: 600;
   color: #1b1b1b;
   text-decoration: unset;
+}
+.popup_select_wrp select{
+  width: 230px;
 }
 /* login page css */
