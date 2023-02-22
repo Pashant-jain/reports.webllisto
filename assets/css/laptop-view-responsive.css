@@ -10,6 +10,9 @@
 }
 } /* 1199 */
 @media only screen and (max-width: 1199px) {
+  .container-fluid{
+    padding: 0 15px;
+  }
   .apply_leave_inner{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -125,6 +128,9 @@
 }
 .add_policy_inner {
     width: 100%;
+}
+.login_inner{
+  width: 80%;
 }
 } /* 1024 */
 @media only screen and (max-width: 991px) {

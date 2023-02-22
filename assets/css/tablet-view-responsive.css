@@ -19,6 +19,9 @@
   max-width:85%;
   margin: auto;
 }
+.login_inner{
+  width: 100%;
+}
 } /* 768 */
 @media only screen and (max-width: 767px) {
 
@@ -39,5 +42,18 @@
   }
   .modal-body .popup_select_wrp{
     width: 100%;
+  }
+  .login_wrp{
+    position:unset;
+    width:100%;
+    border-radius:25px;
+  }
+  .login_page_wrp{
+    background-image:unset;
+  }
+  .login_right_wrp{
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
 } /* 650 */
