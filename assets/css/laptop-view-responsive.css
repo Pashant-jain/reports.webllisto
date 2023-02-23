@@ -140,4 +140,8 @@
     gap:30px;
     margin-bottom:45px;
   }
+  .form_label,.form_data{
+    width: 100%;
+  }
+
 } /* 980 */
