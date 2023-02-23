@@ -25,7 +25,7 @@
 } /* 768 */
 @media only screen and (max-width: 767px) {
 
-    .dashboard_cards_wrp{
+    .dashboard_cards_wrp, .user_profile_dtl,.user_basic_dtl{
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
     .announcement_card{
@@ -56,4 +56,5 @@
     justify-content: center;
     align-items: center;
   }
+
 } /* 650 */

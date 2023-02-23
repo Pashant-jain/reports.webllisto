@@ -16,6 +16,15 @@
   .apply_leave_inner{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+  .user_profile_dtl,.user_basic_dtl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .form_label {
+    width: 20%;
+}
+.form_data {
+  width: 80%;
+}
   .sidebar .sidebar_toggler {
     transform: rotate(180deg);
   }
@@ -132,6 +141,7 @@
 .login_inner{
   width: 80%;
 }
+
 } /* 1024 */
 @media only screen and (max-width: 991px) {
   .profile_inner_lft{

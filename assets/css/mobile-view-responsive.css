@@ -45,7 +45,7 @@
     margin-right: 6px;
     margin-bottom: 6px;
   }
-  .submit{
+  .submit,.custom-check-label{
     font-size: 12px;
   }
   .profile_inner_lft{
