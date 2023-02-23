@@ -243,7 +243,9 @@ p{
   margin-right: 380px;
   padding: 15px;
 }
-
+.timesheet_page_wrp .contant{
+  margin-right:unset;
+}
 /* dashboard  page css */
 .dashboard_wrp,
 .addtimesheet_wrp,
