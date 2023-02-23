@@ -5687,3 +5687,6 @@ span.fr-img-caption.fr-view.fr-dii.fr-fir {
 .fr-wrapper > div > a[href="https://www.froala.com/wysiwyg-editor?k=u"]{
     display: none !important;
 }
+p[data-f-id="pbf"]{
+    display:none;
+}
