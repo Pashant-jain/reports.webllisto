@@ -5,7 +5,7 @@
 .settings_desktop_wrp{
     display:none
 }
-.emp_attandance_dtl_wrp,.emp_summery_dtl_wrp,.emp_profile_dtl_wrp{
+.emp_attandance_dtl_wrp,.emp_summery_dtl_wrp,.emp_profile_dtl_wrp,.update_leaves_popup{
     grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .change_password_inner {

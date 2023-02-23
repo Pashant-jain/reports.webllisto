@@ -243,7 +243,9 @@ p{
   margin-right: 380px;
   padding: 15px;
 }
-
+.timesheet_page_wrp .contant{
+  margin-right:unset;
+}
 /* dashboard  page css */
 .dashboard_wrp,
 .addtimesheet_wrp,
@@ -658,11 +660,11 @@ background-position: center;
 .client_list_wrp  .page_inner_wrp{
   position:relative;
 }
-.client_list_wrp .filter_table_btn_wrp{
+/* .client_list_wrp .filter_table_btn_wrp{
   position: absolute;
   right: 25px;
   top: 18px;
-}
+} */
 .client_list_wrp .submit{
   padding: 11px 28px;
 }
@@ -680,11 +682,11 @@ background-position: center;
 .emp_leave_balance_wrp  .page_inner_wrp{
   position:relative;
 }
-.emp_leave_balance_wrp .filter_table_btn_wrp{
+/* .emp_leave_balance_wrp .filter_table_btn_wrp{
   position: absolute;
   right: 25px;
   top: 18px;
-}
+} */
 /* enf of employee-leave-balance-list-css */
 
 /* client-list-add-client-css */
@@ -692,8 +694,14 @@ background-position: center;
   .page_inner_wrp{
   position:relative;
 }
-.client_list_add_client_wrp
+/* .client_list_add_client_wrp
  .filter_table_btn_wrp{
+  position: absolute;
+  right: 25px;
+  top: 18px;
+  z-index: 1;
+} */
+.filter_table_btn_wrp{
   position: absolute;
   right: 25px;
   top: 18px;
@@ -708,12 +716,12 @@ background-position: center;
   .page_inner_wrp{
   position:relative;
 }
-.employee_list_wrp
+/* .employee_list_wrp
  .filter_table_btn_wrp{
   position: absolute;
   right: 6px;
   top: 18px;
-}
+} */
 span a{
   color:black;
 }
@@ -783,12 +791,12 @@ margin: 0 auto;
     justify-content: space-between;
     align-items: center;
 }
-.add_policy_inner .custom_input_wrp .fileUpload {
+ .custom_input_wrp .fileUpload {
   position: relative;
   overflow: hidden;
   /* padding: 4px;  */
 }
-.add_policy_inner .custom_input_wrp .fileUpload span{
+ .custom_input_wrp .fileUpload span{
   background-color: #1b1b1b;
   color: #ffffff;
   padding: 7px 10px;
@@ -797,7 +805,7 @@ margin: 0 auto;
   display: block;
     text-align: center;
 }
-.add_policy_inner .fileUpload input.upload {
+ .fileUpload input.upload {
   position: absolute;
   top: 0;
   right: 0;
@@ -808,10 +816,10 @@ margin: 0 auto;
   opacity: 0;
   filter: alpha(opacity=0);
 } 
-.add_policy_inner .custom_input_wrp  .f-input{
+ .custom_input_wrp  .f-input{
   height: 32px;
   background-color: transparent;
-  width: 77%;
+  width: 60%;
   padding: 4px;
   /* max-width: 300px; */
   float: left;
@@ -819,6 +827,20 @@ margin: 0 auto;
   border: unset;
   }
 
+  .upload_list_popup .custom_input_wrp{
+    margin-left: 15px;
+    border-color: #ffffff;
+  }
+  .upload_list_popup label{
+    color: #fff;
+  }
+  .upload_list_popup  input, .upload_list_popup  input::placeholder{
+    color: #fff;
+    font-size: 12px;
+  }
+  .upload_list_popup .custom_input_wrp .fileUpload span{
+    font-size: 12px;
+  }
 /* modal css */
 .modal{
   background: rgba(255, 246, 233, 0.85);
@@ -826,7 +848,6 @@ margin: 0 auto;
 }
 .modal-dialog {
   min-width: 800px;
-  margin: auto;
 }
 .modal-content{
   background: #F85046;
@@ -843,13 +864,18 @@ margin: 0 auto;
   border: unset;
   background-color: transparent;
   color: #ffffff;
-  font-size: 21px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
   z-index: 9;
 }
 .conform_export_wrp{
-  padding: 30px 0;
+  padding: 45px 0;
 }
-.modal-body h2{
+.conform_import_wrp{
+  padding: 30px 15px;
+}
+.modal-body h2,h6{
   font-weight: 600;
 }
 <<<<<<<<< Temporary merge branch 1
@@ -864,6 +890,10 @@ margin: 0 auto;
   background-color: #F85046;
   color: #ffffff;
   border-color: #ffffff;
+  margin-left: 15px;
+}
+.modal-body .popup_select_wrp select option:disabled{
+  color: #000;
 }
 .pupup_btn{
   border-radius: 50px;
@@ -873,12 +903,27 @@ margin: 0 auto;
 .dark_btn{
   background-color: #1b1b1b !important;
   border-color: #1b1b1b !important;
+  position: relative;
+}
+.dark_btn::before{
+  background-color: rgba(0, 0, 0, 0.52);
+  bottom: 0;
+  content: "";
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 25px;
+  width: 75%;
+  border-radius: 50px;
+  filter: blur(12px);
+  margin: 0 auto;
 }
 .dark_btn:hover{
-  border-color: #fff !important;
+  border-color: #fff !important;  
 }
 .outline_btn:hover{
-  background-color: #1b1b1b !important;
+  border-color: #1b1b1b !important;
 }
 .conform_import_wrp ul{
   list-style-type: auto;
@@ -889,7 +934,18 @@ margin: 0 auto;
   line-height: 28px;
   font-weight: 300;
 }
-
+.conform_export_wrp p,.conform_import_wrp li{
+  font-weight: 500;
+}
+.update_leaves_popup{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+.modal label,.modal input,.modal input::placeholder{
+  color: #ffffff;
+  border-color: #ffffff;
+}
 /* end of modal css */
 =========
 /* end of modal css */
