@@ -7,6 +7,9 @@ body {
   background-color: #fffdfa;
   font-family: "Poppins", sans-serif;
 }
+.container-fluid{
+  padding:0 30px; 
+}
 /* table_card scrollbar css */
 ::-webkit-scrollbar {
   width: 0px;
@@ -458,6 +461,9 @@ textarea,
   font-size: 14px;
   border-radius: unset;
 }
+input{
+  background-color: transparent;
+}
 select:focus,
 select:focus-visible,
 select:active,
@@ -476,7 +482,7 @@ textarea:active {
   border: unset;
   padding: 7px 19px;
   border-radius: 10px;
-  border: 1px solid;
+  border: 0.5px solid;
 }
 .Regularize {
   background-color: #f85046;
@@ -504,6 +510,7 @@ form input,
   padding: 8px 28px;
   position: relative;
   font-size:14px;
+  text-decoration: unset;
 }
 .submit:before {
   background-color: #f85046;
@@ -632,8 +639,7 @@ background-position: center;
 .filter_table_wrp input {
     width: 60%;
 }
-<<<<<<<<< Temporary merge branch 1
-=========
+
 .down_light_arrow{
   display:none
 }
@@ -819,7 +825,7 @@ margin: 0 auto;
   color: #ffffff;
 }
 .modal-dialog {
-  min-width: 700px;
+  min-width: 800px;
   margin: auto;
 }
 .modal-content{
@@ -846,6 +852,7 @@ margin: 0 auto;
 .modal-body h2{
   font-weight: 600;
 }
+<<<<<<<<< Temporary merge branch 1
 .modal-body .popup_select_wrp{
   width: 60%;
   margin: 0 auto;
@@ -873,5 +880,17 @@ margin: 0 auto;
 .outline_btn:hover{
   background-color: #1b1b1b !important;
 }
+.conform_import_wrp ul{
+  list-style-type: auto;
+  padding-left:15px ;
+}
+.conform_import_wrp ul li{
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 300;
+}
 
 /* end of modal css */
+=========
+/* end of modal css */
+>>>>>>>>> Temporary merge branch 2
