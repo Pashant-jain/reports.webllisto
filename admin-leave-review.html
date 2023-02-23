@@ -148,17 +148,11 @@
       </aside>
       <div class="contant">
         <div class="leave_review_wrp">
-                <h2 class="page_title">Past Employee List</h2>
+                <h2 class="page_title">Leave Review</h2>
                 <p class="subtitle mb-3">
-                    List of UnActive Employee with server side datatable
+                  List of UnActive Employee with server side datatable
                 </p>
                 <div class="page_inner_wrp mt-5">
-                    <div
-                        class="filter_table_btn_wrp d-flex justify-content-end align-items-center"
-                        >
-                        <button class="btn import">Import</button>
-                        <button class="btn export">Export</button>
-                    </div>
                   <table
                     id="list_table"
                     class="row-border cell-border project_list_table "
@@ -166,215 +160,851 @@
                   >
                   <thead>
                     <tr>
-                    <th>Username</th>
-                    <th>Role</th>
-                    <th>Manager</th>
-                    <th>Designation</th>
-                    <th>Joining Date</th>
-                    <th>Reliving Date</th>
+                    <th>Employee</th>
+                    <th>Type-Period</th>
+                    <th>From Date</th>
+                    <th>To Date</th>
+                    <th>Days</th>
+                    <th>Applying To</th>
+                    <th>Reason</th>
+                    <th>Status</th>
+                    <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
                     <tr>
-                        <td><span>Lorem Ipsum</span></td>
-                        <td><span>Admin</span></td>
-                        <td><span>Lorem</span></td>
-                        <td><span>Sr. Developer</span></td>
-                        <td><span>2023-01-01</span></td>
-                        <td><span>2023-02-11</span></td>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
                     </tr>
+                    <tr>
+                      <td><span>Lorem Ipsum</span></td>
+                      <td><span>CASUAL - FULL DAY</span></td>
+                      <td><span>2023-02-19</span></td>
+                      <td><span>2023-02-24</span></td>
+                      <td><span>4</span></td>
+                      <td><span>Webllisto Admin</span></td>
+                      <td><span>Lorem ipsum dolor sit amet consectetur.</span></td>
+                      <td><span>Pending</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
+                    </tr>
+                    
                    </tbody>
                   </table>
             </div>

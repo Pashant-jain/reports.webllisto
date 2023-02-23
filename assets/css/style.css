@@ -250,15 +250,7 @@ p {
 /* dashboard  page css */
 .dashboard_wrp,
 .addtimesheet_wrp,
-.settings_wrp,
-.apply_leave_wrp,
-.add_emp_page_wrp,
-.client_list_wrp,
-.emp_leave_balance_wrp,
-.client_list_add_client_wrp,
-.employee_list_wrp,
-.past_employee_list_wrp,
-.leave_review_wrp {
+.settings_wrp,.apply_leave_wrp, .client_list_wrp, .emp_leave_balance_wrp, .client_list_add_client_wrp, .employee_list_wrp, .past_employee_list_wrp, .leave_review_wrp,.admin_report_list_wrp{
   background-color: #fff6e9;
   border-radius: 50px;
   padding: 30px;
@@ -748,6 +740,46 @@ span a {
 }
 /* end of employee-list-css */
 
+/* regularization-review-css */
+.regularization_review_wrp
+  .page_inner_wrp{
+  position:relative;
+}
+.regularization_review_wrp
+ .filter_table_btn_wrp{
+  position: absolute;
+  right: 6px;
+  top: 18px;
+}
+/* end of regularization-review-css */
+
+/* regularization-review-history-css */
+.regularization_review_history_wrp
+  .page_inner_wrp{
+  position:relative;
+}
+.regularization_review_history_wrp
+ .filter_table_btn_wrp{
+  position: absolute;
+  right: 6px;
+  top: 18px;
+}
+/* end of regularization-review-history-css */
+
+/* past employee list css */
+.past_employee_list_wrp
+  .page_inner_wrp{
+  position:relative;
+}
+.past_employee_list_wrp
+ .filter_table_btn_wrp{
+  position: absolute;
+  right: 6px;
+  top: 18px;
+}
+/* end of past employee list css */
+
+
 .avaiabe_leave_dtl {
   font-size: 14px;
   font-weight: 600;
@@ -862,7 +894,7 @@ h6 {
   font-weight: 600;
 }
 
-.modal-body .popup_select_wrp label {
+.modal-body .popup_select_wrp label{
   color: #ffffff;
 }
 .modal-body .popup_select_wrp select {
@@ -929,177 +961,106 @@ h6 {
   border-color: #ffffff;
 }
 /* end of modal css */
+=========
+/* end of modal css */
+>>>>>>>>> Temporary merge branch 2
 
 /* login page css */
-.login_page_wrp {
-  background-color: #f85046;
+.login_page_wrp{
+  background-color: #F85046;
   height: 100vh;
-  background-image: url("../images/login-img.png");
+  background-image: url('../images/login-img.png');
   background-size: 50% 80%;
   background-position: bottom left;
   background-repeat: no-repeat;
 }
-.login_wrp {
+ .login_wrp{
   position: fixed;
   right: 0;
   top: 0;
   width: 50%;
   bottom: 0;
   height: 100hv;
-  background-color: #fff6e9;
-
+  background-color: #FFF6E9;
+  
   border-radius: 50px 0px 0px 50px;
   padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.login_inner {
+.login_inner{
   width: 60%;
   margin: 0 auto;
-}
-.form-check-input {
+} 
+.form-check-input{
   background-color: transparent;
   position: absolute;
-  z-index: 1;
-  opacity: 0;
+    z-index: 1;
+    opacity: 0;
 }
-
-.form-check .form-check-input:checked ~ .form-check-label::after,.form-check .form-check-input:checked ~ .custom-check-label::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
-  color: #000;
+.form-check .form-check-input:checked ~ .form-check-label::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    color: #000;
 }
-.form-check-label {
+.form-check-label{
   position: relative;
-  margin-bottom: 0;
-  vertical-align: top;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 500;
-  color: #000000;
+    margin-bottom: 0;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000000;
 }
-.form-check-label::before,.custom-check-label::before {
+.form-check-label::before{
   border-radius: 0.25rem;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  position: absolute;
-  top: 0.15625rem;
-  left: -1.5rem;
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  pointer-events: none;
-  content: "";
-  background-color: transparent;
-  border: #b7b7b7 solid 1px;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    position: absolute;
+    top: 0.15625rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    background-color: transparent;
+    border: #b7b7b7 solid 1px;
 }
-.form-check-label:after,.custom-check-label::after {
+.form-check-label:after{
   position: absolute;
-  top: 0.15625rem;
-  left: -1.5rem;
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  content: "";
-  background: no-repeat 50% / 50% 50%;
+    top: 0.15625rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    background: no-repeat 50% / 50% 50%;
 }
-.link {
-  color: #f85046;
+.link{
+  color: #F85046;
   text-decoration: unset;
+
 }
-.forgot_pass {
+.forgot_pass{
   font-weight: 600;
   font-size: 12px;
 }
-.login_now {
+.login_now{
   font-weight: 600;
   font-size: 14px;
 }
-.login_btn {
+.login_btn{
   font-size: 12px;
   font-weight: 600;
   padding: 8px 32px;
 }
-.mail_id {
+.mail_id{
   font-size: 14px;
   font-weight: 600;
   color: #1b1b1b;
   text-decoration: unset;
 }
-.popup_select_wrp select {
+.popup_select_wrp select{
   width: 230px;
 }
 /* login page css */
-
-/* add employee css */
-.add_emp_progressbar {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.add_emp_progressbar li {
-  background: #ffa9a4;
-  border-radius: 10px;
-  width: 30px;
-  height: 30px;
-  padding: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 13px;
-  font-weight: 600;
-  color: #ff5555;
-}
-.add_emp_progressbar li.active {
-  background-color: #f85046;
-  color: #fff;
-}
-.add_emp_progressbar .wizard_step_connector {
-  width: 22px;
-  border-bottom: 0.25px solid #f85046;
-}
-/*Hide all except first fieldset*/
-.add_emp_form fieldset:not(:first-of-type) {
-  display: none;
-}
-.form_label {
-  width: 14%;
-}
-.form_data {
-  width: 86%;
-}
-button.add_more {
-  position: absolute;
-  right: 0;
-  bottom: 3px;
-  background: transparent;
-  border: unset;
-  width: 15px;
-}
-.submit_outline_btn {
-  background-color: transparent;
-  border: 0.3px solid #f85046;
-  color: #f85046;
-  border-radius: 50px;
-  padding: 8px 28px;
-  position: relative;
-  font-size: 14px;
-  text-decoration: unset;
-}
-.custom-check-label {
-  position: relative;
-  margin-bottom: 0;
-  vertical-align: top;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 600;
-  color: #000000;
-}
-.profile_check_wrp .form-check{
-  margin-right: 30px;
-}
-input.exp_input {
-    width: unset;
-    margin: 0px 15px;
-}
-/* end of add employee css */
