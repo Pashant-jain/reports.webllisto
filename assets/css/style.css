@@ -11,9 +11,9 @@ body {
   padding: 0 30px;
 }
 /* table_card scrollbar css */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0px;
-}
+} */
 h1 {
   font-size: 30px;
   line-height: 40px;
@@ -1142,3 +1142,7 @@ input.exp_input {
   min-height:50vh
 }
 /* end of add employee css */
+/* leave-review-list-css */
+  
+
+  
