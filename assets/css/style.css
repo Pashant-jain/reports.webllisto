@@ -993,7 +993,7 @@ h6 {
   width: 60%;
   margin: 0 auto;
 } 
-.form-check-input,.custom-check-label::after{
+.form-check-input{
   background-color: transparent;
   position: absolute;
     z-index: 1;
@@ -1026,7 +1026,7 @@ h6 {
     background-color: transparent;
     border: #b7b7b7 solid 1px;
 }
-.form-check-label:after{
+.form-check-label:after,.custom-check-label:after{
   position: absolute;
     top: 0.15625rem;
     left: -1.5rem;
