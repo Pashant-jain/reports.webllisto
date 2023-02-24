@@ -13,6 +13,8 @@ $(document).ready(function () {
     pagingType: "simple",
     responsive: true,
     searching: report_list_table ? false : true,
+    scrollX: true,
+   
   });
   $("#leave_details").DataTable({
     lengthMenu: [
@@ -24,6 +26,7 @@ $(document).ready(function () {
     searching: false,
     paging: false,
     info: false,
+    scrollX: true,
   });
   $("#list_assets").DataTable({
     lengthMenu: [
