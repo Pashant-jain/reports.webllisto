@@ -8,6 +8,16 @@
   .announcement_card {
     min-height: 300px;
 }
+.setting_tab_head .nav-item .nav-link{
+  font-size: 13px;
+  padding: 3px;
+}
+.setting_tab_head span{
+  margin: 0px 2px;
+}
+.setting_tab_head{
+  padding:10px;
+}
 } /* 1199 */
 @media only screen and (max-width: 1199px) {
   .container-fluid{

@@ -25,6 +25,17 @@ $(document).ready(function () {
     paging: false,
     info: false,
   });
+  $("#list_assets").DataTable({
+    lengthMenu: [
+      [10, 25, 50, -1],
+      [10, 25, 50, "All"],
+    ],
+    pagingType: "simple",
+    responsive: true,
+    searching: false,
+    paging: false,
+    info: false,
+  });
 });
 
 

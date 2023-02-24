@@ -22,6 +22,15 @@
 .login_inner{
   width: 100%;
 }
+.input_flex_wrp{
+  flex-direction: column;
+}
+.w-md-100{
+width: 100%;
+}
+/* .input_flex_wrp{
+  flex-direction: column;
+} */
 } /* 768 */
 @media only screen and (max-width: 767px) {
 
