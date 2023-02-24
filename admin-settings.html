@@ -217,49 +217,49 @@
                 </li>
                 <span>/</span>
                 <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="pills-add-announcement-tab"
-                      data-bs-toggle="pill"
-                      data-bs-target="#pills-add-announcement"
-                      type="button"
-                      role="tab"
-                      aria-controls="pills-add-announcement"
-                      aria-selected="false"
-                    >
+                  <button
+                    class="nav-link"
+                    id="pills-add-announcement-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-add-announcement"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-add-announcement"
+                    aria-selected="false"
+                  >
                     Add Announcement
-                    </button>
-                  </li>
-                  <span>/</span>
+                  </button>
+                </li>
+                <span>/</span>
                 <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="pills-add-slack-tab"
-                      data-bs-toggle="pill"
-                      data-bs-target="#pills-add-slack"
-                      type="button"
-                      role="tab"
-                      aria-controls="pills-add-slack"
-                      aria-selected="false"
-                    >
+                  <button
+                    class="nav-link"
+                    id="pills-add-slack-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-add-slack"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-add-slack"
+                    aria-selected="false"
+                  >
                     Add Slack Channel
-                    </button>
-                  </li>
-                  <span>/</span>
-                  <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="pills-add-Assets-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-add-Assets"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-add-Assets"
-                        aria-selected="false"
-                      >
-                      Add Assets
-                      </button>
-                    </li>
+                  </button>
+                </li>
+                <span>/</span>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-add-Assets-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-add-Assets"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-add-Assets"
+                    aria-selected="false"
+                  >
+                    Add Assets
+                  </button>
+                </li>
               </ul>
               <div
                 class="setting_tab_containt tab-content"
@@ -807,266 +807,291 @@
                 </div>
                 <!-- Add Announcement -->
                 <div
-                class="tab-pane fade"
-                id="pills-add-announcement"
-                role="tabpanel"
-                aria-labelledby="pills-add-announcement-tab"
-              >
-                <div class="add_announcement_wrp pb-3 pb-sm-5">
-                  <div class="text-center">
-                    <img
-                      src="./assets/images/icons/add-announcement-icon.svg"
-                      alt="Add Announcement"
-                      class="mx-auto"
-                      width="45px"
-                      height="45px"
-                    />
-                    <h3 class="my-2">Add Announcement</h3>
-                  </div>
-                  <div class="add_announcement_inner mt-5">
-                    <form>
-                   <div class="user_basic_dtl" >
-                    <div class="row m-0">
-                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                          <label>Type</label>
-                        </div>
-                        <div class="col-12 col-sm-7 p-0">
-                            <select>
+                  class="tab-pane fade"
+                  id="pills-add-announcement"
+                  role="tabpanel"
+                  aria-labelledby="pills-add-announcement-tab"
+                >
+                  <div class="add_announcement_wrp pb-3 pb-sm-5">
+                    <div class="text-center">
+                      <img
+                        src="./assets/images/icons/add-announcement-icon.svg"
+                        alt="Add Announcement"
+                        class="mx-auto"
+                        width="45px"
+                        height="45px"
+                      />
+                      <h3 class="my-2">Add Announcement</h3>
+                    </div>
+                    <div class="add_announcement_inner mt-5">
+                      <form>
+                        <div class="user_basic_dtl">
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                              <label>Type</label>
+                            </div>
+                            <div class="col-12 col-sm-7 p-0">
+                              <select>
                                 <option class="option_menu" value="">
                                   Company
                                 </option>
                                 <option class="option_menu">Team</option>
                               </select>
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                              <label>Duration</label>
+                            </div>
+                            <div class="col-12 col-sm-7 p-0">
+                              <input type="date" />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                              <label>Added By</label>
+                            </div>
+                            <div class="col-12 col-sm-7 p-0">
+                              <input
+                                type="text"
+                                placeholder="Webllisto Admin"
+                              />
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="row m-0">
-                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                          <label>Duration</label>
+                        <div class="mt-5" style="padding: 0 15px">
+                          <div class="row">
+                            <div
+                              class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                            >
+                              <label>About</label>
+                            </div>
+                            <div class="col-12 col-lg-10 p-0 form_data">
+                              <input type="text" placeholder="Enter Details" />
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-12 col-sm-7 p-0">
-                          <input type="date" />
-                        </div>
-                      </div>
-                      <div class="row m-0">
-                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                          <label>Added By</label>
-                        </div>
-                        <div class="col-12 col-sm-7 p-0">
-                          <input type="text" placeholder="Webllisto Admin" />
-                        </div>
-                      </div>
-                   </div>
-                   <div class="mt-5" style="padding: 0 15px">
-                    <div class="row">
-                      <div
-                        class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
-                      >
-                        <label>About</label>
-                      </div>
-                      <div class="col-12 col-lg-10 p-0 form_data">
-                        <input type="text" placeholder="Enter Details" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="text-center mt-5">
-                    <button
-                      type="button"
-                      class="submit mx-1"
-                    >
-                      <span class="position-relative">Submit</span>
-                    </button>
-                   
-                  </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <!-- end of Add Announcement -->
-              <!-- add slack -->
-              <div
-                class="tab-pane fade"
-                id="pills-add-slack"
-                role="tabpanel"
-                aria-labelledby="pills-add-slack-tab"
-              >
-                <div class="add_slack_wrp pb-3 pb-sm-5">
-                  <div class="text-center">
-                    <img
-                      src="./assets/images/icons/add-slack-icon.svg"
-                      alt="Add Slack"
-                      class="mx-auto"
-                      width="45px"
-                      height="45px"
-                    />
-                    <h3 class="my-3">Manage Slack Channels</h3>
-                  </div>
-                  <div class="add_slack_inner mt-5">
-                    <form>
-                    <div class="mb-4" >
-                        <h4 class="page_title mb-4" >Add a new slack channel</h4>
-                        <div class="input_flex_wrp d-flex justify-content-between align-items-center gap-4 mb-4" >
-                            <div class="row m-0 w-40 w-md-100">
-                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                                  <label>Channel Name</label>
-                                </div>
-                                <div class="col-12 col-sm-7 p-0">
-                                  <input type="text" placeholder="Enter Name" />
-                                </div>
-                              </div>
-                              <div class="row m-0 w-60 w-md-100">
-                                <div class="col-12 col-sm-2 mb-3 mb-sm-0 p-0">
-                                  <label>Enter URL</label>
-                                </div>
-                                <div class="col-12 col-sm-10 p-0">
-                                  <input type="url" placeholder="Enter URL here" />
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="text-center mt-5" >
-                        <button type="submit" class="submit">
+                        <div class="text-center mt-5">
+                          <button type="button" class="submit mx-1">
                             <span class="position-relative">Submit</span>
                           </button>
-                    </div>
-                    </form>
-                    <div class="mt-5" >
-                        <h4 class="page_title mb-4" >All Slack Channels</h4>
-                        <div>
-                            <div class="input_flex_wrp d-flex justify-content-between align-items-center gap-4 mb-4" >
-                                <div class="row m-0 w-40 w-md-100">
-                                    <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                                      <label>Channel Name</label>
-                                    </div>
-                                    <div class="col-12 col-sm-7 p-0">
-                                      <input type="text" placeholder="Enter Name" />
-                                    </div>
-                                  </div>
-                                  <div class="row m-0 w-60 w-md-100">
-                                    <div class="col-12 col-sm-2 mb-3 mb-sm-0 p-0">
-                                      <label>Enter URL</label>
-                                    </div>
-                                    <div class="col-12 col-sm-10 p-0">
-                                      <input type="url" placeholder="Enter URL here" />
-                                    </div>
-                                  </div>
-                                  <button type="button" class="btn p-0 border-0" ><img src="./assets/images/icons/delete_icon.svg" /></button>
-                            </div>
-                                
                         </div>
+                      </form>
                     </div>
                   </div>
                 </div>
-              </div>
-               <!-- add slack -->
-              <!-- add assets -->
-              <div
-              class="tab-pane fade"
-              id="pills-add-Assets"
-              role="tabpanel"
-              aria-labelledby="pills-add-Assets-tab"
-            >
-              <div class="add_assets_wrp ">
-                <div class="text-center">
-                  <img
-                    src="./assets/images/icons/add-assets-icon.svg"
-                    alt="Add Assets"
-                    class="mx-auto"
-                    width="45px"
-                    height="45px"
-                  />
-                  <h3 class="my-2">Add Assets</h3>
-                </div>
-                <div class="add_assets_inner mt-5">
-                    <form>
-                        <div class="mb-4" >
-                            <h4 class="page_title mb-4" >Add a new asset</h4>
-                            
+                <!-- end of Add Announcement -->
+                <!-- add slack -->
+                <div
+                  class="tab-pane fade"
+                  id="pills-add-slack"
+                  role="tabpanel"
+                  aria-labelledby="pills-add-slack-tab"
+                >
+                  <div class="add_slack_wrp pb-3 pb-sm-5">
+                    <div class="text-center">
+                      <img
+                        src="./assets/images/icons/add-slack-icon.svg"
+                        alt="Add Slack"
+                        class="mx-auto"
+                        width="45px"
+                        height="45px"
+                      />
+                      <h3 class="my-3">Manage Slack Channels</h3>
+                    </div>
+                    <div class="add_slack_inner mt-5">
+                      <form>
+                        <div class="mb-4">
+                          <h4 class="page_title mb-4">
+                            Add a new slack channel
+                          </h4>
+                          <div
+                            class="input_flex_wrp d-flex justify-content-between align-items-center gap-4 mb-4"
+                          >
+                            <div class="row m-0 w-40 w-md-100">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                <label>Channel Name</label>
+                              </div>
+                              <div class="col-12 col-sm-7 p-0">
+                                <input type="text" placeholder="Enter Name" />
+                              </div>
+                            </div>
+                            <div class="row m-0 w-60 w-md-100">
+                              <div class="col-12 col-sm-2 mb-3 mb-sm-0 p-0">
+                                <label>Enter URL</label>
+                              </div>
+                              <div class="col-12 col-sm-10 p-0">
+                                <input
+                                  type="url"
+                                  placeholder="Enter URL here"
+                                />
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="user_basic_dtl" >
-                            <div class="row m-0">
-                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                                  <label>Asset Type</label>
-                                </div>
-                                <div class="col-12 col-sm-7 p-0">
-                                    <select>
-                                        <option class="option_menu" value="">
-                                          Laptop
-                                        </option>
-                                        <option class="option_menu">Desktop</option>
-                                        <option class="option_menu">Mouse</option>
-                                      </select>
-                                </div>
-                              </div>
-                              <div class="row m-0">
-                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                                  <label>Device Name</label>
-                                </div>
-                                <div class="col-12 col-sm-7 p-0">
-                                  <input type="text" placeholder="Enter device name" />
-                                </div>
-                              </div>
-                              <div class="row m-0">
-                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                                  <label>Asset ID</label>
-                                </div>
-                                <div class="col-12 col-sm-7 p-0">
-                                  <input type="text" placeholder="Enter Asset ID" />
-                                </div>
-                              </div>
-                           </div>
-                        <div class="text-center mt-5" >
-                            <button type="submit" class="submit">
-                                <span class="position-relative">Submit</span>
-                              </button>
+                        <div class="text-center mt-5">
+                          <button type="submit" class="submit">
+                            <span class="position-relative">Submit</span>
+                          </button>
                         </div>
-                        </form>
-                        <div class="mt-5" >
-                            <h4 class="page_title mb-4" >List of all Assets</h4>
-                            <div >
-                                <table
-                                id="list_assets"
-                                class="row-border cell-border list_assets_table"
-                                style="width: 100%"
+                      </form>
+                      <div class="mt-5">
+                        <h4 class="page_title mb-4">All Slack Channels</h4>
+                        <div>
+                            <div
+                            class="input_flex_wrp d-flex justify-content-between align-items-center gap-4 mb-4"
+                          >
+                            <div class="row m-0 w-40">
+                              <div
+                                class="col-12 col-sm-5 mb-3 mb-sm-0 p-0 w-md-100"
                               >
-                                <thead>
-                                  <tr>
-                                    <th style="min-width: 90px">Assets Type</th>
-                                    <th style="min-width: 90px">Assets Name</th>
-                                    <th style="min-width: 90px">Assets ID</th>
-                                    <th style="min-width: 150px">User</th>
-                                    <th style="min-width: 90px">Action</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td><span>Laptop</span></td>
-                                    <td><span>DELL LT</span></td>
-                                    <td><span>LT 1123</span></td>
-                                    <td><span>None</span></td>
-                                    <td>
-                                        <span
-                                          ><div class="table_action_drobdown text-center">
-                                            <button
-                                              class="table_action_btn"
-                                              type="button"
-                                              id="dropdownMenuButton1"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                            >
-                                              Action
-                                            </button>
-                                            <ul
-                                              class="dropdown-menu table_action_menu"
-                                              aria-labelledby="dropdownMenuButton1"
-                                            >
-                                              <li>Edit</li>
-                                              <li>Delete</li>
-                                            </ul>
-                                          </div></span
-                                        >
-                                      </td>
-                                  </tr>
-                                  <!-- <tr>
+                                <label>Channel Name</label>
+                              </div>
+                              <div class="col-12 col-sm-7 p-0">
+                                <input
+                                  type="text"
+                                  placeholder="Enter Name"
+                                />
+                              </div>
+                            </div>
+                            <div class="row m-0 w-60 w-md-100">
+                              <div class="col-12 col-sm-2 mb-3 mb-sm-0 p-0">
+                                <label>Enter URL</label>
+                              </div>
+                              <div class="col-12 col-sm-10 p-0 d-flex">
+                                <input
+                                  type="url"
+                                  placeholder="Enter URL here"
+                                />
+                                <button type="button" class="btn p-0 border-0 ms-3">
+                                    <img
+                                      src="./assets/images/icons/delete_icon.svg"
+                                    />
+                                  </button>
+                              </div>
+                              
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- add slack -->
+                <!-- add assets -->
+                <div
+                  class="tab-pane fade"
+                  id="pills-add-Assets"
+                  role="tabpanel"
+                  aria-labelledby="pills-add-Assets-tab"
+                >
+                  <div class="add_assets_wrp">
+                    <div class="text-center">
+                      <img
+                        src="./assets/images/icons/add-assets-icon.svg"
+                        alt="Add Assets"
+                        class="mx-auto"
+                        width="45px"
+                        height="45px"
+                      />
+                      <h3 class="my-2">Add Assets</h3>
+                    </div>
+                    <div class="add_assets_inner mt-5">
+                      <form>
+                        <div class="mb-4">
+                          <h4 class="page_title mb-4">Add a new asset</h4>
+                        </div>
+                        <div class="user_basic_dtl">
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                              <label>Asset Type</label>
+                            </div>
+                            <div class="col-12 col-sm-7 p-0">
+                              <select>
+                                <option class="option_menu" value="">
+                                  Laptop
+                                </option>
+                                <option class="option_menu">Desktop</option>
+                                <option class="option_menu">Mouse</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                              <label>Device Name</label>
+                            </div>
+                            <div class="col-12 col-sm-7 p-0">
+                              <input
+                                type="text"
+                                placeholder="Enter device name"
+                              />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                              <label>Asset ID</label>
+                            </div>
+                            <div class="col-12 col-sm-7 p-0">
+                              <input type="text" placeholder="Enter Asset ID" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-center mt-5">
+                          <button type="submit" class="submit">
+                            <span class="position-relative">Submit</span>
+                          </button>
+                        </div>
+                      </form>
+                      <div class="mt-5">
+                        <h4 class="page_title mb-4">List of all Assets</h4>
+                        <div>
+                          <table
+                            id="list_assets"
+                            class="row-border cell-border list_assets_table"
+                            style="width: 100%"
+                          >
+                            <thead>
+                              <tr>
+                                <th style="min-width: 90px">Assets Type</th>
+                                <th style="min-width: 90px">Assets Name</th>
+                                <th style="min-width: 90px">Assets ID</th>
+                                <th style="min-width: 150px">User</th>
+                                <th style="min-width: 90px">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><span>Laptop</span></td>
+                                <td><span>DELL LT</span></td>
+                                <td><span>LT 1123</span></td>
+                                <td><span>None</span></td>
+                                <td>
+                                  <span
+                                    ><div
+                                      class="table_action_drobdown text-center"
+                                    >
+                                      <button
+                                        class="table_action_btn"
+                                        type="button"
+                                        id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                      >
+                                        Action
+                                      </button>
+                                      <ul
+                                        class="dropdown-menu table_action_menu"
+                                        aria-labelledby="dropdownMenuButton1"
+                                      >
+                                        <li>Edit</li>
+                                        <li>Delete</li>
+                                      </ul>
+                                    </div></span
+                                  >
+                                </td>
+                              </tr>
+                              <!-- <tr>
                         <td><span>Casual Leave</span></td>
                         <td><span>2023-02-09</span></td>
                         <td><span>2023-02-09</span></td>
@@ -1100,15 +1125,14 @@
                           >
                         </td>
                       </tr> -->
-                                </tbody>
-                              </table>
-                                    
-                            </div>
+                            </tbody>
+                          </table>
                         </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-             <!-- end of add assets -->
+                <!-- end of add assets -->
               </div>
             </div>
             <div class="settings_mobile_wrp">
@@ -1747,70 +1771,73 @@
                   </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingfour">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsefive"
-                        aria-expanded="false"
-                        aria-controls="collapsefive"
-                      >
-                      Add Announcement
-                      </button>
-                    </h2>
-                    <div
-                      id="collapsefive"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingfour"
-                      data-bs-parent="#accordionExample"
+                  <h2 class="accordion-header" id="headingfour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsefive"
+                      aria-expanded="false"
+                      aria-controls="collapsefive"
                     >
-                      <div class="accordion-body">
-                        <div class="add_announcement_wrp pb-3 pb-sm-5">
-                            <div class="text-center">
-                              <img
-                                src="./assets/images/icons/add-announcement-icon.svg"
-                                alt="Add Announcement"
-                                class="mx-auto"
-                                width="45px"
-                                height="45px"
-                              />
-                              <h3 class="my-2">Add Announcement</h3>
-                            </div>
-                            <div class="add_announcement_inner mt-5">
-                              <form>
-                             <div class="user_basic_dtl" >
+                      Add Announcement
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsefive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingfour"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="add_announcement_wrp pb-3 pb-sm-5">
+                        <div class="text-center">
+                          <img
+                            src="./assets/images/icons/add-announcement-icon.svg"
+                            alt="Add Announcement"
+                            class="mx-auto"
+                            width="45px"
+                            height="45px"
+                          />
+                          <h3 class="my-2">Add Announcement</h3>
+                        </div>
+                        <div class="add_announcement_inner mt-5">
+                          <form>
+                            <div class="user_basic_dtl">
                               <div class="row m-0">
-                                  <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                                    <label>Type</label>
-                                  </div>
-                                  <div class="col-12 col-sm-7 p-0">
-                                      <select>
-                                          <option class="option_menu" value="">
-                                            Company
-                                          </option>
-                                          <option class="option_menu">Team</option>
-                                        </select>
-                                  </div>
+                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                  <label>Type</label>
                                 </div>
-                                <div class="row m-0">
-                                  <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                                    <label>Duration</label>
-                                  </div>
-                                  <div class="col-12 col-sm-7 p-0">
-                                    <input type="date" />
-                                  </div>
+                                <div class="col-12 col-sm-7 p-0">
+                                  <select>
+                                    <option class="option_menu" value="">
+                                      Company
+                                    </option>
+                                    <option class="option_menu">Team</option>
+                                  </select>
                                 </div>
-                                <div class="row m-0">
-                                  <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                                    <label>Added By</label>
-                                  </div>
-                                  <div class="col-12 col-sm-7 p-0">
-                                    <input type="text" placeholder="Webllisto Admin" />
-                                  </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                  <label>Duration</label>
                                 </div>
-                             </div>
-                             <div class="mt-5" style="padding: 0 15px">
+                                <div class="col-12 col-sm-7 p-0">
+                                  <input type="date" />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                  <label>Added By</label>
+                                </div>
+                                <div class="col-12 col-sm-7 p-0">
+                                  <input
+                                    type="text"
+                                    placeholder="Webllisto Admin"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mt-5" style="padding: 0 15px">
                               <div class="row">
                                 <div
                                   class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
@@ -1818,237 +1845,273 @@
                                   <label>About</label>
                                 </div>
                                 <div class="col-12 col-lg-10 p-0 form_data">
-                                  <input type="text" placeholder="Enter Details" />
+                                  <input
+                                    type="text"
+                                    placeholder="Enter Details"
+                                  />
                                 </div>
                               </div>
                             </div>
                             <div class="text-center mt-5">
-                              <button
-                                type="button"
-                                class="submit mx-1"
-                              >
+                              <button type="button" class="submit mx-1">
                                 <span class="position-relative">Submit</span>
                               </button>
-                             
                             </div>
-                              </form>
-                            </div>
-                          </div>
+                          </form>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingsix">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsesix"
-                        aria-expanded="false"
-                        aria-controls="collapsesix"
-                      >
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingsix">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsesix"
+                      aria-expanded="false"
+                      aria-controls="collapsesix"
+                    >
                       Add Slack Channel
-                      </button>
-                    </h2>
-                    <div
-                      id="collapsesix"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingsix"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="add_slack_wrp pb-3 pb-sm-5">
-                            <div class="text-center">
-                              <img
-                                src="./assets/images/icons/add-slack-icon.svg"
-                                alt="Add Slack"
-                                class="mx-auto"
-                                width="45px"
-                                height="45px"
-                              />
-                              <h3 class="my-3">Manage Slack Channels</h3>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsesix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingsix"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="add_slack_wrp pb-3 pb-sm-5">
+                        <div class="text-center">
+                          <img
+                            src="./assets/images/icons/add-slack-icon.svg"
+                            alt="Add Slack"
+                            class="mx-auto"
+                            width="45px"
+                            height="45px"
+                          />
+                          <h3 class="my-3">Manage Slack Channels</h3>
+                        </div>
+                        <div class="add_slack_inner mt-5">
+                          <form>
+                            <div class="mb-4">
+                              <h4 class="page_title mb-4">
+                                Add a new slack channel
+                              </h4>
+                              <div
+                                class="input_flex_wrp d-flex justify-content-between align-items-center gap-4 mb-4"
+                              >
+                                <div class="row m-0 w-40 w-md-100">
+                                  <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                    <label>Channel Name</label>
+                                  </div>
+                                  <div class="col-12 col-sm-7 p-0">
+                                    <input
+                                      type="text"
+                                      placeholder="Enter Name"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="row m-0 w-60 w-md-100">
+                                  <div class="col-12 col-sm-2 mb-3 mb-sm-0 p-0">
+                                    <label>Enter URL</label>
+                                  </div>
+                                  <div class="col-12 col-sm-10 p-0">
+                                    <input
+                                      type="url"
+                                      placeholder="Enter URL here"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div class="add_slack_inner mt-5">
-                              <form>
-                              <div class="mb-4" >
-                                  <h4 class="page_title mb-4" >Add a new slack channel</h4>
-                                  <div class="input_flex_wrp d-flex justify-content-between align-items-center gap-4 mb-4" >
-                                      <div class="row m-0 w-40 w-md-100">
-                                          <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                                            <label>Channel Name</label>
-                                          </div>
-                                          <div class="col-12 col-sm-7 p-0">
-                                            <input type="text" placeholder="Enter Name" />
-                                          </div>
-                                        </div>
-                                        <div class="row m-0 w-60 w-md-100">
-                                          <div class="col-12 col-sm-2 mb-3 mb-sm-0 p-0">
-                                            <label>Enter URL</label>
-                                          </div>
-                                          <div class="col-12 col-sm-10 p-0">
-                                            <input type="url" placeholder="Enter URL here" />
-                                          </div>
-                                        </div>
+                            <div class="text-center mt-5">
+                              <button type="submit" class="submit">
+                                <span class="position-relative">Submit</span>
+                              </button>
+                            </div>
+                          </form>
+                          <div class="mt-5">
+                            <h4 class="page_title mb-4">All Slack Channels</h4>
+                            <div>
+                              <div
+                                class="input_flex_wrp d-flex justify-content-between align-items-center gap-4 mb-4"
+                              >
+                                <div class="row m-0 w-40 w-md-100">
+                                  <div
+                                    class="col-12 col-sm-5 mb-3 mb-md-0 p-0 "
+                                  >
+                                    <label>Channel Name</label>
                                   </div>
-                              </div>
-                              <div class="text-center mt-5" >
-                                  <button type="submit" class="submit">
-                                      <span class="position-relative">Submit</span>
-                                    </button>
-                              </div>
-                              </form>
-                              <div class="mt-5" >
-                                  <h4 class="page_title mb-4" >All Slack Channels</h4>
-                                  <div>
-                                      <div class="input_flex_wrp d-flex justify-content-between align-items-center gap-4 mb-4" >
-                                          <div class="row m-0 w-40">
-                                              <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0 w-md-100">
-                                                <label>Channel Name</label>
-                                              </div>
-                                              <div class="col-12 col-sm-7 p-0">
-                                                <input type="text" placeholder="Enter Name" />
-                                              </div>
-                                            </div>
-                                            <div class="row m-0 w-60 w-md-100">
-                                              <div class="col-12 col-sm-2 mb-3 mb-sm-0 p-0">
-                                                <label>Enter URL</label>
-                                              </div>
-                                              <div class="col-12 col-sm-10 p-0">
-                                                <input type="url" placeholder="Enter URL here" />
-                                              </div>
-                                            </div>
-                                            <button type="button" class="btn p-0 border-0" ><img src="./assets/images/icons/delete_icon.svg" /></button>
-                                      </div>
-                                          
+                                  <div class="col-12 col-sm-7 p-0">
+                                    <input
+                                      type="text"
+                                      placeholder="Enter Name"
+                                    />
                                   </div>
+                                </div>
+                                <div class="row m-0 w-60 w-md-100">
+                                  <div class="col-12 col-sm-2 mb-3 mb-md-0 p-0">
+                                    <label>Enter URL</label>
+                                    <button type="button" class="btn p-0 border-0 ms-3 d-sm-none">
+                                        <img
+                                          src="./assets/images/icons/delete_icon.svg"
+                                        />
+                                      </button>
+                                  </div>
+                                  <div class="col-12 col-sm-10 p-0 d-flex">
+                                    <input
+                                      type="url"
+                                      placeholder="Enter URL here"
+                                    />
+                                    <button type="button" class="btn p-0 border-0 ms-3 d-none d-sm-block">
+                                        <img
+                                          src="./assets/images/icons/delete_icon.svg"
+                                        />
+                                      </button>
+                                  </div>
+                                  
+                                </div>
+                                
                               </div>
                             </div>
                           </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingseven">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseseven"
-                        aria-expanded="false"
-                        aria-controls="collapseseven"
-                      >
-                      Add Assets
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseseven"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headinsevenx"
-                      data-bs-parent="#accordionExample"
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingseven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseseven"
+                      aria-expanded="false"
+                      aria-controls="collapseseven"
                     >
-                      <div class="accordion-body">
-                        <div class="add_assets_wrp ">
-                            <div class="text-center">
-                              <img
-                                src="./assets/images/icons/add-assets-icon.svg"
-                                alt="Add Assets"
-                                class="mx-auto"
-                                width="45px"
-                                height="45px"
-                              />
-                              <h3 class="my-2">Add Assets</h3>
+                      Add Assets
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseseven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headinsevenx"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="add_assets_wrp">
+                        <div class="text-center">
+                          <img
+                            src="./assets/images/icons/add-assets-icon.svg"
+                            alt="Add Assets"
+                            class="mx-auto"
+                            width="45px"
+                            height="45px"
+                          />
+                          <h3 class="my-2">Add Assets</h3>
+                        </div>
+                        <div class="add_assets_inner mt-5">
+                          <form>
+                            <div class="mb-4">
+                              <h4 class="page_title mb-4">Add a new asset</h4>
                             </div>
-                            <div class="add_assets_inner mt-5">
-                                <form>
-                                    <div class="mb-4" >
-                                        <h4 class="page_title mb-4" >Add a new asset</h4>
-                                        
-                                    </div>
-                                    <div class="user_basic_dtl" >
-                                        <div class="row m-0">
-                                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                                              <label>Asset Type</label>
-                                            </div>
-                                            <div class="col-12 col-sm-7 p-0">
-                                                <select>
-                                                    <option class="option_menu" value="">
-                                                      Laptop
-                                                    </option>
-                                                    <option class="option_menu">Desktop</option>
-                                                    <option class="option_menu">Mouse</option>
-                                                  </select>
-                                            </div>
-                                          </div>
-                                          <div class="row m-0">
-                                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                                              <label>Device Name</label>
-                                            </div>
-                                            <div class="col-12 col-sm-7 p-0">
-                                              <input type="text" placeholder="Enter device name" />
-                                            </div>
-                                          </div>
-                                          <div class="row m-0">
-                                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
-                                              <label>Asset ID</label>
-                                            </div>
-                                            <div class="col-12 col-sm-7 p-0">
-                                              <input type="text" placeholder="Enter Asset ID" />
-                                            </div>
-                                          </div>
-                                       </div>
-                                    <div class="text-center mt-5" >
-                                        <button type="submit" class="submit">
-                                            <span class="position-relative">Submit</span>
-                                          </button>
-                                    </div>
-                                    </form>
-                                    <div class="mt-5" >
-                                        <h4 class="page_title mb-4" >List of all Assets</h4>
-                                        <div >
-                                            <table
-                                            id="list_assets"
-                                            class="row-border cell-border list_assets_table"
-                                            style="width: 100%"
+                            <div class="user_basic_dtl">
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                  <label>Asset Type</label>
+                                </div>
+                                <div class="col-12 col-sm-7 p-0">
+                                  <select>
+                                    <option class="option_menu" value="">
+                                      Laptop
+                                    </option>
+                                    <option class="option_menu">Desktop</option>
+                                    <option class="option_menu">Mouse</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                  <label>Device Name</label>
+                                </div>
+                                <div class="col-12 col-sm-7 p-0">
+                                  <input
+                                    type="text"
+                                    placeholder="Enter device name"
+                                  />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                  <label>Asset ID</label>
+                                </div>
+                                <div class="col-12 col-sm-7 p-0">
+                                  <input
+                                    type="text"
+                                    placeholder="Enter Asset ID"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="text-center mt-5">
+                              <button type="submit" class="submit">
+                                <span class="position-relative">Submit</span>
+                              </button>
+                            </div>
+                          </form>
+                          <div class="mt-5">
+                            <h4 class="page_title mb-4">List of all Assets</h4>
+                            <div>
+                              <table
+                                id="list_assets"
+                                class="row-border cell-border list_assets_table"
+                                style="width: 100%"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th style="min-width: 90px">Assets Type</th>
+                                    <th style="min-width: 90px">Assets Name</th>
+                                    <th style="min-width: 90px">Assets ID</th>
+                                    <th style="min-width: 150px">User</th>
+                                    <th style="min-width: 90px">Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span>Laptop</span></td>
+                                    <td><span>DELL LT</span></td>
+                                    <td><span>LT 1123</span></td>
+                                    <td><span>None</span></td>
+                                    <td>
+                                      <span
+                                        ><div
+                                          class="table_action_drobdown text-center"
+                                        >
+                                          <button
+                                            class="table_action_btn"
+                                            type="button"
+                                            id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
                                           >
-                                            <thead>
-                                              <tr>
-                                                <th style="min-width: 90px">Assets Type</th>
-                                                <th style="min-width: 90px">Assets Name</th>
-                                                <th style="min-width: 90px">Assets ID</th>
-                                                <th style="min-width: 150px">User</th>
-                                                <th style="min-width: 90px">Action</th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                <td><span>Laptop</span></td>
-                                                <td><span>DELL LT</span></td>
-                                                <td><span>LT 1123</span></td>
-                                                <td><span>None</span></td>
-                                                <td>
-                                                    <span
-                                                      ><div class="table_action_drobdown text-center">
-                                                        <button
-                                                          class="table_action_btn"
-                                                          type="button"
-                                                          id="dropdownMenuButton1"
-                                                          data-bs-toggle="dropdown"
-                                                          aria-expanded="false"
-                                                        >
-                                                          Action
-                                                        </button>
-                                                        <ul
-                                                          class="dropdown-menu table_action_menu"
-                                                          aria-labelledby="dropdownMenuButton1"
-                                                        >
-                                                          <li>Edit</li>
-                                                          <li>Delete</li>
-                                                        </ul>
-                                                      </div></span
-                                                    >
-                                                  </td>
-                                              </tr>
-                                              <!-- <tr>
+                                            Action
+                                          </button>
+                                          <ul
+                                            class="dropdown-menu table_action_menu"
+                                            aria-labelledby="dropdownMenuButton1"
+                                          >
+                                            <li>Edit</li>
+                                            <li>Delete</li>
+                                          </ul>
+                                        </div></span
+                                      >
+                                    </td>
+                                  </tr>
+                                  <!-- <tr>
                                     <td><span>Casual Leave</span></td>
                                     <td><span>2023-02-09</span></td>
                                     <td><span>2023-02-09</span></td>
@@ -2082,16 +2145,15 @@
                                       >
                                     </td>
                                   </tr> -->
-                                            </tbody>
-                                          </table>
-                                                
-                                        </div>
-                                    </div>
+                                </tbody>
+                              </table>
                             </div>
                           </div>
+                        </div>
                       </div>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
           </div>
