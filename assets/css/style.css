@@ -1064,3 +1064,15 @@ h6 {
   width: 230px;
 }
 /* login page css */
+
+/* leave-review-list-css */
+.leave_review_wrp .page_inner_wrp #list_table_wrapper::-webkit-scrollbar {
+  width: 20px;
+  overflow: auto;
+}
+.leave_review_wrp .page_inner_wrp .leave_review {
+  width: 100px; 
+}
+  
+
+  
