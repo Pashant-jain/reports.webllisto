@@ -824,3 +824,6 @@ table.table_with_action tbody td{
   .dataTables_scrollBody::-webkit-scrollbar-thumb:hover {
     background: #FFB9B6; 
   }
+  .dataTables_scrollHeadInner,.dataTables_scrollHeadInner table{
+    width:100% !important;
+  }

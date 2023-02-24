@@ -163,5 +163,7 @@
   .form_label,.form_data{
     width: 100%;
   }
-
+  .w-lg-100{
+    width: 100%;
+    }
 } /* 980 */
