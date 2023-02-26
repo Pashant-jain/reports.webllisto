@@ -18,18 +18,22 @@ h1 {
   font-size: 30px;
   line-height: 40px;
   font-weight: 700;
+  word-break: break-word;
 }
 h2 {
   font-size: 20px;
   font-weight: 500;
+  word-break: break-word;
 }
 h3 {
   font-size: 18px;
   font-weight: 600;
+  word-break: break-word;
 }
 h4 {
   font-size: 16px;
   font-weight: 600;
+  word-break: break-word;
 }
 .page_title {
   color: #f85046;
@@ -37,6 +41,10 @@ h4 {
 }
 p {
   font-size: 14px;
+  word-break: break-word;
+}
+td,th,span,button,a,li{
+  word-break: break-word;
 }
 .w-60 {
   width: 60%;
@@ -64,9 +72,9 @@ p {
 .sidebar {
   width: 280px;
   position: fixed;
-  height: 100vh;
+  min-height: 100vh;
   padding: 15px 15px 15px 30px;
-  overflow: auto;
+  /* overflow: auto; */
   z-index: 999;
 }
 
@@ -100,6 +108,8 @@ p {
 .menu_wrp {
   list-style-type: none;
   padding: 0 15px;
+  max-height: 30vh;
+  overflow: auto;
 }
 .light_img {
   display: none;
@@ -1236,6 +1246,7 @@ input.exp_input {
 }
 .view_all_comments {
   color: #686868;
+  cursor: pointer;
 }
 .comment_action_wrp {
   font-size: 12px;
@@ -1259,8 +1270,52 @@ input.exp_input {
   position: sticky;
   bottom: 0;
   background-color: #ffeed5;
-}
-.view_all_comments{
-  cursor: pointer;
-}
+} 
 /* end of feeds css */
+/* notification css */
+.notification_wrp{
+ 
+position: absolute;
+top: 165%;
+left: -60%;
+}
+.notification_inner::before{
+  display: inline-block;
+  margin-left: 0.3em;
+  vertical-align: 1px;
+  content: "";
+  border-bottom: 20px solid #fff;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  position: absolute;
+  top: -20px;
+}
+.notification_inner{
+  background: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+border-radius: 12px;
+max-height: 370px;
+width: 370px;
+padding: 20px;
+overflow: auto;
+}
+.notification_profie{
+  border: 2px solid #F85046;
+  border-radius: 50%;
+}
+.notification_time{
+  font-size: 12px;
+  color: #1B1B1B;
+}
+.notification_time span{
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background: #F85046;
+border-radius: 5px;
+padding: 2px 8px;
+margin-right: 8px;
+display: inline-block;
+text-align: center;
+}
+/* end of notification css */
