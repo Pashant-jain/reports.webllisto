@@ -15,6 +15,17 @@
     margin: 10px 0;
     width: 100%;
   }
+  .feeds_file_input .label{
+    font-size: 12px;
+  }
+  .dashboard_wrp, .addtimesheet_wrp,.apply_leave_wrp,.settings_wrp, .client_list_wrp, .emp_leave_balance_wrp, .client_list_add_client_wrp, .employee_list_wrp, .past_employee_list_wrp,.admin_report_list_wrp
+.leave_review_wrp, .my_leave_review_wrp, .admin_report_list_wrp, .regularization_review_wrp, .regularization_review_history_wrp, .leave_history_wrp,.add_emp_page_wrp{
+  padding: 15px;
+  border-radius: 35px;
+}s
+  .feede_post{
+    height: 200px;
+  }
 } /* 480 */
 @media only screen and (max-width: 479px) {
 
@@ -45,7 +56,7 @@
     margin-right: 6px;
     margin-bottom: 6px;
   }
-  .submit,.custom-check-label{
+  .submit,.custom-check-label,.feeds_comment_head {
     font-size: 12px;
   }
   .profile_inner_lft{
@@ -84,11 +95,7 @@
 .table_card  table{
   width: 257px;
 }
-.dashboard_wrp, .addtimesheet_wrp,.apply_leave_wrp,.settings_wrp, .client_list_wrp, .emp_leave_balance_wrp, .client_list_add_client_wrp, .employee_list_wrp, .past_employee_list_wrp,.admin_report_list_wrp
-.leave_review_wrp, .my_leave_review_wrp, .admin_report_list_wrp, .regularization_review_wrp, .regularization_review_history_wrp, .leave_history_wrp,.add_emp_page_wrp{
-  padding: 15px;
-  border-radius: 35px;
-}
+
 .settings_wrp .accordion-body{
   padding:15px;
 }
@@ -116,6 +123,20 @@
   padding: 2px 5px;
     font-size: 12px;
     padding: 2px;
+}
+.feeds_input_wrp input.feeds_input{
+  font-size: 12px;
+}
+.feeds_inner{
+  padding:15px 6px;
+}
+.single_comment{
+  position: relative;
+}
+.comment_likes_btn{
+  position: absolute;
+  top: 20px;
+  right: 0  ;
 }
 } /* 375 */
 @media only screen and (max-width: 374px) {

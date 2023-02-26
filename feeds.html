@@ -44,9 +44,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
-
-    <link rel="stylesheet" href="./assets/css/emoji_keyboard.css" />
-    <script src="./assets/js/emoji_keyboard.js"></script>
   </head>
   <body>
     <div class="page_wrp timesheet_page_wrp">
@@ -173,8 +170,8 @@
 
           <div class="feeds_page_inner mt-5 mx-auto">
             <div class="feeds_inner">
-              <div class="d-flex gap-4">
-                <figure>
+              <div class="d-flex flex-column flex-sm-row gap-4">
+                <figure class="text-center">
                   <img
                     src="./assets/images/dummy-profile.png"
                     alt="user image"
@@ -191,7 +188,7 @@
                     class="feeds_input .asd"
                   />
                   <div
-                    class="d-flex justify-content-between align-items-center mt-4"
+                    class="d-flex flex-column flex-sm-row align-items-start justify-content-between align-items-sm-center mt-4"
                   >
                     <div class="feeds_file_input">
                       <label class="label">
@@ -226,6 +223,7 @@
                       </label>
                     </div>
                   </div>
+                  <div class="post_img_wrp"></div>
                 </div>
               </div>
             </div>
@@ -241,8 +239,13 @@
                   />
                 </figure>
                 <div class="feed_post_head w-100">
-                  <h5>Lorem Ipsum <span>2 weeks</span></h5>
-                  <p class="m-0">Designation</p>
+                  <div class="d-sm-flex">
+                    <div>
+                      <h5>Lorem Ipsum</h5>
+                      <p class="m-0">Designation</p>
+                    </div>
+                    <span class="time_ago_posted" >2 weeks</span>
+                  </div>
                 </div>
               </div>
               <div class="feede_post my-4">
@@ -254,7 +257,7 @@
               </div>
               <div class="">
                 <div class="d-flex gap-4">
-                  <button type="button" id="handle_like">
+                  <button type="button" id="handle_like" >
                     <img
                       src="./assets/images/icons/like.svg"
                       alt="like"
@@ -279,204 +282,293 @@
                     />
                   </button>
                 </div>
-               <span class="feeds_comment_head my-2 d-block" >10 likes</span>
-               <p class="m-0" ><span class="feeds_comment_head" >lorem ipsum</span> Lorem ipsum dolor sit amet consectetur. Urna cras est.</p>
-               <p class="view_all_comments" >View all 2 comments</p>
-               <div class="comments_wrp d-none mt-4" >
-                <div class="single_comment d-flex gap-4">
-                  <figure>
-                    <img
-                      src="./assets/images/dummy-profile.png"
-                      alt="user image"
-                      width="35px"
-                      height="35px"
-                      class="rounded-circle feed_input"
-                    />
-                  </figure>
-                  <div class="feed_post_head w-100">
-                    <p class="m-0" ><span class="feeds_comment_head" >lorem ipsum</span> Lorem ipsum dolor sit amet consectetur. Urna cras est.</p>
-                   <div class="comment_action_wrp d-flex gap-4 align-items-baseline" >
-                      <p>2 weeks</p>
-                      <p>1 like </p>
-                      <button type="button" class="reply" >Reply</button>
-                   </div>
-                   <div class=" reply_wrp d-none comment_input py-4 mt-3 d-flex justify-content-between align-items-center gap-4" >
-                    <img src="./assets/images/icons/emoji_label.svg" alt="emoji" width="20px" height="20px" />
-                    <input type="text" placeholder="Add a comment"  />
-                    <button type="button" ><img src="./assets/images/icons/send.svg" alt="send" width="20px" height="20px"/></button>
+                <span class="feeds_comment_head my-2 d-block">10 likes</span>
+                <p class="m-0">
+                  <span class="feeds_comment_head">lorem ipsum</span> Lorem
+                  ipsum dolor sit amet consectetur. Urna cras est.
+                </p>
+                <p class="view_all_comments">View all 2 comments</p>
+                <div class="comments_wrp d-none mt-4">
+                  <div class="single_comment mb-3 d-flex flex-column flex-sm-row gap-4">
+                    <figure>
+                      <img
+                        src="./assets/images/dummy-profile.png"
+                        alt="user image"
+                        width="35px"
+                        height="35px"
+                        class="rounded-circle feed_input"
+                      />
+                    </figure>
+                    <div class="feed_post_head w-100">
+                      <p class="m-0">
+                        <span class="feeds_comment_head">lorem ipsum</span>
+                        Lorem ipsum dolor sit amet consectetur. Urna cras est.
+                      </p>
+                      <div
+                        class="comment_action_wrp d-flex flex-column flex-sm-row gap-0 gap-sm-4 align-items-baseline"
+                      >
+                        <p class="m-0" >2 weeks</p>
+                        <p class="m-0" >1 like</p>
+                        <button type="button" class="reply">Reply</button>
+                      </div>
+                      <div
+                        class="reply_wrp d-none comment_input py-4 mt-3 d-flex justify-content-between align-items-center gap-4"
+                      >
+                        <img
+                          src="./assets/images/icons/emoji_label.svg"
+                          alt="emoji"
+                          width="20px"
+                          height="20px"
+                        />
+                        <input type="text" placeholder="Add a comment" />
+                        <button type="button">
+                          <img
+                            src="./assets/images/icons/send.svg"
+                            alt="send"
+                            width="20px"
+                            height="20px"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <button type="button" id="handle_like" class="comment_likes_btn">
+                      <img
+                        src="./assets/images/icons/like.svg"
+                        alt="like"
+                        width="15px"
+                        height="15px"
+                        class="like_img"
+                      />
+                      <img
+                        src="./assets/images/icons/unlike.svg"
+                        alt="liked"
+                        width="15px"
+                        height="15px"
+                        class="like_img d-none"
+                      />
+                    </button>
                   </div>
+                  <div class="single_comment mb-3 d-flex flex-column flex-sm-row gap-4">
+                    <figure>
+                      <img
+                        src="./assets/images/dummy-profile.png"
+                        alt="user image"
+                        width="35px"
+                        height="35px"
+                        class="rounded-circle feed_input"
+                      />
+                    </figure>
+                    <div class="feed_post_head w-100">
+                      <p class="m-0">
+                        <span class="feeds_comment_head">lorem ipsum</span>
+                        Lorem ipsum dolor sit amet consectetur. Urna cras est.
+                      </p>
+                      <div
+                        class="comment_action_wrp d-flex flex-column flex-sm-row gap-0 gap-sm-4 align-items-baseline"
+                      >
+                        <p class="m-0" >2 weeks</p>
+                        <p class="m-0" >1 like</p>
+                        <button type="button" class="reply">Reply</button>
+                      </div>
+                      <div
+                        class="reply_wrp d-none comment_input py-4 mt-3 d-flex justify-content-between align-items-center gap-4"
+                      >
+                        <img
+                          src="./assets/images/icons/emoji_label.svg"
+                          alt="emoji"
+                          width="20px"
+                          height="20px"
+                        />
+                        <input type="text" placeholder="Add a comment" />
+                        <button type="button">
+                          <img
+                            src="./assets/images/icons/send.svg"
+                            alt="send"
+                            width="20px"
+                            height="20px"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <button type="button" id="handle_like" class="comment_likes_btn">
+                      <img
+                        src="./assets/images/icons/like.svg"
+                        alt="like"
+                        width="15px"
+                        height="15px"
+                        class="like_img"
+                      />
+                      <img
+                        src="./assets/images/icons/unlike.svg"
+                        alt="liked"
+                        width="15px"
+                        height="15px"
+                        class="like_img d-none"
+                      />
+                    </button>
                   </div>
-                  <button type="button" id="handle_like">
+                  <div class="single_comment mb-3 d-flex flex-column flex-sm-row gap-4">
+                    <figure>
+                      <img
+                        src="./assets/images/dummy-profile.png"
+                        alt="user image"
+                        width="35px"
+                        height="35px"
+                        class="rounded-circle feed_input"
+                      />
+                    </figure>
+                    <div class="feed_post_head w-100">
+                      <p class="m-0">
+                        <span class="feeds_comment_head">lorem ipsum</span>
+                        Lorem ipsum dolor sit amet consectetur. Urna cras est.
+                      </p>
+                      <div
+                        class="comment_action_wrp d-flex flex-column flex-sm-row gap-0 gap-sm-4 align-items-baseline"
+                      >
+                        <p class="m-0" >2 weeks</p>
+                        <p class="m-0" >1 like</p>
+                        <button type="button" class="reply">Reply</button>
+                      </div>
+                      <div
+                        class="reply_wrp d-none comment_input py-4 mt-3 d-flex justify-content-between align-items-center gap-4"
+                      >
+                        <img
+                          src="./assets/images/icons/emoji_label.svg"
+                          alt="emoji"
+                          width="20px"
+                          height="20px"
+                        />
+                        <input type="text" placeholder="Add a comment" />
+                        <button type="button">
+                          <img
+                            src="./assets/images/icons/send.svg"
+                            alt="send"
+                            width="20px"
+                            height="20px"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <button type="button" id="handle_like" class="comment_likes_btn">
+                      <img
+                        src="./assets/images/icons/like.svg"
+                        alt="like"
+                        width="15px"
+                        height="15px"
+                        class="like_img"
+                      />
+                      <img
+                        src="./assets/images/icons/unlike.svg"
+                        alt="liked"
+                        width="15px"
+                        height="15px"
+                        class="like_img d-none"
+                      />
+                    </button>
+                  </div>
+                  <div class="single_comment mb-3 d-flex flex-column flex-sm-row gap-4">
+                    <figure>
+                      <img
+                        src="./assets/images/dummy-profile.png"
+                        alt="user image"
+                        width="35px"
+                        height="35px"
+                        class="rounded-circle feed_input"
+                      />
+                    </figure>
+                    <div class="feed_post_head w-100">
+                      <p class="m-0">
+                        <span class="feeds_comment_head">lorem ipsum</span>
+                        Lorem ipsum dolor sit amet consectetur. Urna cras est.
+                      </p>
+                      <div
+                        class="comment_action_wrp d-flex flex-column flex-sm-row gap-0 gap-sm-4 align-items-baseline"
+                      >
+                        <p class="m-0" >2 weeks</p>
+                        <p class="m-0" >1 like</p>
+                        <button type="button" class="reply">Reply</button>
+                      </div>
+                      <div
+                        class="reply_wrp d-none comment_input py-4 mt-3 d-flex justify-content-between align-items-center gap-4"
+                      >
+                        <img
+                          src="./assets/images/icons/emoji_label.svg"
+                          alt="emoji"
+                          width="20px"
+                          height="20px"
+                        />
+                        <input type="text" placeholder="Add a comment" />
+                        <button type="button">
+                          <img
+                            src="./assets/images/icons/send.svg"
+                            alt="send"
+                            width="20px"
+                            height="20px"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <button type="button" id="handle_like" class="comment_likes_btn">
+                      <img
+                        src="./assets/images/icons/like.svg"
+                        alt="like"
+                        width="15px"
+                        height="15px"
+                        class="like_img"
+                      />
+                      <img
+                        src="./assets/images/icons/unlike.svg"
+                        alt="liked"
+                        width="15px"
+                        height="15px"
+                        class="like_img d-none"
+                      />
+                    </button>
+                  </div>
+                  <div
+                    class="comment_input py-4 mt-3 d-flex justify-content-between align-items-center gap-4"
+                  >
                     <img
-                      src="./assets/images/icons/like.svg"
-                      alt="like"
-                      width="15px"
-                      height="15px"
-                      class="like_img"
+                      src="./assets/images/icons/emoji_label.svg"
+                      alt="emoji"
+                      width="20px"
+                      height="20px"
                     />
-                    <img
-                      src="./assets/images/icons/unlike.svg"
-                      alt="liked"
-                      width="15px"
-                      height="15px"
-                      class="like_img d-none"
-                    />
-                  </button>
+                    <input type="text" placeholder="Add a comment" />
+                    <button type="button">
+                      <img
+                        src="./assets/images/icons/send.svg"
+                        alt="send"
+                        width="20px"
+                        height="20px"
+                      />
+                    </button>
+                  </div>
                 </div>
-                <div class="single_comment d-flex gap-4">
-                  <figure>
-                    <img
-                      src="./assets/images/dummy-profile.png"
-                      alt="user image"
-                      width="35px"
-                      height="35px"
-                      class="rounded-circle feed_input"
-                    />
-                  </figure>
-                  <div class="feed_post_head w-100">
-                    <p class="m-0" ><span class="feeds_comment_head" >lorem ipsum</span> Lorem ipsum dolor sit amet consectetur. Urna cras est.</p>
-                   <div class="comment_action_wrp d-flex gap-4 align-items-baseline" >
-                      <p>2 weeks</p>
-                      <p>1 like </p>
-                      <button type="button" class="reply" >Reply</button>
-                   </div>
-                   <div class=" reply_wrp d-none comment_input py-4 mt-3 d-flex justify-content-between align-items-center gap-4" >
-                    <img src="./assets/images/icons/emoji_label.svg" alt="emoji" width="20px" height="20px" />
-                    <input type="text" placeholder="Add a comment"  />
-                    <button type="button" ><img src="./assets/images/icons/send.svg" alt="send" width="20px" height="20px"/></button>
-                  </div>
-                  </div>
-                  <button type="button" id="handle_like">
-                    <img
-                      src="./assets/images/icons/like.svg"
-                      alt="like"
-                      width="15px"
-                      height="15px"
-                      class="like_img"
-                    />
-                    <img
-                      src="./assets/images/icons/unlike.svg"
-                      alt="liked"
-                      width="15px"
-                      height="15px"
-                      class="like_img d-none"
-                    />
-                  </button>
-                </div>
-                <div class="single_comment d-flex gap-4">
-                  <figure>
-                    <img
-                      src="./assets/images/dummy-profile.png"
-                      alt="user image"
-                      width="35px"
-                      height="35px"
-                      class="rounded-circle feed_input"
-                    />
-                  </figure>
-                  <div class="feed_post_head w-100">
-                    <p class="m-0" ><span class="feeds_comment_head" >lorem ipsum</span> Lorem ipsum dolor sit amet consectetur. Urna cras est.</p>
-                   <div class="comment_action_wrp d-flex gap-4 align-items-baseline" >
-                      <p>2 weeks</p>
-                      <p>1 like </p>
-                      <button type="button" class="reply" >Reply</button>
-                   </div>
-                   <div class=" reply_wrp d-none comment_input py-4 mt-3 d-flex justify-content-between align-items-center gap-4" >
-                    <img src="./assets/images/icons/emoji_label.svg" alt="emoji" width="20px" height="20px" />
-                    <input type="text" placeholder="Add a comment"  />
-                    <button type="button" ><img src="./assets/images/icons/send.svg" alt="send" width="20px" height="20px"/></button>
-                  </div>
-                  </div>
-                  <button type="button" id="handle_like">
-                    <img
-                      src="./assets/images/icons/like.svg"
-                      alt="like"
-                      width="15px"
-                      height="15px"
-                      class="like_img"
-                    />
-                    <img
-                      src="./assets/images/icons/unlike.svg"
-                      alt="liked"
-                      width="15px"
-                      height="15px"
-                      class="like_img d-none"
-                    />
-                  </button>
-                </div>
-                <div class="single_comment d-flex gap-4">
-                  <figure>
-                    <img
-                      src="./assets/images/dummy-profile.png"
-                      alt="user image"
-                      width="35px"
-                      height="35px"
-                      class="rounded-circle feed_input"
-                    />
-                  </figure>
-                  <div class="feed_post_head w-100">
-                    <p class="m-0" ><span class="feeds_comment_head" >lorem ipsum</span> Lorem ipsum dolor sit amet consectetur. Urna cras est.</p>
-                   <div class="comment_action_wrp d-flex gap-4 align-items-baseline" >
-                      <p>2 weeks</p>
-                      <p>1 like </p>
-                      <button type="button" class="reply" >Reply</button>
-                   </div>
-                   <div class=" reply_wrp d-none comment_input py-4 mt-3 d-flex justify-content-between align-items-center gap-4" >
-                    <img src="./assets/images/icons/emoji_label.svg" alt="emoji" width="20px" height="20px" />
-                    <input type="text" placeholder="Add a comment"  />
-                    <button type="button" ><img src="./assets/images/icons/send.svg" alt="send" width="20px" height="20px"/></button>
-                  </div>
-                  </div>
-                  <button type="button" id="handle_like">
-                    <img
-                      src="./assets/images/icons/like.svg"
-                      alt="like"
-                      width="15px"
-                      height="15px"
-                      class="like_img"
-                    />
-                    <img
-                      src="./assets/images/icons/unlike.svg"
-                      alt="liked"
-                      width="15px"
-                      height="15px"
-                      class="like_img d-none"
-                    />
-                  </button>
-                </div>
-                <div class=" comment_input py-4 mt-3 d-flex justify-content-between align-items-center gap-4" >
-                  <img src="./assets/images/icons/emoji_label.svg" alt="emoji" width="20px" height="20px" />
-                  <input type="text" placeholder="Add a comment"  />
-                  <button type="button" ><img src="./assets/images/icons/send.svg" alt="send" width="20px" height="20px"/></button>
-                </div>
-               </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      var emojiKeyboard = new EmojiKeyboard();
-      emojiKeyboard.instantiate(document.getElementById("test"));
 
-      const output = document.getElementById("output");
-      emojiKeyboard.callback = (emoji, closed) => {
-        console.info(emoji, closed);
-        output.innerText += emoji.emoji;
-      };
+    <script>
+      $("#handle_like").click(function () {
+        $(".like_img").toggleClass("d-none");
+      });
+      $(".view_all_comments").click(function () {
+        $(".comments_wrp").toggleClass("d-none");
+        $(".view_all_comments").toggleClass("d-none");
+      });
+      $(".reply").click(function () {
+        $(".reply_wrp").toggleClass("d-none");
+      });
+      function img_pathUrl(input) {
+        $(".post_img_wrp")[0].src = (
+          window.URL ? URL : webkitURL
+        ).createObjectURL(input.files[0]);
+      }
     </script>
-<script>
-$("#handle_like").click(function () {
-  $(".like_img").toggleClass("d-none");
-});
-$(".view_all_comments").click(function () {
-  $(".comments_wrp").toggleClass("d-none");
-  $(".view_all_comments").toggleClass("d-none");
-});
-$(".reply").click(function () {
-  $(".reply_wrp").toggleClass("d-none");
-});
-</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>

@@ -1205,11 +1205,11 @@ input.exp_input {
   font-weight: 600;
   margin: unset;
 }
-.feed_post_head h5 span {
+.feed_post_head  span.time_ago_posted {
   color: #686868;
   font-size: 12px;
 }
-.feed_post_head h5 span::before {
+.feed_post_head span.time_ago_posted::before {
   display: inline-block;
   margin: 0 8px;
   vertical-align: 1px;
