@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href='./assets/css/text-editor.css' rel='stylesheet' type='text/css' />
+    <link
+      href="./assets/css/text-editor.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <link
       rel="stylesheet"
@@ -30,22 +34,20 @@
     <link rel="stylesheet" href="./assets/css/mobile-view-responsive.css" />
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/> -->
 
-
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
     <!-- Load Bootstrap -->
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" rel="stylesheet"/>
 
+
     <link rel="stylesheet" href="./assets/css/filter_multi_select.css" />
     <script src="./assets/js/filter-multi-select-bundle.min.js"></script>
-
   </head>
   <body>
     <div class="page_wrp timesheet_page_wrp">
@@ -167,134 +169,166 @@
         </div>
       </aside>
       <div class="contant">
-       <div class="apply_leave_wrp">
-        <h2 class="page_title">Apply Leave</h2>
-        <p class="subtitle mb-3">Fill the required information below to Apply leave</p>
-        <div  class="page_inner_wrp mt-5">
-            <div class="remaining_leave_wrp mb-5 mt-3">
-                <p class="remaining_leaves">You have currently 6.0 available</p>
-            </div>
-
-
-            
-            <form class="form-material" action="/leave/" method="post" id="form-leave">
-                <div class="form-group">
-                  <div class="row mb-5">
-                    <div class="col-md-6">
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Leave Type</label>
-                            <div class="col-sm-9">
-                                <select class="form-select" id="leave_type">
-                                    <option class="option_menu" value="CASUAL">Casual Leave</option>
-                                    <option class="option_menu" value="PRIVILEGED">Privileged Leave</option>
-                                    <option class="option_menu" value="EMERGENCY">Emergency Leave</option>
-                                    <option class="option_menu" value="LOP">Loss of Pay</option>
-                                </select>
-                            </div>
-                        </div>
+        <div class="apply_leave_wrp">
+          <h2 class="page_title">Apply Leave</h2>
+          <p class="subtitle mb-3">
+            Fill the required information below to Apply leave
+          </p>
+          <div class="page_inner_wrp mt-5">
+            <form
+              class="form-material"
+              action="/leave/"
+              method="post"
+              id="form-leave"
+            >
+              <div class="row">
+                <div class="col-12 col-sm-4 mb-5">
+                  <div class="row m-0">
+                    <div class="col-12 col-lg-4 mb-3 mb-sm-0 p-0">
+                      <label>Applying for</label>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Leave Period</label>
-                            <div class="col-sm-9">
-                                <select id="leave_period" name="leave_period" class="form-select">
-                                    <option class="option_menu" value="FULL DAY">Full Day</option>
-                                    <option class="option_menu" value="HALF DAY">Half Day</option>
-                                </select>
-                                <span class="messages popover-valid"></span>
-                            </div>
+                    <div class="col-12 col-lg-8 p-0">
+                      <div
+                        class="d-flex justify-content-start align-items-center gap-4"
+                      >
+                        <div>
+                          <input
+                            id="Myself"
+                            type="radio"
+                            name="ApplyingFor"
+                            class="ApplyingFor"
+                            checked
+                          /><label for="Myself">Myself</label>
                         </div>
-                    </div>
-                </div>
-                <div class="row mb-5">
-                    <div class="col-md-6">
-                      <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">From Date</label>
-                        <div class="col-sm-9">
-                          <input type="date" id="sd" autocomplete="off" name="from_date" class="form-control hasDatepicker" required="">
-
-                          <span id="msg_from" class="messages popover-valid"></span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">To Date</label>
-                        <div class="col-sm-9">
-                          <input type="date" autocomplete="off" id="ed" name="to_date" class="form-control hasDatepicker" required="">
-                          <span id="msg_to" class="messages popover-valid"></span>
+                        <div>
+                          <input
+                            id="Other"
+                            type="radio"
+                            name="ApplyingFor"
+                            class="ApplyingFor"
+                          /><label for="Other">Other</label>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form-group mb-5 applying_to">
-                    
-                        <label class="col-form-label">Applying To</label>
-                    
-                      <input type="text" value="Bharti Sharma" class="form-control applying_ans" id="apply_to" disabled="">
-                      <input type="hidden" value="42" name="applying_to" id="applying_to">
-                      <span class="messages popover-valid"></span>
-                  
-                  </div>
-
-                  <div class="row mb-5">
-                    <div class="col-md-12">
-                      <div class="form-group row">
-                        <label class="col-sm-1 col-form-label" style="min-width: 13% !important;">CC To</label>
-                       <div class="col-sm-10 p-0 ">
-                        <div class="form-group row">
-                          <label class="col-2 col-form-label" for="animals">Animals</label>
-                          <div class="col-10">
-                            <select multiple name="animals" id="animals" class="filter-multi-select">
-                              <option value="bear">Bear</option>
-                              <option value="ant">Ant</option>
-                              <option value="salamander">Salamander</option>
-                              <option value="owl">Owl</option>
-                              <option value="frog">Frog</option>
-                              <option value="shark">Shark</option>
-                              <option value="bear1">Bear</option>
-                              <option value="bear2">Bear</option>
-                              <option value="bear3">Bear</option>
-                              <option value="bear4">Bear</option>
-                              <option value="bear5">Bear</option>
-                              <option value="bear6">Bear</option>
-                              <option value="bear7">Bear</option>
-                              <option value="bear8">Bear</option>
-                            </select>
-                          </div>
-                        </div>
-                        </div> 
-                      </div>
+                </div>
+                <div class="username_wrp col-12 col-sm-8 mb-5 disabled_wrp">
+                  <div class="row m-0">
+                    <div class="col-12 col-lg-3 mb-3 mb-sm-0 p-0">
+                      <label>User Name</label>
+                    </div>
+                    <div class="col-12 col-lg-9 p-0">
+                      <select id="leave_period" name="leave_period" class="select_user" disabled>
+                        <option class="option_menu" disabled selected>
+                          Select Employee
+                        </option>
+                        <option class="option_menu" value="Prashant jain">
+                          Prashant jain
+                        </option>
+                      </select>
                     </div>
                   </div>
                 </div>
-
-                <div class="form-group mb-5 reason" id="div_reason">
-                  <label for="exampleFormControlTextarea1">Reason</label>
-                  <div id="example"><p>Webllisto Marketing</p></div>
-                  <script type='text/javascript' src='./assets/js/text-editor.js'></script>  
-                  <script>
-                  new FroalaEditor('div#example', {
-                      toolbarBottom: true
-                  })
-                  </script>
+              </div>
+              <div class="mb-3 mb-sm-5" style="padding: 0 15px">
+                <div class="row">
+                  <div class="col-12 col-lg-1 mb-3 mb-lg-0 p-0 form_label">
+                    <label>Select Project </label>
+                  </div>
+                  <div class="col-12 col-lg-11 p-0 form_data">
+                    <select class="sel_proj">
+                        <option class="option_menu" value="">Webllisto Marketing</option>
+                        <option class="option_menu">Project 1</option>
+                        <option class="option_menu">Project 2</option>
+                        <option class="option_menu">Project 3</option>
+                      </select>
+                  </div>
                 </div>
-
-                <div class="form-group sub_btn">
-                  <button type="submit" id="leaveSubmit" class="submit m-b-0">Submit</button>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                    <div class="row m-0">
+                      <div class="col-12   col-lg-3 mb-3 mb-sm-0 p-0">
+                        <label>Select Date</label>
+                      </div>
+                      <div class="col-12 col-lg-9 p-0">
+                        <input type="date" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                    <div class="row m-0">
+                      <div class="col-12 col-lg-3 mb-3 mb-sm-0 p-0">
+                        <label>Start Time</label>
+                      </div>
+                      <div class="col-12 col-lg-9 p-0">
+                        <input type="time" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                    <div class="row m-0">
+                      <div class="col-12 col-lg-3 mb-3 mb-sm-0 p-0">
+                        <label>End Time</label>
+                      </div>
+                      <div class="col-12 col-lg-9 p-0">
+                        <input type="time" />
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="" style="padding: 0 15px">
+                <div class="row">
+                  <div class="col-12 col-lg-1 mb-3 mb-lg-0 p-0 form_label">
+                    <label for="animals">Reason</label>
+                  </div>
+                  <div class="col-12 col-lg-11 p-0 form_data">
+                    <div id="example"><p>Webllisto Marketing</p></div>
+                  </div>
                 </div>
-                
-              </form>
-              
+              </div>
+              <div class="mt-3 mt-sm-5" style="padding: 0 15px">
+                <div class="row">
+                  <div
+                    class="col-12  col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                  >
+                    <label>Task Status</label>
+                  </div>
+                  <div class="col-12 col-lg-10 p-0 form_data">
+                    <select class="task_status">
+                        <option class="option_menu" value="" disabled selected>Select Task Status</option>
+                        <option class="option_menu">Done</option>
+                        <option class="option_menu">In-progress</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group sub_btn mt-5">
+                <button type="submit" id="leaveSubmit" class="submit m-b-0">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-        
-
-       </div>
       </div>
-      
     </div>
-    
+    <script type="text/javascript" src="./assets/js/text-editor.js"></script>
+    <script>
+      new FroalaEditor("div#example", {
+        toolbarBottom: true,
+      });
+    </script>
+    <script>
+      $(function () {
+        $(".ApplyingFor").on("change", function () {
+          var checked = $("#Myself").prop("checked");
+          $(".select_user").prop("disabled", checked);
+          $(".username_wrp").toggleClass("disabled_wrp");
+        });
+      });
+    </script>
+
     <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
       crossorigin="anonymous"
@@ -305,6 +339,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
     <script src="./assets/js/email-cc.js"></script>
     <script src="./assets/js/main.js"></script>
-    
   </body>
 </html>

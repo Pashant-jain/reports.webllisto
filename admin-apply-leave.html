@@ -193,7 +193,7 @@
                     <div class="col-12 col-lg-3 mb-3 mb-sm-0 p-0">
                       <label>Leave Type</label>
                     </div>
-                    <div class="col-12 col-sm-9 p-0">
+                    <div class="col-12 col-lg-9 p-0">
                       <select id="leave_type">
                         <option class="option_menu" value="CASUAL">
                           Casual Leave
@@ -216,7 +216,7 @@
                     <div class="col-12 col-lg-3 mb-3 mb-sm-0 p-0">
                       <label>Leave Type</label>
                     </div>
-                    <div class="col-12 col-sm-9 p-0">
+                    <div class="col-12 col-lg-9 p-0">
                       <select id="leave_period" name="leave_period">
                         <option class="option_menu" value="FULL DAY">
                           Full Day
@@ -233,7 +233,7 @@
                     <div class="col-12 col-lg-3 mb-3 mb-sm-0 p-0">
                       <label>Applying for</label>
                     </div>
-                    <div class="col-12 col-sm-9 p-0">
+                    <div class="col-12 col-lg-9 p-0">
                       <div
                         class="d-flex justify-content-start align-items-center gap-4"
                       >
@@ -263,8 +263,8 @@
                     <div class="col-12 col-lg-3 mb-3 mb-sm-0 p-0">
                       <label>User Name</label>
                     </div>
-                    <div class="col-12 col-sm-9 p-0">
-                      <select id="leave_period" name="leave_period" disabled >
+                    <div class="col-12 col-lg-9 p-0">
+                      <select id="leave_period" name="leave_period" class="select_user" disabled >
                         <option class="option_menu" disabled selected>
                           Select Employee
                         </option>
@@ -280,7 +280,7 @@
                     <div class="col-12 col-lg-3 mb-3 mb-sm-0 p-0">
                       <label>From Date</label>
                     </div>
-                    <div class="col-12 col-sm-9 p-0">
+                    <div class="col-12 col-lg-9 p-0">
                       <input type="date" />
                     </div>
                   </div>
@@ -290,7 +290,7 @@
                     <div class="col-12 col-lg-3 mb-3 mb-sm-0 p-0">
                       <label>To Date</label>
                     </div>
-                    <div class="col-12 col-sm-9 p-0">
+                    <div class="col-12 col-lg-9 p-0">
                       <input type="date" />
                     </div>
                   </div>
@@ -366,7 +366,7 @@
       $(function () {
         $(".ApplyingFor").on("change", function () {
           var checked = $("#Myself").prop("checked");
-          $("select").prop("disabled", checked);
+          $(".select_user").prop("disabled", checked);
           $(".username_wrp").toggleClass("disabled_wrp");
         });
       });
