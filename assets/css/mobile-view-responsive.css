@@ -22,10 +22,17 @@
 .leave_review_wrp, .my_leave_review_wrp, .admin_report_list_wrp, .regularization_review_wrp, .regularization_review_history_wrp, .leave_history_wrp,.add_emp_page_wrp{
   padding: 15px;
   border-radius: 35px;
-}s
+}
   .feede_post{
     height: 200px;
   }
+  .notification_wrp{
+    left: -300%;
+  }
+  .notification_inner::before{
+    left: 27%;
+  }
+
 } /* 480 */
 @media only screen and (max-width: 479px) {
 
@@ -35,13 +42,13 @@
   h3{
     font-size: 13px;
   }
-  h4,select, input, textarea, .profile_skils_wrp,label,.avaiabe_leave_dtl,.filter_table_btn_wrp .import,.filter_table_btn_wrp .export,.filter_table_btn_wrp .submit{
+  h4,select, input, textarea, .profile_skils_wrp,label,.avaiabe_leave_dtl,.filter_table_btn_wrp .import,.filter_table_btn_wrp .export,.filter_table_btn_wrp .submit,.notification_time span{
     font-size: 12px;
   }
   p{
     font-size: 11px;
   }
-  .emp_leave_dtl{
+  .emp_leave_dtl,.notification_time{
     font-size: 10PX;
   }
   .emp_profile_box_wrp{
@@ -138,6 +145,19 @@
   top: 20px;
   right: 0  ;
 }
+  .notification_inner{
+    width: 300px;
+  }
+  .custom_input_wrp .fileUpload span,.custom_input_wrp .f-input{
+    font-size: 10px;
+  }
 } /* 375 */
 @media only screen and (max-width: 374px) {
+  .notification_wrp {
+    left: -364%;
+}
+.notification_inner::before {
+  left: 38%;
+}
+
 } /* 320 */

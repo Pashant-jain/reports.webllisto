@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href='./assets/css/text-editor.css' rel='stylesheet' type='text/css' />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/calander.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/laptop-view-responsive.css" />
+    <link rel="stylesheet" href="./assets/css/tablet-view-responsive.css" />
+    <link rel="stylesheet" href="./assets/css/mobile-view-responsive.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="page_wrp timesheet_page_wrp">
+      <aside id="separator-sidebar" class="sidebar" aria-label="Sidebar">
+        <div class="sidebar_inner">
+          <div
+            class="sidebar_head d-flex justify-content-between align-items-center"
+          >
+            <figure class="m-0"><h1 class="m-0">Logo</h1></figure>
+            <img
+              src="./assets/images/sidebar_arrow.svg"
+              alt="sidebar toggle"
+              width="20px"
+              height="20px"
+              class="sidebar_toggler"
+            />
+          </div>
+          <div class="profile_wrp py-5">
+            <figure class="text-center m-0">
+              <img
+                src="./assets/images/dummy-profile.png"
+                alt="dummy profile"
+                class="profile_img"
+              />
+            </figure>
+            <div
+              class="profile_icon_wrp d-flex justify-content-center align-items-center py-3"
+            >
+              <button class="profile_icon">
+                <img
+                  src="./assets/images/icons/settings_icon.svg"
+                  alt="Settings"
+                  class="w-4"
+                />
+              </button>
+              <div class="notification_btn mx-3">
+                <button class="profile_icon">
+                  <img
+                    src="./assets/images/icons//notification_icon.svg"
+                    alt="Notification"
+                    class="w-4"
+                  />
+                </button>
+                <div class="notification_wrp"></div>
+              </div>
+              <button class="profile_icon">
+                <img
+                  src="./assets/images/icons/logout_icon.svg"
+                  alt="Log Out"
+                  class="w-4"
+                />
+              </button>
+            </div>
+            <h2 class="text-center">Lorem Ipsum</h2>
+            <p class="subtitle text-center">Designation</p>
+          </div>
+          <ul class="menu_wrp">
+            <li class="active">
+              <a href="#"
+                ><img
+                  src="./assets/images/icons/dashboard_menu_icon.svg"
+                  alt="Dashboard Icon" /><span>Dashboard</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow"
+              /></a>
+
+              <ul class="submenu">
+                <li>
+                  <a href="#"><span>Dashboard</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Dashboard</span></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/icons/dashboard_menu_icon.svg"
+                  alt="Dashboard Icon"
+                /><span>Dashboard</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/icons/dashboard_menu_icon.svg"
+                  alt="Dashboard Icon"
+                /><span>Dashboard</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/icons/dashboard_menu_icon.svg"
+                  alt="Dashboard Icon"
+                /><span>Dashboard</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/icons/dashboard_menu_icon.svg"
+                  alt="Dashboard Icon"
+                /><span>Leave History</span></a
+              >
+            </li>
+          </ul>
+          <div class="text-center mt-5">
+            <button type="button" class="help_btn">
+              <img
+                src="./assets/images/icons/help_icon.svg"
+                alt="Help Icon Icon"
+              /><span>Help Center</span>
+            </button>
+          </div>
+        </div>
+      </aside>
+      <div class="contant">
+       <div class="addtimesheet_wrp" >
+        <h2 class="page_title">Add Client</h2>
+        <p class="subtitle mb-3">Add client with the help of fields mentioned below.</p>
+        <div  class="page_inner_wrp mt-5">
+            <form>
+                <div class="row m-0" >
+                  <div class="col-12 col-sm-6 col-lg-4  mb-5" >
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>Enter Name</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                          <input type="text" placeholder="John Doe" />
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-5" >
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>Email Address</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                          <input type="email" placeholder="johndoe@gmail.com" />
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-5" >
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>Contact No.</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                          <input type="tel" placeholder="12345 67890" />
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-8 mb-5" >
+                    <div class="" style="padding: 0 15px">
+                        <div class="row">
+                          <div
+                            class="col-12  col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                          >
+                            <label>Client Address</label>
+                          </div>
+                          <div class="col-12 col-lg-10 p-0 form_data">
+                            <input type="text" placeholder="Lorem 28, Ipsum XYX" />
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-5" >
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>ZIP/Postal Code    </label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                          <input type="text" placeholder="451115" />
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-5" >
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>City</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                          <input type="text" placeholder="Ipsum" />
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-5" >
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>State</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                          <input type="text" placeholder="Lorem" />
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-5" >
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>Country</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                          <input type="text" placeholder="Lorem" />
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-5" >
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>Gender</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                            <select>
+                                <option class="option_menu" value="" disabled selected >
+                                    Select Gender
+                                </option>
+                                <option class="option_menu">Male</option>
+                                <option class="option_menu">Female</option>
+                                <option class="option_menu">Other</option>
+                              </select>
+                        </div>
+                      </div>
+                  </div>  
+                  <div class="col-12 col-sm-6 col-lg-4 mb-5" >
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>Way of 
+                            Communication</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                            <select>
+                                <option class="option_menu" value="" disabled selected >
+                                    Others
+                                </option>
+                                <option class="option_menu">Male</option>
+                                <option class="option_menu">Female</option>
+                                <option class="option_menu">Other</option>
+                              </select>
+                        </div>
+                      </div>
+                  </div>  
+                  <div class="col-12 col-sm-6 col-lg-4 mb-5" >
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>Lead Generated
+                            From</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                            <input type="text" placeholder="Enter here" />
+                        </div>
+                      </div>
+                  </div>   
+                  <div class="col-12 col-sm-6 col-lg-4 mb-5" >
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>Platform Name</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                            <input type="text" placeholder="Platform Name" />
+                        </div>
+                      </div>
+                  </div>   
+                  <div class="col-12 col-sm-6 col-lg-8 mb-5" >
+                    <div class="" style="padding: 0 15px">
+                        <div class="row">
+                          <div
+                            class="col-12  col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                          >
+                            <label>Platform Name</label>
+                          </div>
+                          <div class="col-12 col-lg-10 p-0 form_data">
+                            <input type="url" placeholder="Enter Link" />
+                          </div>
+                        </div>
+                      </div>
+                  </div>   
+                </div>
+                <div class="text-center mt-5">
+                    <button type="button" class="submit mx-1">
+                      <span class="position-relative">Submit</span>
+                    </button>
+                  </div>
+              </form>
+        </div>
+       </div>
+      </div>
+      
+    </div>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

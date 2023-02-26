@@ -44,8 +44,9 @@ $(document).ready(function () {
 
 
 
-
-
+$(".notification_btn").click(function () {
+  $(".notification_wrp").toggleClass("d-none");
+});
 new FroalaEditor('div#example', {
   toolbarBottom: true
 })
