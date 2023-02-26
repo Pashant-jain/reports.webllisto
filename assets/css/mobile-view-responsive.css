@@ -148,6 +148,9 @@
   .notification_inner{
     width: 300px;
   }
+  .custom_input_wrp .fileUpload span,.custom_input_wrp .f-input{
+    font-size: 10px;
+  }
 } /* 375 */
 @media only screen and (max-width: 374px) {
   .notification_wrp {
