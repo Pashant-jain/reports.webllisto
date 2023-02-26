@@ -24,20 +24,21 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap"
       rel="stylesheet"
     />
+    <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="./assets/css/calander.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/laptop-view-responsive.css" />
     <link rel="stylesheet" href="./assets/css/tablet-view-responsive.css" />
     <link rel="stylesheet" href="./assets/css/mobile-view-responsive.css" />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css"
-      rel="stylesheet"
-    />
+   
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
       crossorigin="anonymous"
@@ -273,7 +274,7 @@
                       class="like_img d-none"
                     />
                   </button>
-                  <button type="button">
+                  <button type="button" id="handle_message">
                     <img
                       src="./assets/images/icons/message.svg"
                       alt="comments"
@@ -556,6 +557,10 @@
       $("#handle_like").click(function () {
         $(".like_img").toggleClass("d-none");
       });
+      $("#handle_message").click(function () {
+        $(".single_comment").toggleClass("d-none");
+        $(".comments_wrp").toggleClass("d-none");
+      });
       $(".view_all_comments").click(function () {
         $(".comments_wrp").toggleClass("d-none");
         $(".view_all_comments").toggleClass("d-none");
@@ -568,6 +573,7 @@
           window.URL ? URL : webkitURL
         ).createObjectURL(input.files[0]);
       }
+      
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

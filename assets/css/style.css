@@ -1260,4 +1260,7 @@ input.exp_input {
   bottom: 0;
   background-color: #ffeed5;
 }
+.view_all_comments{
+  cursor: pointer;
+}
 /* end of feeds css */
