@@ -1168,6 +1168,9 @@ input.exp_input {
 .curr_add_dtl_inner {
   min-height: 50vh;
 }
+.page_inner_wrp{
+  min-height: 70vh;
+}
 /* end of add employee css */
 
 /* feeds css */
