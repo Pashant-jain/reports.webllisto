@@ -43,7 +43,12 @@ p {
   font-size: 14px;
   word-break: break-word;
 }
-td,th,span,button,a,li{
+td,
+th,
+span,
+button,
+a,
+li {
   word-break: break-word;
 }
 .w-60 {
@@ -1168,7 +1173,7 @@ input.exp_input {
 .curr_add_dtl_inner {
   min-height: 50vh;
 }
-.page_inner_wrp{
+.page_inner_wrp {
   min-height: 70vh;
 }
 /* end of add employee css */
@@ -1218,7 +1223,7 @@ input.exp_input {
   font-weight: 600;
   margin: unset;
 }
-.feed_post_head  span.time_ago_posted {
+.feed_post_head span.time_ago_posted {
   color: #686868;
   font-size: 12px;
 }
@@ -1257,32 +1262,31 @@ input.exp_input {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
-.comment_input{
+.comment_input {
   border-top: 0.3px solid rgba(0, 0, 0, 0.15);
 }
-.comment_input input{
+.comment_input input {
   border: unset;
 }
-.comments_wrp{
+.comments_wrp {
   position: relative;
   bottom: 0;
   max-height: 190px;
   overflow: auto;
 }
-.comment_input{
+.comment_input {
   position: sticky;
   bottom: 0;
   background-color: #ffeed5;
-} 
+}
 /* end of feeds css */
 /* notification css */
-.notification_wrp{
- 
-position: absolute;
-top: 165%;
-left: -60%;
+.notification_wrp {
+  position: absolute;
+  top: 165%;
+  left: -60%;
 }
-.notification_inner::before{
+.notification_inner::before {
   display: inline-block;
   margin-left: 0.3em;
   vertical-align: 1px;
@@ -1293,32 +1297,57 @@ left: -60%;
   position: absolute;
   top: -20px;
 }
-.notification_inner{
-  background: #FFFFFF;
+.notification_inner {
+  background: #ffffff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
-border-radius: 12px;
-max-height: 370px;
-width: 370px;
-padding: 20px;
-overflow: auto;
+  border-radius: 12px;
+  max-height: 370px;
+  width: 370px;
+  padding: 20px;
+  overflow: auto;
 }
-.notification_profie{
-  border: 2px solid #F85046;
+.notification_profie {
+  border: 2px solid #f85046;
   border-radius: 50%;
 }
-.notification_time{
+.notification_time {
   font-size: 12px;
-  color: #1B1B1B;
+  color: #1b1b1b;
 }
-.notification_time span{
+.notification_time span {
   font-size: 14px;
   font-weight: 500;
-  color: #FFFFFF;
-  background: #F85046;
-border-radius: 5px;
-padding: 2px 8px;
-margin-right: 8px;
-display: inline-block;
-text-align: center;
+  color: #ffffff;
+  background: #f85046;
+  border-radius: 5px;
+  padding: 2px 8px;
+  margin-right: 8px;
+  display: inline-block;
+  text-align: center;
 }
 /* end of notification css */
+
+.disabled_wrp,
+.disabled_wrp label,
+.disabled_wrp input,
+.disabled_wrp select {
+  cursor: not-allowed;
+  color: #ababab;
+}
+
+input[type="radio"] {
+  border: 2px solid #ffeed5 ;
+  box-shadow: 0 0 0 1px 
+  #1B1B1B;
+  appearance: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  transition: all ease-in 0.2s;
+  margin-right: 10px;
+}
+input[type="radio"]:checked {
+  background-color: #f85046;
+  box-shadow: 0 0 0 1px #f85046;
+}
