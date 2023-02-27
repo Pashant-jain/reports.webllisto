@@ -84,8 +84,8 @@ li {
 }
 
 /* .profile_wrp img{
-    margin: 0 auto;
-  } */
+      margin: 0 auto;
+    } */
 .profile_icon {
   background-color: #f3f1ef;
   border-radius: 50%;
@@ -96,8 +96,8 @@ li {
   align-items: center;
 }
 /* .profile_icon:nth-child(2) {
-  margin: 0 15px;
-} */
+    margin: 0 15px;
+  } */
 .profile_wrp h2 {
   font-weight: 700;
 }
@@ -202,20 +202,20 @@ li {
 
 /* notification css */
 /* .notification_btn {
-  position: relative;
-}
-.notification_btn:hover .notification_wrp{
-  display: block;
-}
-.notification_wrp {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  padding: 100px;
-  background-color: #ffffff;
-  z-index: 99999;
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
-} */
+    position: relative;
+  }
+  .notification_btn:hover .notification_wrp{
+    display: block;
+  }
+  .notification_wrp {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 100px;
+    background-color: #ffffff;
+    z-index: 99999;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+  } */
 /* end of notification css */
 /* expanded sidebar css */
 .sidebar.expand_sidebar {
@@ -707,10 +707,10 @@ form input,
   position: relative;
 }
 /* .client_list_wrp .filter_table_btn_wrp{
-  position: absolute;
-  right: 25px;
-  top: 18px;
-} */
+    position: absolute;
+    right: 25px;
+    top: 18px;
+  } */
 .client_list_wrp .submit {
   padding: 11px 28px;
 }
@@ -729,23 +729,23 @@ form input,
   position: relative;
 }
 /* .emp_leave_balance_wrp .filter_table_btn_wrp{
-  position: absolute;
-  right: 25px;
-  top: 18px;
-} */
+    position: absolute;
+    right: 25px;
+    top: 18px;
+  } */
 /* enf of employee-leave-balance-list-css */
 
 /* client-list-add-client-css */
 /* .client_list_add_client_wrp .page_inner_wrp {
-  position: relative;
-} */
+    position: relative;
+  } */
 /* .client_list_add_client_wrp
- .filter_table_btn_wrp{
-  position: absolute;
-  right: 25px;
-  top: 18px;
-  z-index: 1;
-} */
+   .filter_table_btn_wrp{
+    position: absolute;
+    right: 25px;
+    top: 18px;
+    z-index: 1;
+  } */
 .page_inner_wrp {
   position: relative;
 }
@@ -764,14 +764,14 @@ form input,
 /* enf of client-list-add-client-css */
 /* employee-list-css */
 /* .employee_list_wrp .page_inner_wrp {
-  position: relative;
-} */
+    position: relative;
+  } */
 /* .employee_list_wrp
- .filter_table_btn_wrp{
-  position: absolute;
-  right: 6px;
-  top: 18px;
-} */
+   .filter_table_btn_wrp{
+    position: absolute;
+    right: 6px;
+    top: 18px;
+  } */
 span a {
   color: black;
 }
@@ -1173,9 +1173,9 @@ input.exp_input {
 .curr_add_dtl_inner {
   min-height: 50vh;
 }
-.page_inner_wrp {
-  min-height: 70vh;
-}
+/* .page_inner_wrp {
+    min-height: 70vh;
+  } */
 /* end of add employee css */
 
 /* feeds css */
@@ -1336,9 +1336,8 @@ input.exp_input {
 }
 
 input[type="radio"] {
-  border: 2px solid #ffeed5 ;
-  box-shadow: 0 0 0 1px 
-  #1B1B1B;
+  border: 2px solid #ffeed5;
+  box-shadow: 0 0 0 1px #1b1b1b;
   appearance: none;
   border-radius: 50%;
   width: 12px;

@@ -1,163 +1,197 @@
 @media only screen and (max-width: 649px) {
-  .avaiabe_leave_dtl{
+  .avaiabe_leave_dtl {
     width: 100%;
     padding: 7px;
   }
-  .client_list_add_client_wrp .filter_table_btn_wrp{
-   flex-direction:column;
+  .client_list_add_client_wrp .filter_table_btn_wrp {
+    flex-direction: column;
   }
-  .filter_table_btn_wrp .import,.filter_table_btn_wrp .export,.filter_table_btn_wrp .submit{
+  .filter_table_btn_wrp .import,
+  .filter_table_btn_wrp .export,
+  .filter_table_btn_wrp .submit {
     width: 100%;
-    margin-right:unset ;
+    margin-right: unset;
     margin-bottom: 15px;
   }
   .pupup_btn {
     margin: 10px 0;
     width: 100%;
   }
-  .feeds_file_input .label{
+  .feeds_file_input .label {
     font-size: 12px;
   }
-  .dashboard_wrp, .addtimesheet_wrp,.apply_leave_wrp,.settings_wrp, .client_list_wrp, .emp_leave_balance_wrp, .client_list_add_client_wrp, .employee_list_wrp, .past_employee_list_wrp,.admin_report_list_wrp
-.leave_review_wrp, .my_leave_review_wrp, .admin_report_list_wrp, .regularization_review_wrp, .regularization_review_history_wrp, .leave_history_wrp,.add_emp_page_wrp{
-  padding: 15px;
-  border-radius: 35px;
-}
-  .feede_post{
+  .dashboard_wrp,
+  .addtimesheet_wrp,
+  .apply_leave_wrp,
+  .settings_wrp,
+  .client_list_wrp,
+  .emp_leave_balance_wrp,
+  .client_list_add_client_wrp,
+  .employee_list_wrp,
+  .past_employee_list_wrp,
+  .admin_report_list_wrp .leave_review_wrp,
+  .my_leave_review_wrp,
+  .admin_report_list_wrp,
+  .regularization_review_wrp,
+  .regularization_review_history_wrp,
+  .leave_history_wrp,
+  .add_emp_page_wrp {
+    padding: 15px;
+    border-radius: 35px;
+  }
+  .feede_post {
     height: 200px;
   }
-  .notification_wrp{
+  .notification_wrp {
     left: -300%;
   }
-  .notification_inner::before{
+  .notification_inner::before {
     left: 27%;
   }
-
 } /* 480 */
 @media only screen and (max-width: 479px) {
-
-  h2{
+  h2 {
     font-size: 14px;
   }
-  h3{
+  h3 {
     font-size: 13px;
   }
-  h4,select, input, textarea, .profile_skils_wrp,label,.avaiabe_leave_dtl,.filter_table_btn_wrp .import,.filter_table_btn_wrp .export,.filter_table_btn_wrp .submit,.notification_time span{
+  h4,
+  select,
+  input,
+  textarea,
+  .profile_skils_wrp,
+  label,
+  .avaiabe_leave_dtl,
+  .filter_table_btn_wrp .import,
+  .filter_table_btn_wrp .export,
+  .filter_table_btn_wrp .submit,
+  .notification_time span {
     font-size: 12px;
   }
-  p{
+  p {
     font-size: 11px;
   }
-  .emp_leave_dtl,.notification_time{
-    font-size: 10PX;
+  .emp_leave_dtl,
+  .notification_time {
+    font-size: 10px;
   }
-  .emp_profile_box_wrp{
+  .emp_profile_box_wrp {
     padding: 15px;
   }
-  .emp_profile_wrp  figure img{
+  .emp_profile_wrp figure img {
     width: 60px;
     height: 60px;
   }
-  .profile_skils{
+  .profile_skils {
     font-size: 10px;
     margin-right: 6px;
     margin-bottom: 6px;
   }
-  .submit,.custom-check-label,.feeds_comment_head {
+  .submit,
+  .custom-check-label,
+  .feeds_comment_head {
     font-size: 12px;
   }
-  .profile_inner_lft{
+  .profile_inner_lft {
     margin-bottom: 15px;
   }
-  .subtitle,.timesheet_alert,.calander_event_btn{
+  .subtitle,
+  .timesheet_alert,
+  .calander_event_btn {
     font-size: 11px;
   }
-  .greeting_card .greeting_card_inner span,.calander_event_wrp h2{
+  .greeting_card .greeting_card_inner span,
+  .calander_event_wrp h2 {
     font-size: 13px;
   }
-  .announcement_card span{
+  .announcement_card span {
     font-size: 35px;
     line-height: 29px;
   }
   .announcement_card {
     min-height: 150px;
-}
-.sidebar.expand_sidebar .menu_wrp {
+  }
+  .sidebar.expand_sidebar .menu_wrp {
     padding: 0 30px;
-}
-.menu_wrp li,.help_btn{
-  font-size: 13px;
+  }
+  .menu_wrp li,
+  .help_btn {
+    font-size: 13px;
     line-height: 14px;
-}
-.dashboard_card_title img{
-  width:15px;
-  height:15px;
-}
-.announcement_card,.table_card{
-  padding:15px
-}
-.dashboard_card_title{
-  font-size: 12px;
-}
-.table_card  table{
-  width: 257px;
-}
+  }
+  .dashboard_card_title img {
+    width: 15px;
+    height: 15px;
+  }
+  .announcement_card,
+  .table_card {
+    padding: 15px;
+  }
+  .dashboard_card_title {
+    font-size: 12px;
+  }
+  .table_card table {
+    width: 257px;
+  }
 
-.settings_wrp .accordion-body{
-  padding:15px;
-}
-.dashboard_cards_wrp{
-  padding: 15px 0;
-}
-.table_card td,.table_card th,.calander_event_table td{
-  font-size: 11px;
+  .settings_wrp .accordion-body {
+    padding: 15px;
+  }
+  .dashboard_cards_wrp {
+    padding: 15px 0;
+  }
+  .table_card td,
+  .table_card th,
+  .calander_event_table td {
+    font-size: 11px;
     line-height: 12px;
-}
-.greeting_card .greeting_card_inner span{
-  text-align: center;
-  left:0;
-  right:0;
-  bottom:20px;
-  padding:0 8px;
-}
-.page_inner_wrp{
-  padding: 15px;
-}
-.add_policy_inner .custom_input_wrp .f-input{
-  padding:0;
-}
-.add_policy_inner .custom_input_wrp .fileUpload span{
-  padding: 2px 5px;
+  }
+  .greeting_card .greeting_card_inner span {
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    padding: 0 8px;
+  }
+  .page_inner_wrp {
+    padding: 15px;
+  }
+  .add_policy_inner .custom_input_wrp .f-input {
+    padding: 0;
+  }
+  .add_policy_inner .custom_input_wrp .fileUpload span {
+    padding: 2px 5px;
     font-size: 12px;
     padding: 2px;
-}
-.feeds_input_wrp input.feeds_input{
-  font-size: 12px;
-}
-.feeds_inner{
-  padding:15px 6px;
-}
-.single_comment{
-  position: relative;
-}
-.comment_likes_btn{
-  position: absolute;
-  top: 20px;
-  right: 0  ;
-}
-  .notification_inner{
+  }
+  .feeds_input_wrp input.feeds_input {
+    font-size: 12px;
+  }
+  .feeds_inner {
+    padding: 15px 6px;
+  }
+  .single_comment {
+    position: relative;
+  }
+  .comment_likes_btn {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+  .notification_inner {
     width: 300px;
   }
-  .custom_input_wrp .fileUpload span,.custom_input_wrp .f-input{
+  .custom_input_wrp .fileUpload span,
+  .custom_input_wrp .f-input {
     font-size: 10px;
   }
 } /* 375 */
 @media only screen and (max-width: 374px) {
   .notification_wrp {
     left: -364%;
-}
-.notification_inner::before {
-  left: 38%;
-}
-
+  }
+  .notification_inner::before {
+    left: 38%;
+  }
 } /* 320 */
