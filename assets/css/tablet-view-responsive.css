@@ -11,8 +11,14 @@
 .change_password_inner {
     width: unset;
 }
+.emp_leave_balance_wrp .filter_table_btn_wrp{
+  position: unset;
+}
+.client_list_wrp .filter_table_btn_wrp{
+  position: unset;
+}
 .client_list_add_client_wrp .filter_table_btn_wrp{
-    position: unset;
+  position: unset;
 }
 .modal-dialog {
   min-width: 85%;
@@ -46,9 +52,9 @@ width: 100%;
 .profile_inner_lft{
    display:block
   }
-  .client_list_add_client_wrp .filter_table_btn_wrp{
+  /* .client_list_add_client_wrp .filter_table_btn_wrp{
     justify-content: center !important;
-  }
+  } */
   /* .modal-body .popup_select_wrp{
     width: 100%;
   } */

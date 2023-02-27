@@ -11,9 +11,9 @@ body {
   padding: 0 30px;
 }
 /* table_card scrollbar css */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0px;
-} */
+}
 h1 {
   font-size: 30px;
   line-height: 40px;
@@ -675,14 +675,15 @@ form input,
 .client_list_wrp .page_inner_wrp {
   position: relative;
 }
-/* .client_list_wrp .filter_table_btn_wrp{
+.client_list_wrp .filter_table_btn_wrp{
   position: absolute;
   right: 25px;
   top: 18px;
-} */
+}
 .client_list_wrp .submit {
   padding: 11px 28px;
 }
+
 /* end of client-list-css */
 /* employee-leave-balance-list-css */
 .emp_leave_balance_wrp .update_leave_btn {
@@ -697,28 +698,19 @@ form input,
 .emp_leave_balance_wrp .page_inner_wrp {
   position: relative;
 }
-/* .emp_leave_balance_wrp .filter_table_btn_wrp{
+.emp_leave_balance_wrp .filter_table_btn_wrp{
   position: absolute;
   right: 25px;
   top: 18px;
-} */
+}
 /* enf of employee-leave-balance-list-css */
 
 /* client-list-add-client-css */
-/* .client_list_add_client_wrp .page_inner_wrp {
+.client_list_add_client_wrp .page_inner_wrp {
   position: relative;
-} */
-/* .client_list_add_client_wrp
+} 
+.client_list_add_client_wrp
  .filter_table_btn_wrp{
-  position: absolute;
-  right: 25px;
-  top: 18px;
-  z-index: 1;
-} */
-.page_inner_wrp{
-  position: relative;
-}
-.filter_table_btn_wrp {
   position: absolute;
   right: 25px;
   top: 18px;
@@ -730,17 +722,17 @@ form input,
 .client_list_add_client_wrp .submit {
   padding: 11px 28px;
 }
-/* enf of client-list-add-client-css */
+/* enf of client-list-add-client-css */ 
 /* employee-list-css */
-/* .employee_list_wrp .page_inner_wrp {
+.employee_list_wrp .page_inner_wrp {
   position: relative;
-} */
-/* .employee_list_wrp
+}
+.employee_list_wrp
  .filter_table_btn_wrp{
   position: absolute;
   right: 6px;
   top: 18px;
-} */
+}
 span a {
   color: black;
 }
@@ -1149,6 +1141,21 @@ input.exp_input {
 }
 /* end of add employee css */
 /* leave-review-list-css */
-  
 
-  
+/* table lists responsive */
+@media only screen and (max-width: 979px) {
+  .import{
+    margin-right: 12px;
+  }
+  .export{
+    margin-right: 12px;
+  }
+  .btn{
+    font-size: 11px;
+    padding: 7px 15px;
+  }
+  .client_list_add_client_wrp .submit{
+    padding: 8px 17px;
+    font-size: 11px;
+  }
+} /* 768 */

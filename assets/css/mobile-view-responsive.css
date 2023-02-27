@@ -6,6 +6,9 @@
   .client_list_add_client_wrp .filter_table_btn_wrp{
    flex-direction:column;
   }
+  .client_list_wrp .filter_table_btn_wrp{
+    flex-direction:column;
+   }
   .filter_table_btn_wrp .import,.filter_table_btn_wrp .export,.filter_table_btn_wrp .submit{
     width: 100%;
     margin-right:unset ;
@@ -14,6 +17,9 @@
   .pupup_btn {
     margin: 10px 0;
     width: 100%;
+  }
+  .dataTables_filter input {
+    width: 75%;
   }
 } /* 480 */
 @media only screen and (max-width: 479px) {
