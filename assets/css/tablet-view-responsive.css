@@ -28,6 +28,9 @@
   .input_flex_wrp {
     flex-direction: column;
   }
+  .table_card th {
+    font-size: 13px;
+  }
 
   /* .input_flex_wrp{
   flex-direction: column;
