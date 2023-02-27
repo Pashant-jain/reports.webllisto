@@ -11,7 +11,7 @@
 
 .calendar {
     /* height: 309px;*/
-    /* max-width: 435px; */
+    max-width: 435px;
     margin: auto;
     background-color: #f8f5f2;
     border-radius: 20px;

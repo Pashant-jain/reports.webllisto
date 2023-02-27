@@ -37,10 +37,10 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
    
     <!-- plugin -->
-    <script src="./assets/js/data-table.js"></script>
+    
   </head>
   <body>
-    <div class="page_wrp dashboard_page_wrp" >
+    <div class="page_wrp project_list_page_wrp" >
        <!-- sidebar -->
       <aside id="separator-sidebar" class="sidebar" aria-label="Sidebar">
         <div class="sidebar_inner">
@@ -392,276 +392,170 @@
       </aside>
       <!-- contant -->
       <main class="contant">
-        <div class="dashboard_wrp" >
-          <h2>Good Morning <strong class="username" >Lorem</strong></h2>
-          <p class="subtitle mb-3">
-            History will be kind to me for I intend to write it
-            <span class="thoughtby">-Winston Churchill</span></p>
-            <div class="timesheet_alert text-center mb-5">
-              <span class="position-relative" >Alert : You have missed your yesterday’s timesheet</span>
-            </div>
-            <div class="dashboard_cards_wrp">
-              <!-- greeting card -->
-              <div class="card greeting_card">
-                <div class="greeting_card_inner">
-                  <img
-                    src="./assets/images/cards/greetings-dummy.jpg"
-                    width="100%"
-                    height="100%"
-                    alt="Dummy Greetings"
-                  />
-                  <span>Work Anniversary <img src="./assets/images/down-arrow-light.svg" alt="down" class="ms-1" /></span>
-                </div>
-              </div>
-               <!-- announcement card -->
-              <div class="card announcement_card">
-                <h2 class="dashboard_card_title">
-                  Announcements<img
-                    src="./assets//images/icons/announcement_icon.svg"
-                    alt="announcement Icon"
-                    width="35px"
-                    height="35px"
-                  />
-                  <span>Coming<br />Soon</span>
-                </h2>
-              </div>
-              <!-- Anniversary card -->
-              <div class="card table_card anniversary_card">
-                <h2 class="dashboard_card_title">
-                  Upcoming Anniversary<img
-                    src="./assets/images/icons/dark_tada_icon.svg"
-                    alt="Celebration Icon"
-                    width="25px"
-                    height="25px"
-                  />
-                </h2>
-                <div class="table_wrp">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Date</th>
-                        <th scope="col">Employee Name</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <!-- Birthday card -->
-              <div class="card table_card birthday_card">
-                <h2 class="dashboard_card_title">
-                  Upcoming Birthdays<img
-                    src="./assets/images/icons/dark_tada_icon.svg"
-                    width="25px"
-                    height="25px"
-                    alt="Celebration Icon"
-                  />
-                </h2>
-                <div class="table_wrp">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Date</th>
-                        <th scope="col">Employee Name</th>
-                      </tr>
-                    </thead>
-                    <tbody>
+        <div class="project_list_wrp" >
+            <h2 class="page_title">Project List</h2>
+            <p class="subtitle mb-3">
+              List of active project with server side datatable
+            </p>
+            <div class="page_inner_wrp mt-5">
+                <table
+                  id="project_list"
+                  class="row-border cell-border project_list_table "
+                  style="width: 100%"
+                >
+                  <thead>
+                    <tr>
+                      <th style="max-width:140px" >Name</th>
+                      <th style="max-width:220px">Technology Used</th>
+                      <th style="max-width:140px">Total Time Spent</th>
+                      <th style="max-width:220px">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span>Atulya Hearing Aid</span></td>
+                      <td><span>ReactJS, Python, MySQL</span></td>
+                      
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Astroon NFT</span></td>
+                      <td><span>NestJS, NextJS, MySQL, solidity</span></td>
                      
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr><tr>
+                      <td><span>Atulya Hearing Aid</span></td>
+                      <td><span>ReactJS, Python, MySQL</span></td>
+                      
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Astroon NFT</span></td>
+                      <td><span>NestJS, NextJS, MySQL, solidity</span></td>
+                     
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr><tr>
+                      <td><span>Atulya Hearing Aid</span></td>
+                      <td><span>ReactJS, Python, MySQL</span></td>
+                      
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Astroon NFT</span></td>
+                      <td><span>NestJS, NextJS, MySQL, solidity</span></td>
+                     
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr><tr>
+                      <td><span>Atulya Hearing Aid</span></td>
+                      <td><span>ReactJS, Python, MySQL</span></td>
+                      
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Astroon NFT</span></td>
+                      <td><span>NestJS, NextJS, MySQL, solidity</span></td>
+                     
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr><tr>
+                      <td><span>Atulya Hearing Aid</span></td>
+                      <td><span>ReactJS, Python, MySQL</span></td>
+                      
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Astroon NFT</span></td>
+                      <td><span>NestJS, NextJS, MySQL, solidity</span></td>
+                     
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr><tr>
+                      <td><span>Atulya Hearing Aid</span></td>
+                      <td><span>ReactJS, Python, MySQL</span></td>
+                      
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Astroon NFT</span></td>
+                      <td><span>NestJS, NextJS, MySQL, solidity</span></td>
+                     
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr><tr>
+                      <td><span>Atulya Hearing Aid</span></td>
+                      <td><span>ReactJS, Python, MySQL</span></td>
+                      
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Astroon NFT</span></td>
+                      <td><span>NestJS, NextJS, MySQL, solidity</span></td>
+                     
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr><tr>
+                      <td><span>Atulya Hearing Aid</span></td>
+                      <td><span>ReactJS, Python, MySQL</span></td>
+                      
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Astroon NFT</span></td>
+                      <td><span>NestJS, NextJS, MySQL, solidity</span></td>
+                     
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr><tr>
+                      <td><span>Atulya Hearing Aid</span></td>
+                      <td><span>ReactJS, Python, MySQL</span></td>
+                      
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Astroon NFT Astroon NFTAstroon NFTAstroon NFTAstroon NFTAstroon NFT</span></td>
+                      <td><span>NestJS, NextJS, MySQL, solidity NestJS, NextJS, MySQL, solidityNestJS, NextJS, MySQL, solidity</span></td>
+                     
+                      <td><span>143 hours </span></td>
+                      <td><span>NFT market place in etherium network</span></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <!-- Holiday card -->
-              <div class="card table_card holiday_list_card">
-                <h2 class="dashboard_card_title">
-                  List Of Holidays<img
-                    src="./assets/images/icons/light_tada_icon.svg"
-                    width="25px"
-                    height="25px"
-                    alt="Celebration Icon"
-                  />
-                </h2>
-                <div class="table_wrp">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Date</th>
-                        <th scope="col">Employee Name</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                      <tr>
-                        <td>03 Feb</td>
-                        <td>Lorem Ipsum</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
         </div>
       </main>
-      <!-- calander bar -->
-      <aside id="calander" class="calander" aria-label="calander">
-    <div class="calander_wrp">
-      <div class="calendar">
-        <div class="calendar-header">
-          <div class="year-picker">
-            <span class="year-change" id="prev-year">
-              <pre><img src="./assets/images/down-arrow.svg" alt="arrow" class="calander_prev_wrp rotate-90" ></pre>
-            </span>
-            <div>
-              <span class="month-picker" id="month-picker">April</span>
-              <span id="year">2023</span>
-            </div>
-            <span class="year-change" id="next-year">
-              <pre><img src="./assets/images/down-arrow.svg" alt="arrow" class="calander_next_wrp rotate-270" ></pre>
-            </span>
-          </div>
-        </div>
-        <div class="calendar-body">
-          <div class="calendar-week-day">
-            <div>Sun</div>
-            <div>Mon</div>
-            <div>Tue</div>
-            <div>Wed</div>
-            <div>Thu</div>
-            <div>Fri</div>
-            <div>Sat</div>
-          </div>
-          <div class="calendar-days"></div>
-        </div>
-       
-        <div class="month-list"></div>
-      </div>
-      <div class="table_color_content mt-3" >
-        <p><span class="current_date" ></span> Current Date</p>
-        <p><span class="missing_timesheet" ></span> Missing Timesheet</p>
-        <p><span class="holiday" ></span>Holiday</p>
-        <p><span class="leave_date" ></span>Leave</p>
-      </div>
-      <div class="text-center calander_event_btn_wrp" >
-        <button type="button" class="calander_event_btn"><span class="position-relative" >Add Timesheet</span></button>
-      </div>
-      <div class="calander_event_wrp" >
-        <h2>Today’s Event : 04 February</h2>
-        <div class="calander_event_table" >
-          <table  >
-           <tbody>
-            <tr>
-              <td class="event_title birthday" ><span>Birthday</span></td>
-              <td class="event_dtl birthday"  ><span>Lorem IpsumLorem IpsumLorem Ipsum</span></td>
-            </tr>
-            <tr>
-              <td class="event_title work"  ><span>Work An.</span></td>
-              <td class="event_dtl work"  ><span>Lorem Ipsum</span></td>
-            </tr>
-            <tr>
-              <td class="event_title work"  ><span>10:00 AM</span></td>
-              <td class="event_dtl work"  ><span>Lorem Ipsum</span></td>
-            </tr>
-           </tbody>
-          </table>
-          </table>
-        </div>
-      </div>
-    </div>
-       </aside>
+     
     </div>
     
 
     <!-- plugin -->
+    <script src="./assets/js/data-table.js"></script>
     <script src="./assets/js/calander.js"></script>
     <!-- custom js -->
     <script src="./assets/js/main.js"></script>
+    <script>
+         $("#project_list").DataTable({
+    lengthMenu: [
+      [10, 25, 50, -1],
+      [10, 25, 50, "All"],
+    ],
+    pagingType: "simple",
+    responsive: true,
+   
+    scrollX: true,
+   
+  });
+    </script>
   </body>
 </html>
