@@ -1,0 +1,120 @@
+.landing_page_wrp{
+        padding: 20px 30px;
+}
+.landing_page_wrp .header ul{
+    list-style:none;
+}
+.landing_page_wrp .header li a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-right: 20px;
+}
+.landing_page_wrp .header button{
+    background: #FFFFFF;
+    border-radius: 90px;
+    border: white;
+    padding: 0px;
+    padding: 6px 24px;
+}
+.navbar{
+    padding:unset;
+}
+.landing_page_wrp .header .logo{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    color: #F85046;
+}
+.landing_page_wrp .banner_wrp{
+    margin-top: 70px;
+}
+.landing_page_wrp .banner_wrp .banner_left{
+    padding-top: 54px;
+}
+.landing_page_wrp .banner_wrp .banner_left h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    color: #1B1B1B;
+}
+.landing_page_wrp .banner_wrp .banner_left strong{
+    color:#F85046;
+}
+.landing_page_wrp .banner_wrp .banner_left p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #343434;
+    margin-top: 35px;
+}
+.landing_page_wrp .banner_wrp .banner_right img{
+    width: 450px;
+    height: 500px;
+}
+.landing_page_wrp .erp_software{
+    margin-top: 70px;
+    text-align: center;
+}
+.landing_page_wrp .erp_software h3{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 74px;
+    text-transform: capitalize;
+}
+.landing_page_wrp .erp_software strong{
+    color:red;
+}
+.landing_page_wrp .erp_software p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #343434;
+}
+.landing_page_wrp .erp_software img{
+    width: 800px;
+    margin-top: 50px;
+}
+.landing_page_wrp .employee_info{
+    margin-top: 70px;
+    background: #F2F2F2;
+    padding: 80px 40px;
+    position:relative;
+}
+.employee_info h3{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 60px;
+    color: #F85046;
+}
+.employee_info p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #343434;
+}
+.landing_page_wrp .employee_info .img1{
+    width:100px;
+    position: absolute;
+}
+.landing_page_wrp .employee_info .img2{
+    width:400px;
+    position: absolute;
+}
+.landing_page_wrp .employee_info .img3{
+    width:100px;
+    position: absolute;
+}
+.landing_page_wrp .employee_info .list{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 44px;
+    color: #343434;
+}
+.landing_page_wrp .employee_info a{
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 32px;
+    color: #F85046;
+}
