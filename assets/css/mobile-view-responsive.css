@@ -9,6 +9,18 @@
   .client_list_wrp .filter_table_btn_wrp{
     flex-direction:column;
    }
+   .employee_list_wrp .filter_table_btn_wrp{
+    flex-direction:column;
+   }
+   .past_employee_list_wrp .filter_table_btn_wrp{
+    flex-direction:column;
+   }
+   .regularization_review_wrp .filter_table_btn_wrp{
+    flex-direction:column;
+   }
+   .regularization_review_history_wrp .filter_table_btn_wrp{
+    flex-direction:column;
+   }
   .filter_table_btn_wrp .import,.filter_table_btn_wrp .export,.filter_table_btn_wrp .submit{
     width: 100%;
     margin-right:unset ;

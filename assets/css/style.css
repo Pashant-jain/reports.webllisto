@@ -730,7 +730,7 @@ form input,
 .employee_list_wrp
  .filter_table_btn_wrp{
   position: absolute;
-  right: 6px;
+  right: 25px;
   top: 18px;
 }
 span a {
@@ -746,7 +746,7 @@ span a {
 .regularization_review_wrp
  .filter_table_btn_wrp{
   position: absolute;
-  right: 6px;
+  right: 25px;
   top: 18px;
 }
 /* end of regularization-review-css */
@@ -759,7 +759,7 @@ span a {
 .regularization_review_history_wrp
  .filter_table_btn_wrp{
   position: absolute;
-  right: 6px;
+  right: 25px;
   top: 18px;
 }
 /* end of regularization-review-history-css */
@@ -772,7 +772,7 @@ span a {
 .past_employee_list_wrp
  .filter_table_btn_wrp{
   position: absolute;
-  right: 6px;
+  right:25px;
   top: 18px;
 }
 /* end of past employee list css */

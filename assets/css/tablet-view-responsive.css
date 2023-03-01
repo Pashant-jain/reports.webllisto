@@ -20,6 +20,18 @@
 .client_list_add_client_wrp .filter_table_btn_wrp{
   position: unset;
 }
+.employee_list_wrp .filter_table_btn_wrp{
+  position: unset;
+}
+.past_employee_list_wrp  .filter_table_btn_wrp{
+  position: unset;
+}
+.regularization_review_wrp .filter_table_btn_wrp{
+  position: unset;
+}
+.regularization_review_history_wrp .filter_table_btn_wrp{
+  position: unset;
+}
 .modal-dialog {
   min-width: 85%;
   max-width:85%;
