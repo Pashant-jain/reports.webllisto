@@ -1,1 +1,1227 @@
-add employee
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reports</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- plugin -->
+    <link rel="stylesheet" href="./assets/css/data-table.css" />
+    <link rel="stylesheet" href="./assets/css/calander.css" />
+    <link rel="stylesheet" href="./assets/css/filter-multi-select.css" />
+    <link rel="stylesheet" href="./assets/css/text-editor.css" />
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/laptop-view-responsive.css" />
+    <link rel="stylesheet" href="./assets/css/tablet-view-responsive.css" />
+    <link rel="stylesheet" href="./assets/css/mobile-view-responsive.css" />
+
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- bootstrap -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/proper.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- plugin -->
+    <script src="./assets/js/data-table.js"></script>
+  </head>
+  <body>
+    <div class="page_wrp add-timesheet">
+      <!-- sidebar -->
+      <aside id="separator-sidebar" class="sidebar" aria-label="Sidebar">
+        <div class="sidebar_inner">
+          <div
+            class="sidebar_head d-flex justify-content-between align-items-center"
+          >
+            <a href="index.html"
+              ><figure class="m-0"><h1 class="m-0">Logo</h1></figure></a
+            >
+            <img
+              src="./assets/images/sidebar_arrow.svg"
+              alt="sidebar toggle"
+              width="20px"
+              height="20px"
+              class="sidebar_toggler"
+            />
+          </div>
+          <div class="profile_wrp py-5">
+            <figure class="text-center m-0">
+              <img
+                src="./assets/images/dummy-profile.png"
+                alt="dummy profile"
+                class="profile_img"
+              />
+            </figure>
+            <div
+              class="profile_icon_wrp d-flex justify-content-center align-items-center py-3"
+            >
+              <a href="seetings.html" class="profile_icon">
+                <img
+                  src="./assets/images/icons/settings_icon.svg"
+                  alt="Settings"
+                  class="w-4"
+                />
+              </a>
+              <div class="notification_btn mx-3 position-relative">
+                <button class="profile_icon">
+                  <img
+                    src="./assets/images/icons//notification_icon.svg"
+                    alt="Notification"
+                    class="w-4"
+                  />
+                </button>
+                <div class="notification_wrp d-none">
+                  <div class="notification_inner">
+                    <div
+                      class="single_notification_wrp d-flex align-items-baseline gap-2 mb-3"
+                    >
+                      <figure class="notification_profie">
+                        <img
+                          src="./assets/images/dummy-profile.png"
+                          alt="user"
+                          width="30px"
+                          height="30px"
+                          class="rounded-circle"
+                        />
+                      </figure>
+                      <div class="notification_dtl_wrp">
+                        <div
+                          class="d-flex justify-content-between align-items-center mb-2"
+                        >
+                          <h5 class="m-0">Username</h5>
+                          <p class="notification_time m-0">
+                            <span>3 Days</span>1 week ago
+                          </p>
+                        </div>
+                        <p class="m-0">
+                          Lorem ipsum dolor sit amet consectetur. Velit nullam
+                          diam id faucibus a mauris. Vivamus arcu.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="single_notification_wrp d-flex align-items-baseline gap-2 mb-3"
+                    >
+                      <figure class="notification_profie">
+                        <img
+                          src="./assets/images/dummy-profile.png"
+                          alt="user"
+                          width="30px"
+                          height="30px"
+                          class="rounded-circle"
+                        />
+                      </figure>
+                      <div class="notification_dtl_wrp">
+                        <div
+                          class="d-flex justify-content-between align-items-center mb-2"
+                        >
+                          <h5 class="m-0">Username</h5>
+                          <p class="notification_time m-0">
+                            <span>3 Days</span>1 week ago
+                          </p>
+                        </div>
+                        <p class="m-0">
+                          Lorem ipsum dolor sit amet consectetur. Velit nullam
+                          diam id faucibus a mauris. Vivamus arcu.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="single_notification_wrp d-flex align-items-baseline gap-2 mb-3"
+                    >
+                      <figure class="notification_profie">
+                        <img
+                          src="./assets/images/dummy-profile.png"
+                          alt="user"
+                          width="30px"
+                          height="30px"
+                          class="rounded-circle"
+                        />
+                      </figure>
+                      <div class="notification_dtl_wrp">
+                        <div
+                          class="d-flex justify-content-between align-items-center mb-2"
+                        >
+                          <h5 class="m-0">Username</h5>
+                          <p class="notification_time m-0">
+                            <span>3 Days</span>1 week ago
+                          </p>
+                        </div>
+                        <p class="m-0">
+                          Lorem ipsum dolor sit amet consectetur. Velit nullam
+                          diam id faucibus a mauris. Vivamus arcu.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="profile_icon">
+                <img
+                  src="./assets/images/icons/logout_icon.svg"
+                  alt="Log Out"
+                  class="w-4"
+                />
+              </button>
+            </div>
+            <h2 class="text-center m-0">Lorem Ipsum</h2>
+            <p class="subtitle text-center">Designation</p>
+          </div>
+          <ul class="menu_wrp">
+            <li class="active">
+              <a href="admin-index.html"
+                ><img
+                  src="./assets/images/menu_icon/dark/dashboard.svg"
+                  alt="Dashboard Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light//dashboard.svg"
+                  alt="Dashboard Icon"
+                  class="light_img"
+                />
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="feeds.html"
+                ><img
+                  src="./assets/images/menu_icon/dark/feeds.svg"
+                  alt="Feeds Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/feeds.svg"
+                  alt="Feeds Icon"
+                  class="light_img"
+                />
+                <span>Feeds</span>
+              </a>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/employee.svg"
+                  alt="Employee Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/employee.svg"
+                  alt="Employee Icon"
+                  class="light_img"
+                />
+                <span>Employee</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="add-employee.html"><span>Add Employee</span></a>
+                </li>
+                <li>
+                  <a href="employee-list.html"><span>List Employee</span></a>
+                </li>
+                <li>
+                  <a href="past-employee-list.html"
+                    ><span>List Past Employee</span></a
+                  >
+                </li>
+                <li>
+                  <a href="view-attendance.html"
+                    ><span>View Attendance</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/client.svg"
+                  alt="Client Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/client.svg"
+                  alt="Client Icon"
+                  class="light_img"
+                />
+                <span>Client</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="add-client.html"><span>Add Client</span></a>
+                </li>
+                <li>
+                  <a href="client-list.html"><span>List Client</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/project.svg"
+                  alt="Project Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/project.svg"
+                  alt="Project Icon"
+                  class="light_img"
+                />
+                <span>Project</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="add-project.html"><span>Add Project</span></a>
+                </li>
+                <li>
+                  <a href="project-list.html"><span>List Project</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/leave.svg"
+                  alt="Leave Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/leave.svg"
+                  alt="Leave Icon"
+                  class="light_img"
+                />
+                <span>Leave</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="leave-balance.html"><span>Leave Balance</span></a>
+                </li>
+                <li>
+                  <a href="apply-leave.html"><span>Apply Leave</span></a>
+                </li>
+                <li>
+                  <a href="leave-list.html"><span>Leave List</span></a>
+                </li>
+                <li>
+                  <a href="leave-history.html"><span>Leave History</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/timesheet.svg"
+                  alt="Timesheet Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/timesheet.svg"
+                  alt="Timesheet Icon"
+                  class="light_img"
+                />
+                <span>Timesheet</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="add-timesheet.html"><span>Add Timesheet</span></a>
+                </li>
+                <li>
+                  <a href="timesheet-list.html"><span>List Timesheet</span></a>
+                </li>
+                <li>
+                  <a href="my-timesheet.html"><span>My Timesheet</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/review.svg"
+                  alt="Review Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/review.svg"
+                  alt="Review Icon"
+                  class="light_img"
+                />
+                <span>Review</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="leave-review.html"><span>Leave Review</span></a>
+                </li>
+                <li>
+                  <a href="leave-review-history.html"
+                    ><span>Leave Review History</span></a
+                  >
+                </li>
+                <li>
+                  <a href="regularization-review.html"
+                    ><span>Regularization Review</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/policy.svg"
+                  alt="Policy Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/policy.svg"
+                  alt="Policy Icon"
+                  class="light_img"
+                />
+                <span>Policy</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="./add-policy.html"><span>Add Policy</span></a>
+                </li>
+                <li>
+                  <a href="./view-policy.html"><span>View Policy</span></a>
+                </li>
+              </ul>
+            </li>
+            <div class="text-center mt-4">
+              <button type="button" class="help_btn">
+                <img
+                  src="./assets/images/icons/help_icon.svg"
+                  alt="Help Icon Icon"
+                /><span>Help Center</span>
+              </button>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <!-- contant -->
+      <main class="contant">
+        <div class="add_emp_page_wrp">
+          <h2 class="page_title">Add Employee</h2>
+          <p class="subtitle mb-3">
+            Add Employee with the help of the fields mentioned below.
+          </p>
+          <div class="page_inner_wrp mt-3 mt-sm-5">
+            <form id="add_emp_form" class="add_emp_form">
+              <div>
+                <ul id="add_emp_progressbar" class="add_emp_progressbar">
+                  <li class="active" id="user_dtl">01</li>
+                  <span class="wizard_step_connector"></span>
+                  <li id="profile_dtl">02</li>
+                  <span class="wizard_step_connector"></span>
+                  <li id="current_address">03</li>
+                  <span class="wizard_step_connector"></span>
+                  <li id="permanent_address">04</li>
+                </ul>
+                <fieldset class="py-3 text-center">
+                  <h3 class="mb-5">User Details</h3>
+                  <div class="user_dtl_inner text-start">
+                    <div class="mb-4" style="padding: 0 15px">
+                      <div class="row">
+                        <div class="col-12 col-lg-1 mb-3 mb-lg-0 p-0">
+                          <label>Username</label>
+                        </div>
+                        <div class="col-12 col-lg-11 p-0 ps-lg-5">
+                          <input type="text" value="Lorem Ipsum" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user_basic_dtl">
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>First Name</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter First Name" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Last Name</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter Last Name" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Email Address</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="email" placeholder="Enter email here" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Password</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="password" placeholder="********" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Role</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <select>
+                            <option class="option_menu" value="">
+                              Employee
+                            </option>
+                            <option class="option_menu">Manager</option>
+                            <option class="option_menu">Admin</option>
+                            <option class="option_menu">H.R</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Manager</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <select>
+                            <option class="option_menu" value="">
+                              Lorem Ipsum
+                            </option>
+                            <option class="option_menu">Lorem Ipsum</option>
+                            <option class="option_menu">Lorem Ipsum</option>
+                            <option class="option_menu">Lorem Ipsum</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-4" style="padding: 0 15px">
+                      <div class="row">
+                        <div
+                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                        >
+                          <label>Slack Channel</label>
+                        </div>
+                        <div class="col-12 col-lg-10 p-0 form_data">
+                          <select>
+                            <option
+                              class="option_menu"
+                              value=""
+                              selected
+                              disabled
+                            >
+                              Select Channel/(s)
+                            </option>
+                            <option class="option_menu">general</option>
+                            <option class="option_menu">random</option>
+                            <option class="option_menu">Webllisto ERP</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-4" style="padding: 0 15px">
+                      <div class="row">
+                        <div
+                          class="col-12 col-lg-1 mb-3 mb-lg-0 p-0 form_label"
+                        >
+                          <label>Skills</label>
+                        </div>
+                        <div class="col-12 col-lg-11 p-0 form_data">
+                          <select
+                            multiple
+                            name="cc"
+                            id="cc"
+                            class="filter-multi-select"
+                          >
+                            <option value="bear">
+                              <img
+                                src="./assets/images/dummy-profile.png"
+                                alt="profile"
+                                class="rounded-circle"
+                                width="30px"
+                                height="30px"
+                              />
+                              <span class="item_name">Lorem Ipsum</span>
+                            </option>
+                            <option value="bear1">
+                              <img
+                                src="./assets/images/dummy-profile.png"
+                                alt="profile"
+                                class="rounded-circle"
+                                width="30px"
+                                height="30px"
+                              />
+                              <span class="item_name">Lorem Ipsum</span>
+                            </option>
+                            <option value="bear2">
+                              <img
+                                src="./assets/images/dummy-profile.png"
+                                alt="profile"
+                                class="rounded-circle"
+                                width="30px"
+                                height="30px"
+                              />
+                              <span class="item_name">Lorem Ipsum</span>
+                            </option>
+                            <option value="bear3">
+                              <img
+                                src="./assets/images/dummy-profile.png"
+                                alt="profile"
+                                class="rounded-circle"
+                                width="30px"
+                                height="30px"
+                              />
+                              <span class="item_name">Lorem Ipsum</span>
+                            </option>
+                            <option value="bear4">
+                              <img
+                                src="./assets/images/dummy-profile.png"
+                                alt="profile"
+                                class="rounded-circle"
+                                width="30px"
+                                height="30px"
+                              />
+                              <span class="item_name">Lorem Ipsum</span>
+                            </option>
+                            <option value="bear5">
+                              <img
+                                src="./assets/images/dummy-profile.png"
+                                alt="profile"
+                                class="rounded-circle"
+                                width="30px"
+                                height="30px"
+                              />
+                              <span class="item_name">Lorem Ipsum</span>
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-4" style="padding: 0 15px">
+                      <div class="row">
+                        <div
+                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                        >
+                          <label>Assets</label>
+                        </div>
+                        <div class="col-12 col-lg-10 p-0 form_data">
+                          <div class="position-relative">
+                            <input type="text" placeholder="Enter Asset ID :" />
+                            <button
+                              type="button"
+                              class="add_more"
+                              onclick="assets_fields()"
+                            >
+                              <img
+                                src="./assets/images/icons/add_more_icon.svg"
+                                alt="add assets"
+                                width="100%"
+                              />
+                            </button>
+                          </div>
+                          <div id="add_assets_input"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-4" style="padding: 0 15px">
+                      <div class="row">
+                        <div
+                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                        >
+                          <label
+                            >Other Skills<br />
+                            (If Any)</label
+                          >
+                        </div>
+                        <div class="col-12 col-lg-10 p-0 form_data">
+                          <input type="text" placeholder="Enter skills :" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center mt-4">
+                    <button type="button" class="submit next action-button">
+                      <span class="position-relative">Next</span>
+                    </button>
+                  </div>
+                </fieldset>
+                <fieldset class="py-3 text-center">
+                  <h3 class="mb-5">Profile Details</h3>
+                  <div class="profile_dtl_inner text-start">
+                    <div class="mb-4" style="padding: 0 15px">
+                      <div class="row align-items-center">
+                        <div
+                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                        >
+                          <label>Profile Pic</label>
+                        </div>
+                        <div class="col-12 col-lg-10 p-0 form_data">
+                          <div class="custom_input_wrp">
+                            <input
+                              id="uploadFile"
+                              class="f-input"
+                              placeholder="No File Chosen"
+                            />
+                            <div class="fileUpload btn--browse">
+                              <span>Choose File </span>
+                              <input
+                                id="uploadBtn"
+                                type="file"
+                                accept=".pdf"
+                                class="upload"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user_profile_dtl">
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Designation</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter Designation" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Department</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter Department" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Joining Date</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="date" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Date Of Birth</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="date" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Mobile No.</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="tel" placeholder="Enter number" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Alternate No.</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="tel" placeholder="Enter number" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Marital Status</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <select>
+                            <option
+                              class="option_menu"
+                              value=""
+                              selected
+                              disabled
+                            >
+                              Select Marital Status
+                            </option>
+                            <option class="option_menu">Single</option>
+                            <option class="option_menu">Maried</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Gender</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <select>
+                            <option
+                              class="option_menu"
+                              value=""
+                              selected
+                              disabled
+                            >
+                              Select Gender
+                            </option>
+                            <option class="option_menu">Male</option>
+                            <option class="option_menu">Female</option>
+                            <option class="option_menu">Other</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Blood Group</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <select>
+                            <option
+                              class="option_menu"
+                              value=""
+                              selected
+                              disabled
+                            >
+                              Select Blood Group
+                            </option>
+                            <option class="option_menu">O+</option>
+                            <option class="option_menu">A+</option>
+                            <option class="option_menu">B-</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-blck d-sm-flex justify-content-start align-items-center my-4 profile_check_wrp"
+                    >
+                      <div class="form-group form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="InternationalEmployee"
+                        />
+                        <p
+                          class="custom-check-label"
+                          for="InternationalEmployee"
+                        >
+                          International Employee
+                        </p>
+                      </div>
+                      <div class="form-group form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="Physicallychallenged"
+                        />
+                        <p
+                          class="custom-check-label"
+                          for="Physicallychallenged"
+                        >
+                          Physically challenged
+                        </p>
+                      </div>
+                    </div>
+                    <div class="user_profile_dtl mb-4">
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Nationality</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter Nationality" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Religion</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter Religion" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Father Name</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter Father Name" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="exp_wrp mb-5">
+                      <label>
+                        Total Exp. before Joining
+                        <input
+                          type="text"
+                          class="exp_input"
+                          placeholder="Years"
+                        />
+                        <input
+                          type="text"
+                          class="exp_input"
+                          placeholder="Months"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="text-center mt-4">
+                    <button
+                      type="button"
+                      class="submit_outline_btn previous action-button-previous mx-1"
+                    >
+                      <span class="position-relative">Previous</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="submit next action-button mx-1"
+                    >
+                      <span class="position-relative">Next</span>
+                    </button>
+                  </div>
+                </fieldset>
+                <fieldset class="py-3 text-center">
+                  <h3 class="mb-5">Current Address</h3>
+                  <div class="curr_add_dtl_inner text-start">
+                    <div class="mb-4" style="padding: 0 15px">
+                      <div class="row align-items-center">
+                        <div
+                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                        >
+                          <label>Address Line 1</label>
+                        </div>
+                        <div class="col-12 col-lg-10 p-0 form_data">
+                          <input type="text" placeholder="Enter Address" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4" style="padding: 0 15px">
+                      <div class="row align-items-center">
+                        <div
+                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                        >
+                          <label>Address Line 2</label>
+                        </div>
+                        <div class="col-12 col-lg-10 p-0 form_data">
+                          <input type="text" placeholder="Enter Address" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user_profile_dtl mb-4">
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Zip/Postal Code</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter ZIP" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>City</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter City" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>State</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter State" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Country</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter Country" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center mt-4">
+                    <button
+                      type="button"
+                      class="submit_outline_btn previous action-button-previous mx-1"
+                    >
+                      <span class="position-relative">Previous</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="submit next action-button mx-1"
+                    >
+                      <span class="position-relative">Next</span>
+                    </button>
+                  </div>
+                </fieldset>
+                <fieldset class="py-3 text-center">
+                  <h3 class="mb-5">Permanent Address</h3>
+                  <div class="curr_add_dtl_inner text-start">
+                    <div class="form-group form-check mb-4">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="CurrentAddress"
+                      />
+                      <p class="custom-check-label" for="CurrentAddress">
+                        Same as Current Address
+                      </p>
+                    </div>
+                    <div class="mb-4" style="padding: 0 15px">
+                      <div class="row align-items-center">
+                        <div
+                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                        >
+                          <label>Address Line 1</label>
+                        </div>
+                        <div class="col-12 col-lg-10 p-0 form_data">
+                          <input type="text" placeholder="Enter Address" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4" style="padding: 0 15px">
+                      <div class="row align-items-center">
+                        <div
+                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                        >
+                          <label>Address Line 2</label>
+                        </div>
+                        <div class="col-12 col-lg-10 p-0 form_data">
+                          <input type="text" placeholder="Enter Address" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user_profile_dtl mb-4">
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Zip/Postal Code</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter ZIP" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>City</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter City" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>State</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter State" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                          <label>Country</label>
+                        </div>
+                        <div class="col-12 col-sm-7 p-0">
+                          <input type="text" placeholder="Enter Country" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center mt-4">
+                    <button
+                      type="button"
+                      class="submit_outline_btn previous action-button-previous mx-1"
+                    >
+                      <span class="position-relative">Previous</span>
+                    </button>
+                    <button type="button" class="submit mx-1">
+                      <span class="position-relative">Submit</span>
+                    </button>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- plugin -->
+    <script src="./assets/js/calander.js"></script>
+    <script src="./assets/js/filter-multi-select-bundle.min.js"></script>
+    <script src="./assets/js/custom-filter-multi-select.js"></script>
+    <script src="./assets/js/text-editor.js"></script>
+    <script src="./assets/js/chart-loader.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var opacity;
+
+        $(".next").click(function () {
+          current_fs = $(this).parent().parent();
+          next_fs = $(this).parent().parent().next();
+
+          //Add Class Active
+          $("#add_emp_progressbar li")
+            .eq($("fieldset").index(next_fs))
+            .addClass("active");
+
+          //show the next fieldset
+          next_fs.show();
+          //hide the current fieldset with style
+          current_fs.animate(
+            { opacity: 0 },
+            {
+              step: function (now) {
+                // for making fielset appear animation
+                opacity = 1 - now;
+
+                current_fs.css({
+                  display: "none",
+                  position: "relative",
+                });
+                next_fs.css({ opacity: opacity });
+              },
+              duration: 600,
+            }
+          );
+        });
+
+        $(".previous").click(function () {
+          current_fs = $(this).parent().parent();
+          previous_fs = $(this).parent().parent().prev();
+
+          //Remove class active
+          $("#add_emp_progressbar li")
+            .eq($("fieldset").index(current_fs))
+            .removeClass("active");
+
+          //show the previous fieldset
+          previous_fs.show();
+
+          //hide the current fieldset with style
+          current_fs.animate(
+            { opacity: 0 },
+            {
+              step: function (now) {
+                // for making fielset appear animation
+                opacity = 1 - now;
+
+                current_fs.css({
+                  display: "none",
+                  position: "relative",
+                });
+                previous_fs.css({ opacity: opacity });
+              },
+              duration: 600,
+            }
+          );
+        });
+
+        $(".radio-group .radio").click(function () {
+          $(this).parent().find(".radio").removeClass("selected");
+          $(this).addClass("selected");
+        });
+
+        $(".submit").click(function () {
+          return false;
+        });
+      });
+    </script>
+    <script>
+      var room = 1;
+      function assets_fields() {
+        room++;
+        var objTo = document.getElementById("add_assets_input");
+        var divtest = document.createElement("div");
+        divtest.setAttribute("class", "form-group removeclass" + room);
+        var rdiv = "removeclass" + room;
+        divtest.innerHTML =
+          ' <div class="position-relative my-3" ><input type="text" placeholder="Enter Asset ID :" /><button type="button" class="add_more" onclick="remove_assets_fields(' +
+          room +
+          ');" ><img src="./assets/images/icons/add_more_icon.svg" alt="remove assets" width="100%" /></button></div>';
+
+        objTo.appendChild(divtest);
+      }
+      function remove_assets_fields(rid) {
+        $(".removeclass" + rid).remove();
+      }
+    </script>
+  </body>
+</html>

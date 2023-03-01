@@ -1,1 +1,571 @@
-    add-project
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reports</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- plugin -->
+    <link rel="stylesheet" href="./assets/css/data-table.css" />
+    <link rel="stylesheet" href="./assets/css/calander.css" />
+    <link rel="stylesheet" href="./assets/css/filter-multi-select.css" />
+    <link rel="stylesheet" href="./assets/css/text-editor.css" />
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/laptop-view-responsive.css" />
+    <link rel="stylesheet" href="./assets/css/tablet-view-responsive.css" />
+    <link rel="stylesheet" href="./assets/css/mobile-view-responsive.css" />
+
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- bootstrap -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/proper.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+   
+    <!-- plugin -->
+    
+  </head>
+  <body>
+    <div class="page_wrp project_list_page_wrp" >
+       <!-- sidebar -->
+       <aside id="separator-sidebar" class="sidebar" aria-label="Sidebar">
+        <div class="sidebar_inner">
+          <div
+            class="sidebar_head d-flex justify-content-between align-items-center"
+          >
+            <a href="index.html" ><figure class="m-0"><h1 class="m-0">Logo</h1></figure></a>
+            <img
+              src="./assets/images/sidebar_arrow.svg"
+              alt="sidebar toggle"
+              width="20px"
+              height="20px"
+              class="sidebar_toggler"
+            />
+          </div>
+          <div class="profile_wrp py-5">
+            <figure class="text-center m-0">
+              <img
+                src="./assets/images/dummy-profile.png"
+                alt="dummy profile"
+                class="profile_img"
+              />
+            </figure>
+            <div
+              class="profile_icon_wrp d-flex justify-content-center align-items-center py-3"
+            >
+              <a href="seetings.html" class="profile_icon">
+                <img
+                  src="./assets/images/icons/settings_icon.svg"
+                  alt="Settings"
+                  class="w-4"
+                />
+              </a>
+              <div class="notification_btn mx-3 position-relative">
+                <button class="profile_icon">
+                  <img
+                    src="./assets/images/icons//notification_icon.svg"
+                    alt="Notification"
+                    class="w-4"
+                  />
+                </button>
+                <div class="notification_wrp d-none">
+                  <div class="notification_inner" >
+                   
+                
+                    <div  class="single_notification_wrp d-flex align-items-baseline gap-2  mb-3" >
+                      <figure class="notification_profie" >
+                        <img src="./assets/images/dummy-profile.png" alt="user" width="30px" height="30px" class="rounded-circle" />
+                      </figure>
+                      <div class="notification_dtl_wrp" >
+                        <div class="d-flex justify-content-between align-items-center mb-2" >
+                          <h5 class="m-0" >Username</h5>
+                          <p class="notification_time m-0" ><span>3 Days</span>1 week ago</P>
+                          </div>
+                          <p class="m-0" >Lorem ipsum dolor sit amet consectetur. Velit nullam diam id faucibus a mauris. Vivamus arcu.</p>
+                      </div>
+                    </div>
+                    <div  class="single_notification_wrp d-flex align-items-baseline gap-2  mb-3" >
+                      <figure class="notification_profie" >
+                        <img src="./assets/images/dummy-profile.png" alt="user" width="30px" height="30px" class="rounded-circle" />
+                      </figure>
+                      <div class="notification_dtl_wrp" >
+                        <div class="d-flex justify-content-between align-items-center mb-2" >
+                          <h5 class="m-0" >Username</h5>
+                          <p class="notification_time m-0" ><span>3 Days</span>1 week ago</P>
+                          </div>
+                          <p class="m-0" >Lorem ipsum dolor sit amet consectetur. Velit nullam diam id faucibus a mauris. Vivamus arcu.</p>
+                      </div>
+                    </div>
+                    <div  class="single_notification_wrp d-flex align-items-baseline gap-2  mb-3" >
+                      <figure class="notification_profie" >
+                        <img src="./assets/images/dummy-profile.png" alt="user" width="30px" height="30px" class="rounded-circle" />
+                      </figure>
+                      <div class="notification_dtl_wrp" >
+                        <div class="d-flex justify-content-between align-items-center mb-2" >
+                          <h5 class="m-0" >Username</h5>
+                          <p class="notification_time m-0" ><span>3 Days</span>1 week ago</P>
+                          </div>
+                          <p class="m-0" >Lorem ipsum dolor sit amet consectetur. Velit nullam diam id faucibus a mauris. Vivamus arcu.</p>
+                      </div>
+                    </div>
+                  
+                 
+                    
+                </div>
+              </div>
+              </div>
+              <button class="profile_icon">
+                <img
+                  src="./assets/images/icons/logout_icon.svg"
+                  alt="Log Out"
+                  class="w-4"
+                />
+              </button>
+            </div>
+            <h2 class="text-center m-0">Lorem Ipsum</h2>
+            <p class="subtitle text-center">Designation</p>
+          </div>
+          <ul class="menu_wrp">
+            <li class="active">
+              <a href="admin-index.html"
+                ><img
+                  src="./assets/images/menu_icon/dark/dashboard.svg"
+                  alt="Dashboard Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light//dashboard.svg"
+                  alt="Dashboard Icon" class="light_img" />
+                  <span>Dashboard</span>
+            </a>
+            </li>
+            <li class="">
+              <a href="feeds.html"
+                ><img
+                  src="./assets/images/menu_icon/dark/feeds.svg"
+                  alt="Feeds Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/feeds.svg"
+                  alt="Feeds Icon" class="light_img" />
+                  <span>Feeds</span>
+            </a>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/employee.svg"
+                  alt="Employee Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/employee.svg"
+                  alt="Employee Icon" class="light_img" />
+                  <span>Employee</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="add-employee.html"><span>Add Employee</span></a>
+              </li>
+              <li>
+                <a href="employee-list.html"><span>List Employee</span></a>
+              </li>
+              <li>
+                <a href="past-employee-list.html"><span>List Past Employee</span></a>
+              </li>
+              <li>
+                <a href="view-attendance.html"><span>View Attendance</span></a>
+              </li>
+            </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/client.svg"
+                  alt="Client Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/client.svg"
+                  alt="Client Icon" class="light_img" />
+                  <span>Client</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="add-client.html"><span>Add Client</span></a>
+              </li>
+              <li>
+                <a href="client-list.html"><span>List Client</span></a>
+              </li>
+              
+            </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/project.svg"
+                  alt="Project Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/project.svg"
+                  alt="Project Icon" class="light_img" />
+                  <span>Project</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="add-project.html"><span>Add Project</span></a>
+              </li>
+              <li>
+                <a href="project-list.html"><span>List Project</span></a>
+              </li>
+              
+            </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/leave.svg"
+                  alt="Leave Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/leave.svg"
+                  alt="Leave Icon" class="light_img" />
+                  <span>Leave</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="leave-balance.html"><span>Leave Balance</span></a>
+              </li>
+              <li>
+                <a href="apply-leave.html"><span>Apply Leave</span></a>
+              </li>
+              <li>
+                <a href="leave-list.html"><span>Leave List</span></a>
+              </li>
+              <li>
+                <a href="leave-history.html"><span>Leave History</span></a>
+              </li>
+              
+            </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/timesheet.svg"
+                  alt="Timesheet Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/timesheet.svg"
+                  alt="Timesheet Icon" class="light_img" />
+                  <span>Timesheet</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="add-timesheet.html"><span>Add Timesheet</span></a>
+              </li>
+              <li>
+                <a href="timesheet-list.html"><span>List Timesheet</span></a>
+              </li>
+              <li>
+                <a href="my-timesheet.html"><span>My Timesheet</span></a>
+              </li>
+              
+            </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/review.svg"
+                  alt="Review Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/review.svg"
+                  alt="Review Icon" class="light_img" />
+                  <span>Review</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="leave-review.html"><span>Leave Review</span></a>
+              </li>
+              <li>
+                <a href="leave-review-history.html"><span>Leave Review History</span></a>
+              </li>
+              <li>
+                <a href="regularization-review.html"><span>Regularization Review</span></a>
+              </li>
+            </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/policy.svg"
+                  alt="Policy Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/policy.svg"
+                  alt="Policy Icon" class="light_img" />
+                  <span>Policy</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="./add-policy.html"><span>Add Policy</span></a>
+              </li>
+              <li>
+                <a href="./view-policy.html"><span>View Policy</span></a>
+              </li>
+            </ul>
+            </li>
+            <div class="text-center mt-4">
+              <button type="button" class="help_btn">
+                <img
+                  src="./assets/images/icons/help_icon.svg"
+                  alt="Help Icon Icon"
+                /><span>Help Center</span>
+              </button>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <!-- contant -->
+      <main class="contant">
+        <div class="addtimesheet_wrp" >
+            <h2 class="page_title">Add Project</h2>
+            <p class="subtitle mb-3">Add Project with the help of the fields mentioned below.</p>
+            <div  class="page_inner_wrp mt-5">
+                <form>
+                   <div class="user_basic_dtl m-0" >
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>Project Name</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                          <input type="text" placeholder="John Doe" />
+                        </div>
+                      </div>
+                      <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>Project Type</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                            <select>
+                                <option class="option_menu" value="" disabled selected >
+                                    Inhose
+                                </option>
+                                <option class="option_menu">Bilable</option>
+                                <option class="option_menu">non bilable</option>
+                              </select>
+                        </div>
+                      </div>  
+                      <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>Project Nature</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                            <select>
+                                <option class="option_menu" value="" disabled selected >
+                                    12345 67890
+                                </option>
+                                <option class="option_menu">Bilable</option>
+                                <option class="option_menu">non bilable</option>
+                              </select>
+                        </div>
+                      </div>   
+                      <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>Client</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                            <select>
+                                <option class="option_menu" value="" disabled selected >
+                                    Select Client
+                                </option>
+                                <option class="option_menu">Mark</option>
+                                <option class="option_menu">Clubrare</option>
+                              </select>
+                        </div>
+                      </div>   
+                      <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>Start Date</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                          <input type="date" />
+                        </div>
+                      </div>   
+                      <div class="row m-0">
+                        <div class="col-12 col-lg-5 mb-3 mb-sm-0 p-0">
+                          <label>End Date</label>
+                        </div>
+                        <div class="col-12 col-lg-7 p-0">
+                          <input type="date"  />
+                        </div>
+                      </div>     
+                   </div>
+                   <div class="mt-3 " style="padding: 0 15px">
+                    <div class="row">
+                      <div
+                        class="col-12  col-lg-1 mb-3 mb-lg-0 p-0 form_label"
+                      >
+                        <label for="animals">Employee</label>
+                      </div>
+                      <div class="col-12 col-lg-11 p-0 form_data">
+                        <select multiple name="animals" id="animals" class="filter-multi-select">
+                            <option value="bear">Bear</option>
+                            <option value="ant">Ant</option>
+                            <option value="salamander">Salamander</option>
+                            <option value="owl">Owl</option>
+                            <option value="frog">Frog</option>
+                            <option value="shark">Shark</option>
+                            <option value="bear1">Bear</option>
+                            <option value="bear2">Bear</option>
+                            <option value="bear3">Bear</option>
+                            <option value="bear4">Bear</option>
+                            <option value="bear5">Bear</option>
+                            <option value="bear6">Bear</option>
+                            <option value="bear7">Bear</option>
+                            <option value="bear8">Bear</option>
+                          </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3 mt-sm-4" style="padding: 0 15px">
+                    <div class="row">
+                      <div
+                        class="col-12  col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                      >
+                        <label>Description</label>
+                      </div>
+                      <div class="col-12 col-lg-10 p-0 form_data">
+                        <div id="example"><p>Webllisto Marketing</p></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3 mt-sm-4" style="padding: 0 15px">
+                    <div class="row">
+                      <div
+                        class="col-12  col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                      >
+                        <label>Technology</label>
+                      </div>
+                      <div class="col-12 col-lg-10 p-0 form_data">
+                        <input type="text" placeholder="John Doe" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3 mt-sm-4" style="padding: 0 15px">
+                    <div class="row">
+                      <div
+                        class="col-12  col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                      >
+                        <label>Document </label>
+                      </div>
+                      <div class="col-12 col-lg-5 p-0 ">
+                        <div class="custom_input_wrp" >
+                            <input id="uploadFile" class="f-input" placeholder="No File Chosen">
+                        <div class="fileUpload  btn--browse">
+                            <span>Choose File
+                              
+                            </span>
+                            <input id="uploadBtn" type="file" accept=".pdf" class="upload"/>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               
+                    <div class="text-center my-5 ">
+                        <button type="button" class="submit mx-1">
+                          <span class="position-relative">Submit</span>
+                        </button>
+                      </div>
+                  </form>
+            </div>
+           </div>
+      </main>
+     
+    </div>
+    
+
+    <!-- plugin -->
+    <script src="./assets/js/data-table.js"></script>
+    <script src="./assets/js/calander.js"></script>
+    <script src="./assets/js/filter-multi-select-bundle.min.js"></script>
+    <script src="./assets/js/custom-filter-multi-select.js"></script>
+    <script src="./assets/js/text-editor.js"></script>
+    <script src="./assets/js/chart-loader.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
