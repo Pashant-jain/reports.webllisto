@@ -233,6 +233,10 @@ li {
 .sidebar.expand_sidebar .sidebar_head {
   justify-content: center !important;
 }
+.sidebar_head a{
+  text-decoration: unset;
+  color: #1b1b1b;
+}
 .sidebar.expand_sidebar .sidebar_head figure,
 .sidebar.expand_sidebar .profile_icon_wrp,
 .sidebar.expand_sidebar .profile_wrp h2,
@@ -293,9 +297,8 @@ li {
 .addtimesheet_wrp,
 .settings_wrp,
 .apply_leave_wrp,
-.client_list_wrp,
 .emp_leave_balance_wrp,
-.client_list_add_client_wrp,
+.client_list_wrp,
 .employee_list_wrp,
 .past_employee_list_wrp,
 .leave_review_wrp,
@@ -304,7 +307,8 @@ li {
 .project_list_wrp,
 .report_list_wrp
 ,.add_timesheet_page_wrp
-,.leave_list_wrp {
+,.leave_list_wrp,
+.add_policy_wrp {
   background-color: #fff6e9;
   border-radius: 50px;
   padding: 30px;
@@ -371,6 +375,10 @@ li {
   background-image: url("../images/cards/announcements-back.svg");
   padding: 20px 30px;
 }
+.leaves_card{
+  background-image: url("../images/cards/leaves_list_days.svg");
+}
+
 
 .holiday_list_card h2,
 .announcement_card h2,
@@ -402,6 +410,9 @@ li {
   font-size: 13px;
   line-height: 16px;
   color: #1b1b1b;
+}
+.leaves_card th{
+  width: 25%;
 }
 .table_card td {
   font-weight: 400;
@@ -534,7 +545,7 @@ textarea:active {
   outline: unset;
 }
 .btn {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #ffffff;
   border: unset;
@@ -788,9 +799,9 @@ form input,
 .filter_table_btn_wrp button:last-child {
   margin-right: unset !important;
 }
-.client_list_add_client_wrp .submit {
+/* .client_list_add_client_wrp .submit {
   padding: 11px 28px;
-}
+} */
 /* enf of client-list-add-client-css */
 /* employee-list-css */
 /* .employee_list_wrp .page_inner_wrp {
@@ -858,7 +869,7 @@ span a {
 }
 
 .custom_input_wrp {
-  border: 0.5px solid #b7b7b7;
+  border: 0.5px solid rgba(0,0,0,0.15);
   padding: 4px;
   display: flex;
   justify-content: space-between;
@@ -1401,4 +1412,7 @@ input[type="radio"]:checked {
     background: #2CDE00;
     padding: 4px 90px;
     border-radius: 10px;
+}
+.add_policy_wrp .page_inner_wrp{
+min-height:70vh
 }
