@@ -41,7 +41,7 @@
   color: #414141;
   font-size: 14px;
   line-height: 1.6;
-  padding: 20px;
+  /* padding: 20px; */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -307,7 +307,7 @@ iframe.fr-iframe {
   line-height: 1;
   cursor: pointer;
   text-align: left;
-  margin: 4px 2px;
+  margin: unset;
   padding: 0;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -374,13 +374,13 @@ iframe.fr-iframe {
   display: block;
   text-align: center;
   float: none;
-  margin: 8px 7px;
+  /* margin: 8px 7px; */
   width: 24px;
 }
 .fr-toolbar .fr-command.fr-btn svg.fr-svg,
 .fr-popup .fr-command.fr-btn svg.fr-svg,
 .fr-modal .fr-command.fr-btn svg.fr-svg {
-  height: 24px;
+  height: 18px;
 }
 .fr-toolbar .fr-command.fr-btn svg path,
 .fr-popup .fr-command.fr-btn svg path,

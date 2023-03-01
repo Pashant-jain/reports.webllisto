@@ -63,7 +63,7 @@ li {
   width: 40%;
 }
 .subtitle {
-  font-size: 14px;
+  font-size: 13px;
   color: #686868;
 }
 
@@ -301,7 +301,9 @@ li {
 .leave_review_wrp,
 .admin_report_list_wrp,
 .add_emp_page_wrp,
-.project_list_wrp {
+.project_list_wrp,
+.report_list_wrp
+,.add_timesheet_page_wrp {
   background-color: #fff6e9;
   border-radius: 50px;
   padding: 30px;
@@ -500,7 +502,7 @@ li {
 
 /* form css */
 label {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: #000000;
 }
@@ -513,7 +515,7 @@ textarea,
   border-bottom: 0.3px solid rgba(0, 0, 0, 0.15);
   background-color: #ffeed5;
   width: 100%;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: unset;
 }
 input {
@@ -535,18 +537,20 @@ textarea:active {
   font-weight: 600;
   color: #ffffff;
   border: unset;
-  padding: 7px 19px;
+  padding:6px 12px;
   border-radius: 10px;
   border: 0.5px solid;
 }
 .Regularize {
   background-color: #f85046;
   border-color: #f85046 !important;
+  font-size: 12px;
 }
 .Filter {
   background-color: #f39e24;
   border-color: #f39e24 !important;
   margin-right: 20px;
+  font-size: 12px;
 }
 .filter_table_wrp {
   overflow: auto;
@@ -564,7 +568,7 @@ form input,
   border-radius: 50px;
   padding: 8px 28px;
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: unset;
 }
 .submit:before {
@@ -628,7 +632,7 @@ form input,
 .apply_leave_inner {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 40px;
+  gap:30px 40px;
 }
 
 .emp_profile_wrp figure image {
@@ -770,6 +774,9 @@ form input,
   } */
 .page_inner_wrp {
   position: relative;
+}
+.report_list_wrp .filter_table_btn_wrp{
+  position: unset;
 }
 .filter_table_btn_wrp {
   position: absolute;
@@ -1319,13 +1326,14 @@ input.exp_input {
   position: absolute;
   top: -20px;
 }
+
 .notification_inner {
   background: #ffffff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   max-height: 365px;
-  width: 350px;
-  padding: 20px;
+  width: 320px;
+  padding: 20px 0 ;
   overflow: auto;
 }
 .notification_profie {
@@ -1333,11 +1341,11 @@ input.exp_input {
   border-radius: 50%;
 }
 .notification_time {
-  font-size: 12px;
+  font-size: 11px;
   color: #1b1b1b;
 }
 .notification_time span {
-  font-size: 12px;
+  /* font-size: 11px; */
   font-weight: 500;
   color: #ffffff;
   background: #f85046;
@@ -1346,6 +1354,13 @@ input.exp_input {
   margin-right: 8px;
   display: inline-block;
   text-align: center;
+}
+.single_notification_wrp{
+  padding: 2px 20px;
+}
+.single_notification_wrp:hover{
+  background-color: #f3f1ef;
+
 }
 /* end of notification css */
 
@@ -1375,4 +1390,14 @@ input[type="radio"]:checked {
 .error{
   font-size: 12px;
   color: red;
+}
+.remaining_leaves{
+  font-weight: 600;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #2CDE00;
+    padding: 4px 90px;
+    border-radius: 10px;
 }
