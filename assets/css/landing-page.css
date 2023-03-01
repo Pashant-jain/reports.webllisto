@@ -79,8 +79,10 @@
 .landing_page_wrp .employee_info{
     margin-top: 70px;
     background: #F2F2F2;
-    padding: 80px 40px;
     position:relative;
+}
+.landing_page_wrp .employee_info .info{
+    padding: 80px 40px;
 }
 .employee_info h3{
     font-weight: 700;
@@ -97,14 +99,31 @@
 .landing_page_wrp .employee_info .img1{
     width:100px;
     position: absolute;
+    top: -44px;
+    left: -20px;
 }
 .landing_page_wrp .employee_info .img2{
-    width:400px;
+    width: 500px;
     position: absolute;
+    z-index: 1;
 }
 .landing_page_wrp .employee_info .img3{
     width:100px;
     position: absolute;
+    right: 9px;
+    bottom: 164px;
+}
+.landing_page_wrp .employee_info .middle_img_1{
+    width: 100px;
+    position: absolute;
+    top: 94px;
+    left: -25px;
+}
+.landing_page_wrp .employee_info .middle_img_3{
+    width: 100px;
+    position: absolute;
+    right: 15px;
+    bottom: 46px;
 }
 .landing_page_wrp .employee_info .list{
     font-weight: 500;
@@ -117,4 +136,8 @@
     font-size: 19px;
     line-height: 32px;
     color: #F85046;
+}
+.landing_page_wrp .employee_info a:focus, .landing_page_wrp .employee_info a:hover, .landing_page_wrp .employee_info a:focus-visible{
+    color: #F85046;
+    outline:none;
 }
