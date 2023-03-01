@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reports</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- plugin -->
+    <link rel="stylesheet" href="./assets/css/data-table.css" />
+    <link rel="stylesheet" href="./assets/css/calander.css" />
+    <link rel="stylesheet" href="./assets/css/filter-multi-select.css" />
+    <link rel="stylesheet" href="./assets/css/text-editor.css" />
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/laptop-view-responsive.css" />
+    <link rel="stylesheet" href="./assets/css/tablet-view-responsive.css" />
+    <link rel="stylesheet" href="./assets/css/mobile-view-responsive.css" />
+
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- bootstrap -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/proper.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+   
+    <!-- plugin -->
+    <script src="./assets/js/data-table.js"></script>
+  </head>
+  <body>
+    <div class="page_wrp leave_list_page_wrp" >
+       <!-- sidebar -->
+      <aside id="separator-sidebar" class="sidebar" aria-label="Sidebar">
+        <div class="sidebar_inner">
+          <div
+            class="sidebar_head d-flex justify-content-between align-items-center"
+          >
+            <figure class="m-0"><h1 class="m-0">Logo</h1></figure>
+            <img
+              src="./assets/images/sidebar_arrow.svg"
+              alt="sidebar toggle"
+              width="20px"
+              height="20px"
+              class="sidebar_toggler"
+            />
+          </div>
+          <div class="profile_wrp py-5">
+            <figure class="text-center m-0">
+              <img
+                src="./assets/images/dummy-profile.png"
+                alt="dummy profile"
+                class="profile_img"
+              />
+            </figure>
+            <div
+              class="profile_icon_wrp d-flex justify-content-center align-items-center py-3"
+            >
+              <a href="seetings.html" class="profile_icon">
+                <img
+                  src="./assets/images/icons/settings_icon.svg"
+                  alt="Settings"
+                  class="w-4"
+                />
+              </a>
+              <div class="notification_btn mx-3 position-relative">
+                <button class="profile_icon">
+                  <img
+                    src="./assets/images/icons//notification_icon.svg"
+                    alt="Notification"
+                    class="w-4"
+                  />
+                </button>
+                <div class="notification_wrp d-none">
+                  <div class="notification_inner" >
+                   
+                
+                    <div  class="single_notification_wrp d-flex align-items-baseline gap-2  mb-3" >
+                      <figure class="notification_profie" >
+                        <img src="./assets/images/dummy-profile.png" alt="user" width="30px" height="30px" class="rounded-circle" />
+                      </figure>
+                      <div class="notification_dtl_wrp" >
+                        <div class="d-flex justify-content-between align-items-center mb-2" >
+                          <h5 class="m-0" >Username</h5>
+                          <p class="notification_time m-0" ><span>3 Days</span>1 week ago</P>
+                          </div>
+                          <p class="m-0" >Lorem ipsum dolor sit amet consectetur. Velit nullam diam id faucibus a mauris. Vivamus arcu.</p>
+                      </div>
+                    </div>
+                    <div  class="single_notification_wrp d-flex align-items-baseline gap-2  mb-3" >
+                      <figure class="notification_profie" >
+                        <img src="./assets/images/dummy-profile.png" alt="user" width="30px" height="30px" class="rounded-circle" />
+                      </figure>
+                      <div class="notification_dtl_wrp" >
+                        <div class="d-flex justify-content-between align-items-center mb-2" >
+                          <h5 class="m-0" >Username</h5>
+                          <p class="notification_time m-0" ><span>3 Days</span>1 week ago</P>
+                          </div>
+                          <p class="m-0" >Lorem ipsum dolor sit amet consectetur. Velit nullam diam id faucibus a mauris. Vivamus arcu.</p>
+                      </div>
+                    </div>
+                    <div  class="single_notification_wrp d-flex align-items-baseline gap-2  mb-3" >
+                      <figure class="notification_profie" >
+                        <img src="./assets/images/dummy-profile.png" alt="user" width="30px" height="30px" class="rounded-circle" />
+                      </figure>
+                      <div class="notification_dtl_wrp" >
+                        <div class="d-flex justify-content-between align-items-center mb-2" >
+                          <h5 class="m-0" >Username</h5>
+                          <p class="notification_time m-0" ><span>3 Days</span>1 week ago</P>
+                          </div>
+                          <p class="m-0" >Lorem ipsum dolor sit amet consectetur. Velit nullam diam id faucibus a mauris. Vivamus arcu.</p>
+                      </div>
+                    </div>
+                  
+                 
+                    
+                </div>
+              </div>
+              </div>
+              <button class="profile_icon">
+                <img
+                  src="./assets/images/icons/logout_icon.svg"
+                  alt="Log Out"
+                  class="w-4"
+                />
+              </button>
+            </div>
+            <h2 class="text-center m-0">Lorem Ipsum</h2>
+            <p class="subtitle text-center">Designation</p>
+          </div>
+          <ul class="menu_wrp">
+            <li class="active">
+              <a href="index.html"
+                ><img
+                  src="./assets/images/menu_icon/dark/dashboard.svg"
+                  alt="Dashboard Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light//dashboard.svg"
+                  alt="Dashboard Icon" class="light_img" />
+                  <span>Dashboard</span>
+            </a>
+            </li>
+            <li class="">
+              <a href="feeds.html"
+                ><img
+                  src="./assets/images/menu_icon/dark/feeds.svg"
+                  alt="Feeds Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/feeds.svg"
+                  alt="Feeds Icon" class="light_img" />
+                  <span>Feeds</span>
+            </a>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/employee.svg"
+                  alt="Employee Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/employee.svg"
+                  alt="Employee Icon" class="light_img" />
+                  <span>Employee</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="add-employee.html"><span>Add Employee</span></a>
+              </li>
+              <li>
+                <a href="employee-list.html"><span>List Employee</span></a>
+              </li>
+              <li>
+                <a href="past-employee-list.html"><span>List Past Employee</span></a>
+              </li>
+              <li>
+                <a href="view-attendance.html"><span>View Attendance</span></a>
+              </li>
+            </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/client.svg"
+                  alt="Client Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/client.svg"
+                  alt="Client Icon" class="light_img" />
+                  <span>Client</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="add-client.html"><span>Add Client</span></a>
+              </li>
+              <li>
+                <a href="client-list.html"><span>List Client</span></a>
+              </li>
+              
+            </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/project.svg"
+                  alt="Project Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/project.svg"
+                  alt="Project Icon" class="light_img" />
+                  <span>Project</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="add-project.html"><span>Add Project</span></a>
+              </li>
+              <li>
+                <a href="project-list.html"><span>List Project</span></a>
+              </li>
+              
+            </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/leave.svg"
+                  alt="Leave Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/leave.svg"
+                  alt="Leave Icon" class="light_img" />
+                  <span>Leave</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="leave-balance.html"><span>Leave Balance</span></a>
+              </li>
+              <li>
+                <a href="apply-leave.html"><span>Apply Leave</span></a>
+              </li>
+              <li>
+                <a href="leave-list.html"><span>Leave List</span></a>
+              </li>
+              <li>
+                <a href="leave-history.html"><span>Leave History</span></a>
+              </li>
+              
+            </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/timesheet.svg"
+                  alt="Timesheet Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/timesheet.svg"
+                  alt="Timesheet Icon" class="light_img" />
+                  <span>Timesheet</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="add-timesheet.html"><span>Add Timesheet</span></a>
+              </li>
+              <li>
+                <a href="timesheet-list.html"><span>List Timesheet</span></a>
+              </li>
+              <li>
+                <a href="my-timesheet.html"><span>My Timesheet</span></a>
+              </li>
+              
+            </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/review.svg"
+                  alt="Review Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/review.svg"
+                  alt="Review Icon" class="light_img" />
+                  <span>Review</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="leave-review.html"><span>Leave Review</span></a>
+              </li>
+              <li>
+                <a href="leave-review-history.html"><span>Leave Review History</span></a>
+              </li>
+              <li>
+                <a href="regularization-review.html"><span>Regularization Review</span></a>
+              </li>
+            </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/policy.svg"
+                  alt="Policy Icon" class="dark_img" />
+                  <img
+                  src="./assets/images/menu_icon/light/policy.svg"
+                  alt="Policy Icon" class="light_img" />
+                  <span>Policy</span>
+                  <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+              />
+              <img
+              src="./assets/images/down-arrow-light.svg"
+              alt="down arrow"
+              class="down_arrow light_img "
+          />
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="./add.policy.html"><span>Add Policy</span></a>
+              </li>
+              <li>
+                <a href="./view-policy.html"><span>View Policy</span></a>
+              </li>
+            </ul>
+            </li>
+            <div class="text-center mt-4">
+              <button type="button" class="help_btn">
+                <img
+                  src="./assets/images/icons/help_icon.svg"
+                  alt="Help Icon Icon"
+                /><span>Help Center</span>
+              </button>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <!-- contant -->
+      <main class="contant">
+        <div class="leave_list_wrp">
+            <h2 class="page_title">Leave List</h2>
+            <p class="subtitle mb-3">
+              List of your reports with server side datatable. 
+            </p>
+            <div class="page_inner_wrp mt-5">
+              <table
+                id="list_table"
+                class="row-border cell-border project_list_table "
+                style="width: 100%"
+              >
+                <thead>
+                  <tr>
+                    <th style="min-width:90px;">Type-Period</th>
+                    <th style="max-width:90px;">From Date</th>
+                    <th style="max-width:90px;">To Date</th>
+                    <th style="min-width:90px;">Applying To</th>
+                    <th style="min-width: 120px ;" >Reason</th>
+                    <th style="min-width:90px; max-width: 90px;" >Status</th>
+                    <th style="min-width:90px; max-width: 90px;">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- <tr>
+                      <td><span>Casual Leave</span></td>
+                      <td><span>2023-02-09</span></td>
+                      <td><span>2023-02-09</span></td>
+                      <td><span>Bharti Sharma</span></td>
+                      <td style="max-width: 200px">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
+                      </td>
+                      
+                      <td><span>APPROVED_BY_RM</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
+                    </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </main>
+     
+    </div>
+    
+
+    <!-- plugin -->
+    <script src="./assets/js/calander.js"></script>
+    <script src="./assets/js/filter-multi-select-bundle.min.js"></script>
+    <script src="./assets/js/custom-filter-multi-select.js"></script>
+    <script src="./assets/js/text-editor.js"></script>
+    <script src="./assets/js/chart-loader.js"></script>
+
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $("#list_table").DataTable({
+   lengthMenu: [
+     [10, 25, 50, -1],
+     [10, 25, 50, "All"],
+   ],
+   pagingType: "simple",
+   responsive: true,
+  
+   scrollX: true,
+  
+ });
+   </script>
+  </body>
+</html>

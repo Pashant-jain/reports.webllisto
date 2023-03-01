@@ -686,7 +686,7 @@ table.dataTable td {
     clear: both;
     border:1px solid rgba(0, 0, 0, 0.15);
     border-radius: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
     -webkit-overflow-scrolling: touch;

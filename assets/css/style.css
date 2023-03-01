@@ -303,7 +303,8 @@ li {
 .add_emp_page_wrp,
 .project_list_wrp,
 .report_list_wrp
-,.add_timesheet_page_wrp {
+,.add_timesheet_page_wrp
+,.leave_list_wrp {
   background-color: #fff6e9;
   border-radius: 50px;
   padding: 30px;
@@ -626,7 +627,7 @@ form input,
 .emp_attandance_dtl_wrp {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 50px 30px;
+  gap: 40px 30px;
 }
 .emp_profile_dtl_wrp,
 .apply_leave_inner {
