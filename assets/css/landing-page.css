@@ -1,6 +1,4 @@
-.landing_page_wrp{
-        padding: 20px 30px;
-}
+
 .landing_page_wrp .header ul{
     list-style:none;
 }
@@ -11,12 +9,12 @@
     color: #000000;
     margin-right: 20px;
 }
-.landing_page_wrp .header button{
+.button{
     background: #FFFFFF;
     border-radius: 90px;
     border: white;
     padding: 0px;
-    padding: 6px 24px;
+    padding: 9px 24px;
 }
 .navbar{
     padding:unset;
@@ -49,39 +47,57 @@
     color: #343434;
     margin-top: 35px;
 }
-.landing_page_wrp .banner_wrp .banner_right img{
+
+.landing_page_wrp .banner_wrp .banner_left button {
+    background: #F85046;
+    border-radius: 90px;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.landing_page_wrp .banner_wrp .banner_right figure{
     width: 450px;
     height: 500px;
+}
+.landing_page_wrp .banner_wrp .banner_right img{
+    max-width: 100%;
+    max-height: 100%;
 }
 .landing_page_wrp .erp_software{
     margin-top: 70px;
     text-align: center;
+    position:relative;
 }
-.landing_page_wrp .erp_software h3{
+h3{
     font-weight: 700;
     font-size: 36px;
     line-height: 74px;
     text-transform: capitalize;
 }
-.landing_page_wrp .erp_software strong{
+strong{
     color:red;
 }
-.landing_page_wrp .erp_software p{
+p{
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
     color: #343434;
 }
-.landing_page_wrp .erp_software img{
+
+.landing_page_wrp .erp_software .video{
     width: 800px;
     margin-top: 50px;
 }
-.landing_page_wrp .employee_info{
+ .employee_info{
     margin-top: 70px;
     background: #F2F2F2;
     position:relative;
 }
-.landing_page_wrp .employee_info .info{
+ .employee_info .info{
     padding: 80px 40px;
 }
 .employee_info h3{
@@ -96,48 +112,73 @@
     line-height: 30px;
     color: #343434;
 }
-.landing_page_wrp .employee_info .img1{
-    width:100px;
-    position: absolute;
-    top: -44px;
-    left: -20px;
+.employee_info .info figure{
+    width:550px;
 }
-.landing_page_wrp .employee_info .img2{
-    width: 500px;
-    position: absolute;
-    z-index: 1;
+.employee_info .img1{
+    max-width: 100%;
 }
-.landing_page_wrp .employee_info .img3{
-    width:100px;
+.employee_info .img2{
+    max-width: 100%;
     position: absolute;
-    right: 9px;
-    bottom: 164px;
+    left: -50px;
 }
-.landing_page_wrp .employee_info .middle_img_1{
-    width: 100px;
-    position: absolute;
-    top: 94px;
-    left: -25px;
-}
-.landing_page_wrp .employee_info .middle_img_3{
-    width: 100px;
-    position: absolute;
-    right: 15px;
-    bottom: 46px;
-}
-.landing_page_wrp .employee_info .list{
+.employee_info .list{
     font-weight: 500;
-    font-size: 17px;
-    line-height: 44px;
+    font-size: 15px;
+    line-height: 40px;
     color: #343434;
 }
-.landing_page_wrp .employee_info a{
+.employee_info .info a{
     font-weight: 700;
     font-size: 19px;
     line-height: 32px;
     color: #F85046;
 }
-.landing_page_wrp .employee_info a:focus, .landing_page_wrp .employee_info a:hover, .landing_page_wrp .employee_info a:focus-visible{
+ .employee_info a:focus,
+ .employee_info a:hover,
+ .employee_info a:focus-visible{
     color: #F85046;
     outline:none;
+}
+.free_demo_wrp .free_demo_innr_wrp{
+    background: #F85046;
+    box-shadow: 0px 0px 41px 2px rgb(248 80 70 / 39%);
+    border-radius: 95px;
+    margin-top:70px;
+}
+.free_demo_wrp .free_demo_innr_wrp figure{
+    width:400px;
+    margin: 0 auto;
+}
+.free_demo_wrp .free_demo_innr_wrp figure img{
+    max-width:100%;
+    margin-top: -82px;
+}
+.free_demo_wrp .free_demo_innr_wrp h3{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding-top: 40px;
+}
+.free_demo_wrp .free_demo_innr_wrp p{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+    padding: 20px 0 30px 0px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.free_demo_wrp .free_demo_innr_wrp .demo_btn{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.free_demo_wrp .free_demo_innr_wrp button{
+    color: #F85046;
+}
+.testimonials_wrp{
+    margin-top:70px
 }
