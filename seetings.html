@@ -1,0 +1,2604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reports</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- plugin -->
+    <link rel="stylesheet" href="./assets/css/data-table.css" />
+    <link rel="stylesheet" href="./assets/css/calander.css" />
+    <link rel="stylesheet" href="./assets/css/filter-multi-select.css" />
+    <link rel="stylesheet" href="./assets/css/text-editor.css" />
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/laptop-view-responsive.css" />
+    <link rel="stylesheet" href="./assets/css/tablet-view-responsive.css" />
+    <link rel="stylesheet" href="./assets/css/mobile-view-responsive.css" />
+
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <!-- plugin -->
+    <script src="./assets/js/data-table.js"></script>
+  </head>
+  <body>
+    <div class="page_wrp settinges_page_wrp">
+      <!-- sidebar -->
+      <aside id="separator-sidebar" class="sidebar" aria-label="Sidebar">
+        <div class="sidebar_inner">
+          <div
+            class="sidebar_head d-flex justify-content-between align-items-center"
+          >
+            <a href="index.html" ><figure class="m-0"><h1 class="m-0">Logo</h1></figure></a>
+            <img
+              src="./assets/images/sidebar_arrow.svg"
+              alt="sidebar toggle"
+              width="20px"
+              height="20px"
+              class="sidebar_toggler"
+            />
+          </div>
+          <div class="profile_wrp py-5">
+            <figure class="text-center m-0">
+              <img
+                src="./assets/images/dummy-profile.png"
+                alt="dummy profile"
+                class="profile_img"
+              />
+            </figure>
+            <div
+              class="profile_icon_wrp d-flex justify-content-center align-items-center py-3"
+            >
+              <a href="seetings.html" class="profile_icon">
+                <img
+                  src="./assets/images/icons/settings_icon.svg"
+                  alt="Settings"
+                  class="w-4"
+                />
+              </a>
+              <div class="notification_btn mx-3 position-relative">
+                <button class="profile_icon">
+                  <img
+                    src="./assets/images/icons//notification_icon.svg"
+                    alt="Notification"
+                    class="w-4"
+                  />
+                </button>
+                <div class="notification_wrp d-none">
+                  <div class="notification_inner">
+                    <div
+                      class="single_notification_wrp d-flex align-items-baseline gap-2 mb-3"
+                    >
+                      <figure class="notification_profie">
+                        <img
+                          src="./assets/images/dummy-profile.png"
+                          alt="user"
+                          width="30px"
+                          height="30px"
+                          class="rounded-circle"
+                        />
+                      </figure>
+                      <div class="notification_dtl_wrp">
+                        <div
+                          class="d-flex justify-content-between align-items-center mb-2"
+                        >
+                          <h5 class="m-0">Username</h5>
+                          <p class="notification_time m-0">
+                            <span>3 Days</span>1 week ago
+                          </p>
+                        </div>
+                        <p class="m-0">
+                          Lorem ipsum dolor sit amet consectetur. Velit nullam
+                          diam id faucibus a mauris. Vivamus arcu.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="single_notification_wrp d-flex align-items-baseline gap-2 mb-3"
+                    >
+                      <figure class="notification_profie">
+                        <img
+                          src="./assets/images/dummy-profile.png"
+                          alt="user"
+                          width="30px"
+                          height="30px"
+                          class="rounded-circle"
+                        />
+                      </figure>
+                      <div class="notification_dtl_wrp">
+                        <div
+                          class="d-flex justify-content-between align-items-center mb-2"
+                        >
+                          <h5 class="m-0">Username</h5>
+                          <p class="notification_time m-0">
+                            <span>3 Days</span>1 week ago
+                          </p>
+                        </div>
+                        <p class="m-0">
+                          Lorem ipsum dolor sit amet consectetur. Velit nullam
+                          diam id faucibus a mauris. Vivamus arcu.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="single_notification_wrp d-flex align-items-baseline gap-2 mb-3"
+                    >
+                      <figure class="notification_profie">
+                        <img
+                          src="./assets/images/dummy-profile.png"
+                          alt="user"
+                          width="30px"
+                          height="30px"
+                          class="rounded-circle"
+                        />
+                      </figure>
+                      <div class="notification_dtl_wrp">
+                        <div
+                          class="d-flex justify-content-between align-items-center mb-2"
+                        >
+                          <h5 class="m-0">Username</h5>
+                          <p class="notification_time m-0">
+                            <span>3 Days</span>1 week ago
+                          </p>
+                        </div>
+                        <p class="m-0">
+                          Lorem ipsum dolor sit amet consectetur. Velit nullam
+                          diam id faucibus a mauris. Vivamus arcu.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="profile_icon">
+                <img
+                  src="./assets/images/icons/logout_icon.svg"
+                  alt="Log Out"
+                  class="w-4"
+                />
+              </button>
+            </div>
+            <h2 class="text-center m-0">Lorem Ipsum</h2>
+            <p class="subtitle text-center">Designation</p>
+          </div>
+          <ul class="menu_wrp">
+            <li class="active">
+              <a href="admin-index.html"
+                ><img
+                  src="./assets/images/menu_icon/dark/dashboard.svg"
+                  alt="Dashboard Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light//dashboard.svg"
+                  alt="Dashboard Icon"
+                  class="light_img"
+                />
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="feeds.html"
+                ><img
+                  src="./assets/images/menu_icon/dark/feeds.svg"
+                  alt="Feeds Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/feeds.svg"
+                  alt="Feeds Icon"
+                  class="light_img"
+                />
+                <span>Feeds</span>
+              </a>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/employee.svg"
+                  alt="Employee Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/employee.svg"
+                  alt="Employee Icon"
+                  class="light_img"
+                />
+                <span>Employee</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="add-employee.html"><span>Add Employee</span></a>
+                </li>
+                <li>
+                  <a href="employee-list.html"><span>List Employee</span></a>
+                </li>
+                <li>
+                  <a href="past-employee-list.html"
+                    ><span>List Past Employee</span></a
+                  >
+                </li>
+                <li>
+                  <a href="view-attendance.html"
+                    ><span>View Attendance</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/client.svg"
+                  alt="Client Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/client.svg"
+                  alt="Client Icon"
+                  class="light_img"
+                />
+                <span>Client</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="add-client.html"><span>Add Client</span></a>
+                </li>
+                <li>
+                  <a href="client-list.html"><span>List Client</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/project.svg"
+                  alt="Project Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/project.svg"
+                  alt="Project Icon"
+                  class="light_img"
+                />
+                <span>Project</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="add-project.html"><span>Add Project</span></a>
+                </li>
+                <li>
+                  <a href="project-list.html"><span>List Project</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/leave.svg"
+                  alt="Leave Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/leave.svg"
+                  alt="Leave Icon"
+                  class="light_img"
+                />
+                <span>Leave</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="leave-balance.html"><span>Leave Balance</span></a>
+                </li>
+                <li>
+                  <a href="apply-leave.html"><span>Apply Leave</span></a>
+                </li>
+                <li>
+                  <a href="leave-list.html"><span>Leave List</span></a>
+                </li>
+                <li>
+                  <a href="leave-history.html"><span>Leave History</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/timesheet.svg"
+                  alt="Timesheet Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/timesheet.svg"
+                  alt="Timesheet Icon"
+                  class="light_img"
+                />
+                <span>Timesheet</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="add-timesheet.html"><span>Add Timesheet</span></a>
+                </li>
+                <li>
+                  <a href="timesheet-list.html"><span>List Timesheet</span></a>
+                </li>
+                <li>
+                  <a href="my-timesheet.html"><span>My Timesheet</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/review.svg"
+                  alt="Review Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/review.svg"
+                  alt="Review Icon"
+                  class="light_img"
+                />
+                <span>Review</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="leave-review.html"><span>Leave Review</span></a>
+                </li>
+                <li>
+                  <a href="leave-review-history.html"
+                    ><span>Leave Review History</span></a
+                  >
+                </li>
+                <li>
+                  <a href="regularization-review.html"
+                    ><span>Regularization Review</span></a
+                  >
+                </li>
+                <li>
+                    <a href="regularization-history.html"
+                      ><span>Regularization History</span></a
+                    >
+                  </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href=""
+                ><img
+                  src="./assets/images/menu_icon/dark/policy.svg"
+                  alt="Policy Icon"
+                  class="dark_img"
+                />
+                <img
+                  src="./assets/images/menu_icon/light/policy.svg"
+                  alt="Policy Icon"
+                  class="light_img"
+                />
+                <span>Policy</span>
+                <img
+                  src="./assets/images/down-arrow.svg"
+                  alt="down arrow"
+                  class="down_arrow dark_img"
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="./add-policy.html"><span>Add Policy</span></a>
+                </li>
+                <li>
+                  <a href="./view-policy.html"><span>View Policy</span></a>
+                </li>
+              </ul>
+            </li>
+            <div class="text-center mt-4">
+              <button type="button" class="help_btn">
+                <img
+                  src="./assets/images/icons/help_icon.svg"
+                  alt="Help Icon Icon"
+                /><span>Help Center</span>
+              </button>
+            </div>
+          </ul>
+        </div>
+      </aside>
+      <!-- contant -->
+      <main class="contant">
+        <div class="settings_wrp">
+          <h2 class="page_title">Settings</h2>
+          <div class="page_inner_wrp p-0 mt-3 mt-sm-5">
+            <div class="settings_desktop_wrp">
+              <ul
+                class="setting_tab_head nav nav-pills"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="true"
+                  >
+                    Profile
+                  </button>
+                </li>
+                <span>/</span>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-attendance-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-attendance"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-attendance"
+                    aria-selected="false"
+                  >
+                    Attendance
+                  </button>
+                </li>
+                <span>/</span>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-Your-summary-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-Your-summary"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-Your-summary"
+                    aria-selected="false"
+                  >
+                    Your Summary
+                  </button>
+                </li>
+                <span>/</span>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-Change-password-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-Change-password"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-Change-password"
+                    aria-selected="false"
+                  >
+                    Change Password
+                  </button>
+                </li>
+                <span>/</span>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-add-announcement-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-add-announcement"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-add-announcement"
+                    aria-selected="false"
+                  >
+                    Add Announcement
+                  </button>
+                </li>
+                <span>/</span>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-add-slack-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-add-slack"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-add-slack"
+                    aria-selected="false"
+                  >
+                    Add Slack Channel
+                  </button>
+                </li>
+                <span>/</span>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-add-Assets-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-add-Assets"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-add-Assets"
+                    aria-selected="false"
+                  >
+                    Add Assets
+                  </button>
+                </li>
+              </ul>
+              <div
+                class="setting_tab_containt tab-content"
+                id="pills-tabContent"
+              >
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                >
+                  <div class="settings_profile_wrp">
+                    <div class="text-center">
+                      <img
+                        src="./assets/images/icons/profile_icon.svg"
+                        alt="Profile"
+                        class="mx-auto"
+                        width="45px"
+                        height="45px"
+                      />
+                      <h3 class="my-2">Employee Profile</h3>
+                    </div>
+                    <div class="row profile_inner mt-5">
+                      <div class="col-12 col-lg-3 profile_inner_lft">
+                        <div
+                          class="emp_profile_box_wrp emp_profile_wrp d-flex justify-content-center align-items-center text-center mb-3"
+                        >
+                          <div>
+                            <figure>
+                              <img
+                                src="./assets/images/dummy-profile.png"
+                                alt="dummy progile image"
+                                width="75px"
+                                height="75px"
+                              />
+                            </figure>
+                            <h3 class="m-0">Lorem Ipsum</h3>
+                            <p class="my-2">Designation</p>
+                            <button type="buton" class="edit_btn">
+                              <img
+                                src="./assets/images/icons/edit_icon.svg"
+                                alt="Edit"
+                              />Edit
+                            </button>
+                          </div>
+                        </div>
+                        <div class="emp_profile_box_wrp emp_leave_dtl_wrp mb-3">
+                          <h4 class="mb-3">Leave details</h4>
+                          <p
+                            class="emp_leave_dtl d-flex justify-content-between align-items-center mt-2 mb-0"
+                          >
+                            <span>Casual Leaves</span>
+                            <span>6.0</span>
+                          </p>
+                          <p
+                            class="emp_leave_dtl d-flex justify-content-between align-items-center mt-2 mb-0"
+                          >
+                            <span>Privileged Leave</span>
+                            <span>6.0</span>
+                          </p>
+                          <p
+                            class="emp_leave_dtl d-flex justify-content-between align-items-center mt-2 mb-0"
+                          >
+                            <span>Emergency Leave</span>
+                            <span>6.0</span>
+                          </p>
+                          <p
+                            class="emp_leave_dtl d-flex justify-content-between align-items-center mt-2 mb-0"
+                          >
+                            <span>Loss of Pay</span>
+                            <span>6.0</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-9 profile_inner_right">
+                        <div class="emp_profile_dtl_wrp">
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Username</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input readonly type="text" value="lorem_ip" />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Father Name</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input readonly type="text" value="Lorem Ipsum" />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Joining Date</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input
+                                readonly
+                                type="text"
+                                value="Aug. 25, 2020"
+                              />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Birth Date</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input
+                                readonly
+                                type="text"
+                                value="Feb 25, 2020"
+                              />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Email Address</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input
+                                readonly
+                                type="email"
+                                value="prashant.jain@webllisto.com"
+                              />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Manager</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input
+                                readonly
+                                type="text"
+                                value="Prashant jain"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Contact No.</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input readonly type="tell" value="12345 67890" />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Alt. Contact</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input readonly type="text" value="99999 99999" />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Role</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input readonly type="text" value="Employee" />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Department</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input readonly type="text" value="Developer" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="my-5" style="padding: 0 15px">
+                          <div class="row">
+                            <div class="col-12 col-lg-2 mb-3 mb-lg-0 p-0">
+                              <label>Skills</label>
+                            </div>
+                            <div class="col-12 col-lg-10 p-0 px-sm-1">
+                              <div class="profile_skils_wrp">
+                                <span class="profile_skils">Lorem Ipsum</span>
+                                <span class="profile_skils">Lorem Ipsum</span>
+                                <span class="profile_skils">Lorem Ipsum</span>
+                                <span class="profile_skils">Lorem Ipsum</span>
+                                <span class="profile_skils">Lorem Ipsum</span>
+                                <span class="profile_skils">Lorem Ipsum</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="emp_profile_dtl_wrp">
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Religion</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input readonly type="text" value="None" />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Nationality</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input readonly type="text" value="Indian" />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Gender</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input readonly type="text" value="Female" />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                              <label>Blood Group</label>
+                            </div>
+                            <div class="col-12 col-sm-8 p-0">
+                              <input readonly type="text" value="B +ve" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-attendance"
+                  role="tabpanel"
+                  aria-labelledby="pills-attendance-tab"
+                >
+                  <div class="attandance_wrp">
+                    <div class="text-center">
+                      <img
+                        src="./assets/images/icons/attendance_icon.svg"
+                        alt="Attandance"
+                        class="mx-auto"
+                        width="45px"
+                        height="45px"
+                      />
+                      <h3 class="my-2">Employee Attendance</h3>
+                    </div>
+                    <div class="attandance_inner mt-5">
+                      <div class="emp_attandance_dtl_wrp">
+                        <div class="row">
+                          <div class="col-12 col-sm-5 mb-3 mb-sm-0">
+                            <label>Total Leaves</label>
+                          </div>
+                          <div class="col-12 col-sm-7">
+                            <input readonly type="text" value="0" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-sm-5 mb-3 mb-sm-0">
+                            <label>Holidays</label>
+                          </div>
+                          <div class="col-12 col-sm-7">
+                            <input readonly type="text" value="8" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-sm-5 mb-3 mb-sm-0">
+                            <label>Present</label>
+                          </div>
+                          <div class="col-12 col-sm-7">
+                            <input readonly type="text" value="4" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-sm-5 mb-3 mb-sm-0">
+                            <label>Absents</label>
+                          </div>
+                          <div class="col-12 col-sm-7">
+                            <input readonly type="text" value="4" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-sm-5 mb-3 mb-sm-0">
+                            <label>Remaining Workdays</label>
+                          </div>
+                          <div class="col-12 col-sm-7">
+                            <input readonly type="text" value="12" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-sm-5 mb-3 mb-sm-0">
+                            <label>Overlapping Leaves</label>
+                          </div>
+                          <div class="col-12 col-sm-7">
+                            <input readonly type="text" value="0" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="leave_detail_wrp mt-5">
+                        <h4 style="color: #f85046" class="mb-3">
+                          Leave details
+                        </h4>
+                        <table
+                          id="leave_details"
+                          class="row-border cell-border leave_details_table"
+                          style="width: 100%"
+                        >
+                          <thead>
+                            <tr>
+                              <th style="max-width: 90px">From Date</th>
+                              <th style="max-width: 90px">To Date</th>
+                              <th style="min-width: 150px">Reason</th>
+                              <th style="max-width: 100px">Approved</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <!-- <tr>
+                                <td><span>Casual</span></td>
+                                <td><span>Casual</span></td>
+                                <td><span>Casual</span></td>
+                                <td><span>Casual</span></td>
+                              </tr> -->
+                            <!-- <tr>
+                      <td><span>Casual Leave</span></td>
+                      <td><span>2023-02-09</span></td>
+                      <td><span>2023-02-09</span></td>
+                      <td><span>2023-02-09</span></td>
+                      <td><span>Bharti Sharma</span></td>
+                      <td style="max-width: 200px">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
+                      </td>
+                      
+                      <td><span>APPROVED_BY_RM</span></td>
+                      <td>
+                        <span
+                          ><div class="table_action_drobdown text-center">
+                            <button
+                              class="table_action_btn"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Action
+                            </button>
+                            <ul
+                              class="dropdown-menu table_action_menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>Edit</li>
+                              <li>Delete</li>
+                            </ul>
+                          </div></span
+                        >
+                      </td>
+                    </tr> -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-Your-summary"
+                  role="tabpanel"
+                  aria-labelledby="pills-Your-summary-tab"
+                >
+                  <div class="emp_summery_wrp">
+                    <div class="text-center">
+                      <img
+                        src="./assets/images/icons//summary_icon.svg"
+                        alt="Profile Summery"
+                        class="mx-auto"
+                        width="45px"
+                        height="45px"
+                      />
+                      <h3 class="my-2">Employee Summary</h3>
+                    </div>
+                    <div class="emp_summery_inner mt-5">
+                      <div class="emp_summery_dtl_wrp">
+                        <div class="row m-0">
+                          <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                            <label>Joining Date</label>
+                          </div>
+                          <div class="col-12 col-sm-7 p-0">
+                            <input readonly type="text" value="Aug 25, 2020" />
+                          </div>
+                        </div>
+                        <div class="row m-0">
+                          <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                            <label>Total Leaves</label>
+                          </div>
+                          <div class="col-12 col-sm-7 p-0">
+                            <input readonly type="text" value="0" />
+                          </div>
+                        </div>
+                        <div class="row m-0">
+                          <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                            <label>Total Projects</label>
+                          </div>
+                          <div class="col-12 col-sm-7 p-0">
+                            <input readonly type="text" value="10" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-5">
+                        <div class="row m-0">
+                          <div class="col-12 col-lg-1 mb-3 mb-lg-0 p-0">
+                            <label>Allotted Projects</label>
+                          </div>
+                          <div class="col-12 col-lg-11 p-0 px-sm-1">
+                            <div class="profile_skils_wrp">
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                              <span class="profile_skils">Lorem Ipsum</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="emp_summery_dtl_wrp">
+                        <div class="row m-0">
+                          <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                            <label>Avg. Start Time</label>
+                          </div>
+                          <div class="col-12 col-sm-7 p-0">
+                            <input readonly type="text" value="10:46 AM" />
+                          </div>
+                        </div>
+                        <div class="row m-0">
+                          <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                            <label>Avg. End Time</label>
+                          </div>
+                          <div class="col-12 col-sm-7 p-0">
+                            <input readonly type="text" value="08:15 PM" />
+                          </div>
+                        </div>
+                        <div class="row m-0">
+                          <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                            <label>Total Worked</label>
+                          </div>
+                          <div class="col-12 col-sm-7 p-0">
+                            <input
+                              readonly
+                              type="text"
+                              value="699 Hours 30 Minutes"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-5">
+                        <div class="row m-0">
+                          <div class="col-12 col-lg-2 p-0">
+                            <label>Monthly Hours</label>
+                          </div>
+                          <div class="col-12 col-lg-10">
+                            <div id="chart_div" style="height: 300px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-Change-password"
+                  role="tabpanel"
+                  aria-labelledby="pills-Change-password-tab"
+                >
+                  <div class="change_password_wrp pb-3 pb-sm-5">
+                    <div class="text-center">
+                      <img
+                        src="./assets/images/icons/reset-password_icon.svg"
+                        alt="Reset Password"
+                        class="mx-auto"
+                        width="45px"
+                        height="45px"
+                      />
+                      <h3 class="my-2">Reset Your Password</h3>
+                    </div>
+                    <div class="change_password_inner mt-5">
+                      <form>
+                        <div class="row mx-0 mb-2 mb-sm-5">
+                          <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                            <label>Old Password</label>
+                          </div>
+                          <div class="col-12 col-sm-8 p-0">
+                            <input
+                              type="password"
+                              placeholder="Enter old password"
+                            />
+                          </div>
+                        </div>
+                        <div class="row mx-0 mb-2 mb-sm-5">
+                          <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                            <label>New Password</label>
+                          </div>
+                          <div class="col-12 col-sm-8 p-0">
+                            <input
+                              type="password"
+                              placeholder="Enter new password"
+                            />
+                          </div>
+                        </div>
+                        <div class="row mx-0 mb-2 mb-sm-5">
+                          <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                            <label>Re-enter Your Password</label>
+                          </div>
+                          <div class="col-12 col-sm-8 p-0">
+                            <input
+                              type="text"
+                              placeholder="Re-enter new password"
+                            />
+                          </div>
+                        </div>
+                        <div class="text-center">
+                          <!-- <input readonly type="submit" class="submit" value="submit" /> -->
+                          <div class="text-center">
+                            <button
+                              type="button"
+                              class="submit_outline_btn mx-1"
+                            >
+                              <span class="position-relative">Submit</span>
+                            </button>
+                            <a
+                              href="./forgot-password.html"
+                              class="submit mx-1"
+                            >
+                              <span class="position-relative"
+                                >Forgot Password</span
+                              >
+                            </a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add Announcement -->
+                <div
+                  class="tab-pane fade"
+                  id="pills-add-announcement"
+                  role="tabpanel"
+                  aria-labelledby="pills-add-announcement-tab"
+                >
+                  <div class="add_announcement_wrp pb-3 pb-sm-5">
+                    <div class="text-center">
+                      <img
+                        src="./assets/images/icons/add-announcement-icon.svg"
+                        alt="Add Announcement"
+                        class="mx-auto"
+                        width="45px"
+                        height="45px"
+                      />
+                      <h3 class="my-2">Add Announcement</h3>
+                    </div>
+                    <div class="add_announcement_inner mt-5">
+                      <form>
+                        <div class="user_basic_dtl">
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                              <label>Type</label>
+                            </div>
+                            <div class="col-12 col-sm-7 p-0">
+                              <select>
+                                <option class="option_menu" value="">
+                                  Company
+                                </option>
+                                <option class="option_menu">Team</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                              <label>Duration</label>
+                            </div>
+                            <div class="col-12 col-sm-7 p-0">
+                              <input type="date" />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                              <label>Added By</label>
+                            </div>
+                            <div class="col-12 col-sm-7 p-0">
+                              <input
+                                type="text"
+                                placeholder="Webllisto Admin"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mt-5" style="padding: 0 15px">
+                          <div class="row">
+                            <div
+                              class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                            >
+                              <label>About</label>
+                            </div>
+                            <div class="col-12 col-lg-10 p-0 form_data">
+                              <input type="text" placeholder="Enter Details" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-center mt-5">
+                          <button type="button" class="submit mx-1">
+                            <span class="position-relative">Submit</span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of Add Announcement -->
+                <!-- add slack -->
+                <div
+                  class="tab-pane fade"
+                  id="pills-add-slack"
+                  role="tabpanel"
+                  aria-labelledby="pills-add-slack-tab"
+                >
+                  <div class="add_slack_wrp pb-0 pb-md-5">
+                    <div class="text-center">
+                      <img
+                        src="./assets/images/icons/add-slack-icon.svg"
+                        alt="Add Slack"
+                        class="mx-auto"
+                        width="45px"
+                        height="45px"
+                      />
+                      <h3 class="my-3">Manage Slack Channels</h3>
+                    </div>
+                    <div class="add_slack_inner mt-5">
+                      <form>
+                        <div class="mb-4">
+                          <h4 class="page_title mb-4">
+                            Add a new slack channel
+                          </h4>
+                          <div
+                            class="input_flex_wrp d-flex justify-content-between align-items-center gap-4 mb-4"
+                          >
+                            <div class="row m-0 w-40 w-md-100">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                <label>Channel Name</label>
+                              </div>
+                              <div class="col-12 col-sm-7 p-0">
+                                <input type="text" placeholder="Enter Name" />
+                              </div>
+                            </div>
+                            <div class="row m-0 w-60 w-md-100">
+                              <div class="col-12 col-sm-2 mb-3 mb-sm-0 p-0">
+                                <label>Enter URL</label>
+                              </div>
+                              <div class="col-12 col-sm-10 p-0">
+                                <input
+                                  type="url"
+                                  placeholder="Enter URL here"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-center mt-5">
+                          <button type="submit" class="submit">
+                            <span class="position-relative">Submit</span>
+                          </button>
+                        </div>
+                      </form>
+                      <div class="mt-5">
+                        <h4 class="page_title mb-4">All Slack Channels</h4>
+                        <div>
+                          <div
+                            class="input_flex_wrp d-flex justify-content-between align-items-center gap-4 mb-4"
+                          >
+                            <div class="row m-0 w-40 w-lg-100">
+                              <div
+                                class="col-12 col-sm-4 col-xl-5 mb-3 mb-md-0 p-0"
+                              >
+                                <div
+                                  class="d-flex justify-content-between align-items-center"
+                                >
+                                  <label>Channel Name</label>
+                                  <button
+                                    type="button"
+                                    class="btn p-0 border-0 ms-3 d-sm-none"
+                                  >
+                                    <img
+                                      src="./assets/images/icons/delete_icon.svg"
+                                    />
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="col-12 col-sm-8 col-xl-7 p-0">
+                                <input type="text" placeholder="Enter Name" />
+                              </div>
+                            </div>
+                            <div class="row m-0 w-60 w-lg-100">
+                              <div
+                                class="col-12 col-sm-4 col-xl-2 mb-3 mb-md-0 p-0"
+                              >
+                                <label>Enter URL</label>
+                              </div>
+                              <div class="col-12 col-sm-8 col-xl-10 p-0">
+                                <div class="d-flex w-lg-100">
+                                  <input
+                                    type="url"
+                                    placeholder="Enter URL here"
+                                    class="w-lg-100"
+                                  />
+                                  <button
+                                    type="button"
+                                    class="btn p-0 border-0 ms-3 d-none d-sm-block"
+                                  >
+                                    <img
+                                      src="./assets/images/icons/delete_icon.svg"
+                                    />
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- add slack -->
+                <!-- add assets -->
+                <div
+                  class="tab-pane fade"
+                  id="pills-add-Assets"
+                  role="tabpanel"
+                  aria-labelledby="pills-add-Assets-tab"
+                >
+                  <div class="add_assets_wrp">
+                    <div class="text-center">
+                      <img
+                        src="./assets/images/icons/add-assets-icon.svg"
+                        alt="Add Assets"
+                        class="mx-auto"
+                        width="45px"
+                        height="45px"
+                      />
+                      <h3 class="my-2">Add Assets</h3>
+                    </div>
+                    <div class="add_assets_inner mt-5">
+                      <form>
+                        <div class="mb-4">
+                          <h4 class="page_title mb-4">Add a new asset</h4>
+                        </div>
+                        <div class="user_basic_dtl">
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                              <label>Asset Type</label>
+                            </div>
+                            <div class="col-12 col-sm-7 p-0">
+                              <select>
+                                <option class="option_menu" value="">
+                                  Laptop
+                                </option>
+                                <option class="option_menu">Desktop</option>
+                                <option class="option_menu">Mouse</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                              <label>Device Name</label>
+                            </div>
+                            <div class="col-12 col-sm-7 p-0">
+                              <input
+                                type="text"
+                                placeholder="Enter device name"
+                              />
+                            </div>
+                          </div>
+                          <div class="row m-0">
+                            <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                              <label>Asset ID</label>
+                            </div>
+                            <div class="col-12 col-sm-7 p-0">
+                              <input type="text" placeholder="Enter Asset ID" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-center mt-5">
+                          <button type="submit" class="submit">
+                            <span class="position-relative">Submit</span>
+                          </button>
+                        </div>
+                      </form>
+                      <div class="mt-5">
+                        <h4 class="page_title mb-4">List of all Assets</h4>
+                        <div>
+                          <table
+                            id="list_assets"
+                            class="row-border cell-border list_assets_table"
+                            style="width: 100%"
+                          >
+                            <thead>
+                              <tr>
+                                <th style="min-width: 90px">Assets Type</th>
+                                <th style="min-width: 90px">Assets Name</th>
+                                <th style="min-width: 90px">Assets ID</th>
+                                <th style="min-width: 150px">User</th>
+                                <th style="min-width: 90px">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><span>Laptop</span></td>
+                                <td><span>DELL LT</span></td>
+                                <td><span>LT 1123</span></td>
+                                <td><span>None</span></td>
+                                <td>
+                                  <span
+                                    ><div
+                                      class="table_action_drobdown text-center"
+                                    >
+                                      <button
+                                        class="table_action_btn"
+                                        type="button"
+                                        id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                      >
+                                        Action
+                                      </button>
+                                      <ul
+                                        class="dropdown-menu table_action_menu"
+                                        aria-labelledby="dropdownMenuButton1"
+                                      >
+                                        <li>Edit</li>
+                                        <li>Delete</li>
+                                      </ul>
+                                    </div></span
+                                  >
+                                </td>
+                              </tr>
+                              <!-- <tr>
+                          <td><span>Casual Leave</span></td>
+                          <td><span>2023-02-09</span></td>
+                          <td><span>2023-02-09</span></td>
+                          <td><span>2023-02-09</span></td>
+                          <td><span>Bharti Sharma</span></td>
+                          <td style="max-width: 200px">
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
+                          </td>
+                          
+                          <td><span>APPROVED_BY_RM</span></td>
+                          <td>
+                            <span
+                              ><div class="table_action_drobdown text-center">
+                                <button
+                                  class="table_action_btn"
+                                  type="button"
+                                  id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  Action
+                                </button>
+                                <ul
+                                  class="dropdown-menu table_action_menu"
+                                  aria-labelledby="dropdownMenuButton1"
+                                >
+                                  <li>Edit</li>
+                                  <li>Delete</li>
+                                </ul>
+                              </div></span
+                            >
+                          </td>
+                        </tr> -->
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of add assets -->
+              </div>
+            </div>
+            <div class="settings_mobile_wrp">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="profile">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Profile
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="profile"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="settings_profile_wrp">
+                        <div class="text-center">
+                          <img
+                            src="./assets/images/icons/profile_icon.svg"
+                            alt="Profile"
+                            class="mx-auto"
+                            width="45px"
+                            height="45px"
+                          />
+                          <h3 class="my-2">Employee Profile</h3>
+                        </div>
+                        <div class="row profile_inner mt-5">
+                          <div class="col-12 col-lg-3 profile_inner_lft">
+                            <div
+                              class="emp_profile_box_wrp emp_profile_wrp d-flex justify-content-center align-items-center text-center mb-3"
+                            >
+                              <div>
+                                <figure>
+                                  <img
+                                    src="./assets/images/dummy-profile.png"
+                                    alt="dummy progile image"
+                                    width="75px"
+                                    height="75px"
+                                  />
+                                </figure>
+                                <h3 class="m-0">Lorem Ipsum</h3>
+                                <p class="my-2">Designation</p>
+                                <button type="buton" class="edit_btn">
+                                  <img
+                                    src="./assets/images/icons/edit_icon.svg"
+                                    alt="Edit"
+                                  />Edit
+                                </button>
+                              </div>
+                            </div>
+                            <div
+                              class="emp_profile_box_wrp emp_leave_dtl_wrp mb-3"
+                            >
+                              <h4 class="mb-3">Leave details</h4>
+                              <p
+                                class="emp_leave_dtl d-flex justify-content-between align-items-center mt-2 mb-0"
+                              >
+                                <span>Casual Leaves</span>
+                                <span>6.0</span>
+                              </p>
+                              <p
+                                class="emp_leave_dtl d-flex justify-content-between align-items-center mt-2 mb-0"
+                              >
+                                <span>Privileged Leave</span>
+                                <span>6.0</span>
+                              </p>
+                              <p
+                                class="emp_leave_dtl d-flex justify-content-between align-items-center mt-2 mb-0"
+                              >
+                                <span>Emergency Leave</span>
+                                <span>6.0</span>
+                              </p>
+                              <p
+                                class="emp_leave_dtl d-flex justify-content-between align-items-center mt-2 mb-0"
+                              >
+                                <span>Loss of Pay</span>
+                                <span>6.0</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-9 profile_inner_right">
+                            <div class="emp_profile_dtl_wrp">
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Username</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input
+                                    readonly
+                                    type="text"
+                                    value="lorem_ip"
+                                  />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Father Name</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input
+                                    readonly
+                                    type="text"
+                                    value="Lorem Ipsum"
+                                  />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Joining Date</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input
+                                    readonly
+                                    type="text"
+                                    value="Aug. 25, 2020"
+                                  />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Birth Date</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input
+                                    readonly
+                                    type="text"
+                                    value="Feb 25, 2020"
+                                  />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Email Address</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input
+                                    readonly
+                                    type="email"
+                                    value="prashant.jain@webllisto.com"
+                                  />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Manager</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input
+                                    readonly
+                                    type="text"
+                                    value="Prashant jain"
+                                  />
+                                </div>
+                              </div>
+
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Contact No.</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input
+                                    readonly
+                                    type="tell"
+                                    value="12345 67890"
+                                  />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Alt. Contact</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input
+                                    readonly
+                                    type="text"
+                                    value="99999 99999"
+                                  />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Role</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input
+                                    readonly
+                                    type="text"
+                                    value="Employee"
+                                  />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Department</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input
+                                    readonly
+                                    type="text"
+                                    value="Developer"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="my-5" style="padding: 0 15px">
+                              <div class="row">
+                                <div class="col-12 col-lg-2 mb-3 mb-lg-0 p-0">
+                                  <label>Skills</label>
+                                </div>
+                                <div class="col-12 col-lg-10 p-0 px-sm-1">
+                                  <div class="profile_skils_wrp">
+                                    <span class="profile_skils"
+                                      >Lorem Ipsum</span
+                                    >
+                                    <span class="profile_skils"
+                                      >Lorem Ipsum</span
+                                    >
+                                    <span class="profile_skils"
+                                      >Lorem Ipsum</span
+                                    >
+                                    <span class="profile_skils"
+                                      >Lorem Ipsum</span
+                                    >
+                                    <span class="profile_skils"
+                                      >Lorem Ipsum</span
+                                    >
+                                    <span class="profile_skils"
+                                      >Lorem Ipsum</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="emp_profile_dtl_wrp">
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Religion</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input readonly type="text" value="None" />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Nationality</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input readonly type="text" value="Indian" />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Gender</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input readonly type="text" value="Female" />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                  <label>Blood Group</label>
+                                </div>
+                                <div class="col-12 col-sm-8 p-0">
+                                  <input readonly type="text" value="B +ve" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="Attendance">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Attendance
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="Attendance"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="attandance_wrp">
+                        <div class="text-center">
+                          <img
+                            src="./assets/images/icons/attendance_icon.svg"
+                            alt="Attandance"
+                            class="mx-auto"
+                            width="45px"
+                            height="45px"
+                          />
+                          <h3 class="my-2">Employee Attendance</h3>
+                        </div>
+                        <div class="attandance_inner mt-5">
+                          <div class="emp_attandance_dtl_wrp">
+                            <div class="row">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0">
+                                <label>Total Leaves</label>
+                              </div>
+                              <div class="col-12 col-sm-7">
+                                <input readonly type="text" value="0" />
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0">
+                                <label>Holidays</label>
+                              </div>
+                              <div class="col-12 col-sm-7">
+                                <input readonly type="text" value="8" />
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0">
+                                <label>Present</label>
+                              </div>
+                              <div class="col-12 col-sm-7">
+                                <input readonly type="text" value="4" />
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0">
+                                <label>Absents</label>
+                              </div>
+                              <div class="col-12 col-sm-7">
+                                <input readonly type="text" value="4" />
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0">
+                                <label>Remaining Workdays</label>
+                              </div>
+                              <div class="col-12 col-sm-7">
+                                <input readonly type="text" value="12" />
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0">
+                                <label>Overlapping Leaves</label>
+                              </div>
+                              <div class="col-12 col-sm-7">
+                                <input readonly type="text" value="0" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="leave_detail_wrp mt-5">
+                            <h4 class="page_title" class="mb-3">
+                              Leave details
+                            </h4>
+                            <table
+                              id="leave_details_mobile"
+                              class="row-border cell-border leave_details_table"
+                              style="width: 100%"
+                            >
+                              <thead>
+                                <tr>
+                                  <th style="max-width: 90px">From Date</th>
+                                  <th style="max-width: 90px">To Date</th>
+                                  <th style="min-width: 150px">Reason</th>
+                                  <th style="max-width: 100px">Approved</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><span>Casual</span></td>
+                                  <td><span>Casual</span></td>
+                                  <td><span>Casual</span></td>
+                                  <td><span>Casual</span></td>
+                                </tr>
+                                <!-- <tr>
+                        <td><span>Casual Leave</span></td>
+                        <td><span>2023-02-09</span></td>
+                        <td><span>2023-02-09</span></td>
+                        <td><span>2023-02-09</span></td>
+                        <td><span>Bharti Sharma</span></td>
+                        <td style="max-width: 200px">
+                          <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
+                        </td>
+                        
+                        <td><span>APPROVED_BY_RM</span></td>
+                        <td>
+                          <span
+                            ><div class="table_action_drobdown text-center">
+                              <button
+                                class="table_action_btn"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                Action
+                              </button>
+                              <ul
+                                class="dropdown-menu table_action_menu"
+                                aria-labelledby="dropdownMenuButton1"
+                              >
+                                <li>Edit</li>
+                                <li>Delete</li>
+                              </ul>
+                            </div></span
+                          >
+                        </td>
+                      </tr> -->
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="Summary">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Your Summary
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="Summary"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="emp_summery_wrp">
+                        <div class="text-center">
+                          <img
+                            src="./assets/images/icons//summary_icon.svg"
+                            alt="Profile Summery"
+                            class="mx-auto"
+                            width="45px"
+                            height="45px"
+                          />
+                          <h3 class="my-2">Employee Summary</h3>
+                        </div>
+                        <div class="emp_summery_inner mt-5">
+                          <div class="emp_summery_dtl_wrp">
+                            <div class="row m-0">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                <label>Joining Date</label>
+                              </div>
+                              <div class="col-12 col-sm-7 p-0">
+                                <input
+                                  readonly
+                                  type="text"
+                                  value="Aug 25, 2020"
+                                />
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                <label>Total Leaves</label>
+                              </div>
+                              <div class="col-12 col-sm-7 p-0">
+                                <input readonly type="text" value="0" />
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                <label>Total Projects</label>
+                              </div>
+                              <div class="col-12 col-sm-7 p-0">
+                                <input readonly type="text" value="10" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="my-5">
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-1 mb-3 mb-lg-0 p-0">
+                                <label>Allotted Projects</label>
+                              </div>
+                              <div class="col-12 col-lg-11 p-0 px-sm-1">
+                                <div class="profile_skils_wrp">
+                                  <span class="profile_skils">Lorem Ipsum</span>
+                                  <span class="profile_skils">Lorem Ipsum</span>
+                                  <span class="profile_skils">Lorem Ipsum</span>
+                                  <span class="profile_skils">Lorem Ipsum</span>
+                                  <span class="profile_skils">Lorem Ipsum</span>
+                                  <span class="profile_skils">Lorem Ipsum</span>
+                                  <span class="profile_skils">Lorem Ipsum</span>
+                                  <span class="profile_skils">Lorem Ipsum</span>
+                                  <span class="profile_skils">Lorem Ipsum</span>
+                                  <span class="profile_skils">Lorem Ipsum</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="emp_summery_dtl_wrp">
+                            <div class="row m-0">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                <label>Avg. Start Time</label>
+                              </div>
+                              <div class="col-12 col-sm-7 p-0">
+                                <input readonly type="text" value="10:46 AM" />
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                <label>Avg. End Time</label>
+                              </div>
+                              <div class="col-12 col-sm-7 p-0">
+                                <input readonly type="text" value="08:15 PM" />
+                              </div>
+                            </div>
+                            <div class="row m-0">
+                              <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                <label>Total Worked</label>
+                              </div>
+                              <div class="col-12 col-sm-7 p-0">
+                                <input
+                                  readonly
+                                  type="text"
+                                  value="699 Hours 30 Minutes"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="my-5">
+                            <div class="row m-0">
+                              <div class="col-12 col-lg-2 p-0">
+                                <label>Monthly Hours</label>
+                              </div>
+                              <div class="col-12 col-lg-10">
+                                <div id="chart_div" style="height: 300px"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsefour"
+                      aria-expanded="false"
+                      aria-controls="collapsefour"
+                    >
+                      Change Password
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsefour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="change_password_wrp pb-3 pb-sm-5">
+                        <div class="text-center">
+                          <img
+                            src="./assets/images/icons/reset-password_icon.svg"
+                            alt="Reset Password"
+                            class="mx-auto"
+                            width="45px"
+                            height="45px"
+                          />
+                          <h3 class="my-2">Reset Your Password</h3>
+                        </div>
+                        <div class="change_password_inner mt-5">
+                          <form>
+                            <div class="row mx-0 mb-2 mb-sm-5">
+                              <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                <label>Old Password</label>
+                              </div>
+                              <div class="col-12 col-sm-8 p-0">
+                                <input
+                                  type="password"
+                                  placeholder="Enter old password"
+                                />
+                              </div>
+                            </div>
+                            <div class="row mx-0 mb-2 mb-sm-5">
+                              <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                <label>New Password</label>
+                              </div>
+                              <div class="col-12 col-sm-8 p-0">
+                                <input
+                                  type="password"
+                                  placeholder="Enter new password"
+                                />
+                              </div>
+                            </div>
+                            <div class="row mx-0 mb-2 mb-sm-5">
+                              <div class="col-12 col-sm-4 mb-3 mb-sm-0 p-0">
+                                <label>Re-enter Your Password</label>
+                              </div>
+                              <div class="col-12 col-sm-8 p-0">
+                                <input
+                                  type="text"
+                                  placeholder="Re-enter new password"
+                                />
+                              </div>
+                            </div>
+                            <div class="text-center">
+                              <!-- <input readonly type="submit" class="submit" value="submit" /> -->
+                              <button type="submit" class="submit">
+                                <span class="position-relative">Submit</span>
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingfour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsefive"
+                      aria-expanded="false"
+                      aria-controls="collapsefive"
+                    >
+                      Add Announcement
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsefive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingfour"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="add_announcement_wrp pb-3 pb-sm-5">
+                        <div class="text-center">
+                          <img
+                            src="./assets/images/icons/add-announcement-icon.svg"
+                            alt="Add Announcement"
+                            class="mx-auto"
+                            width="45px"
+                            height="45px"
+                          />
+                          <h3 class="my-2">Add Announcement</h3>
+                        </div>
+                        <div class="add_announcement_inner mt-5">
+                          <form>
+                            <div class="user_basic_dtl">
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                  <label>Type</label>
+                                </div>
+                                <div class="col-12 col-sm-7 p-0">
+                                  <select>
+                                    <option class="option_menu" value="">
+                                      Company
+                                    </option>
+                                    <option class="option_menu">Team</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                  <label>Duration</label>
+                                </div>
+                                <div class="col-12 col-sm-7 p-0">
+                                  <input type="date" />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                  <label>Added By</label>
+                                </div>
+                                <div class="col-12 col-sm-7 p-0">
+                                  <input
+                                    type="text"
+                                    placeholder="Webllisto Admin"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mt-5" style="padding: 0 15px">
+                              <div class="row">
+                                <div
+                                  class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                                >
+                                  <label>About</label>
+                                </div>
+                                <div class="col-12 col-lg-10 p-0 form_data">
+                                  <input
+                                    type="text"
+                                    placeholder="Enter Details"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="text-center mt-5">
+                              <button type="button" class="submit mx-1">
+                                <span class="position-relative">Submit</span>
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingsix">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsesix"
+                      aria-expanded="false"
+                      aria-controls="collapsesix"
+                    >
+                      Add Slack Channel
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsesix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingsix"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="add_slack_wrp pb-0 pb-md-5">
+                        <div class="text-center">
+                          <img
+                            src="./assets/images/icons/add-slack-icon.svg"
+                            alt="Add Slack"
+                            class="mx-auto"
+                            width="45px"
+                            height="45px"
+                          />
+                          <h3 class="my-3">Manage Slack Channels</h3>
+                        </div>
+                        <div class="add_slack_inner mt-5">
+                          <form>
+                            <div class="mb-4">
+                              <h4 class="page_title mb-4">
+                                Add a new slack channel
+                              </h4>
+                              <div
+                                class="input_flex_wrp d-flex justify-content-between align-items-center gap-4 mb-4"
+                              >
+                                <div class="row m-0 w-40 w-lg-100">
+                                  <div
+                                    class="col-12 col-sm-4 col-xl-5 mb-3 mb-sm-0 p-0"
+                                  >
+                                    <label>Channel Name</label>
+                                  </div>
+                                  <div class="col-12 col-sm-8 col-xl-7 p-0">
+                                    <input
+                                      type="text"
+                                      placeholder="Enter Name"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="row m-0 w-60 w-lg-100">
+                                  <div
+                                    class="col-12 col-sm-4 col-xl-2 mb-3 mb-sm-0 p-0"
+                                  >
+                                    <label>Enter URL</label>
+                                  </div>
+                                  <div class="col-12 col-sm-8 col-xl-10 p-0">
+                                    <input
+                                      type="url"
+                                      placeholder="Enter URL here"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="text-center mt-5">
+                              <button type="submit" class="submit">
+                                <span class="position-relative">Submit</span>
+                              </button>
+                            </div>
+                          </form>
+                          <div class="mt-5">
+                            <h4 class="page_title mb-4">All Slack Channels</h4>
+                            <div>
+                              <div
+                                class="input_flex_wrp d-flex justify-content-between align-items-center gap-4 mb-4"
+                              >
+                                <div class="row m-0 w-40 w-lg-100">
+                                  <div
+                                    class="col-12 col-sm-4 col-xl-5 mb-3 mb-md-0 p-0"
+                                  >
+                                    <div
+                                      class="d-flex justify-content-between align-items-center"
+                                    >
+                                      <label>Channel Name</label>
+                                      <button
+                                        type="button"
+                                        class="btn p-0 border-0 ms-3 d-sm-none"
+                                      >
+                                        <img
+                                          src="./assets/images/icons/delete_icon.svg"
+                                        />
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-sm-8 col-xl-7 p-0">
+                                    <input
+                                      type="text"
+                                      placeholder="Enter Name"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="row m-0 w-60 w-lg-100">
+                                  <div
+                                    class="col-12 col-sm-4 col-xl-2 mb-3 mb-md-0 p-0"
+                                  >
+                                    <label>Enter URL</label>
+                                  </div>
+                                  <div class="col-12 col-sm-8 col-xl-10 p-0">
+                                    <div class="d-flex w-lg-100">
+                                      <input
+                                        type="url"
+                                        placeholder="Enter URL here"
+                                        class="w-lg-100"
+                                      />
+                                      <button
+                                        type="button"
+                                        class="btn p-0 border-0 ms-3 d-none d-sm-block"
+                                      >
+                                        <img
+                                          src="./assets/images/icons/delete_icon.svg"
+                                        />
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingseven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseseven"
+                      aria-expanded="false"
+                      aria-controls="collapseseven"
+                    >
+                      Add Assets
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseseven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headinsevenx"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="add_assets_wrp">
+                        <div class="text-center">
+                          <img
+                            src="./assets/images/icons/add-assets-icon.svg"
+                            alt="Add Assets"
+                            class="mx-auto"
+                            width="45px"
+                            height="45px"
+                          />
+                          <h3 class="my-2">Add Assets</h3>
+                        </div>
+                        <div class="add_assets_inner mt-5">
+                          <form>
+                            <div class="mb-4">
+                              <h4 class="page_title mb-4">Add a new asset</h4>
+                            </div>
+                            <div class="user_basic_dtl">
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                  <label>Asset Type</label>
+                                </div>
+                                <div class="col-12 col-sm-7 p-0">
+                                  <select>
+                                    <option class="option_menu" value="">
+                                      Laptop
+                                    </option>
+                                    <option class="option_menu">Desktop</option>
+                                    <option class="option_menu">Mouse</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                  <label>Device Name</label>
+                                </div>
+                                <div class="col-12 col-sm-7 p-0">
+                                  <input
+                                    type="text"
+                                    placeholder="Enter device name"
+                                  />
+                                </div>
+                              </div>
+                              <div class="row m-0">
+                                <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
+                                  <label>Asset ID</label>
+                                </div>
+                                <div class="col-12 col-sm-7 p-0">
+                                  <input
+                                    type="text"
+                                    placeholder="Enter Asset ID"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="text-center mt-5">
+                              <button type="submit" class="submit">
+                                <span class="position-relative">Submit</span>
+                              </button>
+                            </div>
+                          </form>
+                          <div class="mt-5">
+                            <h4 class="page_title mb-4">List of all Assets</h4>
+                            <div>
+                              <table
+                                id="list_assets_mobile"
+                                class="row-border cell-border list_assets_table"
+                                style="width: 100%"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th style="min-width: 90px">Assets Type</th>
+                                    <th style="min-width: 90px">Assets Name</th>
+                                    <th style="min-width: 90px">Assets ID</th>
+                                    <th style="min-width: 150px">User</th>
+                                    <th style="min-width: 90px">Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span>Laptop</span></td>
+                                    <td><span>DELL LT</span></td>
+                                    <td><span>LT 1123</span></td>
+                                    <td><span>None</span></td>
+                                    <td>
+                                      <span
+                                        ><div
+                                          class="table_action_drobdown text-center"
+                                        >
+                                          <button
+                                            class="table_action_btn"
+                                            type="button"
+                                            id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                          >
+                                            Action
+                                          </button>
+                                          <ul
+                                            class="dropdown-menu table_action_menu"
+                                            aria-labelledby="dropdownMenuButton1"
+                                          >
+                                            <li>Edit</li>
+                                            <li>Delete</li>
+                                          </ul>
+                                        </div></span
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- plugin -->
+    <script src="./assets/js/calander.js"></script>
+    <script src="./assets/js/filter-multi-select-bundle.min.js"></script>
+    <script src="./assets/js/custom-filter-multi-select.js"></script>
+    <script src="./assets/js/text-editor.js"></script>
+    <script src="./assets/js/chart-loader.js"></script>
+
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+    <script>
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["month", "works"],
+          ["Jan", 180],
+          ["feb", 120],
+          ["mar", 100],
+          ["apr", 250],
+          ["Jan", 300],
+          ["Jan", 130],
+          ["Jan", 300],
+          ["Jan", 144],
+          ["Jan", 145],
+          ["Jan", 265],
+          ["Jan", 275],
+          ["Jan", 400],
+        ]);
+
+        var options = {
+          legend: "none",
+          // vAxis: { gridlines: { count: 0 }, baseline: 3,baselineColor: 'rgba(0, 0, 0, 0.15)' },
+          vAxis: {
+            baselineColor: "#B7B7B7",
+            gridlines: { count: 0 },
+          },
+          colors: ["#F85046"],
+          backgroundColor: { fill: "transparent" },
+          pointSize: 7,
+          pointShape: { type: "circle", sides: 4, colors: "#000" },
+          responsive: true,
+          chartArea: { width: "90%", height: "70%" },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("chart_div")
+        );
+        chart.draw(data, options);
+      }
+    </script>
+    <script>
+      $("#leave_details").DataTable({
+        lengthMenu: [
+          [10, 25, 50, -1],
+          [10, 25, 50, "All"],
+        ],
+        pagingType: "simple",
+        responsive: true,
+        searching: false,
+        paging: false,
+        info: false,
+
+        scrollX: true,
+      });
+      $("#list_assets").DataTable({
+        lengthMenu: [
+          [10, 25, 50, -1],
+          [10, 25, 50, "All"],
+        ],
+        pagingType: "simple",
+        responsive: true,
+        searching: false,
+        paging: false,
+        info: false,
+
+        scrollX: true,
+      });
+      $("#leave_details_mobile").DataTable({
+        lengthMenu: [
+          [10, 25, 50, -1],
+          [10, 25, 50, "All"],
+        ],
+        pagingType: "simple",
+        responsive: true,
+        searching: false,
+        paging: false,
+        info: false,
+
+        scrollX: true,
+      });
+      $("#list_assets_mobile").DataTable({
+        lengthMenu: [
+          [10, 25, 50, -1],
+          [10, 25, 50, "All"],
+        ],
+        pagingType: "simple",
+        responsive: true,
+        searching: false,
+        paging: false,
+        info: false,
+
+        scrollX: true,
+      });
+    </script>
+  </body>
+</html>
