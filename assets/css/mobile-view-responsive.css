@@ -7,6 +7,13 @@
   
       padding: 4px 15px;
   }
+  .filter_table_btn_wrp{
+    flex-direction:column;
+   }
+   .timesheet_list_filter_btn .Filter ,.timesheet_list_filter_btn .import ,.timesheet_list_filter_btn .export{
+    width:100%;
+    margin-top:5px
+   }
   .client_list_add_client_wrp .filter_table_btn_wrp {
     flex-direction: column;
   }
@@ -40,7 +47,7 @@
   .leave_history_wrp,
   .add_emp_page_wrp,
   .add_timesheet_page_wrp,
-  .report_list_wrp,.project_list_wrp,.leave_list_wrp,.leave_list_wrp,.add_client_wrp {
+  .report_list_wrp,.project_list_wrp,.leave_list_wrp,.leave_list_wrp,.add_client_wrp,.feeds_wrp,.regularization_review_wrp,.regularization_review_history_wrp {
     padding: 15px;
     border-radius: 35px;
   }

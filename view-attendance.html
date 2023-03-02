@@ -32,9 +32,8 @@
     ></script>
 
     <!-- bootstrap -->
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/proper.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
     <!-- plugin -->
     <script src="./assets/js/data-table.js"></script>
@@ -434,6 +433,11 @@
                     ><span>Regularization Review</span></a
                   >
                 </li>
+                <li>
+                    <a href="regularization-history.html"
+                      ><span>Regularization History</span></a
+                    >
+                  </li>
               </ul>
             </li>
             <li class="">
@@ -517,7 +521,7 @@
                   <div>
                     <label>
                       Select Year :
-                      <input type="month" />
+                      <input type="date" />
                     </label>
                   </div>
                 </div>
@@ -540,81 +544,79 @@
                   <th style="max-width: 60px; min-width: 60px">Present</th>
                   <th style="max-width: 60px; min-width: 60px">Absent</th>
                   <th style="max-width: 60px; min-width: 60px">Leaves</th>
-                  <th style="max-width: 15px; min-width: 15px">1</th>
-                  <th style="max-width: 15px; min-width: 15px">2</th>
-                  <th style="max-width: 15px; min-width: 15px">3</th>
-                  <th style="max-width: 15px; min-width: 15px">4</th>
-                  <th style="max-width: 15px; min-width: 15px">5</th>
-                  <th style="max-width: 15px; min-width: 15px">6</th>
-                  <th style="max-width: 15px; min-width: 15px">7</th>
-                  <th style="max-width: 15px; min-width: 15px">8</th>
-                  <th style="max-width: 15px; min-width: 15px">9</th>
-                  <th style="max-width: 15px; min-width: 15px">10</th>
-                  <th style="max-width: 15px; min-width: 15px">11</th>
-                  <th style="max-width: 15px; min-width: 15px">12</th>
-                  <th style="max-width: 15px; min-width: 15px">13</th>
-                  <th style="max-width: 15px; min-width: 15px">14</th>
-                  <th style="max-width: 15px; min-width: 15px">15</th>
-                  <th style="max-width: 15px; min-width: 15px">1</th>
-                  <th style="max-width: 15px; min-width: 15px">2</th>
-                  <th style="max-width: 15px; min-width: 15px">3</th>
-                  <th style="max-width: 15px; min-width: 15px">4</th>
-                  <th style="max-width: 15px; min-width: 15px">5</th>
-                  <th style="max-width: 15px; min-width: 15px">6</th>
-                  <th style="max-width: 15px; min-width: 15px">7</th>
-                  <th style="max-width: 15px; min-width: 15px">8</th>
-                  <th style="max-width: 15px; min-width: 15px">9</th>
-                  <th style="max-width: 15px; min-width: 15px">10</th>
-                  <th style="max-width: 15px; min-width: 15px">11</th>
-                  <th style="max-width: 15px; min-width: 15px">12</th>
-                  <th style="max-width: 15px; min-width: 15px">13</th>
-                  <th style="max-width: 15px; min-width: 15px">14</th>
-                  <th style="max-width: 15px; min-width: 15px">15</th>
+                  <th style="max-width: 18px; min-width: 18px">1</th>
+                  <th style="max-width: 18px; min-width: 18px">2</th>
+                  <th style="max-width: 18px; min-width: 18px">3</th>
+                  <th style="max-width: 18px; min-width: 18px">4</th>
+                  <th style="max-width: 18px; min-width: 18px">5</th>
+                  <th style="max-width: 18px; min-width: 18px">6</th>
+                  <th style="max-width: 18px; min-width: 18px">7</th>
+                  <th style="max-width: 18px; min-width: 18px">8</th>
+                  <th style="max-width: 18px; min-width: 18px">9</th>
+                  <th style="max-width: 18px; min-width: 18px">10</th>
+                  <th style="max-width: 18px; min-width: 18px">11</th>
+                  <th style="max-width: 18px; min-width: 18px">12</th>
+                  <th style="max-width: 18px; min-width: 18px">13</th>
+                  <th style="max-width: 18px; min-width: 18px">14</th>
+                  <th style="max-width: 18px; min-width: 18px">15</th>
+                  <th style="max-width: 18px; min-width: 18px">1</th>
+                  <th style="max-width: 18px; min-width: 18px">2</th>
+                  <th style="max-width: 18px; min-width: 18px">3</th>
+                  <th style="max-width: 18px; min-width: 18px">4</th>
+                  <th style="max-width: 18px; min-width: 18px">5</th>
+                  <th style="max-width: 18px; min-width: 18px">6</th>
+                  <th style="max-width: 18px; min-width: 18px">7</th>
+                  <th style="max-width: 18px; min-width: 18px">8</th>
+                  <th style="max-width: 18px; min-width: 18px">9</th>
+                  <th style="max-width: 18px; min-width: 18px">10</th>
+                  <th style="max-width: 18px; min-width: 18px">11</th>
+                  <th style="max-width: 18px; min-width: 18px">12</th>
+                  <th style="max-width: 18px; min-width: 18px">13</th>
+                  <th style="max-width: 18px; min-width: 18px">14</th>
+                  <th style="max-width: 18px; min-width: 18px">15</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><span>Employee</span></td>
-                  <td><span>Employee</span></td>
-                  <td><span>Employee</span></td>
-                  <td><span>Employee</span></td>
-                  <td style="max-width: 15px; min-width: 15px">1</td>
-                  <td style="max-width: 15px; min-width: 15px">2</td>
-                  <td style="max-width: 15px; min-width: 15px">3</td>
-                  <td style="max-width: 15px; min-width: 15px">4</td>
-                  <td style="max-width: 15px; min-width: 15px">5</td>
-                  <td style="max-width: 15px; min-width: 15px">6</td>
-                  <td style="max-width: 15px; min-width: 15px">7</td>
-                  <td style="max-width: 15px; min-width: 15px">8</td>
-                  <td style="max-width: 15px; min-width: 15px">9</td>
-                  <td style="max-width: 15px; min-width: 15px">10</td>
-                  <td style="max-width: 15px; min-width: 15px">11</td>
-                  <td style="max-width: 15px; min-width: 15px">12</td>
-                  <td style="max-width: 15px; min-width: 15px">13</td>
-                  <td style="max-width: 15px; min-width: 15px">14</td>
-                  <td style="max-width: 15px; min-width: 15px">15</td>
-                  <td style="max-width: 15px; min-width: 15px">1</td>
-                  <td style="max-width: 15px; min-width: 15px">2</td>
-                  <td style="max-width: 15px; min-width: 15px">3</td>
-                  <td style="max-width: 15px; min-width: 15px">4</td>
-                  <td style="max-width: 15px; min-width: 15px">5</td>
-                  <td style="max-width: 15px; min-width: 15px">6</td>
-                  <td style="max-width: 15px; min-width: 15px">7</td>
-                  <td style="max-width: 15px; min-width: 15px">8</td>
-                  <td style="max-width: 15px; min-width: 15px">9</td>
-                  <td style="max-width: 15px; min-width: 15px">10</td>
-                  <td style="max-width: 15px; min-width: 15px">11</td>
-                  <td style="max-width: 15px; min-width: 15px">12</td>
-                  <td style="max-width: 15px; min-width: 15px">13</td>
-                  <td style="max-width: 15px; min-width: 15px">14</td>
-                  <td style="max-width: 15px; min-width: 15px">15</td>
+                  <td><span>1</span></td>
+                  <td><span>0</span></td>
+                  <td><span>1</span></td>
+                  <td style="max-width: 18px; min-width: 18px" class="absent" >A</td>
+                  <td style="max-width: 18px; min-width: 18px" class="absent">A</td>
+                  <td style="max-width: 18px; min-width: 18px" class="absent">A</td>
+                  <td style="max-width: 18px; min-width: 18px" class="weekoff" >WE</td>
+                  <td style="max-width: 18px; min-width: 18px" class="weekoff">WE</td>
+                  <td style="max-width: 18px; min-width: 18px" class="present">P</td>
+                  <td style="max-width: 18px; min-width: 18px" class="present">P</td>
+                  <td style="max-width: 18px; min-width: 18px" class="absent">A</td>
+                  <td style="max-width: 18px; min-width: 18px" class="present">P</td>
+                  <td style="max-width: 18px; min-width: 18px" class="present">P</td>
+                  <td style="max-width: 18px; min-width: 18px">11</td>
+                  <td style="max-width: 18px; min-width: 18px">12</td>
+                  <td style="max-width: 18px; min-width: 18px">13</td>
+                  <td style="max-width: 18px; min-width: 18px">14</td>
+                  <td style="max-width: 18px; min-width: 18px">15</td>
+                  <td style="max-width: 18px; min-width: 18px">1</td>
+                  <td style="max-width: 18px; min-width: 18px">2</td>
+                  <td style="max-width: 18px; min-width: 18px">3</td>
+                  <td style="max-width: 18px; min-width: 18px">4</td>
+                  <td style="max-width: 18px; min-width: 18px">5</td>
+                  <td style="max-width: 18px; min-width: 18px">6</td>
+                  <td style="max-width: 18px; min-width: 18px">7</td>
+                  <td style="max-width: 18px; min-width: 18px">8</td>
+                  <td style="max-width: 18px; min-width: 18px">9</td>
+                  <td style="max-width: 18px; min-width: 18px">10</td>
+                  <td style="max-width: 18px; min-width: 18px">11</td>
+                  <td style="max-width: 18px; min-width: 18px">12</td>
+                  <td style="max-width: 18px; min-width: 18px">13</td>
+                  <td style="max-width: 18px; min-width: 18px">14</td>
+                  <td style="max-width: 18px; min-width: 18px">15</td>
                 </tr>
               </tbody>
             </table>
-            <div class="remaining_leave_wrp">
-              <p class="remaining_leaves m-0">
-                You have currently 6.0 available
-              </p>
+            <div class="remaining_leave_wrp d-flex justify-content-center ">
+              <p class="remaining_leaves m-0">You have currently 6.0 available</p>
             </div>
           </div>
         </div>
@@ -638,6 +640,9 @@
         ],
         pagingType: "simple",
         responsive: true,
+        searching: false,
+    paging: false,
+    info: false,
         "ordering": false,
         scrollX: true,
       });

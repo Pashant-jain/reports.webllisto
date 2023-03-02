@@ -31,7 +31,9 @@
   .table_card th {
     font-size: 13px;
   }
-
+.filter_table_btn_wrp{
+position:unset;
+}
   /* .input_flex_wrp{
   flex-direction: column;
 } */

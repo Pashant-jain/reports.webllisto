@@ -35,7 +35,7 @@ h4 {
   font-weight: 600;
   word-break: break-word;
 }
-h5{
+h5 {
   font-size: 14px;
   font-weight: 600;
   word-break: break-word;
@@ -160,6 +160,7 @@ li {
 .menu_wrp li.active a,
 .menu_wrp li:hover a {
   color: #ffffff;
+  font-size: 12px;
 }
 .menu_wrp li a img {
   margin-right: 15px;
@@ -233,7 +234,7 @@ li {
 .sidebar.expand_sidebar .sidebar_head {
   justify-content: center !important;
 }
-.sidebar_head a{
+.sidebar_head a {
   text-decoration: unset;
   color: #1b1b1b;
 }
@@ -266,16 +267,15 @@ li {
 .contant.expand_contant {
   margin-left: 75px;
 }
-.sidebar.expand_sidebar  .menu_wrp li:hover 
- .submenu {
+.sidebar.expand_sidebar .menu_wrp li:hover .submenu {
   display: none;
- }
- .sidebar.expand_sidebar .menu_wrp li {
+}
+.sidebar.expand_sidebar .menu_wrp li {
   width: 100%;
- }
- .sidebar.expand_sidebar .menu_wrp{
+}
+.sidebar.expand_sidebar .menu_wrp {
   max-height: 70vh;
- }
+}
 /* expanded sidebar css */
 
 /* calander css */
@@ -286,7 +286,7 @@ li {
   margin-left: 250px;
   padding: 15px;
 }
-.dashboard_page_wrp .contant{
+.dashboard_page_wrp .contant {
   margin-right: 350px;
 }
 /* .page_wrp .contant {
@@ -305,10 +305,14 @@ li {
 .admin_report_list_wrp,
 .add_emp_page_wrp,
 .project_list_wrp,
-.report_list_wrp
-,.add_timesheet_page_wrp
-,.leave_list_wrp,
-.add_policy_wrp,.add_client_wrp {
+.report_list_wrp,
+.add_timesheet_page_wrp,
+.leave_list_wrp,
+.add_policy_wrp,
+.add_client_wrp ,
+.leave_history_wrp,
+.leave_history_wrp
+,.feeds_wrp,.regularization_review_wrp,.regularization_review_history_wrp{
   background-color: #fff6e9;
   border-radius: 50px;
   padding: 30px;
@@ -375,10 +379,9 @@ li {
   background-image: url("../images/cards/announcements-back.svg");
   padding: 20px 30px;
 }
-.leaves_card{
+.leaves_card {
   background-image: url("../images/cards/leaves_list_days.svg");
 }
-
 
 .holiday_list_card h2,
 .announcement_card h2,
@@ -411,7 +414,7 @@ li {
   line-height: 16px;
   color: #1b1b1b;
 }
-.leaves_card th{
+.leaves_card th {
   width: 25%;
 }
 .table_card td {
@@ -549,7 +552,7 @@ textarea:active {
   font-weight: 600;
   color: #ffffff;
   border: unset;
-  padding:6px 12px;
+  padding: 6px 12px;
   border-radius: 10px;
   border: 0.5px solid;
 }
@@ -644,7 +647,7 @@ form input,
 .apply_leave_inner {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap:30px 40px;
+  gap: 30px 40px;
 }
 
 .emp_profile_wrp figure image {
@@ -761,7 +764,7 @@ form input,
   border: 1px solid #f85046;
   border-radius: 10px;
   background-color: transparent;
-  padding:4px 12px;
+  padding: 4px 12px;
 }
 .emp_leave_balance_wrp .page_inner_wrp {
   position: relative;
@@ -787,8 +790,9 @@ form input,
 .page_inner_wrp {
   position: relative;
 }
-.report_list_wrp .filter_table_btn_wrp{
+.report_list_wrp .filter_table_btn_wrp {
   position: unset;
+  flex-direction: row;
 }
 .filter_table_btn_wrp {
   position: absolute;
@@ -822,9 +826,9 @@ span a {
 .regularization_review_wrp .page_inner_wrp {
   position: relative;
 }
-.regularization_review_wrp .filter_table_btn_wrp {
+.regularization_review_wrp .filter_table_btn_wrp,.regularization_review_history_wrp .filter_table_btn_wrp {
   position: absolute;
-  right: 6px;
+  right: 30px;
   top: 18px;
 }
 /* end of regularization-review-css */
@@ -833,11 +837,11 @@ span a {
 .regularization_review_history_wrp .page_inner_wrp {
   position: relative;
 }
-.regularization_review_history_wrp .filter_table_btn_wrp {
+/* .regularization_review_history_wrp .filter_table_btn_wrp {
   position: absolute;
   right: 6px;
   top: 18px;
-}
+} */
 /* end of regularization-review-history-css */
 
 /* past employee list css */
@@ -869,7 +873,7 @@ span a {
 }
 
 .custom_input_wrp {
-  border: 0.5px solid rgba(0,0,0,0.15);
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
   padding: 4px;
   display: flex;
   justify-content: space-between;
@@ -913,7 +917,7 @@ span a {
 
 .upload_list_popup .custom_input_wrp {
   margin-left: 15px;
-  border-color: #ffffff;
+  border-color: rgba(225,225,225,0.50);
 }
 .upload_list_popup label {
   color: #fff;
@@ -932,7 +936,7 @@ span a {
   color: #ffffff;
 }
 .modal-dialog {
-  min-width: 800px;
+  min-width: 750px;
 }
 .modal-content {
   background: #f85046;
@@ -1013,7 +1017,7 @@ h6 {
 }
 .conform_import_wrp ul li {
   font-size: 14px;
-  line-height: 28px;
+  line-height: 24px;
   font-weight: 300;
 }
 .conform_export_wrp p,
@@ -1029,7 +1033,7 @@ h6 {
 .modal input,
 .modal input::placeholder {
   color: #ffffff;
-  border-color: #ffffff;
+  border-color: rgba(225,225,225,0.50);
 }
 /* end of modal css */
 
@@ -1259,14 +1263,14 @@ input.exp_input {
   font-weight: 400;
 }
 .feed_post_head h5 {
-  font-size: 16px;
+  font-size: 14px;
   color: #1b1b1b;
   font-weight: 600;
   margin: unset;
 }
 .feed_post_head span.time_ago_posted {
   color: #686868;
-  font-size: 12px;
+  font-size: 10px;
 }
 .feed_post_head span.time_ago_posted::before {
   display: inline-block;
@@ -1337,6 +1341,8 @@ input.exp_input {
   border-left: 12px solid transparent;
   position: absolute;
   top: -20px;
+  left: 15px;
+
 }
 
 .notification_inner {
@@ -1345,7 +1351,7 @@ input.exp_input {
   border-radius: 12px;
   max-height: 365px;
   width: 320px;
-  padding: 20px 0 ;
+  padding: 20px 0;
   overflow: auto;
 }
 .notification_profie {
@@ -1367,12 +1373,11 @@ input.exp_input {
   display: inline-block;
   text-align: center;
 }
-.single_notification_wrp{
+.single_notification_wrp {
   padding: 2px 20px;
 }
-.single_notification_wrp:hover{
+.single_notification_wrp:hover {
   background-color: #f3f1ef;
-
 }
 /* end of notification css */
 
@@ -1399,20 +1404,21 @@ input[type="radio"]:checked {
   background-color: #f85046;
   box-shadow: 0 0 0 1px #f85046;
 }
-.error{
+.error {
   font-size: 12px;
   color: red;
 }
-.remaining_leaves{
+.remaining_leaves {
   font-weight: 600;
-    font-size: 13px;
-    line-height: 23px;
-    text-align: center;
-    color: #FFFFFF;
-    background: #2CDE00;
-    padding: 4px 60px;
-    border-radius: 10px;
+  font-size: 13px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  background: #2cde00;
+  padding: 4px 60px;
+  border-radius: 10px;
 }
-.add_policy_wrp .page_inner_wrp{
-min-height:70vh
+.add_policy_wrp .page_inner_wrp {
+  min-height: 70vh;
 }
+
