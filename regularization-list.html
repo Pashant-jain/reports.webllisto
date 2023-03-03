@@ -397,37 +397,37 @@
               </ul>
             </li>
             <li class="">
-              <a href=""
-                ><img
-                  src="./assets/images/menu_icon/dark/review.svg"
-                  alt="Review Icon" class="dark_img" />
-                  <img
-                  src="./assets/images/menu_icon/light/review.svg"
-                  alt="Review Icon" class="light_img" />
-                  <span>Regularization</span>
-                  <img
-                  src="./assets/images/down-arrow.svg"
-                  alt="down arrow"
-                  class="down_arrow dark_img"
-              />
-              <img
-              src="./assets/images/down-arrow-light.svg"
-              alt="down arrow"
-              class="down_arrow light_img "
-          />
-            </a>
-            <ul class="submenu">
-              <li>
-                <a href="apply-regularization.html"><span>Apply Regularization</span></a>
+                <a href=""
+                  ><img
+                    src="./assets/images/menu_icon/dark/review.svg"
+                    alt="Review Icon" class="dark_img" />
+                    <img
+                    src="./assets/images/menu_icon/light/review.svg"
+                    alt="Review Icon" class="light_img" />
+                    <span>Regularization</span>
+                    <img
+                    src="./assets/images/down-arrow.svg"
+                    alt="down arrow"
+                    class="down_arrow dark_img"
+                />
+                <img
+                src="./assets/images/down-arrow-light.svg"
+                alt="down arrow"
+                class="down_arrow light_img "
+            />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="apply-regularization.html"><span>Apply Regularization</span></a>
+                </li>
+                <li>
+                  <a href="regularization-list.html"><span>Regularization List</span></a>
+                </li>
+                <li>
+                  <a href="regularization-history.html"><span>Regularization History</span></a>
+                </li>
+              </ul>
               </li>
-              <li>
-                <a href="regularization-list.html"><span>Regularization List</span></a>
-              </li>
-              <li>
-                <a href="regularization-history.html"><span>Regularization History</span></a>
-              </li>
-            </ul>
-            </li>
             <li class="">
               <a href=""
                 ><img
@@ -519,140 +519,61 @@
       </aside>
       <!-- contant -->
       <main class="contant">
-        <div class="employee_list_wrp">
-          <h2 class="page_title">My Reports List</h2>
-          <p class="subtitle mb-3">
-            List of your reports with server side datatable.
-          </p>
-          <div class="page_inner_wrp mt-5">
-            <div class="filter_table_wrp pb-3">
-              <div
-                class="filter_table_inner d-flex justify-content-between align-items-center"
+        <div class="regularization_review_wrp">
+            <h2 class="page_title">Regularization List</h2>
+            <p class="subtitle mb-3">
+                List of Regularization with server side datatable.
+            </p>
+            <div class="page_inner_wrp mt-5">
+              
+              <table
+                id="list_table"
+                class="row-border cell-border project_list_table "
+                style="width: 100%"
               >
-                <div
-                  class="filter_table_inbox d-flex justify-content-start align-items-center gap-4 w-75"
-                >
-                  <div>
-                    <label>
-                      Select Month :
-                      <select style="width: 135px">
-                        <option value="january">January</option>
-                        <option value="january">January</option>
-                        <option value="january">January</option>
-                        <option value="january">January</option>
-                        <option value="january">January</option>
-                        <option value="january">January</option>
-                        <option value="january">January</option>
-                        <option value="january">January</option>
-                        <option value="january">January</option>
-                        <option value="january">January</option>
-                        <option value="january">January</option>
-                        <option value="january">January</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      Select Year :
-                      <input type="date" />
-                    </label>
-                  </div>
-                </div>
-
-                <div
-                  class="filter_table_btn_wrp d-flex justify-content-end align-items-center w-25"
-                >
-                  <button class="btn Regularize">Search</button>
-                </div>
-              </div>
-            </div>
-            <table
-              id="view_attendance"
-              class="row-border cell-border report_list_table table_with_action"
-              style="width: 100%"
-            >
               <thead>
                 <tr>
-                  <th style="min-width: 90px; max-width: 90px">Employee</th>
-                  <th style="max-width: 60px; min-width: 60px">Present</th>
-                  <th style="max-width: 60px; min-width: 60px">Absent</th>
-                  <th style="max-width: 60px; min-width: 60px">Leaves</th>
-                  <th style="max-width: 18px; min-width: 18px">1</th>
-                  <th style="max-width: 18px; min-width: 18px">2</th>
-                  <th style="max-width: 18px; min-width: 18px">3</th>
-                  <th style="max-width: 18px; min-width: 18px">4</th>
-                  <th style="max-width: 18px; min-width: 18px">5</th>
-                  <th style="max-width: 18px; min-width: 18px">6</th>
-                  <th style="max-width: 18px; min-width: 18px">7</th>
-                  <th style="max-width: 18px; min-width: 18px">8</th>
-                  <th style="max-width: 18px; min-width: 18px">9</th>
-                  <th style="max-width: 18px; min-width: 18px">10</th>
-                  <th style="max-width: 18px; min-width: 18px">11</th>
-                  <th style="max-width: 18px; min-width: 18px">12</th>
-                  <th style="max-width: 18px; min-width: 18px">13</th>
-                  <th style="max-width: 18px; min-width: 18px">14</th>
-                  <th style="max-width: 18px; min-width: 18px">15</th>
-                  <th style="max-width: 18px; min-width: 18px">1</th>
-                  <th style="max-width: 18px; min-width: 18px">2</th>
-                  <th style="max-width: 18px; min-width: 18px">3</th>
-                  <th style="max-width: 18px; min-width: 18px">4</th>
-                  <th style="max-width: 18px; min-width: 18px">5</th>
-                  <th style="max-width: 18px; min-width: 18px">6</th>
-                  <th style="max-width: 18px; min-width: 18px">7</th>
-                  <th style="max-width: 18px; min-width: 18px">8</th>
-                  <th style="max-width: 18px; min-width: 18px">9</th>
-                  <th style="max-width: 18px; min-width: 18px">10</th>
-                  <th style="max-width: 18px; min-width: 18px">11</th>
-                  <th style="max-width: 18px; min-width: 18px">12</th>
-                  <th style="max-width: 18px; min-width: 18px">13</th>
-                  <th style="max-width: 18px; min-width: 18px">14</th>
-                  <th style="max-width: 18px; min-width: 18px">15</th>
+                    <th style="min-width: 70px; max-width: 70px;" >For Date</th>
+                    <th style="min-width: 90px; max-width: 90px;" >Applying To</th>
+                    <th style="min-width: 135px; max-width: 135px;">Reason</th>
+                    <th style="min-width: 90px; max-width: 90px;" >Status</th>
                 </tr>
-              </thead>
-              <tbody>
+            </thead>
+            <tbody>
                 <tr>
-                  <td><span>Employee</span></td>
-                  <td><span>1</span></td>
-                  <td><span>0</span></td>
-                  <td><span>1</span></td>
-                  <td style="max-width: 18px; min-width: 18px" class="absent" >A</td>
-                  <td style="max-width: 18px; min-width: 18px" class="absent">A</td>
-                  <td style="max-width: 18px; min-width: 18px" class="absent">A</td>
-                  <td style="max-width: 18px; min-width: 18px" class="weekoff" >WE</td>
-                  <td style="max-width: 18px; min-width: 18px" class="weekoff">WE</td>
-                  <td style="max-width: 18px; min-width: 18px" class="present">P</td>
-                  <td style="max-width: 18px; min-width: 18px" class="present">P</td>
-                  <td style="max-width: 18px; min-width: 18px" class="absent">A</td>
-                  <td style="max-width: 18px; min-width: 18px" class="present">P</td>
-                  <td style="max-width: 18px; min-width: 18px" class="present">P</td>
-                  <td style="max-width: 18px; min-width: 18px">11</td>
-                  <td style="max-width: 18px; min-width: 18px">12</td>
-                  <td style="max-width: 18px; min-width: 18px">13</td>
-                  <td style="max-width: 18px; min-width: 18px">14</td>
-                  <td style="max-width: 18px; min-width: 18px">15</td>
-                  <td style="max-width: 18px; min-width: 18px">1</td>
-                  <td style="max-width: 18px; min-width: 18px">2</td>
-                  <td style="max-width: 18px; min-width: 18px">3</td>
-                  <td style="max-width: 18px; min-width: 18px">4</td>
-                  <td style="max-width: 18px; min-width: 18px">5</td>
-                  <td style="max-width: 18px; min-width: 18px">6</td>
-                  <td style="max-width: 18px; min-width: 18px">7</td>
-                  <td style="max-width: 18px; min-width: 18px">8</td>
-                  <td style="max-width: 18px; min-width: 18px">9</td>
-                  <td style="max-width: 18px; min-width: 18px">10</td>
-                  <td style="max-width: 18px; min-width: 18px">11</td>
-                  <td style="max-width: 18px; min-width: 18px">12</td>
-                  <td style="max-width: 18px; min-width: 18px">13</td>
-                  <td style="max-width: 18px; min-width: 18px">14</td>
-                  <td style="max-width: 18px; min-width: 18px">15</td>
+                    <td><span>2023-02-24</span></td>
+                    <td><span>Webllisto Admin</span></td>
+                    <td><span>Lorem ipsum dolor sit</span></td>
+                    <td><span>Pending</span></td>
+                  
                 </tr>
-              </tbody>
-            </table>
-            <div class="remaining_leave_wrp d-flex justify-content-center ">
-              <p class="remaining_leaves m-0">You have currently 6.0 available</p>
-            </div>
-          </div>
+                <tr>
+                    <td><span>2023-02-24</span></td>
+                    <td><span>Webllisto Admin</span></td>
+                    <td><span>Lorem ipsum dolor sit</span></td>
+                    <td><span>Pending</span></td>
+                  
+                </tr>
+                <tr>
+                    <td><span>2023-02-24</span></td>
+                    <td><span>Webllisto Admin</span></td>
+                    <td><span>Lorem ipsum dolor sit</span></td>
+                    <td><span>Pending</span></td>
+                  
+                </tr>
+                <tr>
+                    <td><span>2023-02-24</span></td>
+                    <td><span>Webllisto Admin</span></td>
+                    <td><span>Lorem ipsum dolor sit</span></td>
+                    <td><span>Pending</span></td>
+                  
+                </tr>
+                
+                
+            </tbody>
+              </table>
         </div>
+    </div>
       </main>
     </div>
 
@@ -664,19 +585,28 @@
     <script src="./assets/js/chart-loader.js"></script>
     <!-- custom js -->
     <script src="./assets/js/main.js"></script>
-
     <script>
-      $("#view_attendance").DataTable({
+      $("#report_list").DataTable({
+        lengthMenu: [
+          [10, 25, 50, -1],
+          [10, 25, 50, "All"],
+        ],
+        pagingType: "simple",
+        searching: false,
+        responsive: true,
+
+        scrollX: true,
+      });
+    </script>
+    <script>
+      $("#list_table").DataTable({
         lengthMenu: [
           [10, 25, 50, -1],
           [10, 25, 50, "All"],
         ],
         pagingType: "simple",
         responsive: true,
-        searching: false,
-    paging: false,
-    info: false,
-        "ordering": false,
+
         scrollX: true,
       });
     </script>
