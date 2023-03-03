@@ -1,6 +1,6 @@
     $(document).ready(function(){
             $('.bxslider').bxSlider({
-            controls:true,
+              controls:true,
               captions: true,
 			  stopAutoOnClick: true,
 			  pager: false,
