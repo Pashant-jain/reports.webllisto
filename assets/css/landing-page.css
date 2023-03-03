@@ -2,7 +2,13 @@
 .landing_page_wrp .header ul{
     list-style:none;
 }
-.landing_page_wrp .header li a{
+.landing_page_wrp .header .container-fluid{
+    padding:unset;
+}
+#navbarSupportedContent{
+    justify-content:end;
+}
+.header li a{
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -15,9 +21,13 @@
     border: white;
     padding: 0px;
     padding: 9px 24px;
+    filter: drop-shadow(0px 4px 54px rgba(0, 0, 0, 0.05));
 }
 .navbar{
     padding:unset;
+}
+.banner_wrp{
+    background-image:url('./assets/images/Rectangle 16.svg');
 }
 .landing_page_wrp .header .logo{
     font-weight: 700;
@@ -236,7 +246,7 @@ p{
     text-transform: capitalize;
     color: #1B1B1B;
 }
-.accordion-button{
+/* .accordion-button{
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
@@ -247,7 +257,34 @@ p{
     width: 70%;
     text-align: left;
     padding: 10px 10px;
+} */
+.bx-wrapper .bx-controls-direction a {
+    top: 109%;
+    
+}
+.testimonials_wrp a.bx-next{
+    left: 50%;
+}
+.testimonials_wrp a.bx-prev{
+    left: 45%;
+    background-image: url("../assets/images/prev-btn.png");
+    background-repeat: no-repeat;
+
+border: 1px solid #FFB7B3;
+border-radius: 10px;
 }
 
-
-
+.free_demo_form .free_demo_form_innr_wrp{
+    background: #F85046;
+    box-shadow: 0px 0px 41px 2px rgb(248 80 70 / 39%);
+    border-radius: 95px;
+    margin-top: 140px;
+}
+.free_demo_form .free_demo_form_innr_wrp h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 54px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
