@@ -26,7 +26,7 @@
 #navbarSupportedContent{
     justify-content:end;
 }
-.nav-item .nav-link.active {
+.nav-item .nav-link.active{
     font-weight:600;
     color:#000000;
 }
@@ -325,3 +325,8 @@ border-radius: 10px;
     text-transform: capitalize;
     color: #FFFFFF;
 }
+
+
+
+
+
