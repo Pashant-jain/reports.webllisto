@@ -13,7 +13,7 @@
     position: sticky;
     top: 0;
     background-color: #ffffff;
-    z-index:1;
+    z-index:999;
 }
 .header a.active:after {
     background-color: #F85046;
@@ -26,7 +26,8 @@
 #navbarSupportedContent{
     justify-content:end;
 }
-.nav-item .nav-link.active {
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
     font-weight:600;
     color:#000000;
 }
@@ -283,18 +284,6 @@ p{
     text-transform: capitalize;
     color: #1B1B1B;
 }
-/* .accordion-button{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: capitalize;
-    color: #000000;
-    border: 0.25px solid #6C6C6C;
-    border-radius: 10px;
-    width: 70%;
-    text-align: left;
-    padding: 10px 10px;
-} */
 .bx-wrapper .bx-controls-direction a {
     top: 109%;
     
@@ -306,9 +295,8 @@ p{
     left: 45%;
     background-image: url("../images/prev-btn.png");
     background-repeat: no-repeat;
-
-border: 1px solid #FFB7B3;
-border-radius: 10px;
+    border: 1px solid #FFB7B3;
+    border-radius: 10px;
 }
 
 .free_demo_form .free_demo_form_innr_wrp{
@@ -316,6 +304,10 @@ border-radius: 10px;
     box-shadow: 0px 0px 41px 2px rgb(248 80 70 / 39%);
     border-radius: 95px;
     margin-top: 140px;
+    padding: 50px;
+}
+.free_demo_form{
+    margin-bottom: 40px;
 }
 .free_demo_form .free_demo_form_innr_wrp h1{
     font-weight: 700;
@@ -324,4 +316,141 @@ border-radius: 10px;
     text-align: center;
     text-transform: capitalize;
     color: #FFFFFF;
+    margin-bottom:40px;
 }
+.free_demo_form .free_demo_form_innr_wrp input{
+    background: transparent;
+    box-shadow: 0px 0px 74px 2px rgb(212 80 70 / 60%);
+    border-left: unset;
+    border-bottom: unset;
+    border-top: 0.25px solid #FFFFFF;
+    border-right: 0.25px solid #FFFFFF;
+}
+.free_demo_form .free_demo_form_innr_wrp .form_left{
+    margin-bottom: 40px;
+}
+.free_demo_form .free_demo_form_innr_wrp .form_left .left_input{
+    border-right: unset;
+    border-left: 0.25px solid #FFFFFF;
+}
+.free_demo_form .free_demo_form_innr_wrp textarea{
+    background: transparent;
+    box-shadow: 0px 0px 74px 2px rgb(212 80 70 / 60%);
+    border-left: unset;
+    border-bottom:  0.25px solid #FFFFFF;
+    border-top: 0.25px solid #FFFFFF;
+    border-right:unset;
+    min-height:150px;
+}
+.free_demo_form .free_demo_form_innr_wrp .form_right{
+    position:relative;
+}
+.free_demo_form .free_demo_form_innr_wrp .form_right .notepade_img{
+    width: 65%;
+    position: absolute;
+    left: -14px;
+    right: 0;
+    top: 114px;
+    bottom: 49px;
+}
+.free_demo_form .free_demo_form_innr_wrp .form_right .writer_img{
+    width: 384px;
+    position: absolute;
+    z-index: 1;
+    top: -54px;
+    right: 38px;
+}
+.accordion-item{
+    border: 0.25px solid #6C6C6C !important;
+    border-radius: 10px !important;
+    padding: 8px 20px;
+    margin-bottom: 30px;
+}
+.accordion-button{
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+.accordion-button:focus{
+    outline: none;
+}
+.accordion-header{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #000000;
+}
+.accordion-button img{
+    max-width: 9px;
+    margin-right: 10px
+}
+.accordion{
+    margin-top: 50px;
+}
+.sub_query{
+    text-align:center;
+}
+.sub_query button{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F85046;
+}
+.footer{
+    background:black;
+    padding:10px;
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+    display:flex;
+    justify-content:center;
+    align-item:center;
+}
+.footer span{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.footer figure{
+    width:20px;
+    margin-bottom:unset;
+    margin-right:10px;
+}
+.footer figure img{
+    max-width:100%
+}
+
+/* responsive */
+@media only screen and (max-width: 1199px) {
+    .landing_page_wrp .banner_wrp .banner_right figure{
+        width: 400px;
+        height: 500px;
+    }
+    .employee_info .info figure {
+        width: 475px;
+    }
+} /* 1024 */
+@media only screen and (max-width: 1023px) {
+    .landing_page_wrp .banner_wrp .banner_left h2{
+        font-size:36px;
+    }
+    .landing_page_wrp .banner_wrp .banner_left p br{
+        display:none;
+    }
+    .landing_page_wrp .banner_wrp .banner_left p{
+        font-size:16px;
+    }
+    .employee_info .info figure{
+        margin-top:30px;
+    }
+} /* 980 */
+@media only screen and (max-width: 979px) {
+    .free_demo_wrp .free_demo_innr_wrp h3 br{
+        display:none;
+    }
+    .landing_page_wrp .banner_wrp .banner_right figure{
+        width:300px;
+    }
+} /* 768 */
