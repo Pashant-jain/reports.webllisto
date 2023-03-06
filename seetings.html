@@ -32,9 +32,18 @@
     ></script>
 
     <!-- bootstrap -->
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- plugin -->
     <script src="./assets/js/data-table.js"></script>
@@ -47,7 +56,9 @@
           <div
             class="sidebar_head d-flex justify-content-between align-items-center"
           >
-            <a href="index.html" ><figure class="m-0"><h1 class="m-0">Logo</h1></figure></a>
+            <a href="index.html"
+              ><figure class="m-0"><h1 class="m-0">Logo</h1></figure></a
+            >
             <img
               src="./assets/images/sidebar_arrow.svg"
               alt="sidebar toggle"
@@ -398,33 +409,43 @@
               <a href=""
                 ><img
                   src="./assets/images/menu_icon/dark/review.svg"
-                  alt="Review Icon" class="dark_img" />
-                  <img
+                  alt="Review Icon"
+                  class="dark_img"
+                />
+                <img
                   src="./assets/images/menu_icon/light/review.svg"
-                  alt="Review Icon" class="light_img" />
-                  <span>Regularization</span>
-                  <img
+                  alt="Review Icon"
+                  class="light_img"
+                />
+                <span>Regularization</span>
+                <img
                   src="./assets/images/down-arrow.svg"
                   alt="down arrow"
                   class="down_arrow dark_img"
-              />
-              <img
-              src="./assets/images/down-arrow-light.svg"
-              alt="down arrow"
-              class="down_arrow light_img "
-          />
-            </a>
-            <ul class="submenu">
-              <li>
-                <a href="apply-regularization.html"><span>Apply Regularization</span></a>
-              </li>
-              <li>
-                <a href="regularization-list.html"><span>Regularization List</span></a>
-              </li>
-              <li>
-                <a href="regularization-history.html"><span>Regularization History</span></a>
-              </li>
-            </ul>
+                />
+                <img
+                  src="./assets/images/down-arrow-light.svg"
+                  alt="down arrow"
+                  class="down_arrow light_img"
+                />
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="apply-regularization.html"
+                    ><span>Apply Regularization</span></a
+                  >
+                </li>
+                <li>
+                  <a href="regularization-list.html"
+                    ><span>Regularization List</span></a
+                  >
+                </li>
+                <li>
+                  <a href="regularization-history.html"
+                    ><span>Regularization History</span></a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="">
               <a href=""
@@ -465,10 +486,10 @@
                   >
                 </li>
                 <li>
-                    <a href="regularization-history.html"
-                      ><span>Regularization History</span></a
-                    >
-                  </li>
+                  <a href="regularization-history.html"
+                    ><span>Regularization History</span></a
+                  >
+                </li>
               </ul>
             </li>
             <li class="">
@@ -1194,7 +1215,32 @@
                       <h3 class="my-2">Add Announcement</h3>
                     </div>
                     <div class="add_announcement_inner mt-5">
-                      <form>
+                      <div class="mb-5" style="padding: 0 15px">
+                        <div class="row">
+                          <div
+                            class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                          >
+                            <label>Type</label>
+                          </div>
+                          <div class="col-12 col-lg-10 p-0 form_data">
+                            <select id="select_announcement_type">
+                              <option class="option_menu" disabled selected>
+                                select Type of Announcement
+                              </option>
+                              <option class="option_menu" value="Announcements">
+                                Announcement
+                              </option>
+                              <option class="option_menu" value="Greetings">
+                                Greetings
+                              </option>
+                              <option class="option_menu" value="Holiday">
+                                Holiday
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <form id="Announcements"  class="d-none">
                         <div class="user_basic_dtl">
                           <div class="row m-0">
                             <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
@@ -1245,6 +1291,124 @@
                           <button type="button" class="submit mx-1">
                             <span class="position-relative">Submit</span>
                           </button>
+                        </div>
+                      </form>
+                      <form id="Greetings" class="d-none">
+                        <div class="mb-5" style="padding: 0 15px">
+                          <div class="row">
+                            <div
+                              class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                            >
+                              <label>Image</label>
+                            </div>
+                            <div class="col-12 col-lg-10 p-0 form_data">
+                              <div class="custom_input_wrp">
+                                <input
+                                  id="uploadFile"
+                                  class="f-input"
+                                  placeholder="No File Chosen"
+                                />
+                                <div class="fileUpload btn--browse">
+                                  <span>Choose File </span>
+                                  <input
+                                    id="uploadBtn"
+                                    type="file"
+                                    accept=".pdf"
+                                    class="upload"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       
+                          <div class="emp_attandance_dtl_wrp">
+                            <div class="row">
+                              <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+                                <label>From Date</label>
+                              </div>
+                              <div class="col-12 col-sm-8">
+                                <input  type="date"/>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+                                <label>To Date</label>
+                              </div>
+                              <div class="col-12 col-sm-8">
+                                <input  type="date" />
+                              </div>
+                            </div>
+                            </div>
+                            <div class="text-center mt-5">
+                              <button type="button" class="submit mx-1">
+                                <span class="position-relative">Submit</span>
+                              </button>
+                            </div>
+                      </form>
+                      <form id="Holiday" class="d-none">
+                        <div class="mb-5" style="padding: 0 15px">
+                          <div class="row">
+                            <div
+                              class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                            >
+                              <label>Date</label>
+                            </div>
+                            <div class="col-12 col-lg-10 p-0 form_data">
+                             <input type="date" >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mb-5" style="padding: 0 15px">
+                          <div class="row">
+                            <div
+                              class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                            >
+                              <label>Occasion</label>
+                            </div>
+                            <div class="col-12 col-lg-10 p-0 form_data">
+                              <div id="example"><p>Webllisto Marketing</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-center mt-5">
+                          <button type="button" class="submit mx-1">
+                            <span class="position-relative">Submit</span>
+                          </button>
+                        </div>
+
+                        <div class="leave_detail_wrp mt-5">
+                          <h4 class="page_title" class="mb-3">
+                            Holiday List
+                          </h4>
+                          <table
+                            id="leave_details_mobile"
+                            class="row-border cell-border leave_details_table"
+                            style="width: 100%"
+                          >
+                            <thead>
+                              <tr>
+                                <th style="min-width: 90px; max-width: 90px">Date</th>
+                                <th style="min-width: 150px">Occasion</th>
+                                <th style="min-width: 90px; max-width: 900px">Status</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><span>Casual</span></td>
+                                <td><span>Casual</span></td>
+                                <td><span><button
+                                  type="button"
+                                  class="btn p-0 border-0 ms-3 "
+                                >
+                                  <img
+                                    src="./assets/images/icons/delete_icon.svg"
+                                  />
+                                </button></span></td>
+                              </tr>
+                             
+                            </tbody>
+                          </table>
                         </div>
                       </form>
                     </div>
@@ -2187,7 +2351,32 @@
                           <h3 class="my-2">Add Announcement</h3>
                         </div>
                         <div class="add_announcement_inner mt-5">
-                          <form>
+                          <div class="mb-5" style="padding: 0 15px">
+                            <div class="row">
+                              <div
+                                class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                              >
+                                <label>Type</label>
+                              </div>
+                              <div class="col-12 col-lg-10 p-0 form_data">
+                                <select id="select_announcement_type">
+                                  <option class="option_menu" disabled selected>
+                                    select Type of Announcement
+                                  </option>
+                                  <option class="option_menu" value="Announcements">
+                                    Announcement
+                                  </option>
+                                  <option class="option_menu" value="Greetings">
+                                    Greetings
+                                  </option>
+                                  <option class="option_menu" value="Holiday">
+                                    Holiday
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <form id="Announcements"  class="d-none">
                             <div class="user_basic_dtl">
                               <div class="row m-0">
                                 <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
@@ -2230,10 +2419,7 @@
                                   <label>About</label>
                                 </div>
                                 <div class="col-12 col-lg-10 p-0 form_data">
-                                  <input
-                                    type="text"
-                                    placeholder="Enter Details"
-                                  />
+                                  <input type="text" placeholder="Enter Details" />
                                 </div>
                               </div>
                             </div>
@@ -2241,6 +2427,124 @@
                               <button type="button" class="submit mx-1">
                                 <span class="position-relative">Submit</span>
                               </button>
+                            </div>
+                          </form>
+                          <form id="Greetings" class="d-none">
+                            <div class="mb-5" style="padding: 0 15px">
+                              <div class="row">
+                                <div
+                                  class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                                >
+                                  <label>Image</label>
+                                </div>
+                                <div class="col-12 col-lg-10 p-0 form_data">
+                                  <div class="custom_input_wrp">
+                                    <input
+                                      id="uploadFile"
+                                      class="f-input"
+                                      placeholder="No File Chosen"
+                                    />
+                                    <div class="fileUpload btn--browse">
+                                      <span>Choose File </span>
+                                      <input
+                                        id="uploadBtn"
+                                        type="file"
+                                        accept=".pdf"
+                                        class="upload"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                           
+                              <div class="emp_attandance_dtl_wrp">
+                                <div class="row">
+                                  <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+                                    <label>From Date</label>
+                                  </div>
+                                  <div class="col-12 col-sm-8">
+                                    <input  type="date"/>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+                                    <label>To Date</label>
+                                  </div>
+                                  <div class="col-12 col-sm-8">
+                                    <input  type="date" />
+                                  </div>
+                                </div>
+                                </div>
+                                <div class="text-center mt-5">
+                                  <button type="button" class="submit mx-1">
+                                    <span class="position-relative">Submit</span>
+                                  </button>
+                                </div>
+                          </form>
+                          <form id="Holiday" class="d-none">
+                            <div class="mb-5" style="padding: 0 15px">
+                              <div class="row">
+                                <div
+                                  class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                                >
+                                  <label>Date</label>
+                                </div>
+                                <div class="col-12 col-lg-10 p-0 form_data">
+                                 <input type="date" >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-5" style="padding: 0 15px">
+                              <div class="row">
+                                <div
+                                  class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                                >
+                                  <label>Occasion</label>
+                                </div>
+                                <div class="col-12 col-lg-10 p-0 form_data">
+                                  <div id="example"><p>Webllisto Marketing</p></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="text-center mt-5">
+                              <button type="button" class="submit mx-1">
+                                <span class="position-relative">Submit</span>
+                              </button>
+                            </div>
+    
+                            <div class="leave_detail_wrp mt-5">
+                              <h4 class="page_title" class="mb-3">
+                                Holiday List
+                              </h4>
+                              <table
+                                id="leave_details_mobile"
+                                class="row-border cell-border leave_details_table"
+                                style="width: 100%"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th style="min-width: 90px; max-width: 90px">Date</th>
+                                    <th style="min-width: 150px">Occasion</th>
+                                    <th style="min-width: 90px; max-width: 900px">Status</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span>Casual</span></td>
+                                    <td><span>Casual</span></td>
+                                    <td><span><button
+                                      type="button"
+                                      class="btn p-0 border-0 ms-3 "
+                                    >
+                                      <img
+                                        src="./assets/images/icons/delete_icon.svg"
+                                      />
+                                    </button></span></td>
+                                  </tr>
+                                 
+                                </tbody>
+                              </table>
                             </div>
                           </form>
                         </div>
@@ -2631,6 +2935,26 @@
         info: false,
 
         scrollX: true,
+      });
+    </script>
+    <script>
+      $("#select_announcement_type").change(function () {
+        const select_announcement_type = document.getElementById(
+          "select_announcement_type"
+        ).value;
+        if (select_announcement_type === "Holiday") {
+          $("#Announcements").addClass("d-none");
+          $("#Greetings").addClass("d-none");
+          $("#Holiday").removeClass("d-none");
+        } else if (select_announcement_type === "Greetings") {
+          $("#Announcements").addClass("d-none");
+          $("#Greetings").removeClass("d-none");
+          $("#Holiday").addClass("d-none");
+        } else if(select_announcement_type === "Announcements") {
+          $("#Announcements").removeClass("d-none");
+          $("#Greetings").addClass("d-none");
+          $("#Holiday").addClass("d-none");
+        }
       });
     </script>
   </body>
