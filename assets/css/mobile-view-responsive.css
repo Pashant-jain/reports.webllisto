@@ -110,7 +110,7 @@
   }
   .subtitle,
   .timesheet_alert,
-  .calander_event_btn {
+  .calander_event_btn, .auth_btn {
     font-size: 11px;
   }
   .greeting_card .greeting_card_inner span,
@@ -206,5 +206,9 @@
   }
   .notification_inner::before {
     left: 38%;
+  }
+  .auth_btn {
+    margin-bottom: 10px;
+    padding: 8px 47px;
   }
 } /* 320 */

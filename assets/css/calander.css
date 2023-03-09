@@ -295,6 +295,18 @@ pre {
     border-radius: 50px;
     filter: blur(12px);
 }
+.auth_btn {
+    position: relative;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #F85046;
+    background: transparent;
+    border-radius: 50px;
+    border: 1px solid #F85046;
+    padding: 8px 28px;
+    /* box-shadow: 0 5px 12px #f85046; */
+}
 .calander_event_wrp {
     padding: 15px 30px;
 }
