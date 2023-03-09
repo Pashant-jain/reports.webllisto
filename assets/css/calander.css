@@ -58,7 +58,7 @@ pre {
 .calendar-days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 4px;
+    gap: 6px;
     color: var(--color-txt);
 }
 

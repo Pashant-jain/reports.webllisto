@@ -426,7 +426,7 @@ li {
 .greeting_card .greeting_card_inner {
   position: relative;
 }
-.greeting_card .greeting_card_inner::before {
+/* .greeting_card .greeting_card_inner::before {
   background: linear-gradient(0.33deg, #f85046 0.47%, rgba(0, 0, 0, 0) 63.83%);
   bottom: 0;
   content: "";
@@ -437,7 +437,7 @@ li {
   top: 0;
   width: 100%;
   border-radius: 20px;
-}
+} */
 .greeting_card .greeting_card_inner img {
   border-radius: 20px;
 }
@@ -449,6 +449,19 @@ li {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
+}
+.bx-wrapper .bx-controls-direction a{
+  display:none;
+}
+.bx-wrapper{
+  margin:unset;
+  border: unset;
+  border-radius: 20px;
+}
+.bx-wrapper .bx-pager{
+  position: absolute;
+    bottom: 20px;
+    left: 0px;
 }
 .announcement_card span {
   position: absolute;
@@ -583,7 +596,8 @@ form input,
   border-radius: 50px;
   padding: 8px 28px;
   position: relative;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 13px;
   text-decoration: unset;
 }
 .submit:before {
@@ -669,6 +683,9 @@ form input,
 }
 .emp_profile_wrp {
   background-color: #ffe1b6;
+}
+.emp_profile_wrp figure img{
+  border-radius:50%;
 }
 .emp_leave_dtl_wrp {
   background-color: #ffc3c0;

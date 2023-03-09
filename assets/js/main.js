@@ -6,6 +6,12 @@ $(".sidebar_toggler").click(function () {
   $(".notification_btn").click(function () {
     $(".notification_wrp").toggleClass("d-none");
   });
+  $('.bxslider').bxSlider({
+    mode: 'fade',
+    captions: true,
+    slideWidth: 600,
+    adaptiveHeight:true
+  });
 
 
   new FroalaEditor("div#example", {
@@ -15,3 +21,4 @@ $(".sidebar_toggler").click(function () {
   document.getElementById("uploadBtn").onchange = function () {
     document.getElementById("uploadFile").value = this.value.replace("C:\\fakepath\\", "");
 };
+  
