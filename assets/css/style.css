@@ -1439,3 +1439,38 @@ input[type="radio"]:checked {
   min-height: 70vh;
 }
 
+.wysiwyg-editor .wysiwyg-toolbar .btn-group,
+.btn, .wysiwyg-editor .btn-toolbar .btn-group , .btn{
+      color: black;
+}
+#toolbarGroup-mode:last-child{
+  display:none;
+}
+button[data-value="source"],button[data-value="cut"],button[data-value="subscript"],button[data-value="superscript"],button[data-value="bg-color"],button[data-value="font-color"],button[data-value="copy"],button[data-value="paste"],button[data-value="emoji"],button[data-value="link"],button[data-value="image"],button[data-value="video"],button[data-value="line-height"],button[data-value="letter-spacing"],button[data-value="table"],button[data-value="symbol"],button[data-value="print"],button[data-value="clean"],button[data-value="visual"],button[data-value="unformat"]{
+  display:none;
+}
+.wysiwyg-editor .dropdown button{
+  display:none;
+}
+.wysiwyg-editor .editor-content {
+  min-height: 200px;
+  background:transparent;
+  border:unset;
+}
+.wysiwyg-editor{
+  position:relative;
+}
+.wysiwyg-editor .wysiwyg-toolbar, .wysiwyg-editor .btn-toolbar{
+  position:absolute;
+  bottom:0px;
+  background:transparent;
+  border:unset;
+  border-bottom: 0.5px solid #B7B7B7 !important;
+  width:100%;
+}
+.wysiwyg-editor .editor-statusbar{
+  display:none;
+}
+.wysiwyg-editor .wysiwyg-toolbar .btn-group > .btn, .wysiwyg-editor .btn-toolbar .btn-group > .btn{
+  border:none;
+}
