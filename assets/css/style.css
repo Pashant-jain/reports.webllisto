@@ -1279,6 +1279,35 @@ input.exp_input {
   font-size: 14px;
   font-weight: 400;
 }
+.feed_post_head{
+  justify-content:space-between;
+}
+.feed_post_head .dropdown-toggle{
+  background: transparent;
+  border: none;
+  background-image: url("../images/three-dots-vertical.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.feed_post_head .dropdown-toggle:hover{
+  background-color: transparent;
+}
+.feed_post_head .dropdown-toggle::after{
+  display:none;
+}
+.feed_post_head .dropdown-menu.show{
+  right: 0 !important;
+  left: auto !important;
+  background:#ffdfb2 !important;
+}
+.feed_post_head .dropdown-item:focus, .feed_post_head .dropdown-item:hover {
+  background-color: #ffeed5 !important ;
+}
 .feed_post_head h5 {
   font-size: 14px;
   color: #1b1b1b;

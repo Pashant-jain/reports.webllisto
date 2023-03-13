@@ -6,17 +6,18 @@ $(".sidebar_toggler").click(function () {
   $(".notification_btn").click(function () {
     $(".notification_wrp").toggleClass("d-none");
   });
+ 
+  $('.bxslider').bxSlider({
+    mode: 'fade',
+    captions: true,
+    // slideWidth: 600,
+    adaptiveHeight:true,
+    adaptiveHeightSpeed: 750,
+  });
   $('#editor').wysiwyg({
     highlight: true,
     debug: true,
 });
-  $('.bxslider').bxSlider({
-    mode: 'fade',
-    captions: true,
-    slideWidth: 600,
-    adaptiveHeight:true
-  });
-
 
  
   
