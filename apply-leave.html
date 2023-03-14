@@ -614,9 +614,7 @@
                       <textarea name="reason" id="editor"></textarea>
                       <script>
                         ClassicEditor
-                          .create( document.querySelector( '#editor' ), {
-                              toolbarLocation: 'bottom'
-                          } ) 
+                          .create( document.querySelector( '#editor' ))
                           .catch( error => {
                             console.error( error );
                           } );

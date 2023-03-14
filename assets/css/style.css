@@ -426,18 +426,6 @@ li {
 .greeting_card .greeting_card_inner {
   position: relative;
 }
-/* .greeting_card .greeting_card_inner::before {
-  background: linear-gradient(0.33deg, #f85046 0.47%, rgba(0, 0, 0, 0) 63.83%);
-  bottom: 0;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  border-radius: 20px;
-} */
 .greeting_card .greeting_card_inner img {
   border-radius: 20px;
 }
@@ -867,7 +855,6 @@ span a {
 }
 .past_employee_list_wrp .filter_table_btn_wrp {
   position: absolute;
-  right: 6px;
   top: 18px;
 }
 /* end of past employee list css */
@@ -1467,6 +1454,8 @@ input[type="radio"]:checked {
 .add_policy_wrp .page_inner_wrp {
   min-height: 70vh;
 }
+
+/* ck editor css */
 .ck-editor__editable{
   min-height:200px;
 }
@@ -1492,6 +1481,7 @@ input[type="radio"]:checked {
   background:#ffdfb2 !important;
   border:none !important;
   box-shadow:unset !important;
+  color:black !important;
 }
 .ck.ck-button:not(.ck-disabled):focus-visible{
   border: none !important;
@@ -1510,4 +1500,27 @@ input[type="radio"]:checked {
 }
 .ck.ck-editor__main:focus-visible{
   outline:none !important;
+}
+[dir=ltr] .ck.ck-dropdown .ck-button.ck-dropdown__button:not(.ck-button_with-text){
+  display:none;
+}
+.ck.ck-button.ck-on, a.ck.ck-button.ck-on{
+  background:transparent !important;
+}
+.ck.ck-button.ck-on{
+  color:black !important;
+}
+.ck .ck.ck-focused{
+  box-shadow:unset !important;
+}
+
+/* delete modal css */
+.del_modal{
+  background:transparent;
+  border:none;
+  width: 100%;
+  text-align: left;
+}
+#Delete .modal-dialog{
+  min-width: 550px !important;
 }
