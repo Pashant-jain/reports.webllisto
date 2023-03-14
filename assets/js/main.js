@@ -14,10 +14,7 @@ $(".sidebar_toggler").click(function () {
     adaptiveHeight:true,
     adaptiveHeightSpeed: 750,
   });
-  $('#editor').wysiwyg({
-    highlight: true,
-    debug: true,
-});
+  
 
  
   

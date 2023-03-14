@@ -44,7 +44,7 @@
     <!-- plugin -->
     <script src="./assets/js/data-table.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
     
   </head>
   <body>
@@ -611,7 +611,16 @@
                       <label for="animals">Reason</label>
                     </div>
                     <div class="col-12 col-lg-11 p-0 form_data">
-                      <div id="editor" ></div>
+                      <textarea name="reason" id="editor"></textarea>
+                      <script>
+                        ClassicEditor
+                          .create( document.querySelector( '#editor' ), {
+                              toolbarLocation: 'bottom'
+                          } ) 
+                          .catch( error => {
+                            console.error( error );
+                          } );
+                      </script>
                     </div>
                   </div>
                 </div>
