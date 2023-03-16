@@ -133,7 +133,11 @@
                 </div>
               </div>
               </div>
-              <button class="profile_icon">
+              <button
+                class="profile_icon" 
+                data-toggle="modal"
+                data-target="#Delete"
+                >
                 <img
                   src="./assets/images/icons/logout_icon.svg"
                   alt="Log Out"
@@ -654,72 +658,117 @@
       </main>
       <!-- calander bar -->
       <aside id="calander" class="calander" aria-label="calander">
-    <div class="calander_wrp">
-      <div class="calendar">
-        <div class="calendar-header">
-          <div class="year-picker">
-            <span class="year-change" id="prev-year">
-              <pre><img src="./assets/images/down-arrow.svg" alt="arrow" class="calander_prev_wrp rotate-90" ></pre>
-            </span>
-            <div>
-              <span class="month-picker" id="month-picker">April</span>
-              <span id="year">2023</span>
+        <div class="calander_wrp">
+          <div class="calendar">
+            <div class="calendar-header">
+              <div class="year-picker">
+                <span class="year-change" id="prev-year">
+                  <pre><img src="./assets/images/down-arrow.svg" alt="arrow" class="calander_prev_wrp rotate-90" ></pre>
+                </span>
+                <div>
+                  <span class="month-picker" id="month-picker">April</span>
+                  <span id="year">2023</span>
+                </div>
+                <span class="year-change" id="next-year">
+                  <pre><img src="./assets/images/down-arrow.svg" alt="arrow" class="calander_next_wrp rotate-270" ></pre>
+                </span>
+              </div>
             </div>
-            <span class="year-change" id="next-year">
-              <pre><img src="./assets/images/down-arrow.svg" alt="arrow" class="calander_next_wrp rotate-270" ></pre>
-            </span>
+            <div class="calendar-body">
+              <div class="calendar-week-day">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              <div class="calendar-days"></div>
+            </div>
+          
+            <div class="month-list"></div>
+          </div>
+          <div class="table_color_content mt-3" >
+            <p><span class="current_date" ></span> Current Date</p>
+            <p><span class="missing_timesheet" ></span> Missing Timesheet</p>
+            <p><span class="holiday" ></span>Holiday</p>
+            <p><span class="leave_date" ></span>Leave</p>
+          </div>
+          <div class="text-center calander_event_btn_wrp" >
+            <button type="button" class="auth_btn"><span class="position-relative" >G Auth</span></button>
+            <button type="button" class="calander_event_btn"><span class="position-relative" >Add Timesheet</span></button>
+          </div>
+          <div class="calander_event_wrp" >
+            <h2>Today’s Event : 04 February</h2>
+            <div class="calander_event_table" >
+              <table  >
+              <tbody>
+                <tr>
+                  <td class="event_title birthday" ><span>Birthday</span></td>
+                  <td class="event_dtl birthday"  ><span>Lorem Ipsum</span></td>
+                </tr>
+                <tr>
+                  <td class="event_title work"  ><span>Work An.</span></td>
+                  <td class="event_dtl work"  ><span>Lorem Ipsum</span></td>
+                </tr>
+                <tr>
+                  <td class="event_title work"  ><span>10:00 AM</span></td>
+                  <td class="event_dtl work"  ><span>Lorem Ipsum</span></td>
+                </tr>
+              </tbody>
+              </table>
+              </table>
+            </div>
           </div>
         </div>
-        <div class="calendar-body">
-          <div class="calendar-week-day">
-            <div>Sun</div>
-            <div>Mon</div>
-            <div>Tue</div>
-            <div>Wed</div>
-            <div>Thu</div>
-            <div>Fri</div>
-            <div>Sat</div>
+      </aside>
+    </div>
+
+    <!-- Modal Logout -->
+    <div
+    class="modal fade"
+    id="Delete"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+   >
+    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button
+          type="button"
+          class="close modal_close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-body">
+          <div class="conform_import_wrp">
+            <h1 class="mb-4 text-center">Logout</h1>
+            <div>
+              <h6 class="mb-3 text-center">Are you sure you want to log out?</h6>
+            </div>
+            <div>
+              <div class="text-center mt-3 mt-sm-5">
+                <button
+                  type="button"
+                  class="btn pupup_btn outline_btn"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button type="button" class="btn pupup_btn dark_btn">
+                  Submit
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="calendar-days"></div>
-        </div>
-       
-        <div class="month-list"></div>
-      </div>
-      <div class="table_color_content mt-3" >
-        <p><span class="current_date" ></span> Current Date</p>
-        <p><span class="missing_timesheet" ></span> Missing Timesheet</p>
-        <p><span class="holiday" ></span>Holiday</p>
-        <p><span class="leave_date" ></span>Leave</p>
-      </div>
-      <div class="text-center calander_event_btn_wrp" >
-        <button type="button" class="auth_btn"><span class="position-relative" >G Auth</span></button>
-        <button type="button" class="calander_event_btn"><span class="position-relative" >Add Timesheet</span></button>
-      </div>
-      <div class="calander_event_wrp" >
-        <h2>Today’s Event : 04 February</h2>
-        <div class="calander_event_table" >
-          <table  >
-           <tbody>
-            <tr>
-              <td class="event_title birthday" ><span>Birthday</span></td>
-              <td class="event_dtl birthday"  ><span>Lorem Ipsum</span></td>
-            </tr>
-            <tr>
-              <td class="event_title work"  ><span>Work An.</span></td>
-              <td class="event_dtl work"  ><span>Lorem Ipsum</span></td>
-            </tr>
-            <tr>
-              <td class="event_title work"  ><span>10:00 AM</span></td>
-              <td class="event_dtl work"  ><span>Lorem Ipsum</span></td>
-            </tr>
-           </tbody>
-          </table>
-          </table>
         </div>
       </div>
     </div>
-       </aside>
-    </div>
+   </div>
     
 
     <!-- plugin -->

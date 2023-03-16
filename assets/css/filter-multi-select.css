@@ -101,7 +101,6 @@ display: inline-block;
 .filter-multi-select > .viewbar > .selected-items > .item.disabled > button {
     display: none;
 }
-
 .filter-multi-select > .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -125,6 +124,7 @@ display: inline-block;
 
 .filter-multi-select > .dropdown-menu.show {
     display: block;
+    overflow-x:hidden;
 }
 
 .filter-multi-select > .dropdown-menu > .filter > input {
