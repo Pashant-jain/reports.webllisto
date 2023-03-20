@@ -312,7 +312,8 @@ li {
 .add_client_wrp ,
 .leave_history_wrp,
 .leave_history_wrp
-,.feeds_wrp,.regularization_review_wrp,.regularization_review_history_wrp{
+,.feeds_wrp,.regularization_review_wrp,.regularization_review_history_wrp,
+.leave_status_wrp{
   background-color: #fff6e9;
   border-radius: 50px;
   padding: 30px;
