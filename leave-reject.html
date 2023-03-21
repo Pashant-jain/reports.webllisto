@@ -441,11 +441,11 @@
       </aside>
       <!-- contant -->
       <main class="contant">
-        <div class="leave_status_wrp">
+        <div class="leave_reject_wrp">
             <h2 class="page_title">Leave Status</h2>
             <div class="page_inner_wrp mt-4">
-                <h3 class="text-center mb-4 mt-3 status">Status : Pending<h3>
-                <h2 class="text-center mb-4 mt-3 leave_type">Leave Type : Loss Of Pay</h2>
+                <p class="text-center mb-4 mt-3 status">Status : Pending<p>
+                <p class="text-center mb-4 mt-3 leave_type">Leave Type : Loss Of Pay</p>
               <form
                 class="form-material mb-4 leave_form"
                 action="/leave/"
@@ -510,15 +510,35 @@
                     </div>
                     <div class="employee_input p-0">
                       <textarea name="reason" id="editor">Lorem ipsum dolor sit amet consectetur. Eget eget quam vivamus pellentesque egestas pharetra in augue quis. Fames potenti tellus diam massa ultrices orci netus. Dignissim at bibendu <br>
-                   <strong>Amet amet cras non quisque dolor eget sed cum. Quis rhoncus commodo tellus elit nunc urna feugiat. Risus lorem nisi feugiat neque sodales fermentum egestas proin. Integer neque vel ut malesuada sed tincidunt cras lorem. Odio adipiscing amet sapien id porttitor.</strong></textarea>
-                      <script>
+                    <strong>Amet amet cras non quisque dolor eget sed cum. Quis rhoncus commodo tellus elit nunc urna feugiat. Risus lorem nisi feugiat neque sodales fermentum egestas proin. Integer neque vel ut malesuada sed tincidunt cras lorem. Odio adipiscing amet sapien id porttitor.</strong></textarea>
+                    <script>
                         ClassicEditor
                           .create( document.querySelector( '#editor' ))
                           .catch( error => {
                             console.error( error );
                           } );
-                      </script>
+                    </script>
                     </div>
+                   
+                </div>
+                <div class="employee" style="margin-top: 40px;">
+                    <div class="employee_label mb-3 mb-lg-0 p-0 form_label">
+                        <label for="animals">Cancel Reason</label>
+                    </div>
+                    <div class="employee_input p-0">
+                        <textarea name="cancel" id="reason-editor">
+                            Lorem ipsum dolor sit amet consectetur. Eget eget quam vivamus pellentesque egestas pharetra in augue quis. Fames potenti tellus diam massa ultrices orci netus. Dignissim at bibendu 
+                        </textarea>
+                        <script>
+                            ClassicEditor
+                              .create( document.querySelector( '#reason-editor' ))
+                              .catch( error => {
+                                console.error( error );
+                              } );
+                        </script>
+
+                    </div>
+                    
                 </div>
                 <div class="form-group sub_btn text-center mt-5">
                   <button type="button" id="leaveSubmit" class="reject_btn m-b-0">

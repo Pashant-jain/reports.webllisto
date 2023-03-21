@@ -313,7 +313,7 @@ li {
 .leave_history_wrp,
 .leave_history_wrp
 ,.feeds_wrp,.regularization_review_wrp,.regularization_review_history_wrp,
-.leave_status_wrp{
+.leave_status_wrp, .leave_reject_wrp{
   background-color: #fff6e9;
   border-radius: 50px;
   padding: 30px;
@@ -378,7 +378,7 @@ li {
 }
 .announcement_card {
   background-image: url("../images/cards/announcements-back.svg");
-  padding: 20px 30px;
+  padding: 20px;
 }
 .leaves_card {
   background-image: url("../images/cards/leaves_list_days.svg");
@@ -452,7 +452,7 @@ li {
     bottom: 20px;
     left: 0px;
 }
-.announcement_card span {
+/* .announcement_card span {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -462,7 +462,7 @@ li {
   font-size: 75px;
   line-height: 55px;
   font-family: "Praise", cursive;
-}
+} */
 .dashboard_card_title {
   text-align: center;
   font-weight: 700;
@@ -1527,4 +1527,68 @@ input[type="radio"]:checked {
 }
 #Delete .modal-content{
   padding:unset;
+}
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners{
+  padding:unset;
+}
+.announcement_notification_time {
+  font-size: 11px;
+  color: white;
+}
+.announcement img{
+  margin-left:unset !important;
+}
+.announcement_para{
+  text-align: left;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+    color:white;
+
+}
+.announcement_card .notification_time span{
+  background:white;
+  color:black;
+}
+.announcement_card h5{
+  font-size: 12px;
+  color:white;
+}
+.announcement_card .notification_time span{
+  padding: 1px 4px;
+}
+.announcement_card  .dashboard_card_title{
+  margin-bottom:unset;
+}
+.announcement_innr_wrp{
+  max-height: 222px;
+  overflow-y: auto;
+}
+/* pagenot found css */
+
+.page_not_found_wrp{
+  padding:35px 70px;
+}
+.page_not_found_wrp h1{
+  font-size:45px;
+}
+.page_not_found_wrp figure{
+  padding: 40px 0px;
+ 
+}
+.page_not_found_wrp figure img{
+  max-width: 75%;
+}
+.page_not_found_wrp .submit:before{
+  bottom: 0;
+  content: "";
+  height: 44%;
+  left: 25px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 70%;
+  background: #F85046;
+  filter: blur(12px);
+  border-radius: 50px;
 }
