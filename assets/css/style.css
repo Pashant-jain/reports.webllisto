@@ -1534,6 +1534,7 @@ input[type="radio"]:checked {
 .ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners{
   padding:unset;
 }
+/* announcement card css */
 .announcement_notification_time {
   font-size: 11px;
   color: white;
@@ -1567,6 +1568,18 @@ input[type="radio"]:checked {
   max-height: 222px;
   overflow-y: auto;
 }
+/* announcement card responsive css  */
+
+@media only screen and (max-width: 1199px) {
+  .announcement_innr_wrp{
+    max-height: 318px;
+  }
+} /* 1024 */
+@media only screen and (max-width: 979px) {
+  .announcement_innr_wrp{
+    max-height: 222px;
+  }
+} /* 768 */
 /* pagenot found css */
 
 .page_not_found_wrp{
