@@ -87,6 +87,7 @@
   .emp_leave_dtl,
   .notification_time {
     font-size: 10px;
+    margin-top:5px !important;
   }
   .emp_profile_box_wrp {
     padding: 15px;
@@ -117,12 +118,11 @@
   .calander_event_wrp h2 {
     font-size: 13px;
   }
-  .announcement_card span {
-    font-size: 35px;
-    line-height: 29px;
-  }
   .announcement_card {
     min-height: 150px;
+  }
+  .announcement_responsive{
+    display:block !important;
   }
   .sidebar.expand_sidebar .menu_wrp {
     padding: 0 30px;
