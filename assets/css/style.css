@@ -206,6 +206,15 @@ li {
 .sidebar_toggler {
   cursor: pointer;
 }
+.notification_btn button span{
+  padding: 4px;
+  height: 18px;
+  width: 18px;
+  -webkit-animation: not-blink 2.1s cubic-bezier(.65, .815, .735, .395) infinite;
+  animation: not-blink 2.1s cubic-bezier(.65, .815, .735, .395) infinite;
+  font-size: 11px !important;
+  font-weight: 600;
+} 
 
 /* end of sidebar css */
 
@@ -1800,3 +1809,24 @@ input[type="radio"]:checked {
 .apply_leave_wrp .leave_form{
   margin:unset;
 }
+/* .greeting_card_inner div{
+  width: 385px;
+  height: 297px;
+} */
+.bxslider div{
+  max-width: 385px !important;
+}
+.toaster_wrp{
+  background: red;
+  display: flex;
+  padding: 20px;
+  width: 46%;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  position: absolute;
+  top: -83px;
+  right: 2px;
+}
+
+
