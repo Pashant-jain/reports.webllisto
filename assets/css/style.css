@@ -1828,5 +1828,9 @@ input[type="radio"]:checked {
   top: -83px;
   right: 2px;
 }
+.toaster_wrp button{
+  border: none;
+  background: none;
+}
 
 
