@@ -8,16 +8,7 @@
   /* .announcement_card {
       min-height: 300px;
   } */
-  /* .greeting_card .bx-viewport{
-    height: 393px;
-  } */
-  /* .greeting_card_inner div{
-    max-width: 422px !important;
-    max-height: 392px  !important;
-  } */
-  .greeting_card_inner .bx-viewport{
-    max-height: 392px !important;
-  }
+  
   .dashboard_card_title {
     font-size: 14px;
   }

@@ -461,6 +461,10 @@ li {
     bottom: 20px;
     left: 0px;
 }
+.greeting_card_inner > div {
+  width: 100% !important;
+  height: 297px !important;
+}
 /* .announcement_card span {
   position: absolute;
   top: 50%;
@@ -1813,24 +1817,79 @@ input[type="radio"]:checked {
   width: 385px;
   height: 297px;
 } */
-.bxslider div{
-  max-width: 385px !important;
-}
+
 .toaster_wrp{
   background: red;
   display: flex;
   padding: 20px;
-  width: 46%;
+  width: 34%;
   color: white;
   font-weight: 600;
   font-size: 13px;
-  position: absolute;
-  top: -83px;
-  right: 2px;
+  position: fixed;
+  top: 46px;
+  right: 49px;
+}
+.toaster_span{
+  margin-right: 50px;
 }
 .toaster_wrp button{
   border: none;
   background: none;
 }
+/* toaster responsive css */
+@media only screen and (max-width: 1199px) {
+  .toaster_span{
+    margin-right: 37px;
+  }
+  .toaster_wrp{
+    font-size: 12px;
+    width: 39%;
+  }
+} /* 1024 */
+@media only screen and (max-width: 1023px) {
+   .toaster_span{
+    margin-right: 49px;
+  }
+  .toaster_wrp {
+    width: 42%;
+  }
+} /* 980 */
+@media only screen and (max-width: 979px) {
+  .toaster_span{
+    margin-right: 21px;
+  }
+  .toaster_wrp{
+    width: 50%;
+  }
+} /* 768 */
+@media only screen and (max-width: 767px) {
+  .toaster_wrp{
+    font-size: 11px;
+  }
+}/*650 */
+@media only screen and (max-width: 479px) {
+  .toaster_wrp{
+    font-size: 8px;
+    width: 47%;
+    padding: 9px;
+  }
+} /* 375 */
 
-
+/* greetings card responsive css */
+@media only screen and (max-width: 1199px) {
+  .greeting_card .bx-viewport{
+    height: 392px !important;
+  }
+  .greeting_card_inner > div {
+    height: 392px !important;
+  }
+} /* 1024 */
+@media only screen and (max-width: 979px) {
+  .greeting_card_inner > div {
+    height: 297px !important;
+  }
+  .greeting_card .bx-viewport{
+    height: 297px !important;
+  }
+} /* 768 */
