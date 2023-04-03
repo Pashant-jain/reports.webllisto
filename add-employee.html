@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="./assets/css/calander.css" />
     <link rel="stylesheet" href="./assets/css/filter-multi-select.css" />
     <link rel="stylesheet" href="./assets/css/text-editor.css" />
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
 
     <!-- custom style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -38,6 +42,8 @@
 
     <!-- plugin -->
     <script src="./assets/js/data-table.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  </head>
   </head>
   <body>
     <div class="page_wrp add-timesheet">
@@ -831,8 +837,16 @@
                           <label>Mobile No.</label>
                         </div>
                         <div class="col-12 col-sm-7 p-0">
-                          <input type="tel" placeholder="Enter number" />
+                          <!-- <input type="tel"  /> -->
+                          <input id="phone" type="tel" name="phone" placeholder="Enter number" />
                         </div>
+                        <script>
+                          const phoneInputField = document.querySelector("#phone");
+                          const phoneInput = window.intlTelInput(phoneInputField, {
+                            utilsScript:
+                              "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+                          });
+                        </script>
                       </div>
                       <div class="row m-0">
                         <div class="col-12 col-sm-5 mb-3 mb-sm-0 p-0">
