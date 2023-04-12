@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/css/calander.css" />
     <link rel="stylesheet" href="./assets/css/filter-multi-select.css" />
     <link rel="stylesheet" href="./assets/css/text-editor.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
 
     <!-- custom style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -38,6 +39,10 @@
 
     <!-- plugin -->
     <script src="./assets/js/data-table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+    <script src="./assets/js/vanillaEmojiPicker.js"></script>
+
   </head>
   <body>
     <div class="page_wrp add-timesheet">
@@ -539,7 +544,7 @@
                       type="text"
                       placeholder="What’s On Your Mind, Lorem?"
                       id="output"
-                      class="feeds_input .asd"
+                      class="feeds_input .asd two uk-textarea uk-margin"
                     />
                     <div
                       class="d-flex flex-column flex-sm-row align-items-start justify-content-between align-items-sm-center mt-4"
@@ -567,13 +572,37 @@
                         </label>
                       </div>
                       <div class="feeds_file_input">
-                        <label class="label">
+                       <label class="label second-btn uk-button uk-button-primary">
                           <img
                             src="./assets/images/icons/smiling.svg"
                             alt="video"
                             width="20px"
                           />
                           <span>Feeling/Activity</span>
+                        </label> 
+                        <label class="label">
+                        <div>
+                          <!-- <button class="second-btn uk-button uk-button-primary"><img
+                            src="./assets/images/icons/smiling.svg"
+                            alt="video"
+                            width="20px"
+                          />
+                          <span>Feeling/Activity</span></button> -->
+                        </div>
+                        <script>
+
+                          new EmojiPicker({
+                              trigger: [
+                                  {
+                                      selector: '.second-btn',
+                                      insertInto: '.two'
+                                  }
+                              ],
+                              closeButton: true,
+                              //specialButtons: green
+                          });
+                  
+                      </script>
                         </label>
                       </div>
                     </div>
