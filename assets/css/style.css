@@ -1933,6 +1933,11 @@ input[type="radio"]:checked {
   width: 315px !important;
   height: 309px !important;
 }
+.iti__country-list{
+  max-width:270px !important;
+  background: #fceed5 !important;
+}
+
 @media only screen and (max-width: 1199px) {
   .fg-emoji-container{
     left: 669px !important;
@@ -1961,6 +1966,18 @@ input[type="radio"]:checked {
   .fg-emoji-container{
     left: 138px !important;
   }
+  .iti__country-list{
+    width:215px !important;
+  }
+  .iti-mobile .iti--container{
+    left:117px;
+  }
+  .iti__flag-box, .iti__country-name{
+    font-size:12px;
+  }
+  .iti__flag-box, .iti__country-name, .iti__dial-code{
+    font-size:12px;
+  }
 } /* 480 */
 @media only screen and (max-width: 479px) {
   .fg-emoji-container {
@@ -1975,8 +1992,16 @@ input[type="radio"]:checked {
   .fg-emoji-container {
     width: 195px !important;
   }
+  .iti__country-list{
+    width:155px !important;
+  }
+  .iti-mobile .iti--container{
+    left:120px;
+  }
+  .iti__flag-box, .iti__country-name{
+    font-size:10px;
+  }
+  .iti__flag-box, .iti__country-name, .iti__dial-code{
+    font-size:10px;
+  }
 } /* 320 */ 
-.iti__country-list{
-  max-width:270px !important;
-  background: #fceed5 !important;
-}
