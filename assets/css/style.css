@@ -549,7 +549,7 @@ textarea,
   border-radius: unset;
 }
 input {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 select:focus,
 select:focus-visible,
