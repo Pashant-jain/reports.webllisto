@@ -207,8 +207,4 @@
   .notification_inner::before {
     left: 38%;
   }
-  .auth_btn {
-    margin-bottom: 10px;
-    padding: 8px 47px;
-  }
 } /* 320 */

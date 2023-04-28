@@ -279,7 +279,7 @@ pre {
     background: #f85046;
     border-radius: 50px;
     border: unset;
-    padding: 8px 28px;
+    padding: 8px 14px;
     /* box-shadow: 0 5px 12px #f85046; */
 }
 .calander_event_btn:before {
@@ -304,7 +304,7 @@ pre {
     background: transparent;
     border-radius: 50px;
     border: 1px solid #F85046;
-    padding: 8px 28px;
+    padding: 8px 12px;
     /* box-shadow: 0 5px 12px #f85046; */
 }
 .calander_event_wrp {
@@ -445,6 +445,10 @@ pre {
     .table_color_content {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
+    .auth_btn {
+        margin-bottom: 10px;
+      }
+
 } /* 375 */
 @media only screen and (max-width: 374px) {
 } /* 320 */
