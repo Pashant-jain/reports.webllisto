@@ -982,6 +982,11 @@ span a {
 .conform_import_wrp {
   padding: 30px 15px;
 }
+.conform_import_wrp h6{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 27px;
+}
 .modal-body h2,
 h6 {
   font-weight: 600;
@@ -1394,7 +1399,9 @@ input.exp_input {
   left: 15px;
 
 }
-
+.login_wrp h1{
+  font-size: 35px;
+}
 .notification_inner {
   background: #ffffff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
