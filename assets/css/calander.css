@@ -287,11 +287,11 @@ pre {
     bottom: 0;
     content: "";
     height: 50%;
-    left: 0;
+    left: 10px;
     position: absolute;
     right: 0;
-    top: 25;
-    width: 100%;
+    top: 25px;
+    width: 84%;
     border-radius: 50px;
     filter: blur(12px);
 }
