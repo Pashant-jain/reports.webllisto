@@ -171,10 +171,10 @@
   }
   .sidebar.expand_sidebar .menu_wrp li a img,
   .sidebar.expand_sidebar .help_btn img {
-    margin-right: 15px;
+    margin-right: 12px;
   }
   .sidebar.expand_sidebar .menu_wrp li a .down_arrow {
-    margin-left: 15px;
+    margin-left: 12px;
     margin-right: unset;
   }
   .sidebar.expand_sidebar .help_btn {
