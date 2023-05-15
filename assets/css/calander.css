@@ -393,6 +393,55 @@ pre {
 .table_color_content p span.leave_date {
     background-color: #f39e24;
 }
+.events{
+    padding: 15px 30px;
+}
+.event_para{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    color: #6B6B6B;
+    padding-right: 20px;
+    border-right: 3px solid;
+}
+.regularize{
+    border-color: #D30915;
+}
+.timesheet{
+    border-color: #3F54B1;
+}
+.holiday{
+    border-color: #3BB479;
+}
+.leave{
+    border-color: #FF9900;
+}
+.events button{
+    border-radius: 20px;
+    outline: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    border: none;
+    padding: 8px 20px;
+    color: black;
+    margin-left: 20px;
+}
+.regularize_btn{
+    background: #FEE5E3;
+}
+.timesheet_btn{
+    background: #E0E6FF;
+}
+.leave_btn{
+    background: #FFEACA;
+}
+.weekend{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    color: black;
+}
 /* responsive */
 @media only screen and (max-width: 1199px) {
 } /* 1024 */
