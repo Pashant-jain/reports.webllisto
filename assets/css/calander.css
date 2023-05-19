@@ -307,9 +307,9 @@ pre {
     padding: 8px 12px;
     /* box-shadow: 0 5px 12px #f85046; */
 }
-.calander_event_wrp {
+/* .calander_event_wrp {
     padding: 15px 30px;
-}
+} */
 .calander_event_wrp h2 {
     font-weight: 600;
     font-size: 14px;
@@ -336,7 +336,6 @@ pre {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-
 .calander_event_table td.event_title {
     color: #6b6b6b;
     padding-right: 15px;
@@ -392,6 +391,11 @@ pre {
 }
 .table_color_content p span.leave_date {
     background-color: #f39e24;
+}
+#calander_message{
+    margin-left: 0 !important;
+    padding: 15px 30px;
+    text-align: left !important;
 }
 .events{
     padding: 15px 30px;
