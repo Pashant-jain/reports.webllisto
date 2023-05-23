@@ -180,6 +180,10 @@ li {
 .menu_wrp .submenu li a {
   padding: 6px 15px;
   margin: unset;
+  color: #ffffffba;
+}
+.menu_wrp .submenu li.active a {
+  color: white;
 }
 .menu_wrp li:hover .submenu {
   display: block;
@@ -268,10 +272,6 @@ li {
   max-height: 70vh;
 }
 /* expanded sidebar css */
-
-/* calander css */
-
-/* end of calander css */
 
 .contant {
   margin-left: 250px;
@@ -2014,3 +2014,18 @@ input[type="radio"]:checked {
     font-size:10px;
   }
 } /* 320 */ 
+@media only screen and (max-width: 1300px) and (min-width: 1200px)  {
+  .timesheet_list_filter_btn{
+    display: flex;
+    justify-content: space-around;
+  }
+  .timesheet_list_filter_btn .Filter{
+    margin-right:0;
+  }
+  .timesheet_list_filter_btn .import{
+    margin-right:0;
+  }
+  .timesheet_list_filter_btn .export{
+    margin-right:0;
+  }
+}
