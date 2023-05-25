@@ -545,12 +545,12 @@
                 <fieldset class="py-3 text-center">
                   <h3 class="mb-5">User Details</h3>
                   <div class="user_dtl_inner text-start">
-                    <div class="mb-4" style="padding: 0 15px">
-                      <div class="row">
-                        <div class="col-12 col-lg-1 mb-3 mb-lg-0 p-0">
+                    <div class="mb-4">
+                      <div class="form-group w-100 d-flex">
+                        <div class="mb-3 mb-lg-0 p-0 form_labels">
                           <label>Username</label>
                         </div>
-                        <div class="col-12 col-lg-11 p-0 ps-lg-5">
+                        <div class="form-inputs">
                           <input type="text" value="Lorem Ipsum" />
                         </div>
                       </div>
@@ -619,14 +619,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="mt-4" style="padding: 0 15px">
-                      <div class="row">
+                    <div class="mt-4">
+                      <div class="form-group w-100 d-flex">
                         <div
-                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                          class="mb-3 mb-lg-0 p-0 form_labels"
                         >
                           <label>Slack Channel</label>
                         </div>
-                        <div class="col-12 col-lg-10 p-0 form_data">
+                        <div class="p-0 form-inputs">
                           <select>
                             <option
                               class="option_menu"
@@ -643,14 +643,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="mt-4" style="padding: 0 15px">
-                      <div class="row">
+                    <div class="mt-4">
+                      <div class="form-group w-100 d-flex">
                         <div
-                          class="col-12 col-lg-1 mb-3 mb-lg-0 p-0 form_label"
+                          class="mb-3 mb-lg-0 p-0 form_labels"
                         >
                           <label>Skills</label>
                         </div>
-                        <div class="col-12 col-lg-11 p-0 form_data">
+                        <div class="p-0 form-inputs">
                           <select
                             multiple
                             name="cc"
@@ -721,14 +721,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="mt-4" style="padding: 0 15px">
-                      <div class="row">
+                    <div class="mt-4">
+                      <div class="form-group w-100 d-flex">
                         <div
-                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                          class="mb-3 mb-lg-0 p-0 form_labels"
                         >
                           <label>Assets</label>
                         </div>
-                        <div class="col-12 col-lg-10 p-0 form_data">
+                        <div class="p-0 form-inputs">
                           <div class="position-relative">
                             <input type="text" placeholder="Enter Asset ID :" />
                             <button
@@ -747,17 +747,17 @@
                         </div>
                       </div>
                     </div>
-                    <div class="mt-4" style="padding: 0 15px">
-                      <div class="row">
+                    <div class="mt-4">
+                      <div class="form-group w-100 d-flex">
                         <div
-                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                          class="mb-3 mb-lg-0 p-0 form_labels"
                         >
                           <label
                             >Other Skills<br />
                             (If Any)</label
                           >
                         </div>
-                        <div class="col-12 col-lg-10 p-0 form_data">
+                        <div class="p-0 form-inputs">
                           <input type="text" placeholder="Enter skills :" />
                         </div>
                       </div>
@@ -772,14 +772,14 @@
                 <fieldset class="py-3 text-center">
                   <h3 class="mb-5">Profile Details</h3>
                   <div class="profile_dtl_inner text-start">
-                    <div class="mb-4" style="padding: 0 15px">
-                      <div class="row align-items-center">
+                    <div class="mb-4">
+                      <div class="form-group w-100 d-flex align-items-center">
                         <div
-                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                          class="mb-3 mb-lg-0 p-0 form_labels"
                         >
                           <label>Profile Pic</label>
                         </div>
-                        <div class="col-12 col-lg-10 p-0 form_data">
+                        <div class="form-inputs">
                           <div class="custom_input_wrp">
                             <input
                               id="uploadFile"
@@ -972,20 +972,24 @@
                         </div>
                       </div>
                     </div>
-                    <div class="exp_wrp mb-5">
+                    <div class="form-group w-100 d-flex exp_wrp mb-5">
+                      <div
+                      class="mb-3 mb-lg-0 p-0 form_labels"
+                      >
                       <label>
-                        Total Exp. before Joining
-                        <input
-                          type="text"
-                          class="exp_input"
-                          placeholder="Years"
-                        />
-                        <input
-                          type="text"
-                          class="exp_input"
-                          placeholder="Months"
-                        />
-                      </label>
+                        Total Exp. before Joining </label>
+                        </div>
+                        <div class="p-0 form-inputs d-flex">
+                          <input
+                            type="text"
+                            class="exp_input"
+                            placeholder="Years"
+                          />
+                          <input
+                            type="text"
+                            class="exp_input"
+                            placeholder="Months"
+                          />
                     </div>
                   </div>
                   <div class="text-center mt-4">
@@ -1006,26 +1010,26 @@
                 <fieldset class="py-3 text-center">
                   <h3 class="mb-5">Current Address</h3>
                   <div class="curr_add_dtl_inner text-start">
-                    <div class="mb-4" style="padding: 0 15px">
-                      <div class="row align-items-center">
+                    <div class="mb-4">
+                      <div class="form-group w-100 d-flex">
                         <div
-                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                          class="mb-3 mb-lg-0 p-0 form_labels"
                         >
                           <label>Address Line 1</label>
                         </div>
-                        <div class="col-12 col-lg-10 p-0 form_data">
+                        <div class="p-0 form-inputs">
                           <input type="text" placeholder="Enter Address" />
                         </div>
                       </div>
                     </div>
-                    <div class="mb-4" style="padding: 0 15px">
-                      <div class="row align-items-center">
+                    <div class="mb-4">
+                      <div class="form-group w-100 d-flex">
                         <div
-                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                          class="mb-3 mb-lg-0 p-0 form_labels"
                         >
                           <label>Address Line 2</label>
                         </div>
-                        <div class="col-12 col-lg-10 p-0 form_data">
+                        <div class="p-0 form-inputs">
                           <input type="text" placeholder="Enter Address" />
                         </div>
                       </div>
@@ -1093,26 +1097,26 @@
                         Same as Current Address
                       </p>
                     </div>
-                    <div class="mb-4" style="padding: 0 15px">
-                      <div class="row align-items-center">
+                    <div class="mb-4">
+                      <div class="form-group w-100 d-flex">
                         <div
-                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                          class="mb-3 mb-lg-0 p-0 form_labels"
                         >
                           <label>Address Line 1</label>
                         </div>
-                        <div class="col-12 col-lg-10 p-0 form_data">
+                        <div class="form-inputs">
                           <input type="text" placeholder="Enter Address" />
                         </div>
                       </div>
                     </div>
-                    <div class="mb-4" style="padding: 0 15px">
-                      <div class="row align-items-center">
+                    <div class="mb-4">
+                      <div class="form-group w-100 d-flex">
                         <div
-                          class="col-12 col-lg-2 mb-3 mb-lg-0 p-0 form_label"
+                          class="mb-3 mb-lg-0 p-0 form_labels"
                         >
                           <label>Address Line 2</label>
                         </div>
-                        <div class="col-12 col-lg-10 p-0 form_data">
+                        <div class="p-0 form-inputs">
                           <input type="text" placeholder="Enter Address" />
                         </div>
                       </div>

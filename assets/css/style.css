@@ -161,7 +161,11 @@ li {
 .menu_wrp li.active a,
 .menu_wrp li:hover a {
   color: #ffffff;
+  /* color: #ffffffba; */
   font-size: 12px;
+}
+.menu_wrp li:hover .submenu li a {
+  color: #ffffffba;
 }
 .menu_wrp li a img {
   margin-right: 12px;
@@ -180,9 +184,11 @@ li {
 .menu_wrp .submenu li a {
   padding: 6px 15px;
   margin: unset;
-  color: #ffffffba;
 }
-.menu_wrp .submenu li.active a {
+.menu_wrp li:hover .submenu li a:hover{
+  color: white;
+}
+.menu_wrp li:hover .submenu li.active a {
   color: white;
 }
 .menu_wrp li:hover .submenu {
@@ -1198,9 +1204,11 @@ h6 {
 .form_label {
   width: 12%;
 }
-.form_data {
-  width: 86%;
-}
+/* .form_data {
+  width: 87%;
+  margin-left: 8px;
+} */
+
 button.add_more {
   position: absolute;
   right: 0;
@@ -1233,7 +1241,7 @@ button.add_more {
 }
 input.exp_input {
   width: unset;
-  margin: 0px 15px;
+  margin: 0px 15px 0px 0px;
 }
 .curr_add_dtl_inner {
   min-height: 50vh;
@@ -1709,7 +1717,7 @@ input[type="radio"]:checked {
   width: 90%;
   padding-left: unset;
 }
-.leave_form .filter-multi-select > .viewbar{
+.leave_form .filter-multi-select > .viewbar, .form-group .filter-multi-select > .viewbar{
   padding-left: unset;
 }
 .leave_form .reject_btn {
@@ -1946,10 +1954,23 @@ input[type="radio"]:checked {
   max-width:270px !important;
   background: #fceed5 !important;
 }
-
+.form_labels{
+  display: inline-block;
+  width: 13%;
+}
+.form-inputs{
+  display: inline-block;
+  width: 87%;
+}
 @media only screen and (max-width: 1199px) {
   .fg-emoji-container{
     left: 669px !important;
+  }
+  .form_labels{
+    width: 21%;
+  }
+  .form-inputs{
+    width: 86%;
   }
 } /* 1024 */
 @media only screen and (max-width: 1023px) {
@@ -1966,6 +1987,15 @@ input[type="radio"]:checked {
 @media only screen and (max-width: 767px) {
   .fg-emoji-container{
     left: 300px !important;
+  }
+  .form-group{
+    display: block !important;
+  }
+  .form-inputs{
+    width: 100%;
+  }
+  .form_labels{
+    width: 100%;
   }
 } /* 650 */
 @media only screen and (max-width: 649px) {
