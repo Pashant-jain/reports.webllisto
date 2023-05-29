@@ -1204,10 +1204,9 @@ h6 {
 .form_label {
   width: 12%;
 }
-/* .form_data {
+.form_data {
   width: 87%;
-  margin-left: 8px;
-} */
+}
 
 button.add_more {
   position: absolute;
@@ -1751,6 +1750,9 @@ input[type="radio"]:checked {
   }
   .leave_form .employee_label{
       width:13%
+  }
+  .apply_leave_wrp .form-group{
+    display: block !important;
   }
 } /* 980 */
 @media only screen and (max-width: 979px) {
